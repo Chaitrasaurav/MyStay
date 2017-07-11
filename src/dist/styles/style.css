@@ -1,0 +1,32 @@
+.ico-plus {
+  width: 14px;
+  height: 14px;
+  background-position: 0px 0px;
+  background-image: url(../images/sprite.png); }
+
+/* Font face*/
+@font-face {
+  font-family: "Helvetica Neue Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/helvetica/HelveticaNeueLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Helvetica Neue Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/HelveticaNeueThin.ttf") format("truetype"); }
+
+/* Font face*/
+/* Font face*/
+@font-face {
+  font-family: "Helvetica Neue Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/helvetica/HelveticaNeueLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Helvetica Neue Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/HelveticaNeueThin.ttf") format("truetype"); }

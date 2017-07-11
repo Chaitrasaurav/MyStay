@@ -1,11 +1,14 @@
 @import 'fonts';
 
 //Font Families
-$font-family-lato : 'Lato', sans-serif;
+$font-family-base : 'Lato', sans-serif;
 $font-family-helvetica-thin: Helvetica Neue Thin;
 $font-family-helvetica-light: Helvetica Neue Light;
 
 //Text
-$text-color-white: #ffffff;
-$text-color-blue: #232e48;
-$text-color-grey: #7b7b85;
+$text-color-base: #232e48;
+$text-color-primary: #ffffff;
+$text-color-secondary: #7b7b85;
+
+//Browser width
+$desktop-max-width: 1074px;

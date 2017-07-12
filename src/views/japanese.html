@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Mystays</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../dist/styles/style.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body>
-test
-
-	<script type="text/javascript" src="../dist/scripts/app.min.js"></script>
+	<header>
+		<div class="header_container">
+			<div class="logo">
+				<img src="../dist/images/ms-logo.png" title="logo">
+				<i class="ico-cross"></i>
+			</div>
+			<div class="header_links">
+				<ul>
+					<li><a href="javascriptvoid">Hotels &amp; Resorts</a></li>
+					<li><a href="javascriptvoid">Destinations</a></li>
+					<li><a href="javascriptvoid"><i class="ico-flag-english"></i> En</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section class="stage">
+		<div class="stage_container">
+			<h1 class="stage__heading">Win Amazing Pepper <i class="ico-cross-stage"></i> Mystays Prizes!</h1>
+			<div class="stage__form form">
+				<form name="stageForm" id="stageForm">
+					<div class="form__control">
+						<label class="form__label">Where in Japan?</label>
+						<select class="form__field" type="text" name="hotelName" id="hotelName">
+						</select>
+					</div>
+					<div class="form__control">
+						<label class="form__label">Check In</label>
+						<input class="form__field form__field--sm js-datepicker" type="text" name="checkIn" id="checkIn">
+					</div>
+					<div class="form__control">
+						<label class="form__label">Check Out</label>
+						<input class="form__field form__field--sm js-datepicker" type="text" name="checkOut" id="checkOut">
+					</div>
+					<div class="form__control">
+						<label class="form__label">No of guests</label>
+						<select class="form__field form__field--sm form__field--select" type="text" name="noGuest" id="noGuest">
+							<option default>No of guest</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+					</div>
+					<button type="button" class="form__btn" id="main-form-btn">Book Now with Pepper</button>
+				</form>
+				<p class="main__hint">Best Price Guarantee!</p>
+			</div>
+		</div>
+	</section>
+	<section class="offers">
+		<div class="offers_container">
+			<ul>
+				<li>Best Price Guarantee</li>
+				<li>5% Extra Discount</li>
+				<li>Enter Pepper Lotery</li>
+			</ul>
+		</div>
+	</section>
+	<section class="tabs">
+		<div class="tabs_container">
+			<h3>MyStays Meets Pepper</h3>
+		</div>
+	</section>
+	<section class="newsletter">
+		<div class="newsletter_container">
+			<h4>MyStays <i class="ico-cross"></i> Pepper</h4>
+			<h5>Aenean eu leo quam pellentesque ornare lacinia!</h5>
+			<p>Etiam porta sem malesuada magna mollis euismod aenean eu leo quam pellentesque ornare sem lacinia quam venenatis vestibulum praesent commodo cursus magna.</p>
+			<ul>
+				<li><a class="newsletter_link" target="_blank" href="javascriptvoid"><i class="ico-press-release"></i>Read our Press Release</a></li>
+				<li><a class="campaign_link" href="javascriptvoid">Book and Join the Campaign <i class="ico-campaign-arrow"></i></a></li>
+			</ul>
+		</div>
+	</section>
+	<section></section>
+	<footer></footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="../scripts/main.js"></script>
 </body>
 </html>

@@ -1,5 +1,28 @@
-.header-container{
+header{
+	background: #232e48;	
+}
+.header_container{
 	max-width: $desktop-max-width;
-	margin: 0 auto;
-	background: #232e48;
+	margin: 0 auto;	
+	overflow: auto;
+	padding:30px 0;
+}
+.logo{
+	float:left;
+	width:50%;
+}
+.header_links{
+	float:left;
+	width:50%;
+	ul{
+		list-style-type:none;
+		li{
+			float:left;
+			display:inline-block;
+			margin:0 20px 0 0;
+			a{
+				color:#fff;
+			}
+		}
+	}
 }

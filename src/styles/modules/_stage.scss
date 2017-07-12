@@ -1,0 +1,9 @@
+.stage{
+	background: #eeeeee;
+}
+.stage_container{
+	max-width: $desktop-max-width;
+	margin: 0 auto;	
+	overflow: auto;
+	padding:30px 0;
+}

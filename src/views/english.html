@@ -5,6 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../dist/styles/style.min.css">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 </head>
 <body>
 	<header>
@@ -15,43 +16,93 @@
 	<section class="main">
 		<h1 class="main__heading">Win Amazing Pepper Mystays Prizes!</h1>
 		<div class="main__form form">
-			<form name="mainForm" id="mainForm">
+			<form name="mainForm" id="mainForm" novalidate autocomplete="off">
 				<div class="form__control">
 					<label class="form__label">Where in Japan?</label>
-					<select class="form__field" type="text" name="hotelName" id="hotelName">
+					<select class="form__field js-city" type="text" id="city">
+						<option>Please select a city</option>
+						<option value="tokyo">Tokyo</option>
+						<option value="kyoto">Kyoto</option>
+						<option value="osaka">Osaka</option>
+					</select>
+				</div>
+				<div class="form__control">
+					<select class="form__field js-hotel required" type="text" name="property" id="property">
 					</select>
 				</div>
 				<div class="form__control">
 					<label class="form__label">Check In</label>
-					<input class="form__field form__field--sm js-datepicker" type="text" name="checkIn" id="checkIn">
+					<input class="form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" readonly>
 				</div>
 				<div class="form__control">
 					<label class="form__label">Check Out</label>
-					<input class="form__field form__field--sm js-datepicker" type="text" name="checkOut" id="checkOut">
+					<input class="form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" readonly>
 				</div>
 				<div class="form__control">
 					<label class="form__label">No of guests</label>
-					<select class="form__field form__field--sm form__field--select" type="text" name="noGuest" id="noGuest">
-						<option default>No of guest</option>
+					<select class="form__field form__field--sm form__field--select required" type="text" name="adults1" id="no-guest">
+						<option value="">No of guest</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
 					</select>
 				</div>
-				<button type="button" class="form__btn" id="main-form-btn">Book Now with Pepper</button>
+				<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>
 			</form>
 			<p class="main__hint">Best Price Guarantee!</p>
+			<input type="checkbox" class="form__field js-check-box" id="checkbox" checked> Yes I want<br>
 		</div>
 
 	</section>
 	<section></section>
-	<section></section>
+	<section>
+	<select class="js-city-slider" type="text">
+		<option>Please select a city</option>
+		<option value="tokyo">Tokyo</option>
+		<option value="kyoto">Kyoto</option>
+		<option value="osaka">Osaka</option>
+	</select>
+	<ul class="lazy">
+		<li>
+			<img data-lazy="../dist/images/lazyfonz1.png">
+			1
+		</li>
+		<li>
+			<img data-lazy="../dist/images/lazyfonz1.png">
+			2
+		</li>
+		<li>
+			<img data-lazy="../dist/images/lazyfonz1.png">
+			3
+		</li>
+		<li>
+			<img data-lazy="../dist/images/lazyfonz1.png">
+			4
+		</li>
+		<li>
+			<img data-lazy="../dist/images/lazyfonz1.png">
+			2
+		</li>
+		<li>
+			<img data-lazy="../dist/images/lazyfonz1.png">
+			3
+		</li>
+		<li>
+			<img data-lazy="../dist/images/lazyfonz1.png">
+			4
+		</li>
+	</ul>
+	</section>
 	<section></section>
 	<section></section>
 	<footer></footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script type="text/javascript" src="../scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+.slider{
+	background: #5873bb;
+}
+.slider_container{
+	max-width: $desktop-max-width;
+	margin: 0 auto;	
+	overflow: auto;
+	padding: 30px 0;
+	text-align: center;
+	color: $text-color-primary;
+	h2{
+		color: $text-color-primary;
+	}
+	p{
+		font-size: 26px;
+		font-weight: 300;
+	}
+}

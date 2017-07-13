@@ -293,4 +293,36 @@
 
 	$(document).ready(myStays.init);
 
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	});
+
+	$('select[name=country]').on("change", function(e){
+      if($(this).val() == 'EN'){
+        window.location.assign("../views/english.html");
+      }else if($(this).val() == 'JP'){
+      	window.location.assign("../views/japanese.html");
+      }
+      else if($(this).val() == 'KR'){
+      	window.location.assign("../views/korean.html");
+      }
+      else if($(this).val() == 'CNS'){
+      	window.location.assign("../views/simplified-chinese.html");
+      }
+      else if($(this).val() == 'CNT'){
+      	window.location.assign("../views/traditional-chinese.html");
+      }
+   });
+	$(".campaign_link").click(function() {
+	    $('html,body').animate({
+	    scrollTop: $(".stage__form").offset().top},
+	        'slow');
+	});
+
 })(window, document, jQuery);

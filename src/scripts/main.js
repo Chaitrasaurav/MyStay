@@ -9,27 +9,51 @@
 			hotels: [
 				{
 					name: 'HOTEL MYSTAYS PREMIER1',
-					address: '',
-					img: '',
+					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JP',
+					img: 'lazyfonz1.png',
 					id: 'jptok26324'
 				},
 				{
 					name: 'HOTEL MYSTAYS PREMIER2',
-					address: '',
-					img: '',
-					id: 'jptok263242'
+					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JP13123',
+					img: 'lazyfonz1.png',
+					id: 'tokyo1'
 				},
 				{
 					name: 'HOTEL MYSTAYS PREMIER3',
-					address: '',
-					img: '',
-					id: 'jptok263243'
+					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JPsdfs',
+					img: 'lazyfonz1.png',
+					id: 'tokyo2'
 				},
 				{
 					name: 'HOTEL MYSTAYS PREMIER4',
 					address: '',
-					img: '',
-					id: 'jptok263244'
+					img: 'lazyfonz1.png',
+					id: 'tokyo3'
+				},
+				{
+					name: 'HOTEL MYSTAYS PREMIER1',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'tokyo4'
+				},
+				{
+					name: 'HOTEL MYSTAYS PREMIER2',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'tokyo5'
+				},
+				{
+					name: 'HOTEL MYSTAYS PREMIER3',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'tokyo6'
+				},
+				{
+					name: 'HOTEL MYSTAYS PREMIER4',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'tokyo7'
 				}
 			]
 		},
@@ -40,26 +64,50 @@
 				{
 					name: 'HOTEL MYSTAYS Kyoto',
 					address: '',
-					img: '',
-					id: 'jptok26324'
+					img: 'lazyfonz1.png',
+					id: 'kyoto1'
 				},
 				{
 					name: 'HOTEL MYSTAYS Kyoto1',
 					address: '',
-					img: '',
-					id: 'jptok26324Kyoto1'
+					img: 'lazyfonz1.png',
+					id: 'kyoto2'
 				},
 				{
 					name: 'HOTEL MYSTAYS Kyoto2',
 					address: '',
-					img: '',
-					id: 'jptok26324Kyoto2'
+					img: 'lazyfonz1.png',
+					id: 'kyoto3'
 				},
 				{
 					name: 'HOTEL MYSTAYS Kyoto3',
 					address: '',
-					img: '',
-					id: 'jptok26324Kyoto3'
+					img: 'lazyfonz1.png',
+					id: 'kyoto4'
+				},
+				{
+					name: 'HOTEL MYSTAYS Kyoto',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'kyoto5'
+				},
+				{
+					name: 'HOTEL MYSTAYS Kyoto1',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'kyoto6'
+				},
+				{
+					name: 'HOTEL MYSTAYS Kyoto2',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'kyoto7'
+				},
+				{
+					name: 'HOTEL MYSTAYS Kyoto3',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'kyoto8'
 				}
 			]
 		},
@@ -70,26 +118,50 @@
 				{
 					name: 'HOTEL MYSTAYS Osaka',
 					address: '',
-					img: '',
-					id: 'jptok26324Osaka'
+					img: 'lazyfonz1.png',
+					id: 'osaka1'
 				},
 				{
 					name: 'HOTEL MYSTAYS Osaka1',
 					address: '',
-					img: '',
-					id: 'jptok26324Osaka1'
+					img: 'lazyfonz1.png',
+					id: 'osaka2'
 				},
 				{
 					name: 'HOTEL MYSTAYS Osaka2',
 					address: '',
-					img: '',
-					id: 'jptok26324Osaka2'
+					img: 'lazyfonz1.png',
+					id: 'osaka3'
 				},
 				{
 					name: 'HOTEL MYSTAYS Osaka3',
 					address: '',
-					img: '',
-					id: 'jptok26324Osaka3'
+					img: 'lazyfonz1.png',
+					id: 'osaka4'
+				},
+				{
+					name: 'HOTEL MYSTAYS Osaka',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'osaka5'
+				},
+				{
+					name: 'HOTEL MYSTAYS Osaka1',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'osaka6'
+				},
+				{
+					name: 'HOTEL MYSTAYS Osaka2',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'osaka7'
+				},
+				{
+					name: 'HOTEL MYSTAYS Osaka3',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'osaka8'
 				}
 			]
 		}
@@ -128,11 +200,7 @@
 				$('.js-hotel').html(options);
 		};
 
-		$('.lazy').slick({
-		  lazyLoad: 'ondemand',
-		  slidesToShow: 4,
-		  slidesToScroll: 1
-		});	
+		createSliderElements('tokyo');
 	};
 
 	$('#main-form-btn').on('click', function(){
@@ -193,6 +261,35 @@
 	$('.js-check-box').change(function() {
         $('.js-main-form-btn').attr("disabled", !$(this).is(":checked"));
     });
+
+    $( ".js-slider-control" ).on('change', function(e) {
+		var city = e.target.value; 
+		$('.js-slider').slick("unslick");	
+		createSliderElements(city);
+	});
+
+	function createSliderElements(city) {
+		var item = '';
+		for (var i = 0; i < cityHotelMap[city].hotels.length; i++) {
+			var hotelData =  cityHotelMap[city].hotels[i];
+			item += '<li><img data-lazy="../dist/images/' + hotelData.img + '" /> <h6>'+ hotelData.name +'</h6> <p>'+ hotelData.address +'</p> <button class="js-slider-choose" data-city="' + city + '" data-hotel="' + hotelData.name + '" data-property="' + hotelData.id + '">Select Hotel</button></li>';
+		};
+		
+		$('.js-slider').empty().append(item).slick({
+		  lazyLoad: 'ondemand',
+		  slidesToShow: 4,
+		  slidesToScroll: 1
+		});	
+	};
+
+	$(document).on('click', '.js-slider-choose', function(e){
+		var hotelData = $(this).data();
+		$('html, body').animate({
+	        scrollTop: $('#mainForm').offset().top
+	    }, 2000);
+		$('#mainForm').find('#city').val(hotelData.city).trigger('change');
+		$('#mainForm').find('#property').val(hotelData.property);
+	});
 
 	$(document).ready(myStays.init);
 

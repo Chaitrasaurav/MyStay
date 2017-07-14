@@ -6,4 +6,105 @@
 	margin: 0 auto;	
 	overflow: auto;
 	padding:30px 0;
+	h1{
+		max-width:400px;
+	}
+}
+.stage__form{
+	max-width: 400px;
+	background: #fff;
+	padding:30px;
+	box-sizing:border-box;
+	text-align:center;
+	.form__btn{
+		display: block;
+	    margin: 20px auto;
+	    background: #ffd25d;
+	    border: none;
+	    padding: 10px;
+	    width: 100%;
+	    border-radius: 3px;
+	    font-size: 15px;
+	    font-weight: 900;
+	}
+}
+.form__control{
+	select{
+		display: block;
+	    width: 100%;
+	    border: 2px solid #e4e4e7;
+	    margin-top: 20px;
+	    padding: 10px;
+	    color: #7b7b85;
+	    font-size: 12px;
+	    opacity: 0.75;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    text-indent: 1px;
+	    text-overflow: '';
+	    &.js-city{
+	    	background: url(../images/location.png) no-repeat right 10px top 8px;
+	    }
+	    &.js-hotel{
+
+	    }
+	}
+	.form__label{
+		font-size: 13px;
+		font-weight: 600;
+	}
+}
+.form_guestWrap{
+	overflow: auto;
+	margin-top:20px;
+	.form__control{
+		width:29.4%;
+		float:left;
+		margin-right:20px;
+		text-align:center;
+		&:last-child{
+			margin-right:0;
+		}
+		input{
+			display: block;
+		    width: 100%;
+		    border: 2px solid #e4e4e7;
+		    margin-top: 20px;
+		    padding:29px 0 10px;
+		    color: #7b7b85;
+		    font-size: 12px;
+		    opacity: 0.75;
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+		    text-indent: 1px;
+		    text-overflow: '';
+		    box-sizing: border-box;
+		    text-align:center;
+		    &.check-in{
+		    	background: url(../images/calandar.png) no-repeat center top 7px;
+		    }
+		    &.check-out{
+		    	background: url(../images/calandar.png) no-repeat center top 7px;
+		    }
+		}
+		select.guest{
+	    	background: url(../images/guest.png) no-repeat center top 7px;
+	    	padding: 29px 30px 10px;
+	    }
+	}
+
+}
+.stage_conditions{
+	max-width: 400px;
+	font-size:14px;
+	line-height:1.57;
+	color:#ffffff;
+	font-family:$font-family-helvetica-light;
+	a{
+		color:#ffffff;
+		text-decoration:underline;
+		&:hover{
+			text-decoration:none;
+		}
+	}
 }

@@ -440,6 +440,90 @@ header {
   margin: 0 auto;
   overflow: auto;
   padding: 30px 0; }
+  .stage_container h1 {
+    max-width: 400px; }
+
+.stage__form {
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center; }
+  .stage__form .form__btn {
+    display: block;
+    margin: 20px auto;
+    background: #ffd25d;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 900; }
+
+.form__control select {
+  display: block;
+  width: 100%;
+  border: 2px solid #e4e4e7;
+  margin-top: 20px;
+  padding: 10px;
+  color: #7b7b85;
+  font-size: 12px;
+  opacity: 0.75;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: ''; }
+  .form__control select.js-city {
+    background: url(../images/location.png) no-repeat right 10px top 8px; }
+
+.form__control .form__label {
+  font-size: 13px;
+  font-weight: 600; }
+
+.form_guestWrap {
+  overflow: auto;
+  margin-top: 20px; }
+  .form_guestWrap .form__control {
+    width: 29.4%;
+    float: left;
+    margin-right: 20px;
+    text-align: center; }
+    .form_guestWrap .form__control:last-child {
+      margin-right: 0; }
+    .form_guestWrap .form__control input {
+      display: block;
+      width: 100%;
+      border: 2px solid #e4e4e7;
+      margin-top: 20px;
+      padding: 29px 0 10px;
+      color: #7b7b85;
+      font-size: 12px;
+      opacity: 0.75;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: '';
+      box-sizing: border-box;
+      text-align: center; }
+      .form_guestWrap .form__control input.check-in {
+        background: url(../images/calandar.png) no-repeat center top 7px; }
+      .form_guestWrap .form__control input.check-out {
+        background: url(../images/calandar.png) no-repeat center top 7px; }
+    .form_guestWrap .form__control select.guest {
+      background: url(../images/guest.png) no-repeat center top 7px;
+      padding: 29px 30px 10px; }
+
+.stage_conditions {
+  max-width: 400px;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #ffffff;
+  font-family: Helvetica Neue Light; }
+  .stage_conditions a {
+    color: #ffffff;
+    text-decoration: underline; }
+    .stage_conditions a:hover {
+      text-decoration: none; }
 
 .offers {
   background: #fff; }
@@ -747,6 +831,18 @@ footer {
   .slider_container p {
     font-size: 26px;
     font-weight: 300; }
+
+.js-slider-control {
+  display: block;
+  margin: 20px auto;
+  background: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 0;
+  min-width: 452px;
+  color: #232e48;
+  font-size: 27px;
+  text-align: center; }
 
 .subscribe {
   background: #fff3e5; }

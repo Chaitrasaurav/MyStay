@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../dist/styles/style.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 	<script src="https://js.gleam.io/oi-my108fgp.js" async="async"></script>
 <body>
 	<header>
@@ -33,33 +35,50 @@
 		<div class="stage_container">
 			<h1 class="stage__heading">Win Amazing Pepper <i class="ico-cross-stage"></i> Mystays Prizes!</h1>
 			<div class="stage__form form">
-				<form name="stageForm" id="stageForm">
+				<form name="mainForm" id="mainForm" novalidate autocomplete="off">
 					<div class="form__control">
 						<label class="form__label">Where in Japan?</label>
-						<select class="form__field" type="text" name="hotelName" id="hotelName">
+						<select class="form__field js-city" type="text" id="city">
+							<option>Please select a city</option>
+							<option value="tokyo">Tokyo</option>
+							<option value="kyoto">Kyoto</option>
+							<option value="osaka">Osaka</option>
 						</select>
 					</div>
 					<div class="form__control">
-						<label class="form__label">Check In</label>
-						<input class="form__field form__field--sm js-datepicker" type="text" name="checkIn" id="checkIn">
-					</div>
-					<div class="form__control">
-						<label class="form__label">Check Out</label>
-						<input class="form__field form__field--sm js-datepicker" type="text" name="checkOut" id="checkOut">
-					</div>
-					<div class="form__control">
-						<label class="form__label">No of guests</label>
-						<select class="form__field form__field--sm form__field--select" type="text" name="noGuest" id="noGuest">
-							<option default>No of guest</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
+						<select class="form__field js-hotel required" type="text" name="property" id="property">
 						</select>
 					</div>
-					<button type="button" class="form__btn" id="main-form-btn">Book Now with Pepper</button>
+					<div class="form_guestWrap">
+						<div class="form__control">
+							<label class="form__label">Check In</label>
+							<input class="form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" value="Select" readonly>
+						</div>
+						<div class="form__control">
+							<label class="form__label">Check Out</label>
+							<input class="form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" value="Select" readonly>
+						</div>
+						<div class="form__control">
+							<label class="form__label">No of guests</label>
+							<select class="form__field form__field--sm form__field--select required guest" type="text" name="adults1" id="no-guest">
+								<option value="">Select</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+							</select>
+						</div>
+					</div>
+					<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>
 				</form>
-				<p class="main__hint">Best Price Guarantee!</p>
+				<p class="stage__hint">Best Price Guarantee!</p>
+			</div>
+			<div class="stage_conditions">
+				<p><input type="checkbox" class="form__field js-check-box" id="checkbox" checked> Yes I want to become a MyStays Member and Join the Campaign</p>
+				<a href=""><i class="policies"></i>Terms &amp; Conitions</a>
 			</div>
 		</div>
 	</section>
@@ -101,6 +120,14 @@
  		<div class="slider_container">
  			<h2>77 Hotels all around Japan</h2>
  			<p>Book your Hotel, Save and Win!</p>
+ 			<span>Please select a city</span>
+ 			<select class="js-slider-control" type="text">
+				<option value="tokyo" selected>Tokyo (4)</option>
+				<option value="kyoto">Kyoto (4)</option>
+				<option value="osaka">Osaka (4)</option>
+			</select>
+			<ul class="lazy js-slider">
+			</ul>
  		</div>
  	</section>
  	<section class="subscribe">

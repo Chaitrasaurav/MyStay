@@ -719,6 +719,17 @@
 	        'slow');
 	});
 
+	$(".select-language").click(function() {
+	    $('ul.header_language').toggleClass('active');
+	});
+
+	if ($(window).width() < 767) {
+	   $(".sitemap_links").click(function(e) {  
+	   		$('.sitemap_links ul').removeClass('active');
+		    $(this).children('ul').toggleClass('active');
+		});
+	}
+
 })(window, document, jQuery);
 
 window.document.onkeydown = function (e) {

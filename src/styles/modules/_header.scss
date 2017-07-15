@@ -47,5 +47,9 @@ header{
 				font-weight:600;
 			}
 		}
+		&.active{
+			display:block;
+			position: absolute;
+		}
 	}
 }

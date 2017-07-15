@@ -244,6 +244,9 @@ h5 {
   clear: both;
   display: block; }
 
+.active {
+  display: block !important; }
+
 .ico-campaign-arrow {
   width: 20px;
   height: 20px;
@@ -443,6 +446,9 @@ header {
         padding: 5px 10px;
         text-align: center;
         font-weight: 600; }
+    .header_links .header_language.active {
+      display: block;
+      position: absolute; }
 
 .stage {
   background: #5873bb; }
@@ -946,6 +952,15 @@ header {
       display: block;
       font-family: Helvetica Neue Light;
       font-size: 13px; }
+
+@media (max-width: 767px) {
+  .sitemap_links {
+    width: 100%;
+    float: none; }
+    .sitemap_links p {
+      cursor: pointer; }
+    .sitemap_links ul {
+      display: none; } }
 
 footer {
   background-color: #232e48; }

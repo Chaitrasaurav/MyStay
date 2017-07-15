@@ -33,3 +33,17 @@
 		}
 	}
 }
+
+@media (max-width: 767px) {
+	.sitemap_links{
+		width: 100%;
+   		float: none;
+   		p{
+   			cursor: pointer;
+   		}
+		ul{
+			display:none;
+		}
+	}
+}
+

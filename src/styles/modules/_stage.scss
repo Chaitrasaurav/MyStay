@@ -27,6 +27,10 @@
 	    font-size: 15px;
 	    font-weight: 900;
 	}
+	.stage__hint{
+		font-size:13px;
+		font-weight:300;
+	}
 }
 .form__control{
 	select{
@@ -87,9 +91,17 @@
 		    	background: url(../images/calandar.png) no-repeat center top 7px;
 		    }
 		}
+		.input-wrap{
+			background: url(../images/corner-icon.png) no-repeat bottom right;
+		}
 		select.guest{
 	    	background: url(../images/guest.png) no-repeat center top 7px;
 	    	padding: 29px 30px 10px;
+	    }
+	    select{
+	    	&:focus{
+	    		outline:none;
+	    	}
 	    }
 	}
 

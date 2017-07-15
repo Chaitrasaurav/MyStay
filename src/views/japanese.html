@@ -14,20 +14,21 @@
 			<div class="logo">
 				<img src="../dist/images/ms-logo.png" title="logo">
 				<i class="ico-cross"></i>
+				<img src="../dist/images/pepper-logo.png" title="logo">
 			</div>
 			<div class="header_links">
 				<ul>
 					<li><a href="javascriptvoid">Hotels &amp; Resorts</a></li>
 					<li><a href="javascriptvoid">Destinations</a></li>
-					<li><a href="javascriptvoid"></a></li>
+					<li class="select-language"><i class="ico-flag-english"></i> Jp
+						<ul class="header_language" name="country">
+							<li value="EN"><a href="">En</a></li>
+							<li value="KR"><a href="">Kr</a></li>
+							<li value="CNT"><a href="">Cnt</a></li>
+							<li value="CNS"><a href="">Cns</a></li>
+						</ul>
+					</li>
 				</ul>
-				<Select name="country">
-				   <option value="JP"><i class="ico-flag-english"></i> Jp</option>
-				   <option value="EN"><i class="ico-flag-english"></i> En</option>
-				   <option value="KR"><i class="ico-flag-english"></i> Kr</option>
-				   <option value="CNT"><i class="ico-flag-english"></i> Cnt</option>
-				   <option value="CNS"><i class="ico-flag-english"></i> Cns</option>
-				</Select>
 			</div>
 		</div>
 	</header>
@@ -43,6 +44,23 @@
 							<option value="tokyo">Tokyo</option>
 							<option value="kyoto">Kyoto</option>
 							<option value="osaka">Osaka</option>
+							<option value="kanazawa">Kanazawa</option>
+							<option value="maihama-urayasu">Maihama/Urayasu</option>
+							<option value="tachikawa">Tachikawa</option>
+							<option value="kawasaki">Kawasaki</option>
+							<option value="yokohama">Yokohama</option>
+							<option value="chiba">Chiba</option>
+							<option value="tochigi">Tochigi</option>
+							<option value="hokkaido">Hokkaido</option>
+							<option value="aomori">Aomori</option>
+							<option value="yamanashi">Yamanashi</option>
+							<option value="nagoya">Nagoya</option>
+							<option value="niigata">Niigata</option>
+							<option value="kagawa">Kagawa</option>
+							<option value="ehime">Ehime</option>
+							<option value="fukuoka">Fukuoka</option>
+							<option value="oita">Oita</option>
+							<option value="okinawa">Okinawa</option>
 						</select>
 					</div>
 					<div class="form__control">
@@ -52,15 +70,20 @@
 					<div class="form_guestWrap">
 						<div class="form__control">
 							<label class="form__label">Check In</label>
-							<input class="form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" value="Select" readonly>
+							<div class="input-wrap">
+								<input class="form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" value="Select" readonly>
+							</div>
 						</div>
 						<div class="form__control">
 							<label class="form__label">Check Out</label>
-							<input class="form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" value="Select" readonly>
+							<div class="input-wrap">
+								<input class="form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" value="Select" readonly>
+							</div>
 						</div>
 						<div class="form__control">
 							<label class="form__label">No of guests</label>
-							<select class="form__field form__field--sm form__field--select required guest" type="text" name="adults1" id="no-guest">
+							<div class="input-wrap">
+								<select class="form__field form__field--sm form__field--select required guest" type="text" name="adults1" id="no-guest">
 								<option value="">Select</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -69,7 +92,8 @@
 								<option value="5">5</option>
 								<option value="6">6</option>
 								<option value="7">7</option>
-							</select>
+								</select>
+							</div>
 						</div>
 					</div>
 					<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>
@@ -124,9 +148,26 @@
  			<p>Book your Hotel, Save and Win!</p>
  			<span>Please select a city</span>
  			<select class="js-slider-control" type="text">
-				<option value="tokyo" selected>Tokyo (4)</option>
-				<option value="kyoto">Kyoto (4)</option>
-				<option value="osaka">Osaka (4)</option>
+				<option value="tokyo" selected>Tokyo (9)</option>
+				<option value="kyoto">Kyoto (1)</option>
+				<option value="osaka">Osaka (6)</option>
+				<option value="kanazawa">Kanazawa (2)</option>
+				<option value="maihama-urayasu">Maihama/Urayasu (3)</option>
+				<option value="tachikawa">Tachikawa (1)</option>
+				<option value="kawasaki">Kawasaki (3)</option>
+				<option value="yokohama">Yokohama (3)</option>
+				<option value="chiba">Chiba (1)</option>
+				<option value="tochigi">Tochigi (2)</option>
+				<option value="hokkaido">Hokkaido (10)</option>
+				<option value="aomori">Aomori (1)</option>
+				<option value="yamanashi">Yamanashi (1)</option>
+				<option value="nagoya">Nagoya (1)</option>
+				<option value="niigata">Niigata (2)</option>
+				<option value="kagawa">Kagawa (1)</option>
+				<option value="ehime">Ehime (1)</option>
+				<option value="fukuoka">Fukuoka (2)</option>
+				<option value="oita">Oita (2)</option>
+				<option value="okinawa">Okinawa (2)</option>
 			</select>
 			<ul class="lazy js-slider">
 			</ul>

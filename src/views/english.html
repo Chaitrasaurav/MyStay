@@ -14,20 +14,21 @@
 			<div class="logo">
 				<img src="../dist/images/ms-logo.png" title="logo">
 				<i class="ico-cross"></i>
+				<img src="../dist/images/pepper-logo.png" title="logo">
 			</div>
 			<div class="header_links">
 				<ul>
 					<li><a href="javascriptvoid">Hotels &amp; Resorts</a></li>
 					<li><a href="javascriptvoid">Destinations</a></li>
-					<li><a href="javascriptvoid"></a></li>
+					<li class="select-language"><i class="ico-flag-english"></i> Jp
+						<ul class="header_language" name="country">
+							<li value="EN"><a href="">En</a></li>
+							<li value="KR"><a href="">Kr</a></li>
+							<li value="CNT"><a href="">Cnt</a></li>
+							<li value="CNS"><a href="">Cns</a></li>
+						</ul>
+					</li>
 				</ul>
-				<Select name="country">
-				   <option default value="JP"><i class="ico-flag-english"></i> Jp</option>
-				   <option value="EN"><i class="ico-flag-english"></i> En</option>
-				   <option value="KR"><i class="ico-flag-english"></i> Kr</option>
-				   <option value="CNT"><i class="ico-flag-english"></i> Cnt</option>
-				   <option value="CNS"><i class="ico-flag-english"></i> Cns</option>
-				</Select>
 			</div>
 		</div>
 	</header>
@@ -69,15 +70,20 @@
 					<div class="form_guestWrap">
 						<div class="form__control">
 							<label class="form__label">Check In</label>
-							<input class="form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" value="Select" readonly>
+							<div class="input-wrap">
+								<input class="form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" value="Select" readonly>
+							</div>
 						</div>
 						<div class="form__control">
 							<label class="form__label">Check Out</label>
-							<input class="form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" value="Select" readonly>
+							<div class="input-wrap">
+								<input class="form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" value="Select" readonly>
+							</div>
 						</div>
 						<div class="form__control">
 							<label class="form__label">No of guests</label>
-							<select class="form__field form__field--sm form__field--select required guest" type="text" name="adults1" id="no-guest">
+							<div class="input-wrap">
+								<select class="form__field form__field--sm form__field--select required guest" type="text" name="adults1" id="no-guest">
 								<option value="">Select</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -86,7 +92,8 @@
 								<option value="5">5</option>
 								<option value="6">6</option>
 								<option value="7">7</option>
-							</select>
+								</select>
+							</div>
 						</div>
 					</div>
 					<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>

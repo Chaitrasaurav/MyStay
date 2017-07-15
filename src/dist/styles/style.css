@@ -410,9 +410,29 @@ header {
     .header_links ul li {
       float: left;
       display: inline-block;
-      margin: 0 20px 0 0; }
+      margin: 0 20px 0 0;
+      color: #fff; }
       .header_links ul li a {
         color: #fff; }
+    .header_links ul .select-language {
+      cursor: pointer; }
+  .header_links .header_language {
+    display: none;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #7b7b85;
+    border-radius: 3px; }
+    .header_links .header_language li {
+      display: block;
+      float: none;
+      margin: 0; }
+      .header_links .header_language li a {
+        color: #232e48;
+        display: block;
+        padding: 5px 10px;
+        text-align: center;
+        font-weight: 600; }
 
 .stage {
   background: #5873bb; }
@@ -441,6 +461,9 @@ header {
     border-radius: 3px;
     font-size: 15px;
     font-weight: 900; }
+  .stage__form .stage__hint {
+    font-size: 13px;
+    font-weight: 300; }
 
 .form__control select {
   display: block;
@@ -491,9 +514,13 @@ header {
         background: url(../images/calandar.png) no-repeat center top 7px; }
       .form_guestWrap .form__control input.check-out {
         background: url(../images/calandar.png) no-repeat center top 7px; }
+    .form_guestWrap .form__control .input-wrap {
+      background: url(../images/corner-icon.png) no-repeat bottom right; }
     .form_guestWrap .form__control select.guest {
       background: url(../images/guest.png) no-repeat center top 7px;
       padding: 29px 30px 10px; }
+    .form_guestWrap .form__control select:focus {
+      outline: none; }
 
 .stage_conditions {
   max-width: 400px;

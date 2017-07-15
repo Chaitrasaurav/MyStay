@@ -247,6 +247,9 @@ h5 {
 .active {
   display: block !important; }
 
+.hidden {
+  display: none; }
+
 .ico-campaign-arrow {
   width: 20px;
   height: 20px;

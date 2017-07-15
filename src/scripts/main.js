@@ -692,7 +692,7 @@
 		});	
 	};
 
-	$(document).on('click', '.js-slider-choose', function(e){
+	$('.js-slider').on('click', '.js-slider-choose', function(e){
 		var hotelData = $(this).data();
 		$('html, body').animate({
 	        scrollTop: $('#mainForm').offset().top
@@ -700,8 +700,6 @@
 		$('#mainForm').find('#city').val(hotelData.city).trigger('change');
 		$('#mainForm').find('#property').val(hotelData.property);
 	});
-
-	$(document).ready(myStays.init);
 
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
@@ -729,6 +727,105 @@
 		    $(this).children('ul').toggleClass('active');
 		});
 	}
+
+	$('.js-select-guest').on('click', function(e) {
+		$('.js-select-guest-container').toggleClass('hidden');
+	});
+
+	$('.js-add-room').on('click', function(){
+		console.log($('.js-room-list').find('li').length)
+		var index = $('.js-room-list').find('li').length;
+		var list = '<li class="js-room" data-room="'+ index +'">\
+						<div class="form__control">\
+							<label class="form__label">Adults</label>\
+							<div class="input-wrap">\
+								<select class="js-adult-count">\
+									<option value="1">1</option>\
+									<option value="2">2</option>\
+								</select>\
+							</div>\
+						</div>\
+						<div class="form__control">\
+							<label class="form__label">Children</label>\
+							<div class="input-wrap">\
+								<select class="js-child-count">\
+									<option value="0">0</option>\
+									<option value="1">1</option>\
+									<option value="2">2</option>\
+								</select>\
+							</div>\
+						</div>\
+						<div class="js-child-age-list">\
+						</div>\
+						<div>\
+							<a href="javascript:;" title="Delete this room" class="js-delete-room">delete</a>\
+						</div>\
+					</li>';
+		$('.js-room-list').append(list);
+	});
+
+	$('.js-room-list').on('click', '.js-delete-room', function(e){
+		var $this = $(this);
+		$this.parents('li').remove();
+	});
+
+	$('.js-room-list').on('change', '.js-child-count', function(e){
+		var $this = $(this),
+			value = $this.val(),
+			$ageList = $this.parents('.js-room').find('.js-child-age-list');
+
+		$ageList.empty();				
+		for (var i = 0; i < value; i++) {
+			var index = i + 1;
+			var $ageField = '<div class="form__control js-child-age-ele">\
+							<label class="form__label">Child '+ index + '</label>\
+							<div class="input-wrap">\
+								<select>\
+									<option value="1">1</option>\
+									<option value="2">2</option>\
+									<option value="3">3</option>\
+									<option value="4">4</option>\
+									<option value="5">5</option>\
+									<option value="6">6</option>\
+									<option value="7">7</option>\
+									<option value="8">8</option>\
+									<option value="9">9</option>\
+									<option value="10">10</option>\
+									<option value="11">11</option>\
+									<option value="12">12</option>\
+									<option value="13">13</option>\
+									<option value="14">14</option>\
+								</select>\
+							</div>\
+						</div>';
+			$ageList.append($ageField);
+		}
+	});
+
+	$('.js-confirm').on('click', function() {
+		var adultFields = $('.js-select-guest-container').find('.js-adult-count'),
+			childFields = $('.js-select-guest-container').find('.js-child-count'),
+			adultCount = 0,
+			childCount = 0;
+
+			console.log(adultFields, childFields);
+			for (var i = 0; i < adultFields.length; i++) {
+				adultCount += Number(adultFields[i].value);
+			}
+			for (var i = 0; i < childFields.length; i++) {
+				childCount += Number(childFields[i].value);
+			}
+		$('.js-select-guest').val(adultCount);
+		$('.js-total-children').val(childCount);
+		$('.js-total-room').val($('.js-room').length);
+		$('.js-select-guest-container').toggleClass('hidden');
+	});
+
+	$('.js-cancel-select-guest').on('click', function() {
+		$('.js-select-guest-container').toggleClass('hidden');
+	});
+
+	$(document).ready(myStays.init);
 
 })(window, document, jQuery);
 

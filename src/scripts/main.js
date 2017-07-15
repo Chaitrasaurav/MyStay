@@ -8,52 +8,58 @@
 			id: 'tokyo',
 			hotels: [
 				{
-					name: 'HOTEL MYSTAYS PREMIER1',
+					name: 'HOTEL MYSTAYS PREMIER Akasaka',
 					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JP',
 					img: 'lazyfonz1.png',
 					id: 'jptok26324'
 				},
 				{
-					name: 'HOTEL MYSTAYS PREMIER2',
+					name: 'HOTEL MYSTAYS PREMIER Hamamatsucho',
 					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JP13123',
 					img: 'lazyfonz1.png',
 					id: 'tokyo1'
 				},
 				{
-					name: 'HOTEL MYSTAYS PREMIER3',
+					name: 'HOTEL MYSTAYS PREMIER Omori',
 					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JPsdfs',
 					img: 'lazyfonz1.png',
 					id: 'tokyo2'
 				},
 				{
-					name: 'HOTEL MYSTAYS PREMIER4',
+					name: 'HOTEL MYSTAYS Asakusa bashi',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'tokyo3'
 				},
 				{
-					name: 'HOTEL MYSTAYS PREMIER1',
+					name: 'HOTEL MYSTAYS Gotanda',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'tokyo4'
 				},
 				{
-					name: 'HOTEL MYSTAYS PREMIER2',
+					name: 'HOTEL MYSTAYS Gotanda Station',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'tokyo5'
 				},
 				{
-					name: 'HOTEL MYSTAYS PREMIER3',
+					name: 'HOTEL MYSTAYS Hamamatsucho',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'tokyo6'
 				},
 				{
-					name: 'HOTEL MYSTAYS PREMIER4',
+					name: 'HOTEL MYSTAYS Haneda',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'tokyo7'
+				},
+				{
+					name: 'HOTEL MYSTAYS Higashi Ikebukuroa',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'tokyo8'
 				}
 			]
 		},
@@ -62,52 +68,10 @@
 			id: 'kyoto',
 			hotels: [
 				{
-					name: 'HOTEL MYSTAYS Kyoto',
+					name: 'HOTEL MYSTAYS Kyoto Shijo',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'kyoto1'
-				},
-				{
-					name: 'HOTEL MYSTAYS Kyoto1',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kyoto2'
-				},
-				{
-					name: 'HOTEL MYSTAYS Kyoto2',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kyoto3'
-				},
-				{
-					name: 'HOTEL MYSTAYS Kyoto3',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kyoto4'
-				},
-				{
-					name: 'HOTEL MYSTAYS Kyoto',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kyoto5'
-				},
-				{
-					name: 'HOTEL MYSTAYS Kyoto1',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kyoto6'
-				},
-				{
-					name: 'HOTEL MYSTAYS Kyoto2',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kyoto7'
-				},
-				{
-					name: 'HOTEL MYSTAYS Kyoto3',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kyoto8'
 				}
 			]
 		},
@@ -116,52 +80,370 @@
 			id: 'osaka',
 			hotels: [
 				{
-					name: 'HOTEL MYSTAYS Osaka',
+					name: 'HOTEL MYSTAYS Midosuji Honmachi',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'osaka1'
 				},
 				{
-					name: 'HOTEL MYSTAYS Osaka1',
+					name: 'HOTEL MYSTAYS Otemae',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'osaka2'
 				},
 				{
-					name: 'HOTEL MYSTAYS Osaka2',
+					name: 'HOTEL MYSTAYS Sakaisuji Honmachi',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'osaka3'
 				},
 				{
-					name: 'HOTEL MYSTAYS Osaka3',
+					name: 'HOTEL MYSTAYS Shinsaibashi',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'osaka4'
 				},
 				{
-					name: 'HOTEL MYSTAYS Osaka',
+					name: 'HOTEL MYSTAYS Shinsaibashi East',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'osaka5'
 				},
 				{
-					name: 'HOTEL MYSTAYS Osaka1',
+					name: 'HOTEL MYSTAYS Shin Osaka Conference Center',
 					address: '',
 					img: 'lazyfonz1.png',
 					id: 'osaka6'
-				},
+				}
+			]
+		},
+		'kanazawa':{
+			city: 'Kanazawa',
+			id: 'kanazawa',
+			hotels: [
 				{
-					name: 'HOTEL MYSTAYS Osaka2',
+					name: 'HOTEL MYSTAYS PREMIER Kanazawa',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'osaka7'
+					id: 'kanazawa1'
 				},
 				{
-					name: 'HOTEL MYSTAYS Osaka3',
+					name: 'HOTEL MYSTAYS Kanazawa Castle',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'osaka8'
+					id: 'kanazawa2'
+				}
+			]
+		},
+		'maihama-urayasu':{
+			city: 'Maihama/Urayasu',
+			id: 'maihama-urayasu',
+			hotels: [
+				{
+					name: 'HOTEL MYSTAYS Maihama',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'maihama-urayasu1'
+				},
+				{
+					name: 'MYSTAYS Shin Urayasu Conference Center',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'maihama-urayasu2'
+				},
+				{
+					name: 'FLEXSTAY INN Shin Urayasu',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'maihama-urayasu3'
+				}
+			]
+		},
+		'tachikawa':{
+			city: 'Tachikawa',
+			id: 'tachikawa',
+			hotels: [
+				{
+					name: 'HOTEL MYSTAYS Tachikawa',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'tachikawa1'
+				}
+			]
+		},
+		'kawasaki':{
+			city: 'Kawasaki',
+			id: 'kawasaki',
+			hotels: [
+				{
+					name: 'FLEXSTAY INN Kawasaki Kaizuka',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'kawasaki1'
+				},
+				{
+					name: 'FLEXSTAY INN Kawasaki Ogawacho',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'kawasaki2'
+				},
+				{
+					name: 'FLEXSTAY INN Tamagawa',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'kawasaki3'
+				}
+			]
+		},
+		'yokohama':{
+			city: 'Yokohama',
+			id: 'yokohama',
+			hotels: [
+				{
+					name: 'HOTEL MYSTAYS Yokohama',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'yokohama1'
+				},
+				{
+					name: 'HOTEL MYSTAYS Yokohama Kannai',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'yokohama2'
+				},
+				{
+					name: 'FLEXSTAY INN Sakuragicho',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'yokohama3'
+				}
+			]
+		},
+		'chiba':{
+			city: 'Chiba',
+			id: 'chiba',
+			hotels: [
+				{
+					name: 'Shirahama Ocean Resort',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'chiba1'
+				}
+			]
+		},
+		'tochigi':{
+			city: 'Tochigi',
+			id: 'tochigi',
+			hotels: [
+				{
+					name: 'HOTEL MYSTAYS Utsunomiya',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'tochigi1'
+				},
+				{
+					name: 'Hotel Épinard Nasu',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'tochigi2'
+				}
+			]
+		},
+		'hokkaido':{
+			city: 'Hokkaido',
+			id: 'hokkaido',
+			hotels: [
+				{
+					name: 'HOTEL MYSTAYS PREMIER Sapporo Park',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'hokkaido1'
+				},
+				{
+					name: 'HOTEL MYSTAYS Sapporo Aspen',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'hokkaido2'
+				},
+				{
+					name: 'HOTEL MYSTAYS Sapporo Nakajima Park',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'hokkaido3'
+				},
+				{
+					name: 'HOTEL MYSTAYS Sapporo Nakajima Park Annex',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'hokkaido4'
+				},
+				{
+					name: 'HOTEL MYSTAYS Sapporo Station',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'hokkaido5'
+				},
+				{
+					name: 'ART HOTEL ASAHIKAWA',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'hokkaido6'
+				},
+				{
+					name: 'Hotel Nord Otaru',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'hokkaido7'
+				},
+				{
+					name: 'Hotel Sonia Otaru',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'hokkaido8'
+				},
+				{
+					name: 'Hakodate Kokusai Hotel',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'hokkaido9'
+				},
+				{
+					name: 'Hotel Nets Hakodate',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'hokkaido10'
+				}
+			]
+		},
+		'aomori':{
+			city: 'Aomori',
+			id: 'aomori',
+			hotels: [
+				{
+					name: 'ART HOTEL HIROSAKI CITY',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'aomori1'
+				}
+			]
+		},
+		'yamanashi':{
+			city: 'Yamanashi',
+			id: 'yamanashi',
+			hotels: [
+				{
+					name: 'HOTEL MYSTAYS Fuji',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'yamanashi1'
+				}
+			]
+		},
+		'nagoya':{
+			city: 'Nagoya',
+			id: 'nagoya',
+			hotels: [
+				{
+					name: 'HOTEL MYSTAYS Nagoya Sakae',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'nagoya1'
+				}
+			]
+		},
+		'niigata':{
+			city: 'Niigata',
+			id: 'niigata',
+			hotels: [
+				{
+					name: 'ART HOTEL NIIGATA STATION',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'niigata1'
+				},
+				{
+					name: 'ART HOTEL JOETSU',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'niigata2'
+				}
+			]
+		},
+		'kagawa':{
+			city: 'Kagawa',
+			id: 'kagawa',
+			hotels: [
+				{
+					name: 'Resort Hotel Olivean Shodoshima',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'kagawa1'
+				}
+			]
+		},
+		'ehime':{
+			city: 'Ehime',
+			id: 'ehime',
+			hotels: [
+				{
+					name: 'HOTEL MYSTAYS Matsuyama',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'ehime1'
+				}
+			]
+		},
+		'fukuoka':{
+			city: 'Fukuoka',
+			id: 'fukuoka',
+			hotels: [
+				{
+					name: 'HOTEL MYSTAYS Fukuoka Tenjin Minami',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'fukuoka1'
+				},
+				{
+					name: 'HOTEL MYSTAYS Fukuoka Tenjin',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'fukuoka2'
+				}
+			]
+		},
+		'oita':{
+			city: 'Oita',
+			id: 'oita',
+			hotels: [
+				{
+					name: 'HOTEL MYSTAYS Oita',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'oita1'
+				},
+				{
+					name: 'Beppu Kamenoi Hotel',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'oita2'
+				}
+			]
+		},
+		'okinawa':{
+			city: 'Okinawa',
+			id: 'okinawa',
+			hotels: [
+				{
+					name: 'ART HOTEL ISHIGAKIJIMA',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'okinawa1'
+				},
+				{
+					name: 'Fusaki Resort Village (Ishigaki-jima)',
+					address: '',
+					img: 'lazyfonz1.png',
+					id: 'okinawa2'
 				}
 			]
 		}

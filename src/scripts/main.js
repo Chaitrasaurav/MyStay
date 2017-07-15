@@ -449,11 +449,69 @@
 		}
 	};
 
+	var LoadVideo = function(player_id){
+
+	    var Program = {
+	    
+	        Init: function(){
+	            this.NewPlayer();
+	            this.EventHandler();
+	        },
+
+	        NewPlayer: function(){
+	            var _this = this;
+	            this.Player = new YT.Player(player_id, {});
+	            _this.Player.$element = $('#' + player_id);
+	        },
+
+	        Play: function(){
+	        	if( this.Player.getPlayerState() === 1 ) return;
+	            this.Player.playVideo();
+	        },
+
+	        Pause: function(){
+	        	if( this.Player.getPlayerState() === 2 ) return;
+	            this.Player.pauseVideo();
+	        },
+
+	        ScrollControl: function(){
+	        	if( Utils.IsElementInViewport(this.Player.$element[0]) ) this.Play();
+	            else this.Pause();
+	        },
+
+	        EventHandler: function(){
+	            var _this = this;
+	            $(window).on('scroll', function(){
+	                _this.ScrollControl();
+	            });
+	        }
+	        
+	    };
+	    
+	    var Utils = {
+	        IsElementInViewport: function(el){
+	            if (typeof jQuery === "function" && el instanceof jQuery) el = el[0];
+	            var rect = el.getBoundingClientRect();
+	            return (
+	                rect.top >= 0 &&
+	                rect.left >= 0 &&
+	                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+	                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+	            );
+	        }
+	        
+	    };
+	    
+	    return Program.Init();
+
+	};
+
 	window.myStays = {};
 
 	var options = '<option value="">Please Select a Hotel</option>';
 
 	myStays.init = function() {
+
 		$( ".js-datepicker.check-in" ).datepicker({
 			dateFormat: "mm/dd/yy",
 			minDate: new Date(),
@@ -482,6 +540,9 @@
 		};
 
 		createSliderElements('tokyo');
+		window.onYouTubeIframeAPIReady = function(){
+			LoadVideo('playerA');
+		}
 	};
 
 	$('#main-form-btn').on('click', function(){
@@ -605,6 +666,8 @@
 	    scrollTop: $(".stage__form").offset().top},
 	        'slow');
 	});
+
+	
 
 })(window, document, jQuery);
 

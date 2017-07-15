@@ -474,7 +474,6 @@
 		// var hotelsSelected = cityHotelMap[selectedCity].hotels;
 
 		for(var city in cityHotelMap) {
-			console.log(cityHotelMap[city].hotels);
 				var hotelsSelected = cityHotelMap[city].hotels;
 				for (var i = 0; i < hotelsSelected.length; i++) {
 					options += '<option value="'+ hotelsSelected[i].id +'">' + hotelsSelected[i].name + '</option>';

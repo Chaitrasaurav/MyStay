@@ -35,18 +35,15 @@
 			</div>
 		</div>
 	</header>
-	<section class="stage">
-		<div class="stage_container clearfix">
+		<section class="stage">
+		<div class="stage_container">
 			<h1 class="stage__heading">Win Amazing Pepper <i class="ico-cross-stage"></i> Mystays Prizes!</h1>
-			<div class="stage_promotion">
- 				<span>1 Night</span> Free<br/>Cancellation
- 			</div>
 			<div class="stage__form form">
 				<form name="mainForm" id="mainForm" novalidate autocomplete="off">
 					<div class="form__control">
 						<label class="form__label">Where in Japan?</label>
 						<select class="form__field js-city" type="text" id="city">
-							<option>Please select a city</option>
+							<option value=""> Please select a city</option>
 							<option value="tokyo">Tokyo</option>
 							<option value="kyoto">Kyoto</option>
 							<option value="osaka">Osaka</option>
@@ -77,31 +74,56 @@
 						<div class="form__control">
 							<label class="form__label">Check In</label>
 							<div class="input-wrap">
-								<input class="form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" value="Select" readonly>
+								<input class="form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" placeholder="Select" readonly>
 							</div>
 						</div>
 						<div class="form__control">
 							<label class="form__label">Check Out</label>
 							<div class="input-wrap">
-								<input class="form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" value="Select" readonly>
+								<input class="form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" placeholder="Select" readonly>
 							</div>
 						</div>
 						<div class="form__control">
 							<label class="form__label">No of guests</label>
 							<div class="input-wrap">
-								<select class="form__field form__field--sm form__field--select required guest" type="text" name="adults1" id="no-guest">
-								<option value="">Select</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								</select>
+								<input class="form__field form__field--sm required js-select-guest" type="text" name="adults1" id="adults1" readonly>
+								<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1">
+								<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms"> 
 							</div>
 						</div>
 					</div>
+					<div class="select-guest-container js-select-guest-container hidden">
+								<h5>Rooms</h5>
+								<a class="js-cancel-select-guest" title="Close" href="javascript:;">x</a>
+								<ul class="js-room-list" style="list-style: none;padding-left: 0;">
+									<li class="js-room" data-room="0">
+										<div class="form__control">
+											<label class="form__label">Adults</label>
+											<div class="input-wrap">
+												<select class="js-adult-count">
+													<option value="1">1</option>
+													<option value="2">2</option>
+												</select>
+											</div>
+										</div>
+										<div class="form__control">
+											<label class="form__label">Children</label>
+											<div class="input-wrap">
+												<select class="js-child-count">
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+												</select>
+											</div>
+										</div>
+										<div class="js-child-age-list">
+											
+										</div>
+									</li>
+								</ul>
+								<button type="button" class="js-add-room">Add Room +</button>
+								<button type="button" class="js-confirm">Confirm here</button>
+							</div>
 					<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>
 				</form>
 				<p class="stage__hint">Best Price Guarantee!</p>

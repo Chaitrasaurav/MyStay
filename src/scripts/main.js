@@ -512,6 +512,25 @@
 
 	myStays.init = function() {
 
+		function formatCity (d) {
+			if(d.disabled) return; 
+	    	var info = '';
+	    	if(cityHotelMap[d.id].hotels.length > 1) {
+	    		info += '<span> (' + cityHotelMap[d.id].hotels.length + ' Hotels) </span>';
+	    	} else {
+	    		info += '<span> (' + cityHotelMap[d.id].hotels.length + ' Hotel) </span>';
+	    	}
+	    	return $('<p class="option-city">' + d.text + ' ' + info +'<p>');
+		};
+
+		$( ".js-slider-control" ).select2({
+			containerCssClass: 'city-container',
+        	dropdownCssClass: 'city-container-options',
+			minimumResultsForSearch: -1,
+		    templateResult: formatCity,
+		    templateSelection: formatCity
+		});
+
 		$( ".js-datepicker.check-in" ).datepicker({
 			dateFormat: "mm/dd/yy",
 			minDate: new Date(),

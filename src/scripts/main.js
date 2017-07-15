@@ -512,7 +512,7 @@
 
 	myStays.init = function() {
 
-		function formatCity (d) {
+		function formatCitySlider (d) {
 			if(d.disabled) return; 
 	    	var info = '';
 	    	if(cityHotelMap[d.id].hotels.length > 1) {
@@ -527,8 +527,31 @@
 			containerCssClass: 'city-container',
         	dropdownCssClass: 'city-container-options',
 			minimumResultsForSearch: -1,
-		    templateResult: formatCity,
-		    templateSelection: formatCity
+		    templateResult: formatCitySlider,
+		    templateSelection: formatCitySlider
+		});
+
+		function matchStart(term, text, obj) {
+	      if (text.toUpperCase().indexOf(term.toUpperCase()) == 0) {
+		    return true;
+		  }
+		  return false;
+	    }
+
+		$.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) { 
+			$( ".js-city" ).select2({
+				containerCssClass: 'form-city-container',
+        		dropdownCssClass: 'form-city-container-options',
+				matcher: oldMatcher(matchStart)
+			});
+		});
+
+		$.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) { 
+			$( ".js-hotel" ).select2({
+				containerCssClass: 'form-city-container',
+        		dropdownCssClass: 'form-city-container-options',
+        		matcher: oldMatcher(matchStart)
+			});
 		});
 
 		$( ".js-datepicker.check-in" ).datepicker({
@@ -610,7 +633,7 @@
 	$( ".js-city" ).on('change', function(e) {
 		var selectedCity = e.target.value,
 			hotelsSelected = cityHotelMap[selectedCity].hotels,
-			options = '<option value="default">Please Select a Hotel</option>';
+			options = '<option value="">Please Select a Hotel</option>';
 		if(hotelsSelected.length){
 			for (var i = 0; i < hotelsSelected.length; i++) {
 				options += '<option value="'+ hotelsSelected[i].id +'">' + hotelsSelected[i].name + '</option>';
@@ -695,8 +718,6 @@
 	    scrollTop: $(".stage__form").offset().top},
 	        'slow');
 	});
-
-	
 
 })(window, document, jQuery);
 

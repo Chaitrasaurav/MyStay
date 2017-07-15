@@ -1,5 +1,7 @@
 .offers{
 	background: #fff;
+	position: relative;
+	z-index: 2;
 }
 .offers_container{
 	max-width: $desktop-max-width;
@@ -16,4 +18,14 @@
 			font-size: 18px;
 		}
 	}
+}
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #fff;
+  position: absolute;
+  bottom: -15px;
+  left:50%;
 }

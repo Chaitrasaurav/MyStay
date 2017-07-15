@@ -11,18 +11,161 @@
 	h2{
 		color: $text-color-primary;
 	}
-	p{
+	> p{
 		font-size: 26px;
 		font-weight: 300;
+		position: relative;
+		display:inline-block;
+		&:after{
+			content: "";
+			position: absolute;
+			left:-50px;
+			top:50%;
+			width: 50px;
+			height: 1px;
+			background: #fff;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			right:-50px;
+			top:50%;
+			width: 50px;
+			height: 1px;
+			background: #fff;
+		}
+	}
+	span{
+		font-size: 18px;
+  		font-weight: 300;
+  		display:block;
+	}
+	.slick-slide{
+		background: #fff;
+	    padding: 10px;
+	    border-radius: 3px;
+	    margin-right: 20px;
+	    -webkit-box-shadow: 0px 4px 10px 0 rgba(0,0,0,.25);
+		-moz-box-shadow: 0px 4px 10px 0 rgba(0,0,0,.25);
+		box-shadow: 0px 4px 10px 0 rgba(0,0,0,.25);
+	    h6{
+	    	line-height: 1.29;
+	    	color:$text-color-base;
+	    	font-size:14px;
+	    }
+	    p{
+	    	color:$text-color-secondary;
+	    	font-size: 14px;
+		    font-weight: 300;
+		    line-height: 1.29;
+	    }
+	    button{
+	    	background:#ffd25d;
+	    	border:none;
+	    	outline:none;
+	    	border-radius:3px;
+	    	text-align:center;
+	    	font-weight:900;
+	    	color:$text-color-base;
+	    	display:block;
+	    	padding:10px 20px;
+	    	margin:0 auto;
+	    	&:focus{
+	    		outline:none;
+	    	}
+	    	&:hover{
+	    		text-decoration: underline;
+	    	}
+	    }
+	}
+	.slick-arrow {
+	    font-size: 0;
+	    line-height: 0;
+	    text-indent: -4004px;
+	    width: 60px;
+	    height: 60px;
+	    background: #fff;
+	    line-height: 60px;
+	    position: absolute;
+	    top: 50%;
+	    margin-top: -51px;
+	    z-index: 999;
+	    -webkit-transition:all .3s;
+	    transition: all .3s;
+	    border-radius:100px;
+	    border:none;
+	    opacity:0.8;
+	    &:before {
+		    display: inline-block;
+		    content: '';
+		    width: 10px;
+		    height: 10px;
+		    border-top: 1px solid #232e48;
+		    border-right: 1px solid #232e48;
+		    border-width: 1px;
+		    -webkit-transform: rotate(45deg);
+		            transform: rotate(45deg);
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    margin-top: -4px;
+		    margin-left: -5px;
+		}
+		&:focus{
+			outline:none;
+		}
+		&:hover{
+			opacity:1;
+		}
+	}
+	.slick-prev {
+	    left: 0;
+	}
+	.slick-prev:before {
+	    -webkit-transform: rotate(225deg);
+	            transform: rotate(225deg);
+	}
+	.slick-next {
+	    right: 0;
+	}
+	img{
+		display:block;
+		margin:0 auto;
+	}
+	.slick-dots{
+		list-style: none;
+		font-size:0;
+		margin-top:20px;
+		li{
+			display: inline-block;
+			margin:0 5px;
+			&.slick-active{
+				button{
+					opacity:1;
+				}
+			}
+			button{
+				background: #fff;
+			    border: none;
+			    border-radius: 100px;
+			    height: 8px;
+			    width: 8px;
+			    display: block;
+			    padding:0;
+			    opacity:0.5;
+			    &:focus{
+			    	outline:none;
+			    }
+			}
+		}
 	}
 }
 .js-slider-control{
 	display: block;
     margin: 20px auto;
-    background: #fff;
     border: none;
     border-radius: 3px;
-    padding: 10px 0;
+    padding: 10px 15px;
     min-width: 452px;
     color: #232e48;
     font-size: 27px;
@@ -31,4 +174,8 @@
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
+    background: #fff url(../images/select-city.png) no-repeat right 10px top 8px;
+    &:focus{
+    	outline:none;
+    }
 }

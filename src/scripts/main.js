@@ -620,7 +620,33 @@
 		$('.js-slider').empty().append(item).slick({
 		  lazyLoad: 'ondemand',
 		  slidesToShow: 4,
-		  slidesToScroll: 1
+		  slidesToScroll: 1,
+		  dots: true,
+		  responsive: [
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 3,
+		        infinite: true,
+		        dots: true
+		      }
+		    },
+		    {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
 		});	
 	};
 
@@ -645,22 +671,6 @@
 		$("#"+tab_id).addClass('current');
 	});
 
-	$('select[name=country]').on("change", function(e){
-      if($(this).val() == 'EN'){
-        window.location.assign("../views/english.html");
-      }else if($(this).val() == 'JP'){
-      	window.location.assign("../views/japanese.html");
-      }
-      else if($(this).val() == 'KR'){
-      	window.location.assign("../views/korean.html");
-      }
-      else if($(this).val() == 'CNS'){
-      	window.location.assign("../views/simplified-chinese.html");
-      }
-      else if($(this).val() == 'CNT'){
-      	window.location.assign("../views/traditional-chinese.html");
-      }
-   });
 	$(".campaign_link").click(function() {
 	    $('html,body').animate({
 	    scrollTop: $(".stage__form").offset().top},
@@ -672,19 +682,19 @@
 })(window, document, jQuery);
 
 window.document.onkeydown = function (e) {
-	    if (!e){
-	        e = event;
-	    }
-	    if (e.keyCode == 27){
-	        lightbox_close();
-	    }
-	}
-	function lightboxOpen(){
-	    window.scrollTo(0,0);
-	    document.getElementById('light').style.display='block';
-	    document.getElementById('fade').style.display='block';  
-	}
-	function lightboxClose(){
-	    document.getElementById('light').style.display='none';
-	    document.getElementById('fade').style.display='none';
-	}
+    if (!e){
+        e = event;
+    }
+    if (e.keyCode == 27){
+        lightbox_close();
+    }
+}
+function lightboxOpen(){
+    window.scrollTo(0,0);
+    document.getElementById('light').style.display='block';
+    document.getElementById('fade').style.display='block';  
+}
+function lightboxClose(){
+    document.getElementById('light').style.display='none';
+    document.getElementById('fade').style.display='none';
+}

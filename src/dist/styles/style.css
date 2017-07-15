@@ -248,19 +248,19 @@ h5 {
 .ico-chat {
   width: 17px;
   height: 14px;
-  background-position: -66px -99px;
+  background-position: -85px -99px;
   background-image: url(../images/sprite.png); }
 
 .ico-company {
   width: 15px;
   height: 16px;
-  background-position: -51px -99px;
+  background-position: -70px -99px;
   background-image: url(../images/sprite.png); }
 
 .ico-contact {
   width: 16px;
   height: 16px;
-  background-position: -99px -82px;
+  background-position: -38px -99px;
   background-image: url(../images/sprite.png); }
 
 .ico-cross-stage {
@@ -272,13 +272,13 @@ h5 {
 .ico-cross {
   width: 16px;
   height: 16px;
-  background-position: -35px -99px;
+  background-position: -54px -99px;
   background-image: url(../images/sprite.png); }
 
 .ico-email {
   width: 16px;
   height: 12px;
-  background-position: -83px -99px;
+  background-position: -102px -99px;
   background-image: url(../images/sprite.png); }
 
 .ico-facebook-hover, .footer_social ul li a.facebook:hover {
@@ -296,7 +296,7 @@ h5 {
 .ico-flag-english {
   width: 16px;
   height: 10px;
-  background-position: -99px -99px;
+  background-position: 0px -118px;
   background-image: url(../images/sprite.png); }
 
 .ico-instagram-hover, .footer_social ul li a.instagram:hover {
@@ -320,13 +320,19 @@ h5 {
 .ico-newsletter-arrow {
   width: 15px;
   height: 15px;
-  background-position: -119px 0px;
+  background-position: -119px -15px;
   background-image: url(../images/sprite.png); }
 
 .ico-newsletter {
   width: 20px;
   height: 23px;
   background-position: -99px 0px;
+  background-image: url(../images/sprite.png); }
+
+.ico-offers {
+  width: 19px;
+  height: 19px;
+  background-position: 0px -99px;
   background-image: url(../images/sprite.png); }
 
 .ico-plus {
@@ -338,7 +344,7 @@ h5 {
 .ico-policies {
   width: 16px;
   height: 16px;
-  background-position: -19px -99px;
+  background-position: -99px -82px;
   background-image: url(../images/sprite.png); }
 
 .ico-press-release {
@@ -350,7 +356,7 @@ h5 {
 .ico-selfie {
   width: 19px;
   height: 18px;
-  background-position: 0px -99px;
+  background-position: -19px -99px;
   background-image: url(../images/sprite.png); }
 
 .ico-star {
@@ -374,7 +380,7 @@ h5 {
 .ico-website {
   width: 15px;
   height: 15px;
-  background-position: -119px -15px;
+  background-position: -119px 0px;
   background-image: url(../images/sprite.png); }
 
 .ico-youtube-hover, .footer_social ul li a.youtube:hover {
@@ -534,6 +540,38 @@ header {
     cursor: pointer; }
     .stage_conditions a:hover {
       text-decoration: none; }
+  .stage_conditions .checkbox-wrap {
+    position: relative; }
+  .stage_conditions .checkbox-wrap input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0; }
+  .stage_conditions .checkbox-wrap label {
+    position: relative;
+    display: inline-block;
+    padding-left: 36px;
+    padding-top: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .stage_conditions .checkbox-wrap label:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    background: transparent;
+    background-position: center center;
+    content: '';
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+  .stage_conditions .checkbox-wrap input:checked + label:after {
+    border-color: #ccc;
+    background: transparent url(../images/check.jpg) no-repeat center center;
+    background-size: 11px 7px; }
 
 #fade {
   display: none;
@@ -563,8 +601,34 @@ header {
   z-index: 1002;
   overflow: visible; }
 
+.stage_promotion {
+  background: #fff;
+  border-radius: 100px;
+  color: #7b7b85;
+  font-weight: 300;
+  font-size: 12px;
+  width: 110px;
+  height: 110px;
+  float: right;
+  text-align: center;
+  overflow: hidden;
+  padding: 32px 0;
+  box-sizing: border-box;
+  line-height: 1.08;
+  -webkit-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.25); }
+  .stage_promotion span {
+    font-weight: 900;
+    color: #232e48;
+    font-size: 14px;
+    display: block;
+    line-height: 1.14; }
+
 .offers {
-  background: #fff; }
+  background: #fff;
+  position: relative;
+  z-index: 2; }
 
 .offers_container {
   max-width: 940px;
@@ -580,8 +644,20 @@ header {
       text-align: center;
       font-size: 18px; }
 
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #fff;
+  position: absolute;
+  bottom: -15px;
+  left: 50%; }
+
 .tabs {
-  background: #fff3e5; }
+  background: #fff3e5;
+  position: relative;
+  z-index: 1; }
 
 .tabs_container {
   max-width: 940px;
@@ -866,17 +942,136 @@ footer {
   color: #ffffff; }
   .slider_container h2 {
     color: #ffffff; }
-  .slider_container p {
+  .slider_container > p {
     font-size: 26px;
-    font-weight: 300; }
+    font-weight: 300;
+    position: relative;
+    display: inline-block; }
+    .slider_container > p:after {
+      content: "";
+      position: absolute;
+      left: -50px;
+      top: 50%;
+      width: 50px;
+      height: 1px;
+      background: #fff; }
+    .slider_container > p:before {
+      content: "";
+      position: absolute;
+      right: -50px;
+      top: 50%;
+      width: 50px;
+      height: 1px;
+      background: #fff; }
+  .slider_container span {
+    font-size: 18px;
+    font-weight: 300;
+    display: block; }
+  .slider_container .slick-slide {
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 20px;
+    -webkit-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.25); }
+    .slider_container .slick-slide h6 {
+      line-height: 1.29;
+      color: #232e48;
+      font-size: 14px; }
+    .slider_container .slick-slide p {
+      color: #7b7b85;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.29; }
+    .slider_container .slick-slide button {
+      background: #ffd25d;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      text-align: center;
+      font-weight: 900;
+      color: #232e48;
+      display: block;
+      padding: 10px 20px;
+      margin: 0 auto; }
+      .slider_container .slick-slide button:focus {
+        outline: none; }
+      .slider_container .slick-slide button:hover {
+        text-decoration: underline; }
+  .slider_container .slick-arrow {
+    font-size: 0;
+    line-height: 0;
+    text-indent: -4004px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    line-height: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -51px;
+    z-index: 999;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border-radius: 100px;
+    border: none;
+    opacity: 0.8; }
+    .slider_container .slick-arrow:before {
+      display: inline-block;
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-top: 1px solid #232e48;
+      border-right: 1px solid #232e48;
+      border-width: 1px;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -4px;
+      margin-left: -5px; }
+    .slider_container .slick-arrow:focus {
+      outline: none; }
+    .slider_container .slick-arrow:hover {
+      opacity: 1; }
+  .slider_container .slick-prev {
+    left: 0; }
+  .slider_container .slick-prev:before {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg); }
+  .slider_container .slick-next {
+    right: 0; }
+  .slider_container img {
+    display: block;
+    margin: 0 auto; }
+  .slider_container .slick-dots {
+    list-style: none;
+    font-size: 0;
+    margin-top: 20px; }
+    .slider_container .slick-dots li {
+      display: inline-block;
+      margin: 0 5px; }
+      .slider_container .slick-dots li.slick-active button {
+        opacity: 1; }
+      .slider_container .slick-dots li button {
+        background: #fff;
+        border: none;
+        border-radius: 100px;
+        height: 8px;
+        width: 8px;
+        display: block;
+        padding: 0;
+        opacity: 0.5; }
+        .slider_container .slick-dots li button:focus {
+          outline: none; }
 
 .js-slider-control {
   display: block;
   margin: 20px auto;
-  background: #fff;
   border: none;
   border-radius: 3px;
-  padding: 10px 0;
+  padding: 10px 15px;
   min-width: 452px;
   color: #232e48;
   font-size: 27px;
@@ -884,7 +1079,10 @@ footer {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: ''; }
+  text-overflow: '';
+  background: #fff url(../images/select-city.png) no-repeat right 10px top 8px; }
+  .js-slider-control:focus {
+    outline: none; }
 
 .subscribe {
   background: #fff3e5; }
@@ -918,3 +1116,8 @@ footer {
 .subscribe_video h2 {
   color: #232e48;
   font-size: 40px; }
+
+.hotels img {
+  margin-right: 20px; }
+  .hotels img:last-child {
+    margin-right: 0; }

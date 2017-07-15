@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Mystays</title>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../dist/styles/style.min.css">
@@ -35,6 +36,9 @@
 	<section class="stage">
 		<div class="stage_container">
 			<h1 class="stage__heading">Win Amazing Pepper <i class="ico-cross-stage"></i> Mystays Prizes!</h1>
+			<div class="stage_promotion">
+				<span>1 Night</span> Free<br/>Cancellation
+			</div>
 			<div class="stage__form form">
 				<form name="mainForm" id="mainForm" novalidate autocomplete="off">
 					<div class="form__control">
@@ -101,7 +105,10 @@
 				<p class="stage__hint">Best Price Guarantee!</p>
 			</div>
 			<div class="stage_conditions">
-				<p><input type="checkbox" class="form__field js-check-box" id="checkbox" checked> Yes I want to become a MyStays Member and Join the Campaign</p>
+				<div class="checkbox-wrap">
+					<input type="checkbox" class="form__field js-check-box" id="checkbox" checked> 
+					<label for="checkbox">Yes I want to become a MyStays Member and Join the Campaign</label>
+				</div>
 				<a onclick="lightboxOpen()"><i class="ico-policies"></i>Terms &amp; Conitions</a>
 				<div id="light">terms text</div>
 				<div id="fade" onclick="lightboxClose()"></div> 
@@ -111,10 +118,11 @@
 	<section class="offers">
 		<div class="offers_container">
 			<ul>
-				<li>Best Price Guarantee</li>
-				<li>5% Extra Discount</li>
-				<li>Enter Pepper Lotery</li>
+				<li><i class="ico-offers"></i> Best Price Guarantee</li>
+				<li><i class="ico-offers"></i> 5% Extra Discount</li>
+				<li><i class="ico-offers"></i> Enter Pepper Lotery</li>
 			</ul>
+			<div class="arrow-down"></div>
 		</div>
 	</section>
 	<section class="tabs">
@@ -122,10 +130,10 @@
 			<h3>MyStays Meets Pepper</h3>
 			<div class="container">
 				<ul class="tabs">
-					<li class="tab-link current" data-tab="tab-1">Tab One</li>
-					<li class="tab-link" data-tab="tab-2">Tab Two</li>
-					<li class="tab-link" data-tab="tab-3">Tab Three</li>
-					<li class="tab-link" data-tab="tab-4">Tab Four</li>
+					<li class="tab-link current" data-tab="tab-1"><i class="ico-chat"> Live Support</li>
+					<li class="tab-link" data-tab="tab-2"><i class="ico-map"> City Guide</li>
+					<li class="tab-link" data-tab="tab-3"><i class="ico-selfie"> Fun Selfies</li>
+					<li class="tab-link" data-tab="tab-4"><i class="ico-star"> Amazing Campaigns</li>
 				</ul>
 				<div id="tab-1" class="tab-content current">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -146,7 +154,7 @@
  		<div class="slider_container">
  			<h2>77 Hotels all around Japan</h2>
  			<p>Book your Hotel, Save and Win!</p>
- 			<span>Please select a city</span>
+ 			<span>Please select a city:</span>
  			<select class="js-slider-control" type="text">
 				<option value="tokyo" selected>Tokyo (9)</option>
 				<option value="kyoto">Kyoto (1)</option>
@@ -186,11 +194,16 @@
  			</div>
  			<div class="subscribe_video">
  				<h2>Watch Pepper Helping our Clients</h2>
+ 				<iframe width="auto" height="auto" src="https://www.youtube.com/embed/MIl7HvKKxBc"></iframe>
+ 			</div>
+ 			<div class="hotels">
+ 				<img src="../dist/images/art-hotel.png" alt="">
+ 				<img src="../dist/images/monthly-rei-stays.png" alt="">
+ 				<img src="../dist/images/hotel-mystays.png" alt="">
+ 				<img src="../dist/images/flexstay-inn.png" alt="">
+ 				<img src="../dist/images/my-cube.png" alt="">
  			</div>
  		</div>
- 	</section>
- 	<section>
-		<iframe width="100%" height="345" src="https://www.youtube.com/embed/MIl7HvKKxBc"></iframe>
  	</section>
 	<section class="newsletter">
 		<div class="newsletter_container">
@@ -274,5 +287,6 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script type="text/javascript" src="../scripts/main.js"></script>
+	
 </body>
 </html>

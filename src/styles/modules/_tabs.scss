@@ -1,5 +1,7 @@
 .tabs{
 	background: #fff3e5;
+	position: relative;
+	z-index: 1;
 }
 .tabs_container{
 	max-width: $desktop-max-width;

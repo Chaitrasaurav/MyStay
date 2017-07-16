@@ -181,13 +181,13 @@ th {
   font-family: "Helvetica Neue Light";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/HelveticaNeueLight.ttf") format("truetype"); }
+  src: url("fonts/HelveticaNeueLight.ttf") format("truetype"), url("fonts/HelveticaNeueLight.otf") format("opentype"), url("fonts/HelveticaNeueLight.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica Neue Thin";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/HelveticaNeueThin.ttf") format("truetype"); }
+  src: url("fonts/HelveticaNeueThin.ttf") format("truetype"), url("fonts/HelveticaNeueThin.otf") format("opentype"), url("fonts/HelveticaNeueThin.woff") format("woff"); }
 
 body {
   margin: 0;

@@ -19,6 +19,16 @@
 		padding: 0;
 		margin: 0;
 	}
+	> span{
+		background: rgba(0,0,0,0.1);
+	    display: inline-block;
+	    border-radius: 100px;
+	    height: 50px;
+	    width: 50px;
+	    i{
+	    	margin-top: 13px;
+	    }
+	}
 }
 .subscribe_signup{
 	font-size: 13px;

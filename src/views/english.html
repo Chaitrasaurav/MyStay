@@ -96,34 +96,34 @@
 								<h5>Rooms</h5>
 								<a class="js-cancel-select-guest" title="Close" href="javascript:;">x</a>
 								<ul class="js-room-list" style="list-style: none;padding-left: 0;">
-									<li class="js-room" data-room="0">
-										Room1
+									<li class="room js-room" data-room="0">
+										<p class="room__heading">Room1</p>
 										<div class="form__control">
-											<label class="form__label">Adults</label>
+											<label class="room__label form__label">Adults</label>
 											<div class="input-wrap">
-												<select class="js-adult-count">
+												<select class="room__field form__field js-adult-count">
 													<option value="1">1</option>
 													<option value="2">2</option>
 												</select>
 											</div>
 										</div>
 										<div class="form__control">
-											<label class="form__label">Children</label>
+											<label class="room__label form__label">Children</label>
 											<div class="input-wrap">
-												<select class="js-child-count">
+												<select class="room__field form__field js-child-count">
 													<option value="0">0</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
 												</select>
 											</div>
 										</div>
-										<div class="js-child-age-list">
+										<div class="room__age-container js-child-age-list">
 											
 										</div>
 									</li>
 								</ul>
-								<button type="button" class="js-add-room">Add Room +</button>
-								<button type="button" class="js-confirm">Confirm here</button>
+								<button type="button" class="room__add js-add-room">Add Room +</button>
+								<button type="button" class="room__container js-confirm">Confirm here</button>
 							</div>
 					<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>
 				</form>

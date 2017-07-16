@@ -790,30 +790,31 @@
 		console.log($('.js-room-list').find('li').length)
 		var index = $('.js-room-list').find('li').length + 1;
 		var list = '<li class="js-room" data-room="'+ index +'">\
-						Room' + index +'\
+						<p class="room__heading">Room' + index +'</p>\
 						<div class="form__control">\
-							<label class="form__label">Adults</label>\
+							<label class="room__label form__label">Adults</label>\
 							<div class="input-wrap">\
-								<select class="js-adult-count">\
+								<select class="room__field form__field js-adult-count">\
 									<option value="1">1</option>\
 									<option value="2">2</option>\
 								</select>\
 							</div>\
 						</div>\
 						<div class="form__control">\
-							<label class="form__label">Children</label>\
+							<label class="room__label form__label">Children</label>\
 							<div class="input-wrap">\
-								<select class="js-child-count">\
+								<select class="room__field form__field js-child-count">\
 									<option value="0">0</option>\
 									<option value="1">1</option>\
 									<option value="2">2</option>\
 								</select>\
 							</div>\
 						</div>\
-						<div class="js-child-age-list">\
+						<div class="room__age-container js-child-age-list">\
+							\
 						</div>\
-						<div>\
-							<a href="javascript:;" title="Delete this room" class="js-delete-room">delete</a>\
+						<div class="room__delete">\
+							<a href="javascript:;" title="Delete this room" class="room__delete-btn js-delete-room">delete</a>\
 						</div>\
 					</li>';
 		$('.js-room-list').append(list);
@@ -832,27 +833,27 @@
 		$ageList.empty();				
 		for (var i = 0; i < value; i++) {
 			var index = i + 1;
-			var $ageField = '<div class="form__control js-child-age-ele">\
-							<label class="form__label">Child '+ index + '</label>\
-							<div class="input-wrap">\
-								<select>\
-									<option value="1">1</option>\
-									<option value="2">2</option>\
-									<option value="3">3</option>\
-									<option value="4">4</option>\
-									<option value="5">5</option>\
-									<option value="6">6</option>\
-									<option value="7">7</option>\
-									<option value="8">8</option>\
-									<option value="9">9</option>\
-									<option value="10">10</option>\
-									<option value="11">11</option>\
-									<option value="12">12</option>\
-									<option value="13">13</option>\
-									<option value="14">14</option>\
-								</select>\
-							</div>\
-						</div>';
+			var $ageField = '<div class="form__con js-child-age-ele">\
+								<label class="form__label">Child '+ index + '</label>\
+								<div class="input-wrap">\
+									<select class="form__field">\
+										<option value="1">1</option>\
+										<option value="2">2</option>\
+										<option value="3">3</option>\
+										<option value="4">4</option>\
+										<option value="5">5</option>\
+										<option value="6">6</option>\
+										<option value="7">7</option>\
+										<option value="8">8</option>\
+										<option value="9">9</option>\
+										<option value="10">10</option>\
+										<option value="11">11</option>\
+										<option value="12">12</option>\
+										<option value="13">13</option>\
+										<option value="14">14</option>\
+									</select>\
+								</div>\
+							</div>';
 			$ageList.append($ageField);
 		}
 	});

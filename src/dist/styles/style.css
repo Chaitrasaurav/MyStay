@@ -794,6 +794,10 @@ form {
   top: 15px;
   right: 20px; }
 
+.js-room-list .js-room .form__control {
+  float: left;
+  width: auto; }
+
 .js-room-list .js-room .form__label {
   font-size: 12px;
   opacity: 0.75; }

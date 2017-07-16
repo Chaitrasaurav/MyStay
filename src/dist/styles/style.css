@@ -250,13 +250,13 @@ h5 {
 .ico-campaign-arrow {
   width: 20px;
   height: 20px;
-  background-position: -99px -47px;
+  background-position: -99px -71px;
   background-image: url(../images/sprite.png); }
 
 .ico-chat {
   width: 17px;
   height: 14px;
-  background-position: -123px 0px;
+  background-position: -35px -99px;
   background-image: url(../images/sprite.png); }
 
 .ico-close-btn {
@@ -268,13 +268,13 @@ h5 {
 .ico-company {
   width: 15px;
   height: 16px;
-  background-position: -106px -99px;
+  background-position: -20px -99px;
   background-image: url(../images/sprite.png); }
 
 .ico-contact {
   width: 16px;
   height: 16px;
-  background-position: -58px -99px;
+  background-position: -123px -89px;
   background-image: url(../images/sprite.png); }
 
 .ico-cross-stage {
@@ -286,85 +286,91 @@ h5 {
 .ico-cross {
   width: 16px;
   height: 16px;
-  background-position: -90px -99px;
+  background-position: -123px -57px;
+  background-image: url(../images/sprite.png); }
+
+.ico-delete-icon {
+  width: 21px;
+  height: 24px;
+  background-position: -99px -24px;
   background-image: url(../images/sprite.png); }
 
 .ico-email {
   width: 16px;
   height: 12px;
-  background-position: -123px -59px;
+  background-position: -123px -105px;
   background-image: url(../images/sprite.png); }
 
 .ico-facebook-hover, .footer_social ul li a.facebook:hover {
   width: 33px;
   height: 33px;
-  background-position: 0px -66px;
+  background-position: -33px -66px;
   background-image: url(../images/sprite.png); }
 
 .ico-facebook, .footer_social ul li a.facebook {
   width: 33px;
   height: 33px;
-  background-position: -66px -33px;
+  background-position: 0px -66px;
   background-image: url(../images/sprite.png); }
 
 .ico-flag-english {
   width: 16px;
   height: 10px;
-  background-position: -123px -71px;
+  background-position: -66px -99px;
   background-image: url(../images/sprite.png); }
 
 .ico-instagram-hover, .footer_social ul li a.instagram:hover {
   width: 33px;
   height: 33px;
-  background-position: -33px -66px;
+  background-position: -66px -33px;
   background-image: url(../images/sprite.png); }
 
 .ico-instagram, .footer_social ul li a.instagram {
   width: 33px;
   height: 33px;
-  background-position: -66px 0px;
+  background-position: 0px 0px;
   background-image: url(../images/sprite.png); }
 
 .ico-map {
   width: 12px;
   height: 16px;
-  background-position: -123px -43px;
+  background-position: -142px 0px;
   background-image: url(../images/sprite.png); }
 
 .ico-newsletter {
   width: 20px;
   height: 23px;
-  background-position: -99px -24px;
+  background-position: -99px -48px;
   background-image: url(../images/sprite.png); }
 
 .ico-offers {
   width: 19px;
   height: 19px;
-  background-position: -20px -99px;
+  background-position: -123px -20px;
   background-image: url(../images/sprite.png); }
 
 .ico-plus {
   width: 14px;
   height: 14px;
-  background-position: -123px -29px;
+  background-position: -52px -99px;
   background-image: url(../images/sprite.png); }
 
 .ico-policies {
   width: 16px;
   height: 16px;
-  background-position: -74px -99px;
+  background-position: -123px -73px;
   background-image: url(../images/sprite.png); }
 
 .ico-press-release {
   width: 19px;
   height: 20px;
-  background-position: -99px -67px;
+  background-position: -123px 0px;
   background-image: url(../images/sprite.png); }
 
 .ico-selfie {
   width: 19px;
   height: 18px;
-  background-position: -39px -99px;
+  background-position: -123px -39px;
   background-image: url(../images/sprite.png); }
 
 .ico-star {
@@ -376,7 +382,7 @@ h5 {
 .ico-twitter-hover, .footer_social ul li a.twitter:hover {
   width: 33px;
   height: 33px;
-  background-position: 0px 0px;
+  background-position: -66px 0px;
   background-image: url(../images/sprite.png); }
 
 .ico-twitter, .footer_social ul li a.twitter {
@@ -388,7 +394,7 @@ h5 {
 .ico-website {
   width: 15px;
   height: 15px;
-  background-position: -123px -14px;
+  background-position: 0px -118px;
   background-image: url(../images/sprite.png); }
 
 .ico-youtube-hover, .footer_social ul li a.youtube:hover {
@@ -716,7 +722,7 @@ header {
   .ui-datepicker-title:after {
     content: '';
     position: absolute;
-    top: -10px;
+    top: -23px;
     left: -12px;
     border: solid #dddee0;
     border-width: 0 1px 1px 0;
@@ -787,6 +793,10 @@ form {
   position: absolute;
   top: 15px;
   right: 20px; }
+
+.js-room-list .js-room .form__label {
+  font-size: 12px;
+  opacity: 0.75; }
 
 .offers {
   background: #fff;

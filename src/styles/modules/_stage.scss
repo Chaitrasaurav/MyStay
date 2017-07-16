@@ -264,7 +264,7 @@
 	&:after {
 	    content: '';
 	    position: absolute;
-	    top: -10px;
+	    top: -23px;
 	    left: -12px;
 	    border: solid #dddee0;
 	    border-width: 0 1px 1px 0;
@@ -340,4 +340,16 @@ form{
 	position: absolute;
     top: 15px;
     right: 20px;
+}
+.js-room-list{
+	.js-room{
+		.form__control{
+			float:left;
+			width:auto;
+		}
+		.form__label{
+			font-size: 12px;
+			opacity: 0.75;
+		}
+	}
 }

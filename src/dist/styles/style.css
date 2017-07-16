@@ -247,6 +247,12 @@ h5 {
 .active {
   display: block !important; }
 
+.ico-add-room {
+  width: 10px;
+  height: 10px;
+  background-position: -142px -16px;
+  background-image: url(../images/sprite.png); }
+
 .ico-campaign-arrow {
   width: 20px;
   height: 20px;
@@ -271,10 +277,16 @@ h5 {
   background-position: -20px -99px;
   background-image: url(../images/sprite.png); }
 
+.ico-confirm {
+  width: 14px;
+  height: 10px;
+  background-position: -82px -99px;
+  background-image: url(../images/sprite.png); }
+
 .ico-contact {
   width: 16px;
   height: 16px;
-  background-position: -123px -89px;
+  background-position: -123px -73px;
   background-image: url(../images/sprite.png); }
 
 .ico-cross-stage {
@@ -289,7 +301,7 @@ h5 {
   background-position: -123px -57px;
   background-image: url(../images/sprite.png); }
 
-.ico-delete-icon {
+.ico-delete {
   width: 21px;
   height: 24px;
   background-position: -99px -24px;
@@ -322,13 +334,13 @@ h5 {
 .ico-instagram-hover, .footer_social ul li a.instagram:hover {
   width: 33px;
   height: 33px;
-  background-position: -66px -33px;
+  background-position: 0px 0px;
   background-image: url(../images/sprite.png); }
 
 .ico-instagram, .footer_social ul li a.instagram {
   width: 33px;
   height: 33px;
-  background-position: 0px 0px;
+  background-position: -66px -33px;
   background-image: url(../images/sprite.png); }
 
 .ico-map {
@@ -358,7 +370,7 @@ h5 {
 .ico-policies {
   width: 16px;
   height: 16px;
-  background-position: -123px -73px;
+  background-position: -123px -89px;
   background-image: url(../images/sprite.png); }
 
 .ico-press-release {
@@ -518,6 +530,9 @@ header {
   font-size: 13px;
   font-weight: 600; }
 
+.select2-search input:focus {
+  outline: none; }
+
 .form_guestWrap {
   overflow: auto;
   margin-top: 20px; }
@@ -549,9 +564,9 @@ header {
         background: url(../images/calandar.png) no-repeat center top 7px; }
     .form_guestWrap .form__control .input-wrap {
       background: url(../images/corner-icon.png) no-repeat bottom right; }
-    .form_guestWrap .form__control select.guest {
+    .form_guestWrap .form__control .guest {
       background: url(../images/guest.png) no-repeat center top 7px;
-      padding: 29px 30px 10px; }
+      padding: 29px 0 10px; }
     .form_guestWrap .form__control select:focus {
       outline: none; }
 
@@ -761,7 +776,9 @@ form {
   -moz-box-shadow: 0 15px 15px 0 rgba(35, 46, 72, 0.25);
   border: solid 1px #e4e4e7;
   margin-top: 10px;
-  padding: 20px; }
+  padding: 20px;
+  z-index: 4;
+  border-bottom: 5px solid #ffd25d; }
   .select-guest-container:after {
     content: '';
     position: absolute;
@@ -789,18 +806,89 @@ form {
     padding: 0 0 10px;
     text-align: left; }
 
-.js-cancel-select-guest {
+.button-wrap {
+  border-top: 1px solid #dddee0;
+  padding: 20px 0 0; }
+
+.cancel-select-guest {
   position: absolute;
   top: 15px;
   right: 20px; }
 
-.js-room-list .js-room .form__control {
-  float: left;
-  width: auto; }
+.room-list .room {
+  margin-bottom: 20px; }
+  .room-list .room .form__control {
+    float: left;
+    width: auto;
+    margin-right: 20px; }
+    .room-list .room .form__control select {
+      padding: 4px 1px 5px 7px;
+      text-align: center; }
+      .room-list .room .form__control select:focus {
+        outline: none; }
+  .room-list .room .room__age-container {
+    float: left;
+    width: auto;
+    padding: 0 0 0 20px;
+    border-left: 1px solid #dddee0; }
+    .room-list .room .room__age-container .room__heading {
+      display: none; }
+    .room-list .room .room__age-container .room__heading:first-child {
+      display: block; }
+    .room-list .room .room__age-container .form__con {
+      float: left;
+      width: auto;
+      margin-right: 20px; }
+      .room-list .room .room__age-container .form__con select {
+        padding: 4px 1px 5px 7px;
+        text-align: center; }
+        .room-list .room .room__age-container .form__con select:focus {
+          outline: none; }
+  .room-list .room .form__label {
+    font-size: 12px;
+    opacity: 0.75; }
+  .room-list .room .room-container {
+    width: auto;
+    float: left;
+    text-align: left; }
+  .room-list .room .room__heading {
+    font-size: 14px;
+    font-weight: 900;
+    text-align: left; }
+  .room-list .room .room__delete-btn i {
+    position: relative;
+    top: 73px;
+    float: left;
+    left: 20px; }
 
-.js-room-list .js-room .form__label {
-  font-size: 12px;
-  opacity: 0.75; }
+.room__add {
+  background: #fff;
+  border: 1px solid #aaabae;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 900;
+  display: block;
+  float: left;
+  border-radius: 3px; }
+  .room__add i {
+    margin: 0 0 0 5px; }
+  .room__add:hover {
+    text-decoration: underline; }
+
+.room__confirm {
+  background: #ffd25d;
+  border: 1px solid #ffd25d;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 900;
+  display: block;
+  float: left;
+  border-radius: 3px;
+  margin-left: 20px; }
+  .room__confirm i {
+    margin: 0 0 0 5px; }
+  .room__confirm:hover {
+    text-decoration: underline; }
 
 .offers {
   background: #fff;

@@ -86,7 +86,7 @@
 						<div class="form__control">
 							<label class="form__label">No of guests</label>
 							<div class="input-wrap">
-								<input class="form__field form__field--sm required js-select-guest" type="text" name="adults1" id="adults1" readonly>
+								<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" name="adults1" id="adults1" readonly>
 								<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1">
 								<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms"> 
 							</div>
@@ -94,36 +94,39 @@
 					</div>
 					<div class="select-guest-container js-select-guest-container hidden">
 								<h5>Rooms</h5>
-								<a class="js-cancel-select-guest" title="Close" href="javascript:;"><i class="ico-close-btn"></i></a>
-								<ul class="js-room-list" style="list-style: none;padding-left: 0;">
-									<li class="room js-room" data-room="0">
-										<p class="room__heading">Room1</p>
-										<div class="form__control">
-											<label class="room__label form__label">Adults</label>
-											<div class="input-wrap">
-												<select class="room__field form__field js-adult-count">
-													<option value="1">1</option>
-													<option value="2">2</option>
-												</select>
+								<a class="js-cancel-select-guest cancel-select-guest" title="Close" href="javascript:;"><i class="ico-close-btn"></i></a>
+								<ul class="js-room-list room-list clearfix" style="list-style: none;padding-left: 0;">
+									<li class="room js-room clearfix" data-room="0">
+										<div class="room-container clearfix">
+											<p class="room__heading">Room1</p>
+											<div class="form__control">
+												<label class="room__label form__label">Adults</label>
+												<div class="input-wrap">
+													<select class="room__field form__field js-adult-count">
+														<option value="1">1</option>
+														<option value="2">2</option>
+													</select>
+												</div>
 											</div>
-										</div>
-										<div class="form__control">
-											<label class="room__label form__label">Children</label>
-											<div class="input-wrap">
-												<select class="room__field form__field js-child-count">
-													<option value="0">0</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-												</select>
+											<div class="form__control">
+												<label class="room__label form__label">Children</label>
+												<div class="input-wrap">
+													<select class="room__field form__field js-child-count">
+														<option value="0">0</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+													</select>
+												</div>
 											</div>
 										</div>
 										<div class="room__age-container js-child-age-list">
-											
 										</div>
 									</li>
 								</ul>
-								<button type="button" class="room__add js-add-room">Add Room +</button>
-								<button type="button" class="room__container js-confirm">Confirm here</button>
+								<div class="button-wrap">
+									<button type="button" class="room__add js-add-room">Add Room <i class="ico-add-room"></i></button>
+									<button type="button" class="room__confirm js-confirm">Confirm here <i class="ico-confirm"></i></button>
+								</div>
 							</div>
 					<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>
 				</form>

@@ -789,32 +789,34 @@
 	$('.js-add-room').on('click', function(){
 		console.log($('.js-room-list').find('li').length)
 		var index = $('.js-room-list').find('li').length + 1;
-		var list = '<li class="js-room" data-room="'+ index +'">\
-						<p class="room__heading">Room' + index +'</p>\
-						<div class="form__control">\
-							<label class="room__label form__label">Adults</label>\
-							<div class="input-wrap">\
-								<select class="room__field form__field js-adult-count">\
-									<option value="1">1</option>\
-									<option value="2">2</option>\
-								</select>\
+		var list = '<li class="js-room room" data-room="'+ index +'">\
+						<div class="room-container clearfix">\
+							<p class="room__heading">Room' + index +'</p>\
+							<div class="form__control">\
+								<label class="room__label form__label">Adults</label>\
+								<div class="input-wrap">\
+									<select class="room__field form__field js-adult-count">\
+										<option value="1">1</option>\
+										<option value="2">2</option>\
+									</select>\
+								</div>\
 							</div>\
-						</div>\
-						<div class="form__control">\
-							<label class="room__label form__label">Children</label>\
-							<div class="input-wrap">\
-								<select class="room__field form__field js-child-count">\
-									<option value="0">0</option>\
-									<option value="1">1</option>\
-									<option value="2">2</option>\
-								</select>\
+							<div class="form__control">\
+								<label class="room__label form__label">Children</label>\
+								<div class="input-wrap">\
+									<select class="room__field form__field js-child-count">\
+										<option value="0">0</option>\
+										<option value="1">1</option>\
+										<option value="2">2</option>\
+									</select>\
+								</div>\
 							</div>\
 						</div>\
 						<div class="room__age-container js-child-age-list">\
 							\
 						</div>\
 						<div class="room__delete">\
-							<a href="javascript:;" title="Delete this room" class="room__delete-btn js-delete-room">delete</a>\
+							<a href="javascript:;" title="Delete this room" class="room__delete-btn js-delete-room"><i class="ico-delete"></i></a>\
 						</div>\
 					</li>';
 		$('.js-room-list').append(list);
@@ -833,7 +835,8 @@
 		$ageList.empty();				
 		for (var i = 0; i < value; i++) {
 			var index = i + 1;
-			var $ageField = '<div class="form__con js-child-age-ele">\
+			var $ageField = '<p class="room__heading">Ages</p>\
+							<div class="form__con js-child-age-ele">\
 								<label class="form__label">Child '+ index + '</label>\
 								<div class="input-wrap">\
 									<select class="form__field">\

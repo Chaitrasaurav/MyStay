@@ -11,7 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="../scripts/vendor/select2/css/select2.css">
 	<link rel="stylesheet" type="text/css" href="../dist/styles/style.min.css">
 	<script src="https://js.gleam.io/oi-my108fgp.js" async="async"></script>
-	<script src="https://www.youtube.com/iframe_api"></script>
 <body>
 	<header>
 		<div class="header_container clearfix">
@@ -26,10 +25,10 @@
 					<li><a href="javascriptvoid">Destinations</a></li>
 					<li class="select-language"><i class="ico-flag-english"></i> Jp
 						<ul class="header_language" name="country">
-							<li value="EN"><a href=""><i class="ico-flag-english"></i> En</a></li>
-							<li value="KR"><a href=""><i class="ico-flag-english"></i> Kr</a></li>
-							<li value="CNT"><a href=""><i class="ico-flag-english"></i> Cnt</a></li>
-							<li value="CNS"><a href=""><i class="ico-flag-english"></i> Cns</a></li>
+							<li value="EN"><a href="english.html"> <i class="ico-flag-english"></i> En</a></li>
+							<li value="KR"><a href="korean.html"> <i class="ico-flag-english"></i> Kr</a></li>
+							<li value="CNT"><a href="simplified-chinese.html"> <i class="ico-flag-english"></i> Cnt</a></li>
+							<li value="CNS"><a href="traditional-chinese.html"> <i class="ico-flag-english"></i> Cns</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -246,7 +245,11 @@
  			</div>
  			<div class="subscribe_video">
  				<h2>Watch Pepper Helping our Clients</h2>
- 				<iframe id="playerA" frameborder="0" width="100%" height="345" title="YouTube video player" type="text/html" src="https://www.youtube.com/embed/MIl7HvKKxBc?enablejsapi=1"></iframe>
+ 				<div class="youtube-video" 
+					id="demo-1" 
+					data-video-id="wdmeSIfE8Wg" 
+					width="100%" 
+					height="315"></div>
  			</div>
  			<div class="hotels">
   				<img src="../dist/images/art-hotel.png" alt="">
@@ -340,5 +343,22 @@
 	<script type="text/javascript" src="../scripts/vendor/jquery.slick/1.6.0/slick.min.js"></script>
 	<script type="text/javascript" src="../scripts/vendor/select2/js/select2.full.min.js"></script>
 	<script type="text/javascript" src="../scripts/main.js"></script>
+	<script type="text/javascript" src="../scripts/vendor/jquery.inview.js"></script>
+	<script type="text/javascript" src="../scripts/vendor/jquery.youtube-inview-autoplay.js"></script>
+	<script type="text/javascript">
+	  var tag = document.createElement('script');
+	  tag.src = "https://www.youtube.com/player_api";
+	  var firstScriptTag = document.getElementsByTagName('script')[0];
+	  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	  function onYouTubeIframeAPIReady() {
+	    $('.youtube-video').inViewAutoplay({
+	      autohide: 1,
+	      modestbranding: 1,
+	      rel: 0,
+	      quality: 'hd720'
+	    });
+	  }
+	</script>
 </body>
 </html>

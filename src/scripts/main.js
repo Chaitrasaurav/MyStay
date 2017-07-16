@@ -475,6 +475,20 @@
 		    templateSelection: formatCitySlider
 		});
 
+		function formatTabSelector(d) {
+			if(d.disabled) return;
+			var icon = $('.js-tabs li[data-tab="'+ d.id +'"]').find('i')[0].outerHTML;
+	    	return $('<span class="option-tab">' + icon + d.text +'<span>');
+		};
+
+		$( ".js-tabs-select" ).select2({
+			containerCssClass: 'tab-select-container',
+        	dropdownCssClass: 'city-select-container-options',
+			minimumResultsForSearch: -1,
+		    templateResult: formatTabSelector,
+		    templateSelection: formatTabSelector
+		});
+
 
 		function matchStart(term, text, obj) {
 		  if(!obj.id.length) return;
@@ -543,7 +557,7 @@
 		});
 
 		$( ".js-datepicker.check-in" ).datepicker({
-			dateFormat: "mm/dd/yy",
+			dateFormat: "yy-mm-dd",
 			minDate: new Date(),
 			onSelect: function(dateText, inst) {
 				var date2 = $( ".js-datepicker.check-in" ).datepicker('getDate');
@@ -554,7 +568,7 @@
 		});
 		
 		$( ".js-datepicker.check-out" ).datepicker({
-			dateFormat: "mm/dd/yy",
+			dateFormat: "yy-mm-dd",
 		});
 
 		for(var city in cityHotelMap) {
@@ -564,6 +578,7 @@
 				}
 				$('.js-hotel').html(options);
 		};
+		createSliderElements('tokyo')
 	};
 
 	$('#main-form-btn').on('click', function(){
@@ -680,14 +695,25 @@
 		$('#mainForm').find('#property').val(hotelData.property);
 	});
 
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
+	$('.js-tabs-select').on('change', function(e) {
+		var tabId = $(this).val();
 
 		$('ul.tabs li').removeClass('current');
 		$('.tab-content').removeClass('current');
 
+		$('ul.tabs li[data-tab="'+ tabId +'"]').addClass('current');
+		$("#"+tabId).addClass('current');
+	});
+
+	$('ul.tabs li').click(function(){
+		var tabId = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$('.js-tabs-select').val(tabId).trigger('change');
 		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
+		$("#"+tabId).addClass('current');
 	});
 
 	$(".campaign_link").click(function() {

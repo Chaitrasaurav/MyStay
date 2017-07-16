@@ -578,7 +578,7 @@
 				}
 				$('.js-hotel').html(options);
 		};
-		createSliderElements('tokyo')
+		createSliderElements('tokyo');
 	};
 
 	$('#main-form-btn').on('click', function(){

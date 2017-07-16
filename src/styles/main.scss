@@ -2,7 +2,6 @@
 @import 'utilities/normalize';
 @import 'utilities/config';
 @import 'utilities/base';
-@import 'utilities/utility';
 
 @import 'modules/sprite';
 @import 'modules/header';
@@ -14,3 +13,5 @@
 @import 'modules/footer';
 @import 'modules/slider';
 @import 'modules/subscribe';
+
+@import 'utilities/utility';

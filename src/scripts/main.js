@@ -508,9 +508,12 @@
 
 	window.myStays = {};
 
-	var options = '<option value="">Please Select a Hotel</option>';
+	var options = '<option value="">Please select a Hotel</option>';
 
 	myStays.init = function() {
+		var queryCity = {},
+			queryHotel = {},
+			query= {};
 
 		function formatCitySlider (d) {
 			if(d.disabled) return; 
@@ -531,18 +534,61 @@
 		    templateSelection: formatCitySlider
 		});
 
+
 		function matchStart(term, text, obj) {
-	      if (text.toUpperCase().indexOf(term.toUpperCase()) == 0) {
-		    return true;
-		  }
+		  if(!obj.id.length) return;
+		  
+		  if (text.toUpperCase().indexOf(term.toUpperCase()) > -1 ) {
+	          return true;
+	      }
 		  return false;
+	    }
+
+	    function format(d) {
+	      //if(!d.id) return;
+	      // var term = '';
+	      // if($(d.element.parentNode).hasClass('js-city')) {
+	      // 	term = queryCity.term || '';
+	      // } else {
+	      // 	term = queryHotel.term || '';
+	      // }	
+	      var term	= query.term || '';
+	      var result = highlightMatch(d.text, term);
+	      return result;
+	    }
+
+	    function formatSelection(d) {
+	      return d.text;
+	    }
+
+	    function highlightMatch (text, term) {
+	      var match = text.toUpperCase().indexOf(term.toUpperCase());
+	      var $result = $('<span></span>');
+	      
+	      if (match < 0) {
+	        return $result.text(text);
+	      }
+	      $result.text(text.substring(0, match));
+	      var $match = $('<span class="select2-rendered__match"></span>');
+	      $match.text(text.substring(match, match + term.length));
+	      $result.append($match);
+	      $result.append(text.substring(match + term.length));
+	      return $result;
 	    }
 
 		$.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) { 
 			$( ".js-city" ).select2({
 				containerCssClass: 'form-city-container',
         		dropdownCssClass: 'form-city-container-options',
-				matcher: oldMatcher(matchStart)
+				matcher: oldMatcher(matchStart),
+				templateResult: format,
+		    	templateSelection: formatSelection,
+		    	language: {
+	          		searching: function (params) {
+	            		query = params;
+	            		return 'Searching…';
+	          		}
+	        	}
 			});
 		});
 
@@ -550,7 +596,15 @@
 			$( ".js-hotel" ).select2({
 				containerCssClass: 'form-city-container',
         		dropdownCssClass: 'form-city-container-options',
-        		matcher: oldMatcher(matchStart)
+        		matcher: oldMatcher(matchStart),
+				templateResult: format,
+		    	templateSelection: formatSelection,
+		    	language: {
+	          		searching: function (params) {
+	            		query = params;
+	            		return 'Searching…';
+	          		}
+	        	}
 			});
 		});
 
@@ -633,7 +687,7 @@
 	$( ".js-city" ).on('change', function(e) {
 		var selectedCity = e.target.value,
 			hotelsSelected = cityHotelMap[selectedCity].hotels,
-			options = '<option value="">Please Select a Hotel</option>';
+			options = '<option value="">Please select a Hotel</option>';
 		if(hotelsSelected.length){
 			for (var i = 0; i < hotelsSelected.length; i++) {
 				options += '<option value="'+ hotelsSelected[i].id +'">' + hotelsSelected[i].name + '</option>';
@@ -734,8 +788,9 @@
 
 	$('.js-add-room').on('click', function(){
 		console.log($('.js-room-list').find('li').length)
-		var index = $('.js-room-list').find('li').length;
+		var index = $('.js-room-list').find('li').length + 1;
 		var list = '<li class="js-room" data-room="'+ index +'">\
+						Room' + index +'\
 						<div class="form__control">\
 							<label class="form__label">Adults</label>\
 							<div class="input-wrap">\

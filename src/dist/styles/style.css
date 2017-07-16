@@ -247,9 +247,6 @@ h5 {
 .active {
   display: block !important; }
 
-.hidden {
-  display: none; }
-
 .ico-campaign-arrow {
   width: 20px;
   height: 20px;
@@ -785,6 +782,11 @@ form {
     color: #232e48;
     padding: 0 0 10px;
     text-align: left; }
+
+.js-cancel-select-guest {
+  position: absolute;
+  top: 15px;
+  right: 20px; }
 
 .offers {
   background: #fff;
@@ -1343,3 +1345,15 @@ footer {
   margin-right: 20px; }
   .hotels img:last-child {
     margin-right: 0; }
+
+.hidden {
+  display: none; }
+
+.form_guestWrap .form__control input.js-is-invalid {
+  border: 1px solid red !important; }
+
+.js-is-invalid.select2-hidden-accessible + .select2-container {
+  border: 1px solid red; }
+
+.select2-rendered__match {
+  font-weight: 900; }

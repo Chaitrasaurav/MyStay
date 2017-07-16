@@ -1,3 +1,15 @@
 .hidden {
 	display: none;
 }
+
+.form_guestWrap .form__control input.js-is-invalid {
+	border: 1px solid red !important;
+}
+
+.js-is-invalid.select2-hidden-accessible + .select2-container{
+	border: 1px solid red;
+}
+
+.select2-rendered__match {
+	font-weight: 900;
+}

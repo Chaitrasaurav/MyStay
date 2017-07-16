@@ -427,7 +427,9 @@ header {
 .header_container {
   max-width: 940px;
   margin: 0 auto;
-  padding: 30px 0; }
+  padding: 33px 0 31px; }
+  .header_container .ico-cross {
+    margin: 0 8px 5px 12px; }
 
 .logo {
   float: left;
@@ -437,16 +439,22 @@ header {
   float: left;
   width: 50%; }
   .header_links ul {
-    list-style-type: none; }
+    list-style-type: none;
+    float: right;
+    margin: 5px 0 0; }
     .header_links ul li {
       float: left;
       display: inline-block;
-      margin: 0 20px 0 0;
+      margin: 0 28px 0 0;
       color: #fff; }
       .header_links ul li a {
         color: #fff; }
     .header_links ul .select-language {
-      cursor: pointer; }
+      cursor: pointer;
+      margin: 0;
+      position: relative; }
+      .header_links ul .select-language i {
+        margin: 0 7px 0 0; }
   .header_links .header_language {
     display: none;
     padding: 0;
@@ -466,7 +474,11 @@ header {
         font-weight: 600; }
     .header_links .header_language.active {
       display: block;
-      position: absolute; }
+      position: absolute;
+      left: -10px;
+      min-width: 70px; }
+      .header_links .header_language.active a {
+        text-align: left; }
 
 .stage {
   background: #5873bb; }

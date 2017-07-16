@@ -449,71 +449,12 @@
 		}
 	};
 
-	var LoadVideo = function(player_id){
-
-	    var Program = {
-	    
-	        Init: function(){
-	            this.NewPlayer();
-	            this.EventHandler();
-	        },
-
-	        NewPlayer: function(){
-	            var _this = this;
-	            this.Player = new YT.Player(player_id, {});
-	            _this.Player.$element = $('#' + player_id);
-	        },
-
-	        Play: function(){
-	        	if( this.Player.getPlayerState() === 1 ) return;
-	            this.Player.playVideo();
-	        },
-
-	        Pause: function(){
-	        	if( this.Player.getPlayerState() === 2 ) return;
-	            this.Player.pauseVideo();
-	        },
-
-	        ScrollControl: function(){
-	        	if( Utils.IsElementInViewport(this.Player.$element[0]) ) this.Play();
-	            else this.Pause();
-	        },
-
-	        EventHandler: function(){
-	            var _this = this;
-	            $(window).on('scroll', function(){
-	                _this.ScrollControl();
-	            });
-	        }
-	        
-	    };
-	    
-	    var Utils = {
-	        IsElementInViewport: function(el){
-	            if (typeof jQuery === "function" && el instanceof jQuery) el = el[0];
-	            var rect = el.getBoundingClientRect();
-	            return (
-	                rect.top >= 0 &&
-	                rect.left >= 0 &&
-	                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-	                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-	            );
-	        }
-	        
-	    };
-	    
-	    return Program.Init();
-
-	};
-
 	window.myStays = {};
 
 	var options = '<option value="">Please select a Hotel</option>';
 
 	myStays.init = function() {
-		var queryCity = {},
-			queryHotel = {},
-			query= {};
+		var query= {};
 
 		function formatCitySlider (d) {
 			if(d.disabled) return; 
@@ -545,13 +486,6 @@
 	    }
 
 	    function format(d) {
-	      //if(!d.id) return;
-	      // var term = '';
-	      // if($(d.element.parentNode).hasClass('js-city')) {
-	      // 	term = queryCity.term || '';
-	      // } else {
-	      // 	term = queryHotel.term || '';
-	      // }	
 	      var term	= query.term || '';
 	      var result = highlightMatch(d.text, term);
 	      return result;
@@ -615,17 +549,13 @@
 				var date2 = $( ".js-datepicker.check-in" ).datepicker('getDate');
 		            date2.setDate(date2.getDate() + 1);
 		            $( ".js-datepicker.check-out" ).datepicker('setDate', date2);
-		            //sets minDate to dt1 date + 1
 		            $( ".js-datepicker.check-out" ).datepicker('option', 'minDate', date2);
-
-		        //$( ".js-datepicker.check-out" ).datepicker("option","minDate", $( ".js-datepicker.check-in" ).datepicker("getDate"));
 		    }
 		});
+		
 		$( ".js-datepicker.check-out" ).datepicker({
 			dateFormat: "mm/dd/yy",
 		});
-
-		// var hotelsSelected = cityHotelMap[selectedCity].hotels;
 
 		for(var city in cityHotelMap) {
 				var hotelsSelected = cityHotelMap[city].hotels;
@@ -634,11 +564,6 @@
 				}
 				$('.js-hotel').html(options);
 		};
-
-		createSliderElements('tokyo');
-		window.onYouTubeIframeAPIReady = function(){
-			LoadVideo('playerA');
-		}
 	};
 
 	$('#main-form-btn').on('click', function(){

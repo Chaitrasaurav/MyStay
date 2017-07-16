@@ -2,23 +2,26 @@
 	background: #5873bb;
 	.select2-container{
 		display: block;
-	    margin: 20px auto;
+	    margin: 16px auto;
 	    border: none;
 	    border-radius: 3px;
-	    padding: 10px 15px;
+	    padding: 12px 0 19px;
 	    min-width: 452px;
 	    text-align: center;
 	    -webkit-appearance: none;
 	    -moz-appearance: none;
 	    text-indent: 1px;
 	    text-overflow: '';
-	    background: #fff url(../images/select-city.png) no-repeat right 10px top 8px;
+	    background: #fff url(../images/select-city.png) no-repeat right 11px top 13px;
 	    p{
 	    	padding:0;
 	    	margin:0;
 	    }
 	    &:focus{
 	    	outline:none;
+	    }
+	    @media (max-width: 767px) {
+	    	min-width:auto !important;
 	    }
 	}
 	.select2-container--default .select2-selection--single {
@@ -45,11 +48,15 @@
 	.select2-container--default .select2-selection--single .select2-selection__arrow{
 		display:none;
 	}
+	.slick-slider{
+		margin-top: 49px;
+		padding:0;
+	}
 }
 .slider_container{
 	max-width: $desktop-max-width;
 	margin: 0 auto;	
-	padding: 30px 0;
+	padding: 62px 0 57px;
 	text-align: center;
 	color: $text-color-primary;
 	h2{
@@ -60,42 +67,56 @@
 		font-weight: 300;
 		position: relative;
 		display:inline-block;
+		padding: 0 0;
+    	margin: 14px 0;
 		&:after{
 			content: "";
 			position: absolute;
-			left:-50px;
+			left:-60px;
 			top:50%;
-			width: 50px;
+			width: 40px;
 			height: 1px;
 			background: #fff;
+			@media (max-width: 767px) {
+				display:none;
+			}
 		}
 		&:before{
 			content: "";
 			position: absolute;
-			right:-50px;
+			right:-60px;
 			top:50%;
-			width: 50px;
+			width: 40px;
 			height: 1px;
 			background: #fff;
+			@media (max-width: 767px) {
+				display:none;
+			}
 		}
 	}
 	> span{
 		font-size:18px;
 		font-weight:300;
 		display:block;
+		padding: 18px 0 0;
 	}
 	.slick-slide{
 		background: #fff;
-	    padding: 10px;
+	    padding: 10px 15px;
 	    border-radius: 3px;
-	    margin-right: 20px;
+	    margin:0 7px;
 	    -webkit-box-shadow: 0px 4px 10px 0 rgba(0,0,0,.25);
 		-moz-box-shadow: 0px 4px 10px 0 rgba(0,0,0,.25);
 		box-shadow: 0px 4px 10px 0 rgba(0,0,0,.25);
+		padding: 16px 15px;
+		&.slick-active:last-child {	
+				background: red;			
+		}
 	    h6{
 	    	line-height: 1.29;
 	    	color:$text-color-base;
 	    	font-size:14px;
+	    	margin-top: 16px;
 	    }
 	    p{
 	    	color:$text-color-secondary;
@@ -112,7 +133,7 @@
 	    	font-weight:900;
 	    	color:$text-color-base;
 	    	display:block;
-	    	padding:10px 20px;
+	    	padding:10px 30px;
 	    	margin:0 auto;
 	    	&:focus{
 	    		outline:none;
@@ -122,12 +143,15 @@
 	    	}
 	    }
 	}
+	.slick-list {
+	    padding: 0 0 10px;
+	}
 	.slick-arrow {
 	    font-size: 0;
 	    line-height: 0;
 	    text-indent: -4004px;
-	    width: 60px;
-	    height: 60px;
+	    width: 45px;
+	    height: 45px;
 	    background: #fff;
 	    line-height: 60px;
 	    position: absolute;
@@ -142,16 +166,16 @@
 	    &:before {
 		    display: inline-block;
 		    content: '';
-		    width: 10px;
-		    height: 10px;
+		    width: 8px;
+		    height: 8px;
 		    border-top: 1px solid #232e48;
 		    border-right: 1px solid #232e48;
-		    border-width: 1px;
+		    border-width: 2px;
 		    -webkit-transform: rotate(45deg);
-		            transform: rotate(45deg);
+		    transform: rotate(45deg);
 		    position: absolute;
-		    top: 50%;
-		    left: 50%;
+		    top: 49%;
+		    left: 49%;
 		    margin-top: -4px;
 		    margin-left: -5px;
 		}
@@ -162,15 +186,22 @@
 			opacity:1;
 		}
 	}
+	
 	.slick-prev {
-	    left: 0;
+	    left: -66px;
+	    @media (max-width: 767px) {
+			display:none !important;
+		}
 	}
 	.slick-prev:before {
 	    -webkit-transform: rotate(225deg);
 	            transform: rotate(225deg);
 	}
 	.slick-next {
-	    right: 0;
+	    right: -53px;
+	    @media (max-width: 767px) {
+			display:none !important;
+		}
 	}
 	img{
 		display:block;
@@ -179,7 +210,8 @@
 	.slick-dots{
 		list-style: none;
 		font-size:0;
-		margin-top:20px;
+		margin-top:40px;
+		padding:0;
 		li{
 			display: inline-block;
 			margin:0 5px;

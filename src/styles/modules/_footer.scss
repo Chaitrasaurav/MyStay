@@ -4,11 +4,14 @@ footer{
 .footer_container{
 	max-width: $desktop-max-width;
 	margin: 0 auto;	
-	padding:30px 0;
+	padding: 68px 0 44px;
 	overflow: auto;
 }
 .footer_logo{
 	float: left;
+	img{
+		margin: 0 0 20px;
+	}
 	p{
 		color: $text-color-primary;
 		padding: 0;
@@ -18,13 +21,13 @@ footer{
 	float: right;
 	ul{
 		padding: 0;
-		margin: 0 ;
+		margin: 0 0 18px;
 		list-style: none;
 		text-align: right;
 		li{
 			color: $text-color-primary;
 			display: inline-block;
-			margin-right: 20px;
+			margin-right: 12px;
 			&:last-child{
 				margin-right: 0;
 			}

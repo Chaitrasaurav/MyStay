@@ -1,3 +1,9 @@
+.ico-add-room {
+  width : 10px;
+  height : 10px;
+  background-position : -142px -16px;
+  background-image : url(../images/sprite.png);
+}  
 .ico-campaign-arrow {
   width : 20px;
   height : 20px;
@@ -22,10 +28,16 @@
   background-position : -20px -99px;
   background-image : url(../images/sprite.png);
 }  
+.ico-confirm {
+  width : 14px;
+  height : 10px;
+  background-position : -82px -99px;
+  background-image : url(../images/sprite.png);
+}  
 .ico-contact {
   width : 16px;
   height : 16px;
-  background-position : -123px -89px;
+  background-position : -123px -73px;
   background-image : url(../images/sprite.png);
 }  
 .ico-cross-stage {
@@ -40,7 +52,7 @@
   background-position : -123px -57px;
   background-image : url(../images/sprite.png);
 }  
-.ico-delete-icon {
+.ico-delete {
   width : 21px;
   height : 24px;
   background-position : -99px -24px;
@@ -73,13 +85,13 @@
 .ico-instagram-hover {
   width : 33px;
   height : 33px;
-  background-position : -66px -33px;
+  background-position : 0px 0px;
   background-image : url(../images/sprite.png);
 }  
 .ico-instagram {
   width : 33px;
   height : 33px;
-  background-position : 0px 0px;
+  background-position : -66px -33px;
   background-image : url(../images/sprite.png);
 }  
 .ico-map {
@@ -109,7 +121,7 @@
 .ico-policies {
   width : 16px;
   height : 16px;
-  background-position : -123px -73px;
+  background-position : -123px -89px;
   background-image : url(../images/sprite.png);
 }  
 .ico-press-release {

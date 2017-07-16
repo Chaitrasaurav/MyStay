@@ -67,6 +67,13 @@
 		font-weight: 600;
 	}
 }
+.select2-search{
+		input{
+			&:focus{
+				outline:none;
+			}
+		}
+	}
 .form_guestWrap{
 	overflow: auto;
 	margin-top:20px;
@@ -103,9 +110,9 @@
 		.input-wrap{
 			background: url(../images/corner-icon.png) no-repeat bottom right;
 		}
-		select.guest{
+		.guest{
 	    	background: url(../images/guest.png) no-repeat center top 7px;
-	    	padding: 29px 30px 10px;
+	    	padding: 29px 0 10px;
 	    }
 	    select{
 	    	&:focus{
@@ -306,6 +313,8 @@ form{
   	border: solid 1px #e4e4e7;
   	margin-top:10px;
   	padding: 20px;
+  	z-index: 4;
+  	border-bottom: 5px solid #ffd25d;
     &:after {
 	    content: '';
 	    position: absolute;
@@ -336,20 +345,106 @@ form{
   		text-align:left;
 	}
 }
-.js-cancel-select-guest{
+.button-wrap{
+	border-top:1px solid #dddee0;
+	padding:20px 0 0;
+}
+.cancel-select-guest{
 	position: absolute;
     top: 15px;
     right: 20px;
 }
-.js-room-list{
-	.js-room{
+.room-list{
+	.room{
+		margin-bottom:20px;
 		.form__control{
 			float:left;
 			width:auto;
+			margin-right:20px;
+			select{
+				padding: 4px 1px 5px 7px;
+    			text-align: center;
+    			&:focus{
+    				outline:none;
+    			}
+			}
+		}
+		.room__age-container{
+			float:left;
+			width:auto;
+			padding:0 0 0 20px;
+			border-left: 1px solid #dddee0;
+			.room__heading{
+				display:none;
+			}
+			.room__heading:first-child{
+				display:block;
+			}
+			.form__con{
+				float:left;
+				width:auto;
+				margin-right:20px;
+				select{
+					padding: 4px 1px 5px 7px;
+	    			text-align: center;
+	    			&:focus{
+	    				outline:none;
+	    			}
+				}	
+			}
 		}
 		.form__label{
 			font-size: 12px;
 			opacity: 0.75;
 		}
+		.room-container{
+			width: auto;
+		    float: left;
+		    text-align: left;
+		}
+		.room__heading{
+	    	font-size: 14px;
+			font-weight: 900;
+			text-align:left;
+	    }
+	    .room__delete-btn i{
+	    	position: relative;
+		    top: 73px;
+		    float: left;
+		    left: 20px;
+	    }
 	}
+}
+.room__add{
+	background: #fff;
+    border: 1px solid #aaabae;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 900;
+    display: block;
+    float: left;
+    border-radius: 3px;
+    i{
+    	margin: 0 0 0 5px;
+    }
+    &:hover{
+    	text-decoration: underline;
+    }
+}
+.room__confirm{
+	background: #ffd25d;
+	border: 1px solid #ffd25d;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 900;
+    display: block;
+    float: left;
+    border-radius: 3px;
+    margin-left:20px;
+    i{
+    	margin: 0 0 0 5px;
+    }
+    &:hover{
+    	text-decoration: underline;
+    }
 }

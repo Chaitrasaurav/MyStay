@@ -558,6 +558,8 @@ header {
     border-radius: 3px;
     font-size: 15px;
     font-weight: 900; }
+    .stage__form .form__btn.disabled {
+      background: #e5e5e5; }
   .stage__form .stage__hint {
     font-size: 13px;
     font-weight: 300; }
@@ -994,6 +996,9 @@ form {
   @media (max-width: 767px) {
     .room__confirm {
       margin-left: 15px; } }
+
+.form-city-container-options {
+  top: -46px; }
 
 .offers {
   background: #fff;

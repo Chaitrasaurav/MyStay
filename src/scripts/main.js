@@ -587,7 +587,7 @@
 			isValid = true;
 
 		$form.find(':input.required').each(function(index){
-		    console.log(this.value)
+		    // console.log(this.value)
 		    if(!this.value.length) {
 		    	isValid = false;
 		    	$(this).addClass('js-is-invalid');
@@ -637,7 +637,12 @@
 	});
 
 	$('.js-check-box').change(function() {
-        $('.js-main-form-btn').attr("disabled", !$(this).is(":checked"));
+		if(!$(this).is(":checked")) {
+			$('.js-main-form-btn').empty().text('Members Only');	
+		} else {
+			$('.js-main-form-btn').empty().text('Book Now with Pepper');
+		}
+		$('.js-main-form-btn').toggleClass('disabled').attr("disabled", !$(this).is(":checked"));
     });
 
     $( ".js-slider-control" ).on('change', function(e) {
@@ -692,7 +697,7 @@
 	        scrollTop: $('#mainForm').offset().top
 	    }, 2000);
 		$('#mainForm').find('#city').val(hotelData.city).trigger('change');
-		$('#mainForm').find('#property').val(hotelData.property);
+		$('#mainForm').find('#property').val(hotelData.property).trigger('change');
 	});
 
 	$('.js-tabs-select').on('change', function(e) {

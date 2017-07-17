@@ -19,6 +19,18 @@
     @media (max-width: 950px) {
     	width: 22.6%;
     }
+    @media (max-width: 767px) {
+    	position: relative;
+    }
+    .ico-footer-plus{
+    	display: none;
+    	@media (max-width: 767px) {
+    		display: block;
+		    position: absolute;
+		    right: 0;
+		    top: 27px;
+    	}
+    }
 	&:last-child{
 		margin-right:0;
 	}

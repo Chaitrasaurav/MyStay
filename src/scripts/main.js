@@ -650,13 +650,13 @@
 		var item = '';
 		for (var i = 0; i < cityHotelMap[city].hotels.length; i++) {
 			var hotelData =  cityHotelMap[city].hotels[i];
-			item += '<li><img data-lazy="../dist/images/' + hotelData.img + '" /> <h6>'+ hotelData.name +'</h6> <p>'+ hotelData.address +'</p> <button class="js-slider-choose" data-city="' + city + '" data-hotel="' + hotelData.name + '" data-property="' + hotelData.id + '">Select Hotel</button></li>';
+			item += '<div><img data-lazy="../dist/images/' + hotelData.img + '" /> <h6>'+ hotelData.name +'</h6> <p>'+ hotelData.address +'</p> <button class="js-slider-choose" data-city="' + city + '" data-hotel="' + hotelData.name + '" data-property="' + hotelData.id + '">Select Hotel</button></div>';
 		};
 		
 		$('.js-slider').empty().append(item).slick({
 		  lazyLoad: 'ondemand',
 		  slidesToShow: 4,
-		  slidesToScroll: 1,
+		  slidesToScroll: 4,
 		  dots: true,
 		  responsive: [
 		    {

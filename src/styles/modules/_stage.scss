@@ -55,6 +55,10 @@
 	    border-radius: 3px;
 	    font-size: 15px;
 	    font-weight: 900;
+
+	    &.disabled {
+	    	background: #e5e5e5;
+	    }
 	}
 	.stage__hint{
 		font-size:13px;
@@ -520,4 +524,7 @@ form{
     @media (max-width: 767px) {
     	margin-left:15px;
     }
+}
+.form-city-container-options {
+	top: -46px;
 }

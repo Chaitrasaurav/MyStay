@@ -1,11 +1,17 @@
 .subscribe{
 	background: #fff3e5;
+	@media (max-width: 950px) {
+		padding:0 20px;
+	}
 }
 .subscribe_container{
 	max-width: $desktop-max-width;
 	margin: 0 auto;	
     padding: 68px 0 44px;
 	text-align: center;
+	@media (max-width: 767px) {
+		padding: 50px 0 20px;
+	}
 }
 .subscribe_info{
 	margin-bottom:20px;
@@ -52,12 +58,18 @@
 		color: $text-color-base;
 		font-size: 40px;
 		margin-bottom: 30px;
+		@media (max-width: 767px) {
+			font-size:24px;
+		}
 	}
 }
 .hotels{
 	margin: 23px 0;
 	img{
 		margin-right: 37px;
+		@media (max-width: 767px) {
+			margin: 10px 10px;
+		}
 		&:last-child{
 			margin-right:0;
 		}

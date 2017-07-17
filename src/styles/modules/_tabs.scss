@@ -2,6 +2,9 @@
 	background: #fff3e5;
 	position: relative;
 	z-index: 1;
+	@media (max-width: 950px) {
+		padding:0 20px !important;
+	}
 }
 .tabs_container{
 	max-width: $desktop-max-width;
@@ -34,6 +37,9 @@
 		}
 		i{
 			margin: 0 7px -3px -17px;
+			@media (max-width: 950px) {
+				margin: 0 3px -3px 0;
+			}
 		}
 		span{
 			background:#ffd25d;
@@ -62,6 +68,9 @@
 			span{
 				opacity:1;
 			}
+		}
+		@media (max-width: 950px) {
+			width:22.8%;
 		}
 	}
 	.tab-content{

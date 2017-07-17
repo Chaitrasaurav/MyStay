@@ -5,15 +5,28 @@
 	max-width: $desktop-max-width;
 	margin: 0 auto;	
 	padding:58px 0 70px;
+	@media (max-width: 767px) {
+		padding: 30px 0;
+	}
 	h1{
 		max-width:400px;
 		width:auto;
 		float:left;
+		@media (max-width: 950px) {
+			padding:0 20px;
+		}
+		@media (max-width: 767px) {
+    		text-align: center;
+    		float:none;
+		}
 	}
 }
 .stage__heading{
 	.ico-cross-stage{
 		margin: 3px 4px;
+		@media (max-width: 767px) {
+			margin: 0 0 -2px;
+		}
 	}
 }
 .stage__form{
@@ -24,6 +37,11 @@
 	text-align:center;
 	clear:both;
 	border-radius: 3px;
+	@media (max-width: 767px) {
+		margin-top:50px;
+		border-radius:0;
+		padding: 19px 20px 13px;
+	}
 	.form__btn{
 		display: block;
 	    margin: 20px auto 0;
@@ -38,6 +56,9 @@
 	.stage__hint{
 		font-size:13px;
 		font-weight:300;
+		@media (max-width: 767px) {
+			display:none;
+		}
 	}
 }
 .form__control{
@@ -90,6 +111,9 @@
 		float:left;
 		margin-right:20px;
 		text-align:center;
+		@media (max-width: 767px) {
+			width: 28.4%;
+		}
 		&:last-child{
 			margin-right:0;
 		}
@@ -137,6 +161,10 @@
 	color:#ffffff;
 	font-family:$font-family-helvetica-light;
 	margin-top:30px;
+	@media (max-width: 950px) {
+		padding:0 20px;
+
+	}
 	a{
 		color:#ffffff;
 		text-decoration:underline;
@@ -221,6 +249,9 @@
 		font-size:14px;
 		display:block;
 		line-height:1.5;
+	}
+	@media (max-width: 767px) {
+		display:none;
 	}
 }
 
@@ -331,6 +362,9 @@ form{
   	z-index: 4;
   	border-bottom: 5px solid #ffd25d;
   	left: -20px;
+  	@media (max-width: 767px) {
+  		left: -22px;
+  	}
     &:after {
 	    content: '';
 	    position: absolute;
@@ -342,6 +376,9 @@ form{
 	    padding: 9px;
 	    transform: rotate(-135deg);
 	    -webkit-transform: rotate(-135deg);
+	    @media (max-width: 767px) {
+	    	right:51px;
+	    }
 	}
 	&:before {
 	    content: '';
@@ -351,6 +388,9 @@ form{
 	    width: 27px;
 	    height: 1px;
 	    background: #fff;
+	    @media (max-width: 767px) {
+	    	right:47px;
+	    }
 	}
 	h5{
 		font-size: 16px;
@@ -360,6 +400,7 @@ form{
   		padding: 0 0 15px;
   		text-align:left;
 	}
+
 }
 .button-wrap{
 	border-top:1px solid #dddee0;
@@ -373,11 +414,14 @@ form{
 .room-list{
 	margin-top:0;
 	.room{
-		margin-bottom:20px;
+		margin-top:20px;
 		.form__control{
 			float:left;
 			width:auto;
 			margin-right:20px;
+			@media (max-width: 767px) {
+				margin-right:10px;
+			}
 			select{
 				padding: 4px 1px 5px 7px;
     			text-align: center;
@@ -391,6 +435,9 @@ form{
 			width:auto;
 			padding:0 0 0 20px;
 			border-left: 1px solid #dddee0;
+			@media (max-width: 767px) {
+				padding:0 0 0 10px;
+			}
 			.room__heading{
 				display:none;
 			}
@@ -401,6 +448,9 @@ form{
 				float:left;
 				width:auto;
 				margin-right:20px;
+				@media (max-width: 767px) {
+					margin-right:10px;
+				}
 				select{
 					padding: 4px 1px 5px 7px;
 	    			text-align: center;
@@ -463,5 +513,8 @@ form{
     }
     &:hover{
     	text-decoration: underline;
+    }
+    @media (max-width: 767px) {
+    	margin-left:15px;
     }
 }

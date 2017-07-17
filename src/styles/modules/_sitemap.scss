@@ -1,15 +1,24 @@
 .sitemap{
 	background: #f2f2f2;
+	@media (max-width: 950px) {
+		padding:0 20px;
+	}
 }
 .sitemap_container{
 	max-width: $desktop-max-width;
 	margin: 0 auto;	
 	padding: 66px 0 54px;
+	@media (max-width: 767px) {
+		padding: 0;
+	}
 }
 .sitemap_links{
 	width: 23%;
     float: left;
     margin-right: 23px;
+    @media (max-width: 950px) {
+    	width: 22.6%;
+    }
 	&:last-child{
 		margin-right:0;
 	}
@@ -21,6 +30,9 @@
 		border-bottom: 1px solid #dddee0;
 		i{
 			margin: 0 7px -2px 0;
+		}
+		@media (max-width: 767px) {
+			padding:20px 0;
 		}
 	}
 	ul{

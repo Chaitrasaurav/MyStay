@@ -679,7 +679,8 @@
 		      breakpoint: 480,
 		      settings: {
 		        slidesToShow: 1,
-		        slidesToScroll: 1
+		        slidesToScroll: 1,
+		        centerMode: true,
 		      }
 		    }
 		  ]
@@ -701,14 +702,14 @@
 		$('ul.tabs li').removeClass('current');
 		$('.tab-content').removeClass('current');
 
-		$('ul.tabs li[data-tab="'+ tabId +'"]').addClass('current');
+		$('ul.js-tabs li[data-tab="'+ tabId +'"]').addClass('current');
 		$("#"+tabId).addClass('current');
 	});
 
-	$('ul.tabs li').click(function(){
+	$('ul.js-tabs li').click(function(){
 		var tabId = $(this).attr('data-tab');
 
-		$('ul.tabs li').removeClass('current');
+		$('ul.js-tabs li').removeClass('current');
 		$('.tab-content').removeClass('current');
 
 		$('.js-tabs-select').val(tabId).trigger('change');

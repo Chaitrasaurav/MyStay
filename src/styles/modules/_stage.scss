@@ -5,6 +5,9 @@
 	max-width: $desktop-max-width;
 	margin: 0 auto;	
 	padding:58px 0 70px;
+	@media (max-width: 950px) {
+		padding:58px 20px 70px;
+	}
 	@media (max-width: 767px) {
 		padding: 30px 0;
 	}

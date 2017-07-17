@@ -1,6 +1,9 @@
 .slider{
 	background: #5873bb;
 	padding:0 60px;
+	@media (max-width: 767px) {
+		padding:0;
+	}
 	.select2-container{
 		display: block;
 	    margin: 16px auto;
@@ -22,7 +25,10 @@
 	    	outline:none;
 	    }
 	    @media (max-width: 767px) {
-	    	min-width:auto !important;
+	    	width: 280px !important;
+    		min-width: auto;
+    		text-align: left;
+    		padding-left: 20px;
 	    }
 	}
 	.select2-container--default .select2-selection--single {
@@ -52,6 +58,7 @@
 	.slick-slider{
 		margin-top: 49px;
 		padding:0;
+		
 	}
 }
 .slider_container{
@@ -62,6 +69,9 @@
 	color: $text-color-primary;
 	h2{
 		color: $text-color-primary;
+		@media (max-width: 767px) {
+			font-size:24px;
+		}
 	}
 	> p{
 		font-size: 26px;
@@ -70,16 +80,19 @@
 		display:inline-block;
 		padding: 0 0;
     	margin: 14px 0;
+    	@media (max-width: 767px) {
+    		font-size:18px
+    	}
 		&:after{
 			content: "";
 			position: absolute;
 			left:-60px;
 			top:50%;
-			width: 40px;
+			width: 20px;
 			height: 1px;
 			background: #fff;
 			@media (max-width: 767px) {
-				display:none;
+				left: -30px;
 			}
 		}
 		&:before{
@@ -87,11 +100,11 @@
 			position: absolute;
 			right:-60px;
 			top:50%;
-			width: 40px;
+			width: 20px;
 			height: 1px;
 			background: #fff;
 			@media (max-width: 767px) {
-				display:none;
+			    right: -30px;
 			}
 		}
 	}
@@ -100,6 +113,14 @@
 		font-weight:300;
 		display:block;
 		padding: 18px 0 0;
+		@media (max-width: 767px) {
+			padding: 0;
+		}
+	}
+	.slick-slide.slick-current.slick-active.slick-center{
+		@media (max-width: 767px) {
+			opacity:1;
+		}
 	}
 	.slick-slide{
 		background: #fff;
@@ -110,6 +131,10 @@
 		-moz-box-shadow: 0px 4px 10px 0 rgba(0,0,0,.25);
 		box-shadow: 0px 4px 10px 0 rgba(0,0,0,.25);
 		padding: 16px 15px;
+		min-height:304px;
+		@media (max-width: 767px) {
+			opacity:0.5;
+		}
 	    h6{
 	    	line-height: 1.29;
 	    	color:$text-color-base;
@@ -143,6 +168,9 @@
 	}
 	.slick-list {
 	    padding: 0 0 10px;
+	}
+	.slick-track{
+		margin:0 auto;
 	}
 	.slick-arrow {
 	    font-size: 0;
@@ -190,7 +218,7 @@
 	    @media (max-width: 1100px) {
 	    	left:-55px;
 	    }
-	    @media (max-width: 767px) {
+	    @media (max-width: 400px) {
 			left:0;		}
 	}
 	.slick-prev:before {
@@ -199,7 +227,7 @@
 	}
 	.slick-next {
 	    right: -53px;
-	    @media (max-width: 767px) {
+	    @media (max-width: 400px) {
 			right:0;
 		}
 	}
@@ -234,5 +262,10 @@
 			    }
 			}
 		}
+	}
+}
+span.select2-selection.select2-selection--single.city-container{
+	&:focus{
+		outline:none;
 	}
 }

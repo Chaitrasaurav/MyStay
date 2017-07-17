@@ -71,6 +71,9 @@ header{
 			position: absolute;
 			left: -10px;
     		min-width: 70px;
+    		@media (max-width: 950px) {
+    			left: -14px;
+    		}
     		a{
     			text-align: left;
     		}

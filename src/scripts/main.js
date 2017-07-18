@@ -661,14 +661,15 @@
 		$('.js-slider').empty().append(item).slick({
 		  lazyLoad: 'ondemand',
 		  slidesToShow: 4,
-		  slidesToScroll: 4,
+		  speed: 1000,
+		  slidesToScroll: 1,
 		  dots: true,
 		  responsive: [
 		    {
 		      breakpoint: 1024,
 		      settings: {
 		        slidesToShow: 3,
-		        slidesToScroll: 3,
+		        slidesToScroll: 1,
 		        infinite: true,
 		        dots: true
 		      }
@@ -677,7 +678,7 @@
 		      breakpoint: 600,
 		      settings: {
 		        slidesToShow: 2,
-		        slidesToScroll: 2
+		        slidesToScroll: 1
 		      }
 		    },
 		    {
@@ -725,7 +726,7 @@
 	$(".campaign_link").click(function() {
 	    $('html,body').animate({
 	    scrollTop: $(".stage__form").offset().top},
-	        'slow');
+	        3000);
 	});
 
 	$(".select-language").click(function() {

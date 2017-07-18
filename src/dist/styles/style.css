@@ -463,18 +463,34 @@ header {
   width: 50%; }
   @media (max-width: 767px) {
     .logo {
-      width: auto; } }
+      width: 80%; } }
+
+.hamburger-menu {
+  display: none;
+  color: #fff;
+  width: 20%;
+  float: right;
+  background: red; }
+  @media (max-width: 767px) {
+    .hamburger-menu {
+      display: block; } }
 
 .header_links {
   float: left;
   width: 50%; }
+  @media (max-width: 767px) {
+    .header_links {
+      display: none;
+      float: none;
+      width: 100%; } }
   .header_links ul {
     list-style-type: none;
     float: right;
-    margin: 5px 0 0; }
+    margin: 5px 0 0;
+    padding: 0; }
     @media (max-width: 767px) {
       .header_links ul {
-        display: none; } }
+        margin: 20px 0 0; } }
     .header_links ul li {
       float: left;
       display: inline-block;
@@ -559,7 +575,8 @@ header {
     .stage__form {
       margin-top: 50px;
       border-radius: 0;
-      padding: 19px 20px 13px; } }
+      padding: 19px 20px 13px;
+      max-width: 100%; } }
   .stage__form .form__btn {
     display: block;
     margin: 20px auto 0;

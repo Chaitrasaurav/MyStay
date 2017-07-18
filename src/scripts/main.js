@@ -670,6 +670,7 @@
 		      settings: {
 		        slidesToShow: 3,
 		        slidesToScroll: 1,
+		        infinite: true,
 		        dots: true
 		      }
 		    },
@@ -685,7 +686,7 @@
 		      settings: {
 		        slidesToShow: 1,
 		        slidesToScroll: 1,
-		        centerMode: true
+		        centerMode: true,
 		      }
 		    }
 		  ]
@@ -732,10 +733,6 @@
 	    $('ul.header_language').toggleClass('active');
 	});
 
-	$(".hamburger-menu").click(function() {
-	    $('.header_links').toggleClass('active');
-	});
-	
 	if ($(window).width() < 767) {
 	   $(".sitemap_links").click(function(e) {  
 	   		$('.sitemap_links ul').removeClass('active');
@@ -745,16 +742,6 @@
 
 	$('.js-select-guest').on('click', function(e) {
 		$('.js-select-guest-container').toggleClass('hidden');
-		$('html, body').animate({
-	        scrollTop: $('.js-select-guest-container').offset().top
-	    }, 1000);
-	});
-
-	$('.js-cancel-select-guest').on('click', function() {
-		$('.js-select-guest-container').toggleClass('hidden');
-		$('html, body').animate({
-	        scrollTop: $('#mainForm').offset().top
-	    }, 1000);
 	});
 
 	$('.js-add-room').on('click', function(){
@@ -848,6 +835,10 @@
 		$('.js-select-guest').val(adultCount);
 		$('.js-total-children').val(childCount);
 		$('.js-total-room').val($('.js-room').length);
+		$('.js-select-guest-container').toggleClass('hidden');
+	});
+
+	$('.js-cancel-select-guest').on('click', function() {
 		$('.js-select-guest-container').toggleClass('hidden');
 	});
 

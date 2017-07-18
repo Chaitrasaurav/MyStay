@@ -16,34 +16,18 @@ header{
 	float:left;
 	width:50%;
 	@media (max-width: 767px) {
-		width:80%;
-	}
-}
-.hamburger-menu{
-	display: none;
-	color:#fff;
-	width:20%;
-	float:right;
-	background: red;
-	@media (max-width: 767px) {
-		display: block;
+		width:auto;
 	}
 }
 .header_links{
 	float:left;
 	width:50%;
-	@media (max-width: 767px) {
-		display:none;
-		float:none;
-		width:100%;
-	}
 	ul{
 		list-style-type:none;
 		float:right;
 		margin: 5px 0 0;
-		padding:0;
 		@media (max-width: 767px) {
-			margin:20px 0 0;
+			display:none;
 		}
 		li{
 			float:left;

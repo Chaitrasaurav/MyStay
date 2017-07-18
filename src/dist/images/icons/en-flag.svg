@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>EN-Flag</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 10 16 10 16 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MS-Pepper-Landing-Page-Desktop-EN" transform="translate(-1130.000000, -45.000000)">
+            <g id="Lang-Hover" transform="translate(1115.000000, 30.000000)">
+                <g id="EN-Flag" transform="translate(15.000000, 15.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Fill-1" fill="#4A90E2" xlink:href="#path-1"></use>
+                    <polygon id="Fill-2" fill="#FFFFFF" mask="url(#mask-2)" points="13.9979304 0 9.82972719 2.60168625 9.82972719 0 6.15860771 0 6.15860771 2.70857586 1.75258702 0 0 0 0 1.35217131 3.15992474 3.30422972 0 3.30422972 0 6.7684411 3.13433678 6.7684411 0 8.73425759 0 10 2.07337723 10 6.15860771 7.44099905 6.15860771 10 9.82972719 10 9.82972719 7.39619713 14.050047 10 16 10 16 8.74854482 12.788523 6.7684411 16 6.7684411 16 3.30422972 12.8048918 3.30422972 16 1.30401806 16 0"></polygon>
+                    <polygon id="Fill-3" fill="#E53C53" mask="url(#mask-2)" points="0 0 0 0.959900613 3.98441457 3.63636364 5.33333333 3.63636364"></polygon>
+                    <polygon id="Fill-4" fill="#E53C53" mask="url(#mask-2)" points="10.6666667 7.27272727 16 10.9090909 16 9.99622866 12.0175098 7.27272727"></polygon>
+                    <polygon id="Fill-5" fill="#E53C53" mask="url(#mask-2)" points="5.15201445 7.27272727 0 10.9090909 1.23387543 10.9090909 6.22222222 7.4511711 6.22222222 7.27272727"></polygon>
+                    <polygon id="Fill-6" fill="#E53C53" mask="url(#mask-2)" points="14.8234792 0 9.77777778 3.41196624 9.77777778 3.63636364 10.7727262 3.63636364 16 0.0890989649 16 0"></polygon>
+                    <polygon id="Fill-7" fill="#E53C53" mask="url(#mask-2)" points="6.94543744 0 6.94543744 4.03922814 0 4.03922814 0 6.03326631 6.94543744 6.03326631 6.94543744 10 9.04289746 10 9.04289746 6.03326631 16 6.03326631 16 4.03922814 9.04289746 4.03922814 9.04289746 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

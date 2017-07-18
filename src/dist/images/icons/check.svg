@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Check-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MS-Pepper-Landing-Page-Desktop-EN" transform="translate(-230.000000, -650.000000)">
+            <g id="Group-12" transform="translate(230.000000, 648.000000)">
+                <g id="Check-icon" transform="translate(0.000000, 2.000000)">
+                    <rect id="Check-button" stroke="#FFFFFF" transform="translate(10.000000, 10.000000) scale(-1, 1) translate(-10.000000, -10.000000) " x="0.5" y="0.5" width="19" height="19" rx="2"></rect>
+                    <path d="M8.84747509,13.8137218 C8.59051872,14.0620927 8.17416695,14.0620927 7.91583648,13.8137218 C7.90621779,13.8044245 7.91034009,13.7884863 7.9020955,13.7805172 C7.89659911,13.7738762 7.88698042,13.7765326 7.88148403,13.7712199 L5.21023703,11.1878969 C4.92992099,10.918275 4.92992099,10.4826298 5.21023703,10.2116797 C5.49055307,9.94205786 5.9426314,9.94205786 6.22157334,10.2116797 L8.46684988,12.3819367 L14.8770182,6.18727431 C15.1326005,5.93757523 15.5503263,5.93757523 15.8072827,6.18727431 C16.0642391,6.43564521 16.0642391,6.83808575 15.8072827,7.08778483 L8.84747509,13.8137218 Z" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -7,22 +7,12 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
+var svgSprite = require("gulp-svg-sprites");
 
-gulp.task('sprite', function() {
-  var spriteData = 
-    gulp.src('src/dist/images/icons/*.*') // The way we take pictures for the sprite
-      .pipe(spritesmith({
-        imgName: 'sprite.png',
-        cssName: '_sprite.scss',
-        cssFormat: 'scss',
-        algorithm: 'binary-tree',
-        cssTemplate: 'sprite.template.mustache',
-        cssVarMap: function(sprite) {
-          sprite.name = 'ico-' + sprite.name
-        }
-      }));
-  spriteData.img.pipe(gulp.dest('src/dist/images/')); // Path where we save the picture
-  spriteData.css.pipe(gulp.dest('src/styles/modules')); // Path where we save styles
+gulp.task('sprite', function () {
+    return gulp.src('src/dist/images/icons/*.svg')
+        .pipe(svgSprite())
+        .pipe(gulp.dest("src/dist/sprite"));
 });
 
 gulp.task('scripts', function() {

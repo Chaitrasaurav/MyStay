@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Select-City-Arrow-Hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MS-Pepper-Landing-Page-Desktop-EN" transform="translate(-881.000000, -1789.000000)">
+            <g id="77-Hotels" transform="translate(0.000000, 1536.000000)">
+                <g id="Group-11" transform="translate(163.000000, 228.000000)">
+                    <g id="City-Selector" transform="translate(301.000000, 0.000000)">
+                        <g id="Select-City-Arrow-Hover" transform="translate(417.000000, 25.000000)">
+                            <circle id="Oval-4" fill="#5873BB" cx="15" cy="15" r="15"></circle>
+                            <path d="M19.3219951,13.1198581 L14.999896,17.970588 L10.6786286,13.1198581 C10.5231095,12.9609019 10.2711188,12.9609019 10.117263,13.1198581 C9.96091232,13.279669 9.96091232,13.5386139 10.117263,13.6984248 L14.6747198,18.8149363 C14.6896896,18.8363014 14.6846997,18.8636487 14.702996,18.88245 C14.7836663,18.9662011 14.8917812,19.0038037 14.9982327,18.9995307 C15.1063476,19.0046583 15.2152941,18.9679103 15.2967961,18.88245 C15.3159241,18.8645033 15.3109342,18.8363014 15.3250722,18.8140817 L19.8833607,13.6975702 C20.0388798,13.5377593 20.0388798,13.279669 19.8833607,13.1198581 C19.7278417,12.9600473 19.4766825,12.9600473 19.3219951,13.1198581 Z" id="Arrow-down" stroke="#FFFFFF" stroke-width="1.5" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

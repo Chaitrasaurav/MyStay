@@ -36,9 +36,9 @@ header{
 	}
 	.icon.pepper-logo:before{
 		@media (max-width: 767px) {
-			background-position: 0 -45.9em;
+			background-position: 0 -46.3em;
 		    width: 9.3em;
-		    height: 2.4em;
+		    height: 2em;
 		    background-size: 14em 62em;
 		}
 	}
@@ -49,6 +49,12 @@ header{
 		    height: 1.3em;
 		    background-size: 14em 62em;
 		}
+	}
+}
+.hamburguer-icon{
+	@media (max-width: 767px) {
+		position: relative;
+    	top: -3px;
 	}
 }
 .hamburger-menu{

@@ -22,9 +22,15 @@
 .tabs-select+span.select2 i{
 	@media (max-width: 767px) {
 		position: relative;
-    	top: -3px;
+    	top: -5px;
 	}
 
+}
+.select2-results__option i{
+	@media (max-width: 767px) {
+		position: relative;
+    	top: -5px;
+	}
 }
 .tabs-select + span.select2{
 	display:none;

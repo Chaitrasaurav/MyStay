@@ -448,15 +448,9 @@
 function lightboxOpen(){
     window.scrollTo(0,0);
     document.getElementById('light').style.display='block';
-    document.getElementById('fade').style.display='block';  
-    if($(window).width() < 768) {
-    	$('body, html').addClass('modal-open');
-    }
+    document.getElementById('fade').style.display='block';
 }
 function lightboxClose(){
     document.getElementById('light').style.display='none';
     document.getElementById('fade').style.display='none';
-    if($(window).width() < 768) {
-    	$('body, html').removeClass('modal-open');
-    }
 }

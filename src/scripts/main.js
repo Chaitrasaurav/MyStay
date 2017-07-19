@@ -125,13 +125,13 @@
 					name: 'HOTEL MYSTAYS PREMIER Kanazawa',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'kanazawa1'
+					id: 'ASIAJPFLEHTLKanazawa'
 				},
 				{
 					name: 'HOTEL MYSTAYS Kanazawa Castle',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'kanazawa2'
+					id: 'ASIAJPFLEHTLCastleIn'
 				}
 			]
 		},
@@ -454,6 +454,9 @@
 	var options = '<option value="">Please select a Hotel</option>';
 
 	myStays.init = function() {
+		if (typeof start !== 'undefined') {
+	        start();
+	    }
 		var query= {};
 
 		function formatCitySlider (d) {
@@ -564,11 +567,25 @@
 		            date2.setDate(date2.getDate() + 1);
 		            $( ".js-datepicker.check-out" ).datepicker('setDate', date2);
 		            $( ".js-datepicker.check-out" ).datepicker('option', 'minDate', date2);
+		            var d = new Date(dateText);
+		            $(this).siblings('[name="fromday"]').val(d.getDate());
+		            $(this).siblings('[name="frommonth"]').val(d.getMonth() + 1);
+		            $(this).siblings('[name="fromyear"]').val(d.getFullYear());
+		            $(this).parents('form').find('[name="today"]').val(date2.getDate());
+		            $(this).parents('form').find('[name="tomonth"]').val(date2.getMonth() + 1);
+		            $(this).parents('form').find('[name="toyear"]').val(date2.getFullYear());
+		            
 		    }
 		});
 		
 		$( ".js-datepicker.check-out" ).datepicker({
 			dateFormat: "yy-mm-dd",
+			onSelect: function(dateText, inst) {
+				var d = new Date(dateText);
+	            $(this).siblings('[name="today"]').val(d.getDate());
+	            $(this).siblings('[name="tomonth"]').val(d.getMonth() + 1);
+	            $(this).siblings('[name="toyear"]').val(d.getFullYear());
+		    }
 		});
 
 		for(var city in cityHotelMap) {
@@ -599,15 +616,16 @@
 		if(isValid) {
 			console.log($('#mainForm').serializeArray());
 			console.log($('#mainForm').serialize());
-			var queryParams = "s=results";
-			$form.serializeArray().forEach(function(value){
-				console.log(value)
-				queryParams +=  '&' + value.name + '=' + value.value;
-			});
-			queryParams += '&children1=0&rooms=1&code=5&locale=en_GB&currency=JPY&stid=2hj7fselc&=undefined'
-			var url = 'https://www.book-secure.com/index.php?' + queryParams;
-			var win = window.open(url, '_blank');
-  			win.focus();
+			// var queryParams = "s=results";
+			// $form.serializeArray().forEach(function(value){
+			// 	console.log(value)
+			// 	queryParams +=  '&' + value.name + '=' + value.value;
+			// });
+			// queryParams += '&children1=0&rooms=1&code=5&locale=en_GB&currency=JPY&stid=2hj7fselc&=undefined'
+			// var url = 'https://www.book-secure.com/index.php?' + queryParams;
+			// var win = window.open(url, '_blank');
+  	// 		win.focus();
+  			hhotelDispoprice($form[0]);
 		}
 		//https://www.book-secure.com/index.php?
 		//s=results

@@ -1,12 +1,383 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<title>Mystays</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="../dist/styles/vendor.min.css">
+	<link rel="stylesheet" type="text/css" href="../dist/styles/style.min.css">
+	<link rel="stylesheet" type="text/css" href="../dist/sprite/css/sprite.css">
+	<script src="https://js.gleam.io/oi-my108fgp.js" async="async"></script>
 </head>
 <body>
-test
+	<header>
+		<div class="header_container clearfix">
+			<div class="logo">
+				<i class="icon ms-logo"></i>
+				<i class="icon plus-icon"></i>
+				<i class="icon pepper-logo"></i>
+			</div>
+			<span class="hamburger-menu"><i class="icon hamburguer-icon"></i></span>
+			<div class="header_links">
+				<ul>
+					<li><a target="_blank" href="https://www.mystays.com/en/hotelList/">Hotels &amp; Resorts</a></li>
+					<li><a target="_blank" href="https://www.mystays.com/en/destinationList/">Destinations</a></li>
+					<li class="select-language"><i class="icon cn-flag"></i> Cns
+						<ul class="header_language" name="country">
+							<li><a href="english.html"> <i class="icon en-flag"></i> En</a></li>
+							<li><a href="japanese.html"> <i class="icon jp-flag"></i> Jp</a></li>
+							<li><a href="korean.html"> <i class="icon kr-flag"></i> Kr</a></li>
+							<li><a href="traditional-chinese.html"> <i class="icon cn-flag"></i> Cnt</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section class="stage">
+		<div class="animation-container">
+			<div class="animation"></div>
+			<div class="stage_container">
+					<h1 class="stage__heading">Win Amazing Pepper <i class="icon x-icon"></i> MYSTAYS Prizes!</h1>
+					<div class="stage__form form">
+						<form name="mainForm" id="mainForm" novalidate autocomplete="off">
+							<div class="form__control">
+								<label class="form__label">Where in Japan?</label>
+								<select class="form__field js-city" type="text" id="city">
+									<option value=""> Please select a city</option>
+									<option value="tokyo">Tokyo</option>
+									<option value="kyoto">Kyoto</option>
+									<option value="osaka">Osaka</option>
+									<option value="kanazawa">Kanazawa</option>
+									<option value="maihama-urayasu">Maihama/Urayasu</option>
+									<option value="tachikawa">Tachikawa</option>
+									<option value="kawasaki">Kawasaki</option>
+									<option value="yokohama">Yokohama</option>
+									<option value="chiba">Chiba</option>
+									<option value="tochigi">Tochigi</option>
+									<option value="hokkaido">Hokkaido</option>
+									<option value="aomori">Aomori</option>
+									<option value="yamanashi">Yamanashi</option>
+									<option value="nagoya">Nagoya</option>
+									<option value="niigata">Niigata</option>
+									<option value="kagawa">Kagawa</option>
+									<option value="ehime">Ehime</option>
+									<option value="fukuoka">Fukuoka</option>
+									<option value="oita">Oita</option>
+									<option value="okinawa">Okinawa</option>
+								</select>
+							</div>
+							<div class="form__control">
+								<select class="form__field js-hotel required" type="text" name="property" id="property">
+								</select>
+							</div>
+							<div class="form_guestWrap">
+								<div class="form__control">
+									<label class="form__label">Check In</label>
+									<div class="input-wrap">
+										<input class="datepicker form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" placeholder="Select" readonly>
+									</div>
+								</div>
+								<div class="form__control">
+									<label class="form__label">Check Out</label>
+									<div class="input-wrap">
+										<input class="datepicker form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" placeholder="Select" readonly>
+									</div>
+								</div>
+								<div class="form__control">
+									<label class="form__label">No of guests</label>
+									<div class="input-wrap">
+										<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" name="adults1" id="adults1" readonly>
+										<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1">
+										<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms"> 
+										<input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="zh_Hans_CN"> 
+										<input class="form__field form__field--sm" type="hidden" name="code" id="code" value="PP5"> 
+										<input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY">
+									</div>
+								</div>
+							</div>
+							<div class="select-guest-container js-select-guest-container hidden">
+										<h5>Rooms</h5>
+										<a class="js-cancel-select-guest cancel-select-guest" title="Close" href="javascript:;"><i class="icon close-btn"></i></a>
+										<ul class="js-room-list room-list clearfix" style="list-style: none;padding-left: 0;">
+											<li class="room js-room clearfix" data-room="0">
+												<div class="room-container clearfix">
+													<p class="room__heading">Room1</p>
+													<div class="form__control">
+														<label class="room__label form__label">Adults</label>
+														<div class="input-wrap">
+															<select class="room__field form__field js-adult-count">
+																<option value="1">1</option>
+																<option value="2">2</option>
+															</select>
+														</div>
+													</div>
+													<div class="form__control">
+														<label class="room__label form__label">Children</label>
+														<div class="input-wrap">
+															<select class="room__field form__field js-child-count">
+																<option value="0">0</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="room__age-container js-child-age-list">
+												</div>
+											</li>
+										</ul>
+										<div class="button-wrap">
+											<button type="button" class="room__add js-add-room">Add Room <i class="icon add-room"></i></button>
+											<button type="button" class="room__confirm js-confirm">Confirm here <i class="icon confirm-room"></i></button>
+										</div>
+									</div>
+							<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>
+						</form>
+						<p class="stage__hint">Best Price Guarantee!</p>
+					</div>
+					<div class="stage_conditions">
+						<div class="checkbox-wrap">
+		 					<input type="checkbox" class="form__field js-check-box" id="checkbox" checked> 
+		 					<label for="checkbox">Yes I want to become a MyStays Member and Join the Campaign</label>
+		 				</div>
+						<a onclick="lightboxOpen()"><i class="icon terms-conditions"></i>Terms &amp; Conitions</a>
+						<div id="light">
+							<span onclick="lightboxClose()">x</span>
+							terms text
+						</div>
+						<div id="fade" onclick="lightboxClose()"></div> 
+					</div>
+			</div>
+		</div>
+	</section>
+	<section class="offers">
+		<div class="offers_container clearfix">
+			<ul>
+				<li><i class="icon offers-icon"></i><span>Best Price Guarantee</span></li>
+				<li><i class="icon offers-icon"></i><span>5% Extra Discount</span></li>
+				<li><i class="icon offers-icon"></i><span>Enter Pepper Lotery</span></li>
+			</ul>
+			<div class="arrow-down"></div>
+		</div>
+	</section>
+	<section class="tabs">
+		<div class="tabs_container clearfix">
+			<h3>MyStays Meets Pepper</h3>
+			<div class="tabs-wrap">
+				<ul class="tabs-list js-tabs clearfix">
+					<li class="tab-link current" data-tab="tab-1"><i class="icon chat-icon"></i> Live Support <span></span></li>
+					<li class="tab-link" data-tab="tab-2"><i class="icon city-guide"></i> City Guide <span></span></li>
+					<li class="tab-link" data-tab="tab-3"><i class="icon fun-selfies"></i> Fun Selfies <span></span></li>
+					<li class="tab-link" data-tab="tab-4"><i class="icon amazing-campaigns"></i> Amazing Campaings <span></span></li>
+				</ul>
+				<select class="tabs-select js-tabs-select">
+					<option value="tab-1">Live Support</option>
+					<option value="tab-2">City Guide</option>
+					<option value="tab-3">Fun Selfies</option>
+					<option value="tab-4">Amazing Campaigns</option>
+				</select>
+				<div id="tab-1" class="tab-content clearfix current">
+					<div class="tab-content-left">
+						<img src="../dist/images/chat-image.png" title="chat">
+					</div>
+					<div class="tab-content-right">
+						<span>We are always here for you:</span>
+						<h5>Pepper, our latest employee, is here to welcome you in our hotels, listen to you, and answer all your questions</h5>
+						<p>Are you looking to book a room, or would you simply like more information about the surroundings areas of your hotel? Pepper and our team are here to support you with our new live chat function. Pepper can now converse with you in three languages: Japanese, English, Chinese and you will able to find your new friend in our pilot hotels: HOTEL MYSTAYS PREMIER Akasaka, HOTEL MYSTAYS PREMIER Hamamatsucho. So visit us soon and start talking with our cute robot staff.</p>
+						<a class="chat" href="javascriptvoid"><i class="icon get-help"></i>Get Help</a>
+					</div>
+				</div>
+				<div id="tab-2" class="tab-content clearfix">
+					<div class="tab-content-left">
+						<img src="../dist/images/chat-image.png" title="chat">
+					</div>
+					<div class="tab-content-right">
+						<span>All the yum and fun places:</span>
+						<h5>Pepper knows it all! Discover the most acclaimed restaurants, thanks to our City Guide App</h5>
+						<p>Feeling hungry and in the mood to discover the city? Let Pepper guide you around the neighborhood, we will recommend the best restaurants and show you the way, so that you get to your destination in no time. If you have more specific questions you can still get in touch through our Live Support, and Pepper will be delighted to help you in all matters.</p>
+						<a href="javascriptvoid">See more cities</a>
+					</div>
+				</div>
+				<div id="tab-3" class="tab-content clearfix">
+					<div class="tab-content-left">
+						<img src="../dist/images/chat-image.png" title="chat">
+					</div>
+					<div class="tab-content-right">
+						<span>Super cute selfies: </span>
+						<h5>Your Instagram followers will love seeing you smile beside a fun-looking Pepper. Hit the Fun Selfies App and Pepper will strike a pose just for you</h5>
+						<p>Feature Coming Soon: Pepper loves to help our guests but when break time comes, our cute robot turns into a Super Model and takes fun poses. Take advantage of this, shoot some amazing selfies, and share them with your friends and family! We also invite you to send them to us if you would like us to share them with the world through our Instagram and Facebook accounts! </p>
+						<a href="javascriptvoid">Add your Selfie with Pepper</a>
 
+						<a href="javascriptvoid">See more Selfies</a>
+					</div>
+				</div>
+				<div id="tab-4" class="tab-content clearfix">
+					<div class="tab-content-left">
+						<img src="../dist/images/chat-image.png" title="chat">
+					</div>
+					<div class="tab-content-right">
+						<span>Let us delight you: </span>
+						<h5>Every now and then Pepper will introduce new campaigns exclusively to our dear members and guests. Make sure to check Pepper at every visit!</h5>
+						<p>Our happy robot turns into Santa Claus during the work shifts and introduces amazing campaigns to all our guests. So make sure to speak with Pepper at your next visit and ask around, your little new friend might have some exclusive gifts and rewards for you. Do not miss out on your chance—enroll as a MYSTAYS member today!   </p>
+						<p>Sign up now and start finding the best deals and offers at MYSTAYS.COM</p>
+						<a href="javascriptvoid">Add your Selfie with Pepper</a>
+						<a href="javascriptvoid">Pepper will never send you Spam, and you can unsubscribe at anytime</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="slider">
+		<div class="animation"></div>
+ 		<div class="slider_container clearfix">
+ 			<h2>77 Hotels all around Japan</h2>
+ 			<p>Book your Hotel, Save and Win!</p>
+ 			<span>Please select a city:</span>
+ 			<select class="js-slider-control">
+				<option value="tokyo" selected>Tokyo</option>
+				<option value="kyoto">Kyoto</option>
+				<option value="osaka">Osaka</option>
+				<option value="kanazawa">Kanazawa</option>
+				<option value="maihama-urayasu">Maihama/Urayasu</option>
+				<option value="tachikawa">Tachikawa</option>
+				<option value="kawasaki">Kawasaki</option>
+				<option value="yokohama">Yokohama</option>
+				<option value="chiba">Chiba</option>
+				<option value="tochigi">Tochigi</option>
+				<option value="hokkaido">Hokkaido</option>
+				<option value="aomori">Aomori</option>
+				<option value="yamanashi">Yamanashi</option>
+				<option value="nagoya">Nagoya</option>
+				<option value="niigata">Niigata</option>
+				<option value="kagawa">Kagawa</option>
+				<option value="ehime">Ehime</option>
+				<option value="fukuoka">Fukuoka</option>
+				<option value="oita">Oita</option>
+				<option value="okinawa">Okinawa</option>
+			</select>
+			<div class="lazy js-slider">
+			</div>
+ 		</div>
+ 	</section>
+ 	<section class="subscribe">
+ 		<div class="subscribe_container clearfix">
+ 			<div class="subscribe_info">
+ 				<span><i class="icon newsletter-icon"></i></span>
+ 				<p class="subscribe_updates">Receive Updates from MyStays and Pepper</p>
+ 				<p>Join our News Letter Now!</p>
+ 			</div>
+ 			<div class="subscribe_glem">
+	 			<div data-capture-embed='iFnh0'></div>
+	 			<p class="subscribe_signup">Sign up or Sign in to get access to free content, reveal exclusive deals!</p>
+ 			</div>
+ 			<div class="subscribe_video">
+ 				<h2>Watch Pepper Arrive to MYSTAYS</h2>
+ 				<div class="youtube-video" 
+					id="demo-1" 
+					data-video-id="wdmeSIfE8Wg" 
+					width="100%" 
+					height="315"></div>
+ 			</div>
+ 			<div class="hotels">
+  				<img src="../dist/images/art-hotel.png" alt="ART Hotel">
+  				<img src="../dist/images/monthly-rei-stays.png" alt="Monthly REI Satys">
+  				<img src="../dist/images/hotel-mystays.png" alt="Hotel Mystays">
+ 				<img src="../dist/images/flexstay-inn.png" alt="Flexstay">
+  				<img src="../dist/images/my-cube.png" alt="My Cube">
+   			</div>
+ 		</div>
+ 	</section>
+	<section class="newsletter">
+		<div class="newsletter_container clearfix">
+			<h4>MyStays <i class="icon plus-icon"></i> Pepper</h4>
+			<h5>Softbank Robotics and MYSTAYS are happy to introduce you Pepper!</h5>
+			<p>Etiam porta sem malesuada magna mollis euismod aenean eu leo quam pellentesque ornare sem lacinia quam venenatis vestibulum praesent commodo cursus magna.</p>
+			<ul>
+				<li><a class="newsletter_link" target="_blank" href="javascriptvoid"><i class="icon press-release"></i>Read our Press Release</a></li>
+				<li><a class="campaign_link">Book and Join the Campaign <i class="icon book-campaign"></i></a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="sitemap">
+ 		<div class="sitemap_container clearfix">
+ 			<div class="sitemap_links">
+ 				<p><i class="icon website-icon"></i> MYSTAYS Website <i class="icon footer-plus"></i></p>
+ 				<ul>
+ 					<li><a target="_blank" target="_blank" href="https://www.mystays.com/en/hotelList/">Our Hotels &amp; Resorts</a></li>
+ 					<li><a target="_blank" href="https://www.mystays.com/en/destinationList/">Destinations</a></li>
+ 					<li><a target="_blank" href="https://www.mystays.com/en/attractionList/">Top Attractions</a></li>
+ 					<li><a target="_blank" href="https://www.mystays.com/en/hotelList/?map=1">Sitemap</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="sitemap_links">
+ 				<p><i class="icon contact-icon"></i> Get in Touch <i class="icon footer-plus"></i></p>
+ 				<ul>
+ 					<li><a target="_blank" href="https://mystays.zendesk.com/hc/en-us/requests/new">Contact us</a></li>
+ 					<li><a target="_blank" href="http://corporate.mystays.com/e/cancel/?_ga=2.266372107.426667290.1500430909-141039301.1491361836">Cancel Your Reservation</a></li>
+ 					<li><a target="_blank" href="tel:811267 03087">Phone: +81 1267 03087</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="sitemap_links">
+ 				<p><i class="icon company-icon"></i> Company <i class="icon footer-plus"></i></p>
+ 				<ul>
+ 					<li><a target="_blank" href="http://corporate.mystays.com/e/outline/">Corporate Info</a></li>
+ 					<li><a target="_blank" href="http://corporate.mystays.com/e/development/">Development</a></li>
+ 					<li><a target="_blank" href="mailto:ma_ml@mystays.com">Marketing Contact</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="sitemap_links">
+ 				<p><i class="icon policies"></i> Policies <i class="icon footer-plus"></i></p>
+ 				<ul>
+ 					<li><a target="_blank" href="http://corporate.mystays.com/e/privacy/">Privacy Policy</a></li>
+ 					<li><a target="_blank" href="https://mystays.zendesk.com/hc/en-us/articles/205859958-How-much-is-the-cancellation-fee-">Cancellation Policy</a></li>
+ 					<li><a target="_blank" href="https://mystays.zendesk.com/hc/en-us/articles/206486587-Do-children-stay-free-Does-a-child-stay-free-">Child Policy</a></li>
+ 				</ul>
+ 			</div>
+ 		</div>
+ 	</section>
+ 	<footer>
+ 		<div class="footer_container clearfix">
+ 			<div class="footer_logo">
+ 				<i class="icon ms-logo"></i>
+ 				<p>Corporate Outline</p>
+ 				<p>© MyStays Hotel Management Co, Ltd</p>
+ 			</div>
+ 			<div class="footer_social">
+ 				<ul class="social-media">
+ 					<li><a target="_blank" class="twitter" href="https://twitter.com/mystays?lang=en"></a></li>
+ 					<li><a target="_blank" class="facebook" href="https://www.facebook.com/hotelmystays/"></a></li>
+ 				</ul>
+ 				<ul>
+ 					<li><a target="_blank" href="https://www.mystays.com/en/hotelList/?map=1">Sitemap</a></li>
+ 					<li><a target="_blank" href="https://mystays.zendesk.com/hc/en-us ">FAQ</a></li>
+ 				</ul>
+ 				<ul>
+ 					<li><a target="_blank" href="http://corporate.mystays.com/e/privacy/">Privacy Policy</a></li>  
+ 					<li><a target="_blank" href="https://mystays.zendesk.com/hc/en-us/articles/205859958-How-much-is-the-cancellation-fee-">Cancelation Policy</a></li> 
+ 					<li><a target="_blank" href="https://mystays.zendesk.com/hc/en-us/requests/new">Contact Us</a></li> 
+ 					<li><a target="_blank" href="https://www.mystays.com/en/best-price-guarantee/">Best Price Guarantee</a></li> 
+ 				</ul>                     
+ 			</div>
+ 		</div>
+ 	</footer>
+	<script type="text/javascript" src="../dist/scripts/vendor.min.js"></script>
+	<script type="text/javascript" src="../data/data-cns.js"></script>
 	<script type="text/javascript" src="../dist/scripts/app.min.js"></script>
+	<script type="text/javascript">
+	  var tag = document.createElement('script');
+	  tag.src = "https://www.youtube.com/player_api";
+	  var firstScriptTag = document.getElementsByTagName('script')[0];
+	  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	  function onYouTubeIframeAPIReady() {
+	    $('.youtube-video').inViewAutoplay({
+	      autohide: 1,
+	      modestbranding: 1,
+	      rel: 0,
+	      quality: 'hd720'
+	    });
+	  }
+	</script>
 </body>
 </html>

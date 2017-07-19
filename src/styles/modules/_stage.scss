@@ -289,6 +289,16 @@
 	    	background: #ffd25d;
 	    }
     }
+
+    @media (max-width: 767px) {
+		top: 0;
+	    left: 2%;
+	    width: 92%;
+        margin-left: 0;
+		margin-top: 0;
+		padding: 45px 2%;
+	}
+
 }
 .stage_promotion{
 	background: #fff;
@@ -375,7 +385,7 @@
 	-webkit-box-shadow: 0 15px 15px 0 rgba(35, 46, 72, 0.25);
 	-moz-box-shadow: 0 15px 15px 0 rgba(35, 46, 72, 0.25);
 	box-shadow: 0 15px 15px 0 rgba(35, 46, 72, 0.25);
-	top:92.5 !important;
+	margin-top: 20px;
 }
 .ui-datepicker-title{
 	position: relative;
@@ -636,7 +646,7 @@ form{
 .select2-results__option{
 	padding: 0 10px;
 }
-.select2-results__option:first-child{
+.select2-results__option[id]:first-child{
 	background-color: #fff !important;
     font-size: 16px;
     font-weight: 900;
@@ -654,4 +664,12 @@ form{
 }
 .select2-container--default .select2-results > .select2-results__options{
 	max-height:250px;
+}
+.jp {
+	.form-city-container-options {
+		top: 0;
+	}
+	.select2-search--dropdown {
+	    display: none;
+	}	
 }

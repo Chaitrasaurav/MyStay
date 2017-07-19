@@ -2,459 +2,13 @@
 	
 	'use strict';
 
-	var cityHotelMap = {
-		'tokyo': {
-			city: 'Tokyo',
-			id: 'tokyo',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS PREMIER Akasaka',
-					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JP',
-					img: 'lazyfonz1.png',
-					id: 'jptok26324'
-				},
-				{
-					name: 'HOTEL MYSTAYS PREMIER Hamamatsucho',
-					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JP13123',
-					img: 'lazyfonz1.png',
-					id: 'tokyo1'
-				},
-				{
-					name: 'HOTEL MYSTAYS PREMIER Omori',
-					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JPsdfs',
-					img: 'lazyfonz1.png',
-					id: 'tokyo2'
-				},
-				{
-					name: 'HOTEL MYSTAYS Asakusa bashi',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'tokyo3'
-				},
-				{
-					name: 'HOTEL MYSTAYS Gotanda',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'tokyo4'
-				},
-				{
-					name: 'HOTEL MYSTAYS Gotanda Station',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'tokyo5'
-				},
-				{
-					name: 'HOTEL MYSTAYS Hamamatsucho',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'tokyo6'
-				},
-				{
-					name: 'HOTEL MYSTAYS Haneda',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'tokyo7'
-				},
-				{
-					name: 'HOTEL MYSTAYS Higashi Ikebukuroa',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'tokyo8'
-				}
-			]
-		},
-		'kyoto':{
-			city: 'Kyoto',
-			id: 'kyoto',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS Kyoto Shijo',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kyoto1'
-				}
-			]
-		},
-		'osaka':{
-			city: 'Osaka',
-			id: 'osaka',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS Midosuji Honmachi',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'osaka1'
-				},
-				{
-					name: 'HOTEL MYSTAYS Otemae',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'osaka2'
-				},
-				{
-					name: 'HOTEL MYSTAYS Sakaisuji Honmachi',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'osaka3'
-				},
-				{
-					name: 'HOTEL MYSTAYS Shinsaibashi',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'osaka4'
-				},
-				{
-					name: 'HOTEL MYSTAYS Shinsaibashi East',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'osaka5'
-				},
-				{
-					name: 'HOTEL MYSTAYS Shin Osaka Conference Center',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'osaka6'
-				}
-			]
-		},
-		'kanazawa':{
-			city: 'Kanazawa',
-			id: 'kanazawa',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS PREMIER Kanazawa',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kanazawa1'
-				},
-				{
-					name: 'HOTEL MYSTAYS Kanazawa Castle',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kanazawa2'
-				}
-			]
-		},
-		'maihama-urayasu':{
-			city: 'Maihama/Urayasu',
-			id: 'maihama-urayasu',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS Maihama',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'maihama-urayasu1'
-				},
-				{
-					name: 'MYSTAYS Shin Urayasu Conference Center',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'maihama-urayasu2'
-				},
-				{
-					name: 'FLEXSTAY INN Shin Urayasu',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'maihama-urayasu3'
-				}
-			]
-		},
-		'tachikawa':{
-			city: 'Tachikawa',
-			id: 'tachikawa',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS Tachikawa',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'tachikawa1'
-				}
-			]
-		},
-		'kawasaki':{
-			city: 'Kawasaki',
-			id: 'kawasaki',
-			hotels: [
-				{
-					name: 'FLEXSTAY INN Kawasaki Kaizuka',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kawasaki1'
-				},
-				{
-					name: 'FLEXSTAY INN Kawasaki Ogawacho',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kawasaki2'
-				},
-				{
-					name: 'FLEXSTAY INN Tamagawa',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kawasaki3'
-				}
-			]
-		},
-		'yokohama':{
-			city: 'Yokohama',
-			id: 'yokohama',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS Yokohama',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'yokohama1'
-				},
-				{
-					name: 'HOTEL MYSTAYS Yokohama Kannai',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'yokohama2'
-				},
-				{
-					name: 'FLEXSTAY INN Sakuragicho',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'yokohama3'
-				}
-			]
-		},
-		'chiba':{
-			city: 'Chiba',
-			id: 'chiba',
-			hotels: [
-				{
-					name: 'Shirahama Ocean Resort',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'chiba1'
-				}
-			]
-		},
-		'tochigi':{
-			city: 'Tochigi',
-			id: 'tochigi',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS Utsunomiya',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'tochigi1'
-				},
-				{
-					name: 'Hotel Épinard Nasu',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'tochigi2'
-				}
-			]
-		},
-		'hokkaido':{
-			city: 'Hokkaido',
-			id: 'hokkaido',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS PREMIER Sapporo Park',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'hokkaido1'
-				},
-				{
-					name: 'HOTEL MYSTAYS Sapporo Aspen',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'hokkaido2'
-				},
-				{
-					name: 'HOTEL MYSTAYS Sapporo Nakajima Park',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'hokkaido3'
-				},
-				{
-					name: 'HOTEL MYSTAYS Sapporo Nakajima Park Annex',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'hokkaido4'
-				},
-				{
-					name: 'HOTEL MYSTAYS Sapporo Station',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'hokkaido5'
-				},
-				{
-					name: 'ART HOTEL ASAHIKAWA',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'hokkaido6'
-				},
-				{
-					name: 'Hotel Nord Otaru',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'hokkaido7'
-				},
-				{
-					name: 'Hotel Sonia Otaru',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'hokkaido8'
-				},
-				{
-					name: 'Hakodate Kokusai Hotel',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'hokkaido9'
-				},
-				{
-					name: 'Hotel Nets Hakodate',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'hokkaido10'
-				}
-			]
-		},
-		'aomori':{
-			city: 'Aomori',
-			id: 'aomori',
-			hotels: [
-				{
-					name: 'ART HOTEL HIROSAKI CITY',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'aomori1'
-				}
-			]
-		},
-		'yamanashi':{
-			city: 'Yamanashi',
-			id: 'yamanashi',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS Fuji',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'yamanashi1'
-				}
-			]
-		},
-		'nagoya':{
-			city: 'Nagoya',
-			id: 'nagoya',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS Nagoya Sakae',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'nagoya1'
-				}
-			]
-		},
-		'niigata':{
-			city: 'Niigata',
-			id: 'niigata',
-			hotels: [
-				{
-					name: 'ART HOTEL NIIGATA STATION',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'niigata1'
-				},
-				{
-					name: 'ART HOTEL JOETSU',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'niigata2'
-				}
-			]
-		},
-		'kagawa':{
-			city: 'Kagawa',
-			id: 'kagawa',
-			hotels: [
-				{
-					name: 'Resort Hotel Olivean Shodoshima',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'kagawa1'
-				}
-			]
-		},
-		'ehime':{
-			city: 'Ehime',
-			id: 'ehime',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS Matsuyama',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'ehime1'
-				}
-			]
-		},
-		'fukuoka':{
-			city: 'Fukuoka',
-			id: 'fukuoka',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS Fukuoka Tenjin Minami',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'fukuoka1'
-				},
-				{
-					name: 'HOTEL MYSTAYS Fukuoka Tenjin',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'fukuoka2'
-				}
-			]
-		},
-		'oita':{
-			city: 'Oita',
-			id: 'oita',
-			hotels: [
-				{
-					name: 'HOTEL MYSTAYS Oita',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'oita1'
-				},
-				{
-					name: 'Beppu Kamenoi Hotel',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'oita2'
-				}
-			]
-		},
-		'okinawa':{
-			city: 'Okinawa',
-			id: 'okinawa',
-			hotels: [
-				{
-					name: 'ART HOTEL ISHIGAKIJIMA',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'okinawa1'
-				},
-				{
-					name: 'Fusaki Resort Village (Ishigaki-jima)',
-					address: '',
-					img: 'lazyfonz1.png',
-					id: 'okinawa2'
-				}
-			]
-		}
-	};
-
 	window.myStays = {};
 
 	var options = '<option value="">Please select a Hotel</option>';
 
 	myStays.init = function() {
-		var query= {};
+		var query= {},
+			cityHotelMap = window.cityHotelMap;
 
 		function formatCitySlider (d) {
 			if(d.disabled) return; 
@@ -483,7 +37,7 @@
 
 		$( ".js-tabs-select" ).select2({
 			containerCssClass: 'tab-select-container',
-        	dropdownCssClass: 'city-select-container-options',
+        	dropdownCssClass: 'tab-select-container-options',
 			minimumResultsForSearch: -1,
 		    templateResult: formatTabSelector,
 		    templateSelection: formatTabSelector
@@ -565,7 +119,12 @@
 		            date2.setDate(date2.getDate() + 1);
 		            $( ".js-datepicker.check-out" ).datepicker('setDate', date2);
 		            $( ".js-datepicker.check-out" ).datepicker('option', 'minDate', date2);
-		    }
+		    },
+		    onClose: function() {
+		    	setTimeout(function(){
+		    		 $( ".js-datepicker.check-out" ).datepicker("show");
+		    		}, 10);
+	        }
 		});
 		$( ".js-datepicker.check-out" ).datepicker({
 			dateFormat: "yy-mm-dd",
@@ -604,7 +163,7 @@
 				console.log(value)
 				queryParams +=  '&' + value.name + '=' + value.value;
 			});
-			queryParams += '&children1=0&rooms=1&code=5&locale=en_GB&currency=JPY&stid=2hj7fselc&=undefined'
+			queryParams += '&stid=2hj7fselc&=undefined'
 			var url = 'https://www.book-secure.com/index.php?' + queryParams;
 			var win = window.open(url, '_blank');
   			win.focus();
@@ -613,7 +172,7 @@
 		//s=results
 		//&property=jptok26324
 		//&arrival=2017-07-12
-		//&departure=2017-07-13]
+		//&departure=2017-07-13
 		//&adults1=2
 		//&children1=0
 		//&rooms=1
@@ -633,6 +192,7 @@
 				options += '<option value="'+ hotelsSelected[i].id +'">' + hotelsSelected[i].name + '</option>';
 			}
 			$('.js-hotel').empty().html(options);
+			$('.js-hotel').val('').trigger('change')
 		}
 	});
 
@@ -661,15 +221,15 @@
 		$('.js-slider').empty().append(item).slick({
 		  lazyLoad: 'ondemand',
 		  slidesToShow: 4,
-		  speed: 1000,
-		  slidesToScroll: 1,
+		  speed: 2000,
+		  slidesToScroll: 4,
 		  dots: true,
 		  responsive: [
 		    {
 		      breakpoint: 1024,
 		      settings: {
 		        slidesToShow: 3,
-		        slidesToScroll: 1,
+		        slidesToScroll: 3,
 		        dots: true
 		      }
 		    },
@@ -677,7 +237,7 @@
 		      breakpoint: 900,
 		      settings: {
 		        slidesToShow: 2,
-		        slidesToScroll: 1
+		        slidesToScroll: 2
 		      }
 		    },
 		    {
@@ -728,6 +288,22 @@
 	        3000);
 	});
 
+	$(document).keyup(function(e) {
+	     if (e.keyCode == 27) { // escape key maps to keycode `27`
+	     	if($('ul.header_language').hasClass('active')) {
+	     		$('ul.header_language').removeClass('active');	
+	     	}
+	     	
+	     	lightboxClose();
+	     }
+	});
+
+	$(document).click(function(e) {                    
+	   if(!$(e.target).hasClass('select-language') && !$(e.target).parent().hasClass('select-language')) {
+	     	$('ul.header_language').removeClass('active');	
+	   }
+	}); 
+
 	$(".select-language").click(function() {
 
 	    $('ul.header_language').toggleClass('active');
@@ -763,7 +339,7 @@
 	$('.js-add-room').on('click', function(){
 		console.log($('.js-room-list').find('li').length)
 		var index = $('.js-room-list').find('li').length + 1;
-		var list = '<li class="js-room room" data-room="'+ index +'">\
+		var list = '<li class="js-room room clearfix" data-room="'+ index +'">\
 						<div class="room-container clearfix">\
 							<p class="room__heading">Room' + index +'</p>\
 							<div class="form__control">\
@@ -852,26 +428,35 @@
 		$('.js-total-children').val(childCount);
 		$('.js-total-room').val($('.js-room').length);
 		$('.js-select-guest-container').toggleClass('hidden');
+		$('html, body').animate({
+	        scrollTop: $('#mainForm').offset().top
+	    }, 1000);
 	});
 
 	$(document).ready(myStays.init);
 
 })(window, document, jQuery);
 
-window.document.onkeydown = function (e) {
-    if (!e){
-        e = event;
-    }
-    if (e.keyCode == 27){
-        lightbox_close();
-    }
-}
+// window.document.onkeydown = function (e) {
+//     if (!e){
+//         e = event;
+//     }
+//     if (e.keyCode == 27){
+//         lightbox_close();
+//     }
+// }
 function lightboxOpen(){
     window.scrollTo(0,0);
     document.getElementById('light').style.display='block';
     document.getElementById('fade').style.display='block';  
+    if($(window).width() < 768) {
+    	$('body, html').addClass('modal-open');
+    }
 }
 function lightboxClose(){
     document.getElementById('light').style.display='none';
     document.getElementById('fade').style.display='none';
+    if($(window).width() < 768) {
+    	$('body, html').removeClass('modal-open');
+    }
 }

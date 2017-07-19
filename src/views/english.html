@@ -24,7 +24,7 @@
 					<li><a target="_blank" href="https://www.mystays.com/en/destinationList/">Destinations</a></li>
 					<li class="select-language"><i class="icon en-flag"></i> En
 						<ul class="header_language" name="country">
-							<li><a href="english.html"> <i class="icon jp-flag"></i> Jp</a></li>
+							<li><a href="japanese.html"> <i class="icon jp-flag"></i> Jp</a></li>
 							<li><a href="korean.html"> <i class="icon kr-flag"></i> Kr</a></li>
 							<li><a href="simplified-chinese.html"> <i class="icon cn-flag"></i> Cnt</a></li>
 							<li><a href="traditional-chinese.html"> <i class="icon cn-flag"></i> Cns</a></li>
@@ -90,6 +90,9 @@
 										<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" name="adults1" id="adults1" readonly>
 										<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1">
 										<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms"> 
+										<input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="en_GB"> 
+										<input class="form__field form__field--sm" type="hidden" name="code" id="code" value="PP5"> 
+										<input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY">
 									</div>
 								</div>
 							</div>
@@ -364,6 +367,7 @@
  		</div>
  	</footer>
 	<script type="text/javascript" src="../dist/scripts/vendor.min.js"></script>
+	<script type="text/javascript" src="../data/data-en.js"></script>
 	<script type="text/javascript" src="../dist/scripts/app.min.js"></script>
 	<script type="text/javascript">
 	  var tag = document.createElement('script');

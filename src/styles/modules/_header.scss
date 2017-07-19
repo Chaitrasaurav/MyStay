@@ -3,28 +3,58 @@ header{
 	position: relative;
     z-index: 4;
 	@media (max-width: 950px) {
-		padding:0 20px;
+		padding:0 15px;
 	}	
 }
 .header_container{
 	max-width: $desktop-max-width;
 	margin: 0 auto;	
-	padding:33px 0 31px;
-	.ico-cross{
-		margin: 0 8px 5px 12px;
+	padding: 36px 0;
+	@media (max-width: 767px) {
+		padding: 20px 0;
+	}
+	.plus-icon{
+		margin: 0 12px;
+		@media (max-width: 767px) {
+			margin: 0 4px;
+		}
 	}
 }
 .logo{
 	float:left;
 	width:50%;
 	@media (max-width: 767px) {
-		width:80%;
+		width:90%;
+	}
+	.icon.ms-logo:before{
+		@media (max-width: 767px) {
+			background-position: 0 -41.1em;
+		    width: 14em;
+		    height: 2em;
+		    background-size: 14em 62em;
+		}
+	}
+	.icon.pepper-logo:before{
+		@media (max-width: 767px) {
+			background-position: 0 -45.9em;
+		    width: 9.3em;
+		    height: 2.4em;
+		    background-size: 14em 62em;
+		}
+	}
+	.icon.plus-icon:before{
+		@media (max-width: 767px) {
+			background-position: 0em -48.3em;
+		    width: 1.3em;
+		    height: 1.3em;
+		    background-size: 14em 62em;
+		}
 	}
 }
 .hamburger-menu{
 	display: none;
 	color:#fff;
-	width:20%;
+	width:10%;
 	float:right;
 	text-align: right;
 	@media (max-width: 767px) {
@@ -42,7 +72,7 @@ header{
 	ul{
 		list-style-type:none;
 		float:right;
-		margin: 5px 0 0;
+		margin: 2px 0 0;
 		padding:0;
 		@media (max-width: 767px) {
 			margin:20px 0 0;
@@ -62,6 +92,9 @@ header{
 			position: relative;
 			i{
 				margin: 0 7px 0 0;
+				position: relative;
+				top: -2px;
+    			right: -2px;
 			}
 		}
 	}
@@ -91,7 +124,7 @@ header{
     		min-width: 70px;
     		top: 30px;
     		@media (max-width: 950px) {
-    			left: -14px;
+    			left: -17px;
     		}
     		a{
     			text-align: left;

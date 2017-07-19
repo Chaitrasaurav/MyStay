@@ -673,6 +673,7 @@
 		$( ".js-datepicker.check-in" ).datepicker({
 			dateFormat: "yy-mm-dd",
 			minDate: new Date(),
+			
 			onSelect: function(dateText, inst) {
 				var date2 = $( ".js-datepicker.check-in" ).datepicker('getDate');
 		            date2.setDate(date2.getDate() + 1);
@@ -685,7 +686,6 @@
 		    		}, 10);
 	        }
 		});
-		
 		$( ".js-datepicker.check-out" ).datepicker({
 			dateFormat: "yy-mm-dd",
 		});

@@ -561,7 +561,8 @@ header {
 
 .stage {
   background: url(../images/Hero-section-lg-gradient-bg.png) repeat-x;
-  position: relative; }
+  position: relative;
+  z-index: 3; }
   @media (max-width: 767px) {
     .stage {
       background: url(../images/Hero-section-sm-gradient-bg.png) repeat-x; } }
@@ -1846,13 +1847,54 @@ span.select2-selection.select2-selection--single.city-container:focus {
 
 .city-container-options {
   width: 293px !important;
-  margin-left: 75px !important; }
+  margin-left: 75px !important;
+  box-shadow: 0 5px 10px 0 rgba(35, 46, 72, 0.3);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(35, 46, 72, 0.3);
+  -moz-box-shadow: 0 5px 10px 0 rgba(35, 46, 72, 0.3); }
+  .city-container-options p:last-child {
+    display: none; }
   .city-container-options .select2-results {
     margin: 0 !important; }
     .city-container-options .select2-results:before {
       display: none !important; }
     .city-container-options .select2-results:after {
       display: none !important; }
+  .city-container-options .option-city {
+    padding: 0;
+    margin: 0; }
+    .city-container-options .option-city span {
+      color: #7b7b85;
+      font-weight: 300;
+      font-size: 15px; }
+  .city-container-options .select2-results__option {
+    font-size: 18px;
+    color: #232e48;
+    padding: 10px 20px; }
+  .city-container-options .select2-results__option:first-child {
+    font-size: 18px !important;
+    color: #232e48 !important;
+    border-bottom: none !important;
+    padding: 10 20px !important;
+    font-weight: 400 !important; }
+  .city-container-options .select2-results__option.select2-results__option--highlighted[aria-selected]:first-child {
+    background-color: #e5e5e5 !important;
+    color: #232e48 !important; }
+  .city-container-options .select2-results__option--highlighted[aria-selected] {
+    background-color: #e5e5e5 !important;
+    color: #232e48 !important; }
+  .city-container-options .select2-results__options {
+    max-height: 400px !important; }
+
+::-webkit-scrollbar {
+  width: 12px; }
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border: 1px solid #ccc; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ccc; }
 
 .subscribe {
   background: #fff3e5; }

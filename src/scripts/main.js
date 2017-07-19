@@ -567,9 +567,6 @@
 		            $( ".js-datepicker.check-out" ).datepicker('option', 'minDate', date2);
 		    }
 		});
-		$('input.date').focusin(function(){
-		    $('input.datepicker').datepicker('widget').css({left:"-=127"});
-		});
 		$( ".js-datepicker.check-out" ).datepicker({
 			dateFormat: "yy-mm-dd",
 		});

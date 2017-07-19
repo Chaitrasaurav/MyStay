@@ -3,7 +3,7 @@
 	position: relative;
 	z-index:3;
 	@media (max-width: 767px) {
-		background: url(../images/Hero-section-sm-gradient-bg.png) repeat-x;
+		background: url(../images/Hero-section-sm-gradient-bg.png) repeat-x #435dbd;
 	}
 }
 .animation-container{
@@ -22,11 +22,11 @@
 .stage_container{
 	max-width: $desktop-max-width;
 	margin: 0 auto;	
-	padding:58px 0 70px;
+	padding:58px 0 67px;
 	position: relative;
 	z-index: 2;
 	@media (max-width: 950px) {
-		padding:58px 20px 70px;
+		padding:58px 20px 67px;
 	}
 	@media (max-width: 767px) {
 		padding: 30px 0;
@@ -35,27 +35,44 @@
 		max-width:400px;
 		width:auto;
 		float:left;
+		margin: 0 0 30px;
 		@media (max-width: 950px) {
 			padding:0 20px;
 		}
 		@media (max-width: 767px) {
     		text-align: center;
     		float:none;
+    		padding: 0 20px 100px;
+    		max-width:278px;
+    		margin: 0 auto;
 		}
 	}
 }
+
 .stage__heading{
-	.ico-cross-stage{
-		margin: 3px 4px;
-		@media (max-width: 767px) {
-			margin: 0 0 -2px;
+	.x-icon{
+		position: relative;
+	    top: -12px;
+	    left: 4px;
+	    margin-right: 10px;
+	    &:before{
+			@media (max-width: 767px) {
+				background-position: 0em -55.4em !important;
+			    width: 2em !important;
+			    height: 2em !important;
+			    background-size: 14em 62em;
+			    position: relative;
+			    top: 7px;
+			    left: 2px;
+			    margin-right: -8px;
+			}
 		}
 	}
 }
 .stage__form{
 	max-width: 400px;
 	background: #fff;
-	padding: 19px 30px 13px;
+	padding: 21px 30px 13px;
 	box-sizing:border-box;
 	text-align:center;
 	clear:both;
@@ -66,7 +83,7 @@
 	@media (max-width: 767px) {
 		margin-top:50px;
 		border-radius:0;
-		padding: 19px 20px 13px;
+		padding: 19px 15px 13px;
 		max-width:100%;
 	}
 	.form__btn{
@@ -114,16 +131,16 @@
 	    #select2-property-container{
 	    	position: relative;
 	    	&:before{
-	    		content:'';
-	    		position: absolute;
-	    		top:50%;
-	    		right:20px;
-	    		border: solid black;
-			    border-width: 0 3px 3px 0;
+	    		content: '';
+			    position: absolute;
+			    top: 26%;
+			    right: 16px;
+			    border: solid #232e48;
+			    border-width: 0 1px 1px 0;
 			    display: inline-block;
-			    padding: 3px;
+			    padding: 4px;
 			    transform: rotate(45deg);
-    			-webkit-transform: rotate(45deg);
+			    -webkit-transform: rotate(45deg);
 	    	}
 	    }
 	}
@@ -185,7 +202,7 @@
 		    }
 		}
 		.input-wrap{
-			background: url(../images/corner-icon.svg) no-repeat bottom right;
+			background: url(../images/corner-icon.svg) no-repeat bottom 2px right 2px;
 		}
 		.guest{
 	    	background: url(../images/guests.svg) no-repeat center top 7px;
@@ -219,6 +236,8 @@
     	margin: 14px 0 0;
     	i{
     		margin: 0 12px 0 0;
+    		top: -3px;
+    		position: relative;
     	}
 		&:hover{
 			text-decoration:none;
@@ -470,7 +489,9 @@ form{
 .room-list{
 	margin-top:0;
 	.room{
-		margin-top:20px;
+		&:first-child{
+			margin-top:15px;
+		}		
 		.form__control{
 			float:left;
 			width:auto;
@@ -529,10 +550,11 @@ form{
 	    	font-size: 14px;
 			font-weight: 900;
 			text-align:left;
+			margin-bottom: 5px;
 	    }
 	    .room__delete-btn i{
 	    	position: relative;
-		    top: 73px;
+		    top: 65px;
 		    float: left;
 		    left: 20px;
 	    }
@@ -610,9 +632,6 @@ form{
 	    padding: 9px;
 	    transform: rotate(-135deg);
 	    -webkit-transform: rotate(-135deg);
-	    @media (max-width: 767px) {
-	    	right:51px;
-	    }
 	}
 	&:before {
 	    content: '';
@@ -622,9 +641,6 @@ form{
 	    width: 27px;
 	    height: 1px;
 	    background: #fff;
-	    @media (max-width: 767px) {
-	    	right:47px;
-	    }
 	}
 }
 .select2-results__option{

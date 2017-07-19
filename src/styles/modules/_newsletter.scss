@@ -1,7 +1,7 @@
 .newsletter{
 	background: #fff;
     @media (max-width: 950px) {
-        padding:0 20px;
+        padding:0 15px;
     }
 }
 .newsletter_container{
@@ -62,8 +62,18 @@
 		}
 	}
     h4{
+        i{
+            position: relative;
+            top: -6px;
+            left: 6px;
+            margin-right: 6px;
+        }
         @media (max-width: 767px) {
             font-size:24px;
         }
+    }
+    h5{
+        line-height: 1;
+        margin-top: 10px;
     }
 }

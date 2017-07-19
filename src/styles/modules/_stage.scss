@@ -1,6 +1,7 @@
 .stage{
 	background: url(../images/Hero-section-lg-gradient-bg.png) repeat-x;
 	position: relative;
+	z-index:3;
 	@media (max-width: 767px) {
 		background: url(../images/Hero-section-sm-gradient-bg.png) repeat-x;
 	}

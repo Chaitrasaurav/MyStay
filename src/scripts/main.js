@@ -729,6 +729,7 @@
 	});
 
 	$(".select-language").click(function() {
+
 	    $('ul.header_language').toggleClass('active');
 	});
 
@@ -738,6 +739,8 @@
 	
 	if ($(window).width() < 767) {
 	   $(".sitemap_links").click(function(e) {  
+	   		$('.sitemap_links').removeClass('current');
+	   		$(this).addClass('current');
 	   		$('.sitemap_links ul').removeClass('active');
 		    $(this).children('ul').toggleClass('active');
 		});
@@ -787,7 +790,7 @@
 							\
 						</div>\
 						<div class="room__delete">\
-							<a href="javascript:;" title="Delete this room" class="room__delete-btn js-delete-room"><i class="ico-delete"></i></a>\
+							<a href="javascript:;" title="Delete this room" class="room__delete-btn js-delete-room"><i class="icon delete-icon"></i></a>\
 						</div>\
 					</li>';
 		$('.js-room-list').append(list);

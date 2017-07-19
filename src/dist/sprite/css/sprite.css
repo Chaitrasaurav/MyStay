@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../svg/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 11.5em 45.5em;
+    background-size: 17.6em 50.7em;
 }
 
 .no-svg .icon:before {
@@ -17,8 +17,26 @@
 
 
 
-  .icon.arrow-right:before {
+  .icon.add-room:before {
       background-position: 0em 0em;
+      width: 1em;
+      height: 1em;
+  }
+
+
+
+
+  .icon.amazing-campaigns:before {
+      background-position: 0em -1em;
+      width: 2em;
+      height: 1.9em;
+  }
+
+
+
+
+  .icon.arrow-right:before {
+      background-position: 0em -2.9em;
       width: 2em;
       height: 2em;
   }
@@ -26,8 +44,8 @@
 
 
 
-  .icon.check-button:before {
-      background-position: 0em -2em;
+  .icon.book-campaign:before {
+      background-position: 0em -4.9em;
       width: 2em;
       height: 2em;
   }
@@ -35,17 +53,35 @@
 
 
 
-  .icon.check-icon:before {
-      background-position: 0em -4em;
-      width: 2em;
-      height: 2em;
+  .icon.chat-icon:before {
+      background-position: 0em -6.9em;
+      width: 1.7em;
+      height: 1.4em;
+  }
+
+
+
+
+  .icon.city-guide:before {
+      background-position: 0em -8.3em;
+      width: 1.2em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.close-btn:before {
+      background-position: 0em -9.9em;
+      width: 2.8em;
+      height: 2.8em;
   }
 
 
 
 
   .icon.cn-flag:before {
-      background-position: 0em -6em;
+      background-position: 0em -12.7em;
       width: 1.6em;
       height: 1.1em;
   }
@@ -53,8 +89,44 @@
 
 
 
-  .icon.en-Flag:before {
-      background-position: 0em -7.1em;
+  .icon.company-icon:before {
+      background-position: 0em -13.8em;
+      width: 1.5em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.confirm-room:before {
+      background-position: 0em -15.4em;
+      width: 1.4em;
+      height: 1em;
+  }
+
+
+
+
+  .icon.contact-icon:before {
+      background-position: 0em -16.4em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.delete-icon:before {
+      background-position: 0em -18em;
+      width: 2.1em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.en-flag:before {
+      background-position: 0em -20.4em;
       width: 1.6em;
       height: 1em;
   }
@@ -62,35 +134,44 @@
 
 
 
-  .icon.facebook-hover:before {
-      background-position: 0em -8.1em;
-      width: 3.3em;
-      height: 3.3em;
+  .icon.footer-plus:before {
+      background-position: 0em -21.4em;
+      width: 1.4em;
+      height: 1.4em;
   }
 
 
 
 
-  .icon.instagram-hover:before {
-      background-position: 0em -11.4em;
-      width: 3.3em;
-      height: 3.3em;
+  .icon.fun-selfies:before {
+      background-position: 0em -22.8em;
+      width: 1.9em;
+      height: 1.8em;
   }
 
 
 
 
-  .icon.instagram-icon:before {
-      background-position: 0em -14.7em;
-      width: 3.3em;
-      height: 3.3em;
+  .icon.get-help:before {
+      background-position: 0em -24.6em;
+      width: 2.1em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.hamburguer-icon:before {
+      background-position: 0em -26.6em;
+      width: 1.8em;
+      height: 1.8em;
   }
 
 
 
 
   .icon.jp-flag:before {
-      background-position: 0em -18em;
+      background-position: 0em -28.4em;
       width: 1.6em;
       height: 1em;
   }
@@ -99,7 +180,7 @@
 
 
   .icon.kr-flag:before {
-      background-position: 0em -19em;
+      background-position: 0em -29.4em;
       width: 1.6em;
       height: 1.1em;
   }
@@ -107,17 +188,26 @@
 
 
 
-  .icon.location-icon:before {
-      background-position: 0em -20.1em;
-      width: 2.2em;
-      height: 2.2em;
+  .icon.ms-logo:before {
+      background-position: 0em -30.5em;
+      width: 17.6em;
+      height: 2.6em;
+  }
+
+
+
+
+  .icon.newsletter-icon:before {
+      background-position: 0em -33.1em;
+      width: 2em;
+      height: 2.3em;
   }
 
 
 
 
   .icon.offers-icon:before {
-      background-position: 0em -22.3em;
+      background-position: 0em -35.4em;
       width: 1.8em;
       height: 1.8em;
   }
@@ -125,8 +215,8 @@
 
 
 
-  .icon.pepper-Logo:before {
-      background-position: 0em -24.1em;
+  .icon.pepper-logo:before {
+      background-position: 0em -37.2em;
       width: 11.5em;
       height: 2.4em;
   }
@@ -134,8 +224,26 @@
 
 
 
-  .icon.press-Release-icon:before {
-      background-position: 0em -26.5em;
+  .icon.plus-icon:before {
+      background-position: 0em -39.6em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.policies:before {
+      background-position: 0em -41.2em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.press-release:before {
+      background-position: 0em -42.8em;
       width: 1.9em;
       height: 2em;
   }
@@ -143,26 +251,8 @@
 
 
 
-  .icon.select-City-Arrow:before {
-      background-position: 0em -28.5em;
-      width: 3em;
-      height: 3em;
-  }
-
-
-
-
-  .icon.select-City-Arrow-Hover:before {
-      background-position: 0em -31.5em;
-      width: 3em;
-      height: 3em;
-  }
-
-
-
-
   .icon.terms-conditions:before {
-      background-position: 0em -34.5em;
+      background-position: 0em -44.8em;
       width: 1.8em;
       height: 2.1em;
   }
@@ -170,28 +260,19 @@
 
 
 
-  .icon.twitter-hover:before {
-      background-position: 0em -36.6em;
-      width: 3.3em;
-      height: 3.3em;
+  .icon.website-icon:before {
+      background-position: 0em -46.9em;
+      width: 1.5em;
+      height: 1.5em;
   }
 
 
 
 
   .icon.x-icon:before {
-      background-position: 0em -39.9em;
+      background-position: 0em -48.4em;
       width: 2.4em;
       height: 2.3em;
-  }
-
-
-
-
-  .icon.youtube-hover:before {
-      background-position: 0em -42.2em;
-      width: 3.3em;
-      height: 3.3em;
   }
 
 

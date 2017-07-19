@@ -1,6 +1,7 @@
 .slider{
 	background: #5873bb;
 	padding:0 60px;
+	position: relative;
 	@media (max-width: 767px) {
 		padding:0;
 	}
@@ -16,10 +17,13 @@
 	    -moz-appearance: none;
 	    text-indent: 1px;
 	    text-overflow: '';
-	    background: #fff url(../images/select-city.png) no-repeat right 11px top 13px;
+	    background: #fff url(../images/select-city-arrow.svg) no-repeat right 11px top 13px;
 	    p{
 	    	padding:0;
 	    	margin:0;
+	    }
+	    &:hover,&:focus,&:active{
+	    	background: #fff url(../images/select-city-arrow-hover.svg) no-repeat right 11px top 13px;
 	    }
 	    &:focus{
 	    	outline:none;
@@ -67,6 +71,8 @@
 	padding: 62px 0 57px;
 	text-align: center;
 	color: $text-color-primary;
+	z-index: 2;
+    position: relative;
 	h2{
 		color: $text-color-primary;
 		@media (max-width: 767px) {
@@ -277,4 +283,17 @@ span.select2-selection.select2-selection--single.city-container{
 .slick-no-slide .slick-slide {
     float: none;
     display: inline-block;
+}
+.city-container-options{
+	width: 293px !important;
+	margin-left: 75px !important;
+	.select2-results{
+		margin:0 !important;
+		&:before{
+			display:none !important;
+		}
+		&:after{
+			display:none !important;
+		}
+	}
 }

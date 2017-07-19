@@ -62,28 +62,38 @@ footer{
 			a{
 				color: $text-color-primary;
 				display: block;
+			}
+		}
+	}
+	.social-media{
+		li{
+			a{
+				color: $text-color-primary;
+				display: block;
+				width:33px;
+				height:33px;
 				&.facebook{
-					@extend .ico-facebook;
+					background: url(../images/facebook.svg);
 					&:hover{
-						@extend .ico-facebook-hover;
+						background: url(../images/facebook-hover.svg);
 					}
 				}
 				&.instagram{
-					@extend .ico-instagram;
+					background: url(../images/instagram.svg);
 					&:hover{
-						@extend .ico-instagram-hover;
+						background: url(../images/instagram-hover.svg);
 					}
 				}
 				&.youtube{
-					@extend .ico-youtube;
+					background: url(../images/youtube.svg);
 					&:hover{
-						@extend .ico-youtube-hover;
+						background: url(../images/youtube-hover.svg);
 					}
 				}
 				&.twitter{
-					@extend .ico-twitter;
+					background: url(../images/twitter.svg);
 					&:hover{
-						@extend .ico-twitter-hover;
+						background: url(../images/twitter-hover.svg);
 					}
 				}
 			}

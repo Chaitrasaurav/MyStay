@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1400px" height="364px" viewBox="0 0 1400 364" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Hero-section-bg-detail</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-0.839814805%" x2="50%" y2="62.5852338%" id="linearGradient-1">
+            <stop stop-color="#4240D0" stop-opacity="0.0509793931" offset="0%"></stop>
+            <stop stop-color="#4240D0" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MS-Pepper-Landing-Page-Desktop-EN" transform="translate(0.000000, -412.000000)" fill="url(#linearGradient-1)">
+            <g id="Hero-Section-v2" transform="translate(0.000000, 100.000000)">
+                <g id="img">
+                    <path d="M1837,663.301 L1789.463,615.764 C1761.041,587.342 1714.959,587.342 1686.537,615.764 L1686.537,615.764 C1658.878,643.423 1614.304,644.273 1585.61,617.69 L1276.59,331.392 C1249.469,306.265 1207.818,305.465 1179.751,329.531 L869.557,595.521 C842.219,618.963 801.847,618.887 774.597,595.341 L670.467,505.364 C640.289,479.289 594.746,482.357 568.34,512.246 L485.636,605.856 C457.713,637.461 408.86,638.792 379.257,608.756 L212.461,439.516 C184.1,410.74 137.73,410.571 109.161,439.14 L-60.537,608.838 C-88.959,637.26 -135.041,637.26 -163.463,608.838 L-223.537,548.764 C-251.959,520.342 -298.041,520.342 -326.463,548.764 L-416.683,638.984 C-430.332,652.633 -438,671.145 -438,690.448 L-438,875.521 C-438,915.716 -405.415,948.301 -365.22,948.301 L1761.321,948.301 C1800.723,948.301 1832.972,916.946 1834.073,877.559 C1836.455,792.277 1839.709,660.592 1837,663.301" id="Hero-section-bg-detail" style="mix-blend-mode: darken;"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

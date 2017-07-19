@@ -824,6 +824,14 @@ header {
     cursor: pointer; }
     #light span:hover {
       background: #ffd25d; }
+  @media (max-width: 767px) {
+    #light {
+      top: 0;
+      left: 2%;
+      width: 92%;
+      margin-left: 0;
+      margin-top: 0;
+      padding: 45px 2%; } }
 
 .stage_promotion {
   background: #fff;
@@ -1984,3 +1992,6 @@ span.select2-selection.select2-selection--single.city-container:focus {
 
 .select2-rendered__match {
   font-weight: 900; }
+
+body.modal-open {
+  overflow: hidden; }

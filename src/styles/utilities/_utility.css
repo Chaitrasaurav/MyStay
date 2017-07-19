@@ -13,3 +13,6 @@
 .select2-rendered__match {
 	font-weight: 900;
 }
+body.modal-open {
+    overflow: hidden;
+}

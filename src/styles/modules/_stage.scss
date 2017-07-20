@@ -401,6 +401,12 @@
 	-moz-box-shadow: 0 15px 15px 0 rgba(35, 46, 72, 0.25);
 	box-shadow: 0 15px 15px 0 rgba(35, 46, 72, 0.25);
 	margin-top: 20px;
+	@media (max-width: 767px) {
+	    left: 0 !important;
+	    width: 87%;
+	    margin-left: 10px;
+	    margin-right: 10px;
+	}
 }
 .ui-datepicker-title{
 	position: relative;
@@ -415,6 +421,9 @@
 	    padding: 9px;
 	    transform: rotate(-135deg);
 	    -webkit-transform: rotate(-135deg);
+	    @media (max-width: 767px) {
+	    	display:none;
+	    }
 	}
 	&:before {
 	    content: '';
@@ -424,6 +433,9 @@
 	    width: 27px;
 	    height: 1px;
 	    background: #fff;
+	    @media (max-width: 767px) {
+	    	display:none;
+	    }
 	}
 }
 .ui-datepicker td span, .ui-datepicker td a{

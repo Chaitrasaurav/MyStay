@@ -54,6 +54,8 @@
                 margin-left: 10px;
                 i{
                     margin: 0 0 -4px 4px;
+                    position: relative;
+                    top: -2px;
                 }
                 @media (max-width: 767px) {
                     margin-left:0;

@@ -346,7 +346,22 @@ span.select2-selection.select2-selection--single.city-container{
 	}
 	
 }
-
+.custom_paging{
+	list-style: none;
+	display: table;
+	margin: 0 auto;
+	padding:15px 0 0;
+	li{
+		display:none;
+		a{
+			color:#fff;
+			font-size:18px;
+		}
+		&.slick-active{
+			display:block;
+		}
+	}
+}
 ::-webkit-scrollbar {
     width: 12px;
 }

@@ -715,7 +715,18 @@ header {
     .form__control .select2-container {
       font-size: 15px; } }
   .form__control .select2-container #select2-city-container {
-    background: url(../images/location.svg) no-repeat right 10px top 2px; }
+    position: relative; }
+    .form__control .select2-container #select2-city-container:before {
+      content: '';
+      position: absolute;
+      top: 26%;
+      right: 16px;
+      border: solid #232e48;
+      border-width: 0 1px 1px 0;
+      display: inline-block;
+      padding: 4px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); }
   .form__control .select2-container #select2-property-container {
     position: relative; }
     .form__control .select2-container #select2-property-container:before {

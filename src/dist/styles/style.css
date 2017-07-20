@@ -1237,7 +1237,9 @@ form {
         padding: 0; } }
     @media (max-width: 767px) {
       .offers_container ul {
-        padding: 0 0 0 5px; } }
+        padding: 0 0 0 5px;
+        display: table;
+        margin: 0 auto; } }
     .offers_container ul li {
       display: block;
       float: left;

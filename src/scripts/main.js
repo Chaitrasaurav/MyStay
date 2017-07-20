@@ -112,6 +112,7 @@
 			});
 		});
 
+		var checkinFlag = false;
 		$( ".js-datepicker.check-in" ).datepicker({
 			dateFormat: "yy-mm-dd",
 			minDate: new Date(),
@@ -120,12 +121,14 @@
 		            date2.setDate(date2.getDate() + 1);
 		            $( ".js-datepicker.check-out" ).datepicker('setDate', date2);
 		            $( ".js-datepicker.check-out" ).datepicker('option', 'minDate', date2);
+		            checkinFlag = true;
 		    },
 		    onClose: function() {
-		    	if($( ".js-datepicker.check-in" ).datepicker('getDate')) {
+		    	if(checkinFlag) {
 		    		setTimeout(function(){
 		    		 $( ".js-datepicker.check-out" ).datepicker("show");
 		    		}, 10);
+		    		checkinFlag = false;
 		    	}
 	        },
 	        beforeShow: function (input, inst) {

@@ -122,9 +122,11 @@
 		            $( ".js-datepicker.check-out" ).datepicker('option', 'minDate', date2);
 		    },
 		    onClose: function() {
-		    	setTimeout(function(){
+		    	if($( ".js-datepicker.check-in" ).datepicker('getDate')) {
+		    		setTimeout(function(){
 		    		 $( ".js-datepicker.check-out" ).datepicker("show");
 		    		}, 10);
+		    	}
 	        },
 	        beforeShow: function (input, inst) {
 		        setTimeout(function () {

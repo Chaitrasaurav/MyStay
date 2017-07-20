@@ -1531,7 +1531,9 @@ form {
         cursor: pointer;
         margin-left: 10px; }
         .newsletter_container ul li a.campaign_link i {
-          margin: 0 0 -4px 4px; }
+          margin: 0 0 -4px 4px;
+          position: relative;
+          top: -2px; }
         @media (max-width: 767px) {
           .newsletter_container ul li a.campaign_link {
             margin-left: 0; } }

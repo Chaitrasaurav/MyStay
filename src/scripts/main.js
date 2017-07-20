@@ -54,9 +54,11 @@
 	    }
 
 	    function format(d) {
-	      var term	= query.term || '';
-	      var result = highlightMatch(d.text, term);
-	      return result;
+	      if(d.id && d.id.length) {
+	      	var term	= query.term || '';
+		    var result = highlightMatch(d.text, term);
+		    return result;
+	      }
 	    }
 
 	    function formatSelection(d) {
@@ -113,7 +115,6 @@
 		$( ".js-datepicker.check-in" ).datepicker({
 			dateFormat: "yy-mm-dd",
 			minDate: new Date(),
-			
 			onSelect: function(dateText, inst) {
 				var date2 = $( ".js-datepicker.check-in" ).datepicker('getDate');
 		            date2.setDate(date2.getDate() + 1);
@@ -124,11 +125,29 @@
 		    	setTimeout(function(){
 		    		 $( ".js-datepicker.check-out" ).datepicker("show");
 		    		}, 10);
-	        }
+	        },
+	        beforeShow: function (input, inst) {
+		        setTimeout(function () {
+		            inst.dpDiv.css({
+		                top: $(".js-datepicker").offset().top + 55
+		            });
+		        }, 0);
+		    }
 		});
 		$( ".js-datepicker.check-out" ).datepicker({
 			dateFormat: "yy-mm-dd",
+	        beforeShow: function (input, inst) {
+		        setTimeout(function () {
+		            inst.dpDiv.css({
+		                top: $(".js-datepicker").offset().top + 55
+		            });
+		        }, 0);
+		    }
 		});
+
+		// $(".js-datepicker").focus(function () {
+	 //        $('html, body').animate({ scrollTop: $(this).offset().top - 25 }, 500);
+	 //    })
 
 		for(var city in cityHotelMap) {
 				var hotelsSelected = cityHotelMap[city].hotels;

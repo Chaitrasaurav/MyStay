@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="../dist/sprite/css/sprite.css">
 	<script src="https://js.gleam.io/oi-my108fgp.js" async="async"></script>
 </head>
-<body class="jp">
+<body class="jp ja_JP">
 	<header>
 		<div class="header_container clearfix">
 			<div class="logo">
@@ -69,31 +69,37 @@
 								</select>
 							</div>
 							<div class="form__control">
-								<select class="form__field js-hotel required" type="text" name="property" id="property">
+								<select class="form__field js-hotel required" type="text" name="hotelNo" id="property">
 								</select>
 							</div>
 							<div class="form_guestWrap">
 								<div class="form__control">
 									<label class="form__label">Check In</label>
 									<div class="input-wrap">
-										<input class="datepicker form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" placeholder="Select" readonly>
+										<input class="datepicker form__field form__field--sm js-datepicker check-in required" type="text" id="checkIn" placeholder="Select" readonly>
+										<input type="hidden" name="ciDateY"/>
+										<input type="hidden" name="ciDateM"/>
+										<input type="hidden" name="ciDateD"/>
 									</div>
 								</div>
 								<div class="form__control">
 									<label class="form__label">Check Out</label>
 									<div class="input-wrap">
-										<input class="datepicker form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" placeholder="Select" readonly>
+										<input class="datepicker form__field form__field--sm js-datepicker check-out required" type="text" id="checkOut" placeholder="Select" readonly>
+										<input type="hidden" name="coDateY"/>
+										<input type="hidden" name="coDateM"/>
+										<input type="hidden" name="coDateD"/>
 									</div>
 								</div>
 								<div class="form__control">
 									<label class="form__label">No of guests</label>
 									<div class="input-wrap">
-										<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" name="adults1" id="adults1" readonly>
-										<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1">
-										<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms"> 
-										<input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="ja_JP"> 
-										<input class="form__field form__field--sm" type="hidden" name="code" id="code" value="PP5"> 
-										<input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY">
+										<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" name="otona" id="adults1" readonly>
+										<input class="form__field form__field--sm js-total-children" type="hidden" name="s1" id="children1">
+										<input class="form__field form__field--sm js-total-room" type="hidden" name="room" id="rooms"> 
+										<!-- <input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="ja_JP"> --> 
+										<input class="form__field form__field--sm" type="hidden" name="Vipcode" id="code" value="PEP5"> 
+										<!-- <input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY"> -->
 									</div>
 								</div>
 							</div>
@@ -364,7 +370,7 @@
  	</footer>
 	<script type="text/javascript" src="../dist/scripts/vendor.min.js"></script>
 	<script type="text/javascript" src="../data/data-jp.js"></script>
-	<script type="text/javascript" src="../dist/scripts/app.min.js"></script>
+	<script type="text/javascript" src="../scripts/main.js"></script>
 	<script type="text/javascript">
 	  var tag = document.createElement('script');
 	  tag.src = "https://www.youtube.com/player_api";

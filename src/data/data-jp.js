@@ -11,175 +11,175 @@
 					name: 'ホテルマイステイズプレミア赤坂',
 					address: '2-17-54 Akasaka, Minato-ku, Tokyo 107-0052 Japan',
 					img: 'lazyfonz1.png',
-					id: 'jptok26324'
+					id: '153298'
 				},
 				{
 					name: 'ホテルマイステイズプレミア浜松町',
 					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JP13123',
 					img: 'lazyfonz1.png',
-					id: 'jptok28530'
+					id: '716'
 				},
 				{
 					name: 'HOTEL MYSTAYS PREMIER Omori',
 					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JPsdfs',
 					img: 'lazyfonz1.png',
-					id: 'jptok28531'
+					id: '715'
 				},
 				{
 					name: 'HOTEL MYSTAYS Asakusa',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26318'
+					id: '28096'
 				},
 				{
 					name: 'HOTEL MYSTAYS Asakusa bashi',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26316'
+					id: '80713'
 				},
 				{
 					name: 'HOTEL MYSTAYS Gotanda',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26323'
+					id: '28093'
 				},
 				{
 					name: 'HOTEL MYSTAYS Gotanda Station',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26951'
+					id: '149010'
 				},
 				{
 					name: 'HOTEL MYSTAYS Hamamatsucho',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26322'
+					id: '73984'
 				},
 				{
 					name: 'HOTEL MYSTAYS Haneda',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26798'
+					id: '147074'
 				},
 				{
 					name: 'HOTEL MYSTAYS Higashi Ikebukuroa',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26319'
+					id: '17703'
 				},
 				{
 					name: 'HOTEL MYSTAYS Kamata',
 					address: '2-17-54 Akasaka, Minato-ku, Tokyo 107-0052 Japan',
 					img: 'lazyfonz1.png',
-					id: 'jptok26325'
+					id: '74696'
 				},
 				{
 					name: 'HOTEL MYSTAYS Kameido',
 					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JP13123',
 					img: 'lazyfonz1.png',
-					id: 'jptok26311'
+					id: '16330'
 				},
 				{
 					name: 'HOTEL MYSTAYS Kanda',
 					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JPsdfs',
 					img: 'lazyfonz1.png',
-					id: 'jptok26313'
+					id: '41851'
 				},
 				{
 					name: 'HOTEL MYSTAYS Nippori',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26329'
+					id: '28560'
 				},
 				{
 					name: 'HOTEL MYSTAYS Nishi Shinjuku',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26320'
+					id: '135409'
 				},
 				{
 					name: 'HOTEL MYSTAYS Ochanomizu Conference Center',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26310'
+					id: '56917'
 				},
 				{
 					name: 'HOTEL MYSTAYS Ueno East',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok28305'
+					id: '5627'
 				},
 				{
 					name: 'HOTEL MYSTAYS Ueno Inaricho',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26312'
+					id: '28559'
 				},
 				{
 					name: 'HOTEL MYSTAYS Ueno Iriyaguchi',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26350'
+					id: '28894'
 				},
 				{
 					name: 'FLEXSTAY INN Ekoda',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26345'
+					id: '20579'
 				},
 				{
 					name: 'FLEXSTAY INN Higashi Jujo',
 					address: '2-17-54 Akasaka, Minato-ku, Tokyo 107-0052 Japan',
 					img: 'lazyfonz1.png',
-					id: 'jptok26339'
+					id: '28556'
 				},
 				{
 					name: 'FLEXSTAY INN Iidabashi',
 					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JP13123',
 					img: 'lazyfonz1.png',
-					id: 'jptok26340'
+					id: '28095'
 				},
 				{
 					name: 'FLEXSTAY INN Kiyosumi Shirakawa',
 					address: 'Tokyo, Tokyo-ikebukuro/ Shinjuku, JPsdfs',
 					img: 'lazyfonz1.png',
-					id: 'jptok26348'
+					id: '28558'
 				},
 				{
 					name: 'FLEXSTAY INN Nakanobu',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26346'
+					id: '28555'
 				},
 				{
 					name: 'FLEXSTAY INN Shinagawa',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26341'
+					id: '28554'
 				},
 				{
 					name: 'FLEXSTAY INN Shirogane',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26336'
+					id: '27747'
 				},
 				{
 					name: 'FLEXSTAY INN Sugamo',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26333'
+					id: '28094'
 				},
 				{
 					name: 'FLEXSTAY INN Tokiwadai',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok26344'
+					id: '28557'
 				},
 				{
 					name: 'MyCUBE by MYSTAYS Asakusa Kuramae',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok28108'
+					id: '151373'
 				}
 			]
 		},
@@ -191,7 +191,7 @@
 					name: 'HOTEL MYSTAYS Kyoto Shijo',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpkyo26330'
+					id: '68555'
 				}
 			]
 		},
@@ -203,37 +203,37 @@
 					name: 'HOTEL MYSTAYS Midosuji Honmachi',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jposa31260'
+					id: '164552'
 				},
 				{
 					name: 'HOTEL MYSTAYS Otemae',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jposa26328'
+					id: '19987'
 				},
 				{
 					name: 'HOTEL MYSTAYS Sakaisuji Honmachi',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jposa26315'
+					id: '72026'
 				},
 				{
 					name: 'HOTEL MYSTAYS Shinsaibashi',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jposa26338'
+					id: '17986'
 				},
 				{
 					name: 'HOTEL MYSTAYS Shinsaibashi East',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jposa28306'
+					id: '147707'
 				},
 				{
 					name: 'HOTEL MYSTAYS Shin Osaka Conference Center',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jposa28304'
+					id: '552'
 				}
 			]
 		},
@@ -245,13 +245,13 @@
 					name: 'HOTEL MYSTAYS PREMIER Kanazawa',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpkan26799'
+					id: '147158'
 				},
 				{
 					name: 'HOTEL MYSTAYS Kanazawa Castle',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpkan27429'
+					id: '175'
 				}
 			]
 		},
@@ -263,19 +263,19 @@
 					name: 'HOTEL MYSTAYS Maihama',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpura26317'
+					id: '39203'
 				},
 				{
 					name: 'MYSTAYS Shin Urayasu Conference Center',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpura26309'
+					id: '76849'
 				},
 				{
 					name: 'FLEXSTAY INN Shin Urayasu',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpura26342'
+					id: '30925'
 				}
 			]
 		},
@@ -287,7 +287,7 @@
 					name: 'HOTEL MYSTAYS Tachikawa',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jptok27899'
+					id: '18818'
 				}
 			]
 		},
@@ -299,19 +299,19 @@
 					name: 'FLEXSTAY INN Kawasaki Kaizuka',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpkaw26347'
+					id: '28895'
 				},
 				{
 					name: 'FLEXSTAY INN Kawasaki Ogawacho',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpkaw26337'
+					id: '28896'
 				},
 				{
 					name: 'FLEXSTAY INN Tamagawa',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpkaw26335'
+					id: '28900'
 				}
 			]
 		},
@@ -323,19 +323,19 @@
 					name: 'HOTEL MYSTAYS Yokohama',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpyok26332'
+					id: '50196'
 				},
 				{
 					name: 'HOTEL MYSTAYS Yokohama Kannai',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpyok29010'
+					id: '153564'
 				},
 				{
 					name: 'FLEXSTAY INN Sakuragicho',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpyok26343'
+					id: '31476'
 				}
 			]
 		},
@@ -347,7 +347,7 @@
 					name: 'Shirahama Ocean Resort',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpchi28828'
+					id: '9662'
 				}
 			]
 		},
@@ -359,13 +359,13 @@
 					name: 'HOTEL MYSTAYS Utsunomiya',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jputs26331'
+					id: '67045'
 				},
 				{
 					name: 'Hotel Épinard Nasu',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpnas28830'
+					id: '7335'
 				}
 			]
 		},
@@ -377,55 +377,55 @@
 					name: 'HOTEL MYSTAYS PREMIER Sapporo Park',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jphok28823'
+					id: '5903'
 				},
 				{
 					name: 'HOTEL MYSTAYS Sapporo Aspen',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpsap29702'
+					id: '625'
 				},
 				{
 					name: 'HOTEL MYSTAYS Sapporo Nakajima Park',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpsap27590'
+					id: '9603'
 				},
 				{
 					name: 'HOTEL MYSTAYS Sapporo Nakajima Park Annex',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jphok30695'
+					id: '145361'
 				},
 				{
 					name: 'HOTEL MYSTAYS Sapporo Station',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpsap29772'
+					id: '68288'
 				},
 				{
 					name: 'ART HOTEL ASAHIKAWA',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jphok28822'
+					id: '224'
 				},
 				{
 					name: 'Hotel Nord Otaru',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpota28373'
+					id: '3119'
 				},
 				{
 					name: 'Hotel Sonia Otaru',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpota29771'
+					id: '5170'
 				},
 				{
 					name: 'Hakodate Kokusai Hotel',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jphok29664'
+					id: '1341'
 				}
 			]
 		},
@@ -437,7 +437,7 @@
 					name: 'ART HOTEL HIROSAKI CITY',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpaom28827'
+					id: '504'
 				}
 			]
 		},
@@ -449,7 +449,7 @@
 					name: 'HOTEL MYSTAYS Fuji',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpyam29701'
+					id: '158471'
 				}
 			]
 		},
@@ -461,7 +461,7 @@
 					name: 'HOTEL MYSTAYS Nagoya Sakae',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpnag26321'
+					id: '4758'
 				}
 			]
 		},
@@ -473,13 +473,13 @@
 					name: 'ART HOTEL NIIGATA STATION',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpchu29824'
+					id: '67938'
 				},
 				{
 					name: 'ART HOTEL JOETSU',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpjoe29825'
+					id: '1033'
 				}
 			]
 		},
@@ -491,7 +491,7 @@
 					name: 'Resort Hotel Olivean Shodoshima',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpton28829'
+					id: '7592'
 				}
 			]
 		},
@@ -503,7 +503,7 @@
 					name: 'HOTEL MYSTAYS Matsuyama',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpehi31183'
+					id: '6276'
 				}
 			]
 		},
@@ -515,13 +515,13 @@
 					name: 'HOTEL MYSTAYS Fukuoka Tenjin Minami',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpfuk26314'
+					id: '70215'
 				},
 				{
 					name: 'HOTEL MYSTAYS Fukuoka Tenjin',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpfuk26326'
+					id: '72791'
 				}
 			]
 		},
@@ -533,13 +533,13 @@
 					name: 'HOTEL MYSTAYS Oita',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpoit29773'
+					id: '67983'
 				},
 				{
 					name: 'Beppu Kamenoi Hotel',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpbep27802'
+					id: '4807'
 				}
 			]
 		},
@@ -551,13 +551,13 @@
 					name: 'ART HOTEL ISHIGAKIJIMA',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpoki29665'
+					id: '2770'
 				},
 				{
 					name: 'Fusaki Resort Village (Ishigaki-jima)',
 					address: '',
 					img: 'lazyfonz1.png',
-					id: 'jpoki28825'
+					id: '38599'
 				}
 			]
 		}

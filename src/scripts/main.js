@@ -113,6 +113,8 @@
 		});
 
 		var checkinFlag = false;
+
+		$.datepicker.regional[$('body').data('i18n')];
 		$( ".js-datepicker.check-in" ).datepicker({
 			dateFormat: "yy-mm-dd",
 			minDate: new Date(),
@@ -151,6 +153,9 @@
 		                top: $(".js-datepicker").offset().top + 55
 		            });
 		        }, 0);
+		        if(!$('.js-select-guest-container').hasClass('hidden')) {
+		        	$('.js-select-guest-container').addClass('hidden');
+		        }
 		    }
 		});
 		$( ".js-datepicker.check-out" ).datepicker({
@@ -161,6 +166,9 @@
 		                top: $(".js-datepicker").offset().top + 55
 		            });
 		        }, 0);
+		        if(!$('.js-select-guest-container').hasClass('hidden')) {
+		        	$('.js-select-guest-container').addClass('hidden');
+		        }
 		    },
 		    onSelect: function(dateText, inst) {
 	            if($('body').hasClass('ja_JP')) {
@@ -174,7 +182,7 @@
 		})
 		$(".js-datepicker").focus(function () {
 	        $('html, body').animate({ scrollTop: $(this).offset().top - 25 }, 1000);
-	    })
+	    });
 
 		for(var city in cityHotelMap) {
 				var hotelsSelected = cityHotelMap[city].hotels;

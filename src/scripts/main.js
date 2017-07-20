@@ -122,6 +122,20 @@
 		            $( ".js-datepicker.check-out" ).datepicker('setDate', date2);
 		            $( ".js-datepicker.check-out" ).datepicker('option', 'minDate', date2);
 		            checkinFlag = true;
+		            
+		            if($('body').hasClass('ja_JP')) {
+		            	var dateArray = dateText.split('-');
+		            	$(this).siblings('input[name="ciDateY"]').val(dateArray[0]);
+		            	$(this).siblings('input[name="ciDateM"]').val(dateArray[1]);
+		            	$(this).siblings('input[name="ciDateD"]').val(dateArray[2]);
+		            	if(!$( ".js-datepicker.check-out" ).val()) {
+		            		var month = date2.getMonth() + 1;
+			            		month = month < 10 ? '0' + month : month;
+			            	$( ".js-datepicker.check-out" ).siblings('input[name="coDateY"]').val(date2.getFullYear());
+			            	$( ".js-datepicker.check-out" ).siblings('input[name="coDateM"]').val(month);
+			            	$( ".js-datepicker.check-out" ).siblings('input[name="coDateD"]').val(date2.getDate());
+		            	}
+		            }
 		    },
 		    onClose: function() {
 		    	if(checkinFlag) {
@@ -147,12 +161,20 @@
 		                top: $(".js-datepicker").offset().top + 55
 		            });
 		        }, 0);
+		    },
+		    onSelect: function(dateText, inst) {
+	            if($('body').hasClass('ja_JP')) {
+	            	//console.log(dateText)
+		            var dateArray = dateText.split('-');
+	            	$(this).siblings('input[name="coDateY"]').val(dateArray[0]);
+	            	$(this).siblings('input[name="coDateM"]').val(dateArray[1]);
+	            	$(this).siblings('input[name="coDateD"]').val(dateArray[2]);
+	            }
 		    }
-		});
-
-		// $(".js-datepicker").focus(function () {
-	 //        $('html, body').animate({ scrollTop: $(this).offset().top - 25 }, 500);
-	 //    })
+		})
+		$(".js-datepicker").focus(function () {
+	        $('html, body').animate({ scrollTop: $(this).offset().top - 25 }, 1000);
+	    })
 
 		for(var city in cityHotelMap) {
 				var hotelsSelected = cityHotelMap[city].hotels;
@@ -180,15 +202,30 @@
 		});
 
 		if(isValid) {
-			console.log($('#mainForm').serializeArray());
-			console.log($('#mainForm').serialize());
-			var queryParams = "s=results";
-			$form.serializeArray().forEach(function(value){
-				console.log(value)
-				queryParams +=  '&' + value.name + '=' + value.value;
-			});
-			queryParams += '&stid=2hj7fselc&=undefined'
-			var url = 'https://www.book-secure.com/index.php?' + queryParams;
+			// console.log($('#mainForm').serializeArray());
+			// console.log($('#mainForm').serialize());
+			var queryParams = '',
+				url;
+			if($('body').hasClass('ja_JP')) {
+				//queryParams = "";
+				$form.serializeArray().forEach(function(value){
+					//console.log(value)
+					queryParams +=  '&' + value.name + '=' + value.value;
+				});
+				
+				//queryParams += '&stid=2hj7fselc&=undefined';
+				url = 'https://mystays.rwiths.net/r-withs/tfs0020a.do?' + queryParams;
+			} else {
+				queryParams = "s=results";
+				$form.serializeArray().forEach(function(value){
+					//console.log(value)
+					queryParams +=  '&' + value.name + '=' + value.value;
+				});
+				
+				//queryParams += '&stid=2hj7fselc&=undefined';
+				url = 'https://www.book-secure.com/index.php?' + queryParams;
+			}
+			
 			var win = window.open(url, '_blank');
   			win.focus();
 		}

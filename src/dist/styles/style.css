@@ -684,6 +684,9 @@ header {
     border-radius: 3px;
     font-size: 15px;
     font-weight: 900; }
+    @media (max-width: 767px) {
+      .stage__form .form__btn {
+        font-size: 17px; } }
     .stage__form .form__btn.disabled {
       background: #e5e5e5; }
   .stage__form .stage__hint {
@@ -708,6 +711,9 @@ header {
   text-overflow: '';
   text-align: left;
   border-radius: 3px; }
+  @media (max-width: 767px) {
+    .form__control .select2-container {
+      font-size: 15px; } }
   .form__control .select2-container #select2-city-container {
     background: url(../images/location.svg) no-repeat right 10px top 2px; }
   .form__control .select2-container #select2-property-container {
@@ -738,6 +744,9 @@ header {
 .form__control .form__label {
   font-size: 13px;
   font-weight: 600; }
+  @media (max-width: 767px) {
+    .form__control .form__label {
+      font-size: 15px; } }
 
 .select2-search input:focus {
   outline: none; }
@@ -769,6 +778,9 @@ header {
       text-overflow: '';
       box-sizing: border-box;
       text-align: center; }
+      @media (max-width: 767px) {
+        .form_guestWrap .form__control input {
+          font-size: 15px; } }
       .form_guestWrap .form__control input.check-in {
         background: url(../images/calendar-icon.svg) no-repeat center top 7px;
         cursor: pointer; }
@@ -965,6 +977,12 @@ header {
   -moz-box-shadow: 0 15px 15px 0 rgba(35, 46, 72, 0.25);
   box-shadow: 0 15px 15px 0 rgba(35, 46, 72, 0.25);
   margin-top: 20px; }
+  @media (max-width: 767px) {
+    .ui-widget.ui-widget-content {
+      left: 0 !important;
+      width: 87%;
+      margin-left: 10px;
+      margin-right: 10px; } }
 
 .ui-datepicker-title {
   position: relative; }
@@ -979,6 +997,9 @@ header {
     padding: 9px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg); }
+    @media (max-width: 767px) {
+      .ui-datepicker-title:after {
+        display: none; } }
   .ui-datepicker-title:before {
     content: '';
     position: absolute;
@@ -987,6 +1008,9 @@ header {
     width: 27px;
     height: 1px;
     background: #fff; }
+    @media (max-width: 767px) {
+      .ui-datepicker-title:before {
+        display: none; } }
 
 .ui-datepicker td span, .ui-datepicker td a {
   padding: 5px 10px;
@@ -2004,6 +2028,19 @@ span.select2-selection.select2-selection--single.city-container:focus {
     color: #232e48 !important; }
   .city-container-options .select2-results__options {
     max-height: 400px !important; }
+
+.custom_paging {
+  list-style: none;
+  display: table;
+  margin: 0 auto;
+  padding: 15px 0 0; }
+  .custom_paging li {
+    display: none; }
+    .custom_paging li a {
+      color: #fff;
+      font-size: 18px; }
+    .custom_paging li.slick-active {
+      display: block; }
 
 ::-webkit-scrollbar {
   width: 12px; }

@@ -245,7 +245,14 @@
 		      settings: {
 		        slidesToShow: 1,
 		        slidesToScroll: 1,
-		        centerMode: true
+		        centerMode: true,
+		        dotsClass: 'custom_paging',
+			    customPaging: function (slider, i) {
+			        console.log(slider);
+			        var slideNumber   = (i + 1),
+			            totalSlides = slider.slideCount;
+			        return '<a class="custom-dot"><span class="string">' + slideNumber + '/' + totalSlides + '</span></a>';
+			    }
 		      }
 		    }
 		  ]

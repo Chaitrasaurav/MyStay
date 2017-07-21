@@ -256,7 +256,7 @@
 			]
 		},
 		'maihama-urayasu':{
-			city: 'Maihama/Urayasu',
+			city: 'Maihama-urayasu',
 			id: 'maihama-urayasu',
 			hotels: [
 				{

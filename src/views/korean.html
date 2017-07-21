@@ -44,7 +44,7 @@
 						<form name="mainForm" id="mainForm" novalidate autocomplete="off">
 							<div class="form__control">
 								<label class="form__label">Where in Japan?</label>
-								<select class="form__field js-city" type="text" id="city">
+								<select class="form__field js-city required" type="text" id="city">
 									<option value=""> 도시를 선택하십시오.</option>
 									<option value="tokyo">도쿄</option>
 									<option value="kyoto">교토</option>
@@ -69,7 +69,7 @@
 								</select>
 							</div>
 							<div class="form__control">
-								<select class="form__field js-hotel required" type="text" name="property" id="property">
+								<select class="form__field js-hotel" type="text" name="property" id="property">
 								</select>
 							</div>
 							<div class="form_guestWrap">
@@ -88,9 +88,9 @@
 								<div class="form__control">
 									<label class="form__label">No of guests</label>
 									<div class="input-wrap">
-										<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" name="adults1" id="adults1" readonly>
-										<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1">
-										<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms"> 
+										<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" name="adults1" id="adults1" value="2" readonly>
+										<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1" value="0">
+										<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms" value="1"> 
 										<input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="ko_KR"> 
 										<input class="form__field form__field--sm" type="hidden" name="code" id="code" value="PP5"> 
 										<input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY">

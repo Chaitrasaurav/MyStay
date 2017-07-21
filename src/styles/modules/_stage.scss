@@ -55,17 +55,12 @@
 	    top: -12px;
 	    left: 4px;
 	    margin-right: 10px;
-	    &:before{
-			@media (max-width: 767px) {
-				background-position: 0em -55.4em !important;
-			    width: 2em !important;
-			    height: 2em !important;
-			    background-size: 14em 62em;
-			    position: relative;
-			    top: 7px;
-			    left: 2px;
-			    margin-right: -8px;
-			}
+	    @media (max-width: 767px) {
+	    	font-size:7px;
+	    	position: relative;
+		    top: -6px;
+		    left: 4px;
+		    margin-right: 3px;
 		}
 	}
 }
@@ -107,6 +102,11 @@
 	.stage__hint{
 		font-size:13px;
 		font-weight:300;
+		display: block;
+		margin:10px 0;
+		&:hover{
+			text-decoration: none;
+		}
 		@media (max-width: 767px) {
 			display:none;
 		}
@@ -132,7 +132,19 @@
 	    	font-size:15px;
 	    }
 	    #select2-city-container{
-	    	background: url(../images/location.svg) no-repeat right 10px top 2px;
+	    	position: relative;
+	    	&:before{
+	    		content: '';
+			    position: absolute;
+			    top: 26%;
+			    right: 16px;
+			    border: solid #232e48;
+			    border-width: 0 1px 1px 0;
+			    display: inline-block;
+			    padding: 4px;
+			    transform: rotate(45deg);
+			    -webkit-transform: rotate(45deg);
+	    	}	    
 	    }
 	    #select2-property-container{
 	    	position: relative;

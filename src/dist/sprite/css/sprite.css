@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../svg/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 17.6em 65.7em;
+    background-size: 17.6em 67.7em;
 }
 
 .no-svg .icon:before {
@@ -17,8 +17,26 @@
 
 
 
-  .icon.add-room:before {
+  .icon.HongKong-Flag-icon:before {
       background-position: 0em 0em;
+      width: 1.6em;
+      height: 1em;
+  }
+
+
+
+
+  .icon.Taiwan-Flag-icon:before {
+      background-position: 0em -1em;
+      width: 1.6em;
+      height: 1em;
+  }
+
+
+
+
+  .icon.add-room:before {
+      background-position: 0em -2em;
       width: 1em;
       height: 1em;
   }
@@ -27,7 +45,7 @@
 
 
   .icon.amazing-campaigns:before {
-      background-position: 0em -1em;
+      background-position: 0em -3em;
       width: 2em;
       height: 1.9em;
   }
@@ -36,15 +54,6 @@
 
 
   .icon.arrow-right:before {
-      background-position: 0em -2.9em;
-      width: 2em;
-      height: 2em;
-  }
-
-
-
-
-  .icon.book-campaign:before {
       background-position: 0em -4.9em;
       width: 2em;
       height: 2em;
@@ -53,8 +62,17 @@
 
 
 
-  .icon.chat-icon:before {
+  .icon.book-campaign:before {
       background-position: 0em -6.9em;
+      width: 2em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.chat-icon:before {
+      background-position: 0em -8.9em;
       width: 1.7em;
       height: 1.4em;
   }
@@ -63,7 +81,7 @@
 
 
   .icon.city-guide:before {
-      background-position: 0em -8.3em;
+      background-position: 0em -10.3em;
       width: 1.2em;
       height: 1.6em;
   }
@@ -72,7 +90,7 @@
 
 
   .icon.close-btn:before {
-      background-position: 0em -9.9em;
+      background-position: 0em -11.9em;
       width: 2.8em;
       height: 2.8em;
   }
@@ -81,7 +99,7 @@
 
 
   .icon.cn-flag:before {
-      background-position: 0em -12.7em;
+      background-position: 0em -14.7em;
       width: 1.6em;
       height: 1.1em;
   }
@@ -90,7 +108,7 @@
 
 
   .icon.cn-flag-icon:before {
-      background-position: 0em -13.8em;
+      background-position: 0em -15.8em;
       width: 5em;
       height: 5em;
   }
@@ -99,7 +117,7 @@
 
 
   .icon.company-icon:before {
-      background-position: 0em -18.8em;
+      background-position: 0em -20.8em;
       width: 1.5em;
       height: 1.6em;
   }
@@ -108,7 +126,7 @@
 
 
   .icon.confirm-room:before {
-      background-position: 0em -20.4em;
+      background-position: 0em -22.4em;
       width: 1.4em;
       height: 1em;
   }
@@ -117,7 +135,7 @@
 
 
   .icon.contact-icon:before {
-      background-position: 0em -21.4em;
+      background-position: 0em -23.4em;
       width: 1.6em;
       height: 1.6em;
   }
@@ -126,7 +144,7 @@
 
 
   .icon.delete-icon:before {
-      background-position: 0em -23em;
+      background-position: 0em -25em;
       width: 2.1em;
       height: 2.4em;
   }
@@ -135,7 +153,7 @@
 
 
   .icon.en-flag:before {
-      background-position: 0em -25.4em;
+      background-position: 0em -27.4em;
       width: 1.6em;
       height: 1em;
   }
@@ -144,7 +162,7 @@
 
 
   .icon.en-flag-icon:before {
-      background-position: 0em -26.4em;
+      background-position: 0em -28.4em;
       width: 5em;
       height: 5em;
   }
@@ -153,7 +171,7 @@
 
 
   .icon.footer-plus:before {
-      background-position: 0em -31.4em;
+      background-position: 0em -33.4em;
       width: 1.4em;
       height: 1.4em;
   }
@@ -162,7 +180,7 @@
 
 
   .icon.fun-selfies:before {
-      background-position: 0em -32.8em;
+      background-position: 0em -34.8em;
       width: 1.9em;
       height: 1.8em;
   }
@@ -171,7 +189,7 @@
 
 
   .icon.get-help:before {
-      background-position: 0em -34.6em;
+      background-position: 0em -36.6em;
       width: 2.1em;
       height: 2em;
   }
@@ -180,7 +198,7 @@
 
 
   .icon.hamburguer-icon:before {
-      background-position: 0em -36.6em;
+      background-position: 0em -38.6em;
       width: 1.8em;
       height: 1.8em;
   }
@@ -189,7 +207,7 @@
 
 
   .icon.jp-flag:before {
-      background-position: 0em -38.4em;
+      background-position: 0em -40.4em;
       width: 1.6em;
       height: 1em;
   }
@@ -198,7 +216,7 @@
 
 
   .icon.jp-flag-icon:before {
-      background-position: 0em -39.4em;
+      background-position: 0em -41.4em;
       width: 5em;
       height: 5em;
   }
@@ -207,7 +225,7 @@
 
 
   .icon.kr-flag:before {
-      background-position: 0em -44.4em;
+      background-position: 0em -46.4em;
       width: 1.6em;
       height: 1.1em;
   }
@@ -216,7 +234,7 @@
 
 
   .icon.ms-logo:before {
-      background-position: 0em -45.5em;
+      background-position: 0em -47.5em;
       width: 17.6em;
       height: 2.6em;
   }
@@ -225,7 +243,7 @@
 
 
   .icon.newsletter-icon:before {
-      background-position: 0em -48.1em;
+      background-position: 0em -50.1em;
       width: 2em;
       height: 2.3em;
   }
@@ -234,7 +252,7 @@
 
 
   .icon.offers-icon:before {
-      background-position: 0em -50.4em;
+      background-position: 0em -52.4em;
       width: 1.8em;
       height: 1.8em;
   }
@@ -243,7 +261,7 @@
 
 
   .icon.pepper-logo:before {
-      background-position: 0em -52.2em;
+      background-position: 0em -54.2em;
       width: 11.5em;
       height: 2.4em;
   }
@@ -252,7 +270,7 @@
 
 
   .icon.plus-icon:before {
-      background-position: 0em -54.6em;
+      background-position: 0em -56.6em;
       width: 1.6em;
       height: 1.6em;
   }
@@ -261,7 +279,7 @@
 
 
   .icon.policies:before {
-      background-position: 0em -56.2em;
+      background-position: 0em -58.2em;
       width: 1.6em;
       height: 1.6em;
   }
@@ -270,7 +288,7 @@
 
 
   .icon.press-release:before {
-      background-position: 0em -57.8em;
+      background-position: 0em -59.8em;
       width: 1.9em;
       height: 2em;
   }
@@ -279,7 +297,7 @@
 
 
   .icon.terms-conditions:before {
-      background-position: 0em -59.8em;
+      background-position: 0em -61.8em;
       width: 1.8em;
       height: 2.1em;
   }
@@ -288,7 +306,7 @@
 
 
   .icon.website-icon:before {
-      background-position: 0em -61.9em;
+      background-position: 0em -63.9em;
       width: 1.5em;
       height: 1.5em;
   }
@@ -297,7 +315,7 @@
 
 
   .icon.x-icon:before {
-      background-position: 0em -63.4em;
+      background-position: 0em -65.4em;
       width: 2.4em;
       height: 2.3em;
   }

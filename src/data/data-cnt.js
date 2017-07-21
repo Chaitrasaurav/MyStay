@@ -202,7 +202,7 @@
 				{
 					name: 'HOTEL MYSTAYS Midosuji Honmachi',
 					address: '',
-					img: 'lazyfonz1.png',
+					img: 'HOTEL-MYSTAYS-Midosuji-Honmachi.jpg',
 					id: 'jposa31260'
 				},
 				{
@@ -394,7 +394,7 @@
 				{
 					name: 'HOTEL MYSTAYS Sapporo Nakajima Park Annex',
 					address: '',
-					img: 'lazyfonz1.png',
+					img: 'HOTEL-MYSTAYS-Sapporo-Nakajima-Park-Annex.jpg',
 					id: 'jphok30695'
 				},
 				{
@@ -502,7 +502,7 @@
 				{
 					name: 'HOTEL MYSTAYS Matsuyama',
 					address: '',
-					img: 'lazyfonz1.png',
+					img: 'HOTEL-MYSTAYS-Matsuyama.jpg',
 					id: 'jpehi31183'
 				}
 			]

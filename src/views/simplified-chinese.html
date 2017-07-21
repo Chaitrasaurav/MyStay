@@ -44,7 +44,7 @@
 						<form name="mainForm" id="mainForm" novalidate autocomplete="off">
 							<div class="form__control">
 								<label class="form__label">Where in Japan?</label>
-								<select class="form__field js-city" type="text" id="city">
+								<select class="form__field js-city required" type="text" id="city">
 									<option value=""> Please select a city</option>
 									<option value="tokyo">Tokyo</option>
 									<option value="kyoto">Kyoto</option>
@@ -69,7 +69,7 @@
 								</select>
 							</div>
 							<div class="form__control">
-								<select class="form__field js-hotel required" type="text" name="property" id="property">
+								<select class="form__field js-hotel" type="text" name="property" id="property">
 								</select>
 							</div>
 							<div class="form_guestWrap">
@@ -88,9 +88,9 @@
 								<div class="form__control">
 									<label class="form__label">No of guests</label>
 									<div class="input-wrap">
-										<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" name="adults1" id="adults1" readonly>
-										<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1">
-										<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms"> 
+										<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" name="adults1" id="adults1" value="2" readonly>
+										<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1" value="0">
+										<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms" value="1"> 
 										<input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="zh_Hans_CN"> 
 										<input class="form__field form__field--sm" type="hidden" name="code" id="code" value="PP5"> 
 										<input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY">
@@ -274,11 +274,7 @@
  			</div>
  			<div class="subscribe_video">
  				<h2>Watch Pepper Arrive to MYSTAYS</h2>
- 				<div class="youtube-video" 
-					id="demo-1" 
-					data-video-id="wdmeSIfE8Wg" 
-					width="100%" 
-					height="315"></div>
+				<embed src='http://player.youku.com/player.php/sid/XMjkwODc3NjMxMg==/v.swf' allowFullScreen='true' quality='high' width='100%' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
  			</div>
  			<div class="hotels">
   				<img src="../dist/images/art-hotel.png" alt="ART Hotel">
@@ -366,20 +362,5 @@
 	<script type="text/javascript" src="../data/datepicker-zh-HK.js"></script>
 	<script type="text/javascript" src="../data/data-cns.js"></script>
 	<script type="text/javascript" src="../dist/scripts/app.min.js"></script>
-	<script type="text/javascript">
-	  var tag = document.createElement('script');
-	  tag.src = "https://www.youtube.com/player_api";
-	  var firstScriptTag = document.getElementsByTagName('script')[0];
-	  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	  function onYouTubeIframeAPIReady() {
-	    $('.youtube-video').inViewAutoplay({
-	      autohide: 1,
-	      modestbranding: 1,
-	      rel: 0,
-	      quality: 'hd720'
-	    });
-	  }
-	</script>
 </body>
 </html>

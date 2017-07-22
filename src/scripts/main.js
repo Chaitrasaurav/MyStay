@@ -199,6 +199,14 @@
 				$('.js-hotel').html(options);
 		};
 		createSliderElements('tokyo');
+
+		var sliderMaxHeight = 0;
+
+		$('.tabs .tab-content').each(function () {
+		    sliderMaxHeight = ($(this).height() > sliderMaxHeight ? $(this).height() : sliderMaxHeight); 
+		});
+
+		$('.tabs .tab-content').height(sliderMaxHeight);
 	};
 
 	$('#main-form-btn').on('click', function(){

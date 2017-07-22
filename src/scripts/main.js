@@ -293,7 +293,7 @@
 	});
 
 	$( ".js-hotel" ).on('change', function(e) {
-		console.log(e.target.value)
+		//console.log(e.target.value)
 		if(e.target.value === 'jptok28108' || e.target.value === '151373') {
 			$(e.target).parents('form').find('#adults1').val(1);
 		}

@@ -60,13 +60,11 @@
 		                $('#jrange div').hide();
 		            });
 		        }
-		    })
-		        .position({
+		    }).position({
 		        my: 'left top',
 		        at: 'left bottom',
 		        of: $('#jrange input')
-		    })
-		        .hide();
+		    }).hide();
 
 		    $('#jrange input').on('focus', function (e) {
 		        var v = this.value,
@@ -220,6 +218,13 @@
 			            	$( ".js-datepicker.check-out" ).siblings('input[name="coDateD"]').val(date2.getDate());
 		            	}
 		            }
+
+		            if($(this).hasClass('required') && $(this).hasClass('js-is-invalid')) {
+						$(this).removeClass('js-is-invalid');
+					}
+					if($( ".js-datepicker.check-out" ).hasClass('required') && $( ".js-datepicker.check-out" ).hasClass('js-is-invalid')) {
+						$( ".js-datepicker.check-out" ).removeClass('js-is-invalid');
+					}
 		    },
 		    onClose: function() {
 		    	if(checkinFlag) {
@@ -302,17 +307,25 @@
 					//console.log(value)
 					queryParams +=  '&' + value.name + '=' + value.value;
 				});
-				
-				//queryParams += '&stid=2hj7fselc&=undefined';
+
 				url = 'https://mystays.rwiths.net/r-withs/tfs0020a.do?' + queryParams;
 			} else {
-				queryParams = "s=results";
-				$form.serializeArray().forEach(function(value){
-					//console.log(value)
-					queryParams +=  '&' + value.name + '=' + value.value;
-				});
+				if($form.serializeArray()[0].name === 'property' && $form.serializeArray()[0].value === ''){
+					queryParams = 's=group&group=asiaflexstayinn&filters[region]='+ window.cityHotelMap[$form.find('#city').val()].city;
+					$form.serializeArray().forEach(function(value){
+						if(value.name !== 'property') {
+							//console.log(value)
+							queryParams +=  '&' + value.name + '=' + value.value;
+						}
+					});
+				} else {
+					queryParams = "s=results";
+					$form.serializeArray().forEach(function(value){
+						//console.log(value)
+						queryParams +=  '&' + value.name + '=' + value.value;
+					});
+				}
 				
-				//queryParams += '&stid=2hj7fselc&=undefined';
 				url = 'https://www.book-secure.com/index.php?' + queryParams;
 			}
 			
@@ -344,6 +357,19 @@
 			}
 			$('.js-hotel').empty().html(options);
 			$('.js-hotel').val('').trigger('change')
+		}
+		if($(e.target).hasClass('required') && $(e.target).hasClass('js-is-invalid')) {
+			$(e.target).removeClass('js-is-invalid');
+		}
+	});
+
+	$( ".js-hotel" ).on('change', function(e) {
+		console.log(e.target.value)
+		if(e.target.value === 'jptok28108' || e.target.value === '151373') {
+			$(e.target).parents('form').find('#adults1').val(1);
+		}
+		if($(e.target).hasClass('required') && $(e.target).hasClass('js-is-invalid')) {
+			$(e.target).removeClass('js-is-invalid');
 		}
 	});
 
@@ -414,7 +440,7 @@
 		var hotelData = $(this).data();
 		$('html, body').animate({
 	        scrollTop: $('#mainForm').offset().top
-	    }, 2000);
+	    }, 1000);
 		$('#mainForm').find('#city').val(hotelData.city).trigger('change');
 		$('#mainForm').find('#property').val(hotelData.property).trigger('change');
 	});
@@ -443,7 +469,7 @@
 	$(".campaign_link").click(function() {
 	    $('html,body').animate({
 	    scrollTop: $(".stage__form").offset().top},
-	        3000);
+	        1000);
 	});
 
 	$(document).keyup(function(e) {

@@ -202,7 +202,7 @@
 				{
 					name: 'HOTEL MYSTAYS Midosuji Honmachi',
 					address: '',
-					img: 'lazyfonz1.png',
+					img: 'HOTEL-MYSTAYS-Midosuji-Honmachi.jpg',
 					id: '164552'
 				},
 				{
@@ -256,7 +256,7 @@
 			]
 		},
 		'maihama-urayasu':{
-			city: 'Maihama/Urayasu',
+			city: 'Maihama-urayasu',
 			id: 'maihama-urayasu',
 			hotels: [
 				{
@@ -394,7 +394,7 @@
 				{
 					name: 'HOTEL MYSTAYS Sapporo Nakajima Park Annex',
 					address: '',
-					img: 'lazyfonz1.png',
+					img: 'HOTEL-MYSTAYS-Sapporo-Nakajima-Park-Annex.jpg',
 					id: '145361'
 				},
 				{
@@ -502,7 +502,7 @@
 				{
 					name: 'HOTEL MYSTAYS Matsuyama',
 					address: '',
-					img: 'lazyfonz1.png',
+					img: 'HOTEL-MYSTAYS-Matsuyama.jpg',
 					id: '6276'
 				}
 			]

@@ -361,7 +361,10 @@
 		      }
 		    }
 		  ]
-		});	
+		});
+
+		var stHeight = $('.slick-track').height();
+		$('.slick-slide').css('height', (stHeight - 15) + 'px' );	
 	};
 
 	$('.js-slider').on('click', '.js-slider-choose', function(e){

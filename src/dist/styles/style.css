@@ -221,6 +221,9 @@ body {
   font-family: Lato;
   color: #232e48; }
 
+* {
+  -webkit-overflow-scrolling: touch; }
+
 a {
   color: #232e48;
   text-decoration: none; }
@@ -780,7 +783,7 @@ header {
       text-align: center; }
       @media (max-width: 767px) {
         .form_guestWrap .form__control input {
-          font-size: 15px; } }
+          font-size: 14px; } }
       .form_guestWrap .form__control input.check-in {
         background: url(../images/calendar-icon.svg) no-repeat center top 7px;
         cursor: pointer; }
@@ -1253,6 +1256,9 @@ form {
   max-width: 940px;
   margin: 0 auto;
   padding: 12px 0 26px; }
+  @media (max-width: 767px) {
+    .offers_container {
+      padding-bottom: 12px; } }
   .offers_container ul {
     list-style-type: none;
     padding: 0 13.5%; }
@@ -1310,6 +1316,9 @@ form {
   position: absolute;
   bottom: -15px;
   left: 49%; }
+  @media (max-width: 767px) {
+    .arrow-down {
+      left: 45%; } }
 
 .tabs {
   background: #fff3e5;
@@ -1618,7 +1627,12 @@ a.subscribe_link {
   font-weight: 900;
   display: table !important;
   margin-top: 25px;
-  cursor: pointer; }
+  cursor: pointer;
+  line-height: 22px; }
+  @media (max-width: 767px) {
+    a.subscribe_link {
+      width: 100%;
+      padding: 20px 0; } }
 
 .link-plus-icon {
   position: relative;
@@ -1888,7 +1902,7 @@ footer {
     @media (max-width: 767px) {
       .slider .select2-container {
         width: 280px !important;
-        min-width: auto;
+        min-width: 280px !important;
         text-align: left;
         padding-left: 20px; } }
   .slider .select2-container--default .select2-selection--single {
@@ -1993,7 +2007,8 @@ footer {
     -webkit-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.25);
-    padding: 16px 15px; }
+    padding: 16px 15px;
+    min-height: 275px; }
     @media (max-width: 599px) {
       .slider_container .slick-slide {
         opacity: 0.5; } }

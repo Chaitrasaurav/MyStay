@@ -7,6 +7,10 @@ body {
 	color: $text-color-base;
 }
 
+* {    
+	-webkit-overflow-scrolling: touch;
+}
+
 a{
 	color: $text-color-base;
 	text-decoration: none;

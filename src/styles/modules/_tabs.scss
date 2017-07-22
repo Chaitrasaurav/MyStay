@@ -355,6 +355,11 @@ a.subscribe_link{
     display: table !important;
     margin-top: 25px;
     cursor: pointer;
+    line-height: 22px;
+    @media (max-width: 767px) {
+		width: 100%;
+		padding: 20px 0;
+	}
 }
 .link-plus-icon{
 	position: relative;

@@ -285,7 +285,7 @@
 			hotels: [
 				{
 					name: 'HOTEL MYSTAYS Tachikawa',
-					address: '',
+					address: '190-0022 東京都立川市錦町1-8-14',
 					img: 'HOTEL-MYSTAYS-Tachikawa.jpg',
 					id: 'jptok27899'
 				}

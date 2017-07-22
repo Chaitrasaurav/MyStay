@@ -205,8 +205,9 @@
 		$('.tabs .tab-content').each(function () {
 		    tabMaxHeight = ($(this).height() > tabMaxHeight ? $(this).height() : tabMaxHeight); 
 		});
-
-		$('.tabs .tab-content').height(tabMaxHeight);
+		if($(window).width() >= 768) {
+			$('.tabs .tab-content').height(tabMaxHeight);
+		}
 	};
 
 	$('#main-form-btn').on('click', function(){
@@ -353,7 +354,7 @@
 		        centerMode: true,
 		        dotsClass: 'custom_paging',
 			    customPaging: function (slider, i) {
-			        console.log(slider);
+			        //console.log(slider);
 			        var slideNumber   = (i + 1),
 			            totalSlides = slider.slideCount;
 			        return '<a class="custom-dot"><span class="string">' + slideNumber + '/' + totalSlides + '</span></a>';
@@ -363,8 +364,10 @@
 		  ]
 		});
 
-		var stHeight = $('.slick-track').height();
-		$('.slick-slide').css('height', (stHeight - 15) + 'px' );	
+		setTimeout(function() {
+			var stHeight = $('.slick-track').height();
+			$('.slick-slide').css('height', (stHeight - 15) + 'px' );	
+		}, 100);
 	};
 
 	$('.js-slider').on('click', '.js-slider-choose', function(e){
@@ -444,7 +447,7 @@
 	$('.js-select-guest').on('click', function(e) {
 		$('.js-select-guest-container').toggleClass('hidden');
 		$('html, body').animate({
-	        scrollTop: $('.js-select-guest-container').offset().top
+	        scrollTop: $('.js-select-guest').offset().top
 	    }, 1000);
 	});
 
@@ -456,7 +459,7 @@
 	});
 
 	$('.js-add-room').on('click', function(){
-		console.log($('.js-room-list').find('li').length)
+		//console.log($('.js-room-list').find('li').length)
 		var index = $('.js-room-list').find('li').length + 1;
 		var list = '<li class="js-room room clearfix" data-room="'+ index +'">\
 						<div class="room-container clearfix">\
@@ -543,7 +546,7 @@
 			adultCount = 0,
 			childCount = 0;
 
-			console.log(adultFields, childFields);
+			//console.log(adultFields, childFields);
 			for (var i = 0; i < adultFields.length; i++) {
 				adultCount += Number(adultFields[i].value);
 			}
@@ -572,7 +575,7 @@
 //     }
 // }
 function lightboxOpen(){
-    window.scrollTo(0,0);
+    //window.scrollTo(0,0);
     document.getElementById('light').style.display='block';
     document.getElementById('fade').style.display='block';
 }

@@ -8,6 +8,9 @@
 	max-width: $desktop-max-width;
 	margin: 0 auto;	
 	padding: 12px 0 26px;
+	@media (max-width: 767px){
+		padding-bottom: 12px;
+	}
 	ul{
 		list-style-type: none;
 		padding: 0 13.5%;
@@ -72,4 +75,7 @@
   position: absolute;
   bottom: -15px;
   left:49%;
+  @media (max-width: 767px) {
+	left:45%;
+  }
 }

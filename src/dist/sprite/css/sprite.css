@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../svg/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 17.6em 67.7em;
+    background-size: 17.6em 68.2em;
 }
 
 .no-svg .icon:before {
@@ -152,17 +152,8 @@
 
 
 
-  .icon.en-flag:before {
-      background-position: 0em -27.4em;
-      width: 1.6em;
-      height: 1em;
-  }
-
-
-
-
   .icon.en-flag-icon:before {
-      background-position: 0em -28.4em;
+      background-position: 0em -27.4em;
       width: 5em;
       height: 5em;
   }
@@ -171,7 +162,7 @@
 
 
   .icon.footer-plus:before {
-      background-position: 0em -33.4em;
+      background-position: 0em -32.4em;
       width: 1.4em;
       height: 1.4em;
   }
@@ -180,7 +171,7 @@
 
 
   .icon.fun-selfies:before {
-      background-position: 0em -34.8em;
+      background-position: 0em -33.8em;
       width: 1.9em;
       height: 1.8em;
   }
@@ -189,7 +180,7 @@
 
 
   .icon.get-help:before {
-      background-position: 0em -36.6em;
+      background-position: 0em -35.6em;
       width: 2.1em;
       height: 2em;
   }
@@ -198,7 +189,7 @@
 
 
   .icon.hamburguer-icon:before {
-      background-position: 0em -38.6em;
+      background-position: 0em -37.6em;
       width: 1.8em;
       height: 1.8em;
   }
@@ -207,7 +198,7 @@
 
 
   .icon.jp-flag:before {
-      background-position: 0em -40.4em;
+      background-position: 0em -39.4em;
       width: 1.6em;
       height: 1em;
   }
@@ -216,7 +207,7 @@
 
 
   .icon.jp-flag-icon:before {
-      background-position: 0em -41.4em;
+      background-position: 0em -40.4em;
       width: 5em;
       height: 5em;
   }
@@ -225,7 +216,7 @@
 
 
   .icon.kr-flag:before {
-      background-position: 0em -46.4em;
+      background-position: 0em -45.4em;
       width: 1.6em;
       height: 1.1em;
   }
@@ -233,8 +224,17 @@
 
 
 
+  .icon.link-plus-icon:before {
+      background-position: 0em -46.5em;
+      width: 1.5em;
+      height: 1.5em;
+  }
+
+
+
+
   .icon.ms-logo:before {
-      background-position: 0em -47.5em;
+      background-position: 0em -48em;
       width: 17.6em;
       height: 2.6em;
   }
@@ -243,7 +243,7 @@
 
 
   .icon.newsletter-icon:before {
-      background-position: 0em -50.1em;
+      background-position: 0em -50.6em;
       width: 2em;
       height: 2.3em;
   }
@@ -252,7 +252,7 @@
 
 
   .icon.offers-icon:before {
-      background-position: 0em -52.4em;
+      background-position: 0em -52.9em;
       width: 1.8em;
       height: 1.8em;
   }
@@ -261,7 +261,7 @@
 
 
   .icon.pepper-logo:before {
-      background-position: 0em -54.2em;
+      background-position: 0em -54.7em;
       width: 11.5em;
       height: 2.4em;
   }
@@ -270,7 +270,7 @@
 
 
   .icon.plus-icon:before {
-      background-position: 0em -56.6em;
+      background-position: 0em -57.1em;
       width: 1.6em;
       height: 1.6em;
   }
@@ -279,7 +279,7 @@
 
 
   .icon.policies:before {
-      background-position: 0em -58.2em;
+      background-position: 0em -58.7em;
       width: 1.6em;
       height: 1.6em;
   }
@@ -288,7 +288,7 @@
 
 
   .icon.press-release:before {
-      background-position: 0em -59.8em;
+      background-position: 0em -60.3em;
       width: 1.9em;
       height: 2em;
   }
@@ -297,7 +297,7 @@
 
 
   .icon.terms-conditions:before {
-      background-position: 0em -61.8em;
+      background-position: 0em -62.3em;
       width: 1.8em;
       height: 2.1em;
   }
@@ -306,7 +306,7 @@
 
 
   .icon.website-icon:before {
-      background-position: 0em -63.9em;
+      background-position: 0em -64.4em;
       width: 1.5em;
       height: 1.5em;
   }
@@ -315,7 +315,7 @@
 
 
   .icon.x-icon:before {
-      background-position: 0em -65.4em;
+      background-position: 0em -65.9em;
       width: 2.4em;
       height: 2.3em;
   }

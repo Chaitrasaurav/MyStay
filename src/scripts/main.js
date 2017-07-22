@@ -391,7 +391,11 @@
 	    scrollTop: $(".stage__form").offset().top},
 	        1000);
 	});
-
+	$(".subscribe_link").click(function() {
+	    $('html,body').animate({
+	    scrollTop: $(".subscribe_container").offset().top},
+	        1000);
+	});
 	$(document).keyup(function(e) {
 	     if (e.keyCode == 27) { // escape key maps to keycode `27`
 	     	if($('ul.header_language').hasClass('active')) {

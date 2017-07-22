@@ -200,13 +200,13 @@
 		};
 		createSliderElements('tokyo');
 
-		var sliderMaxHeight = 0;
+		var tabMaxHeight = 0;
 
 		$('.tabs .tab-content').each(function () {
-		    sliderMaxHeight = ($(this).height() > sliderMaxHeight ? $(this).height() : sliderMaxHeight); 
+		    tabMaxHeight = ($(this).height() > tabMaxHeight ? $(this).height() : tabMaxHeight); 
 		});
 
-		$('.tabs .tab-content').height(sliderMaxHeight);
+		$('.tabs .tab-content').height(tabMaxHeight);
 	};
 
 	$('#main-form-btn').on('click', function(){

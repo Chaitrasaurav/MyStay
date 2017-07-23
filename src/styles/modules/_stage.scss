@@ -700,27 +700,22 @@ form{
 	    z-index: 2;
     position: relative;
 }
-.jp {
-	.form-city-container-options {
-		top: 0;
-	}
-	.select2-search--dropdown {
-	    display: none;
-	}	
+.dp-highlighted .ui-state-default {
+  background: #232e48;
+  color: #FFF;
 }
-.select2-dropdown{
-	background:none;
+.dp-highlight .ui-state-default {
+  background: #9196A3;
+  color: #FFF;
 }
-.select2-results{
-	background:#fff;
+
+.ui-widget { font-size: 100% }
+.ui-widget.ui-widget-content {
+	width: 540px !important;
 }
-#jrange input {
-    width: 200px;
-}
-#jrange div {
-    font-size: 9pt;
-}
-.date-range-selected > .ui-state-active, .date-range-selected > .ui-state-default {
-    background: none;
-    background-color: lightsteelblue;
+.datepicker-modal {
+	position: absolute;
+    top: 248px;
+    background: white;
+    z-index: 1;
 }

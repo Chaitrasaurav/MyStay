@@ -1235,27 +1235,25 @@ form {
   z-index: 2;
   position: relative; }
 
-.jp .form-city-container-options {
-  top: 0; }
+.dp-highlighted .ui-state-default {
+  background: #232e48;
+  color: #FFF; }
 
-.jp .select2-search--dropdown {
-  display: none; }
+.dp-highlight .ui-state-default {
+  background: #9196A3;
+  color: #FFF; }
 
-.select2-dropdown {
-  background: none; }
+.ui-widget {
+  font-size: 100%; }
 
-.select2-results {
-  background: #fff; }
+.ui-widget.ui-widget-content {
+  width: 540px !important; }
 
-#jrange input {
-  width: 200px; }
-
-#jrange div {
-  font-size: 9pt; }
-
-.date-range-selected > .ui-state-active, .date-range-selected > .ui-state-default {
-  background: none;
-  background-color: lightsteelblue; }
+.datepicker-modal {
+  position: absolute;
+  top: 248px;
+  background: white;
+  z-index: 1; }
 
 .offers {
   background: #fff;

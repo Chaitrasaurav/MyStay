@@ -9,86 +9,75 @@
 	myStays.init = function() {
 		var query= {},
 			cityHotelMap = window.cityHotelMap;
+	
+		$.datepicker.regional[$('body').data('i18n')];
+		$('input.js-datepicker').click(function(e){
+			$('.js-datepicker-modal').removeClass('hidden');
+			$(".js-datepicker-container").datepicker( "option", "gotoCurrent", true );
+		});
+		$(".js-datepicker-container").datepicker({
+			minDate: 0,
+			numberOfMonths: 2,
+			beforeShowDay: function(date) {
+				var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#checkIn").val());
+				var date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#checkOut").val());
+				var className = "dp-highlight",
+					booleanFlag = true;
+				if((date1 && date.getTime() == date1.getTime()) || (date2 && date.getTime() == date2.getTime())) {
+					className = "dp-highlighted";
+				}
+				if(!date) {
+					booleanFlag = false;
+				}
+				return [booleanFlag, date1 && ((date.getTime() == date1.getTime()) || (date2 && date >= date1 && date <= date2)) ? className : ""];
+			},
+			onSelect: function(dateText, inst) {
+				var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#checkIn").val());
+				var date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#checkOut").val());
+                var selectedDate = $.datepicker.parseDate($.datepicker._defaults.dateFormat, dateText);
 
-		$.datepicker._defaults.onAfterUpdate = null;
+                
+                if (!date1 || date2) {
+					$("#checkIn").val(dateText);
+					if($("#checkIn").hasClass('js-is-invalid')) {
+                    	$("#checkIn").removeClass('js-is-invalid');
+                    }
+					$("#checkOut").val("");
+                    $(this).datepicker();
+                } else if( selectedDate < date1 ) {
+                    // $("#checkOut").val( $("#checkIn").val() );
+                    $("#checkIn").val( dateText );
+                    if($("#checkIn").hasClass('js-is-invalid')) {
+                    	$("#checkIn").removeClass('js-is-invalid');
+                    }
+                    $(this).datepicker();
+                } else {
+					$("#checkOut").val(dateText);
+					if($("#checkOut").hasClass('js-is-invalid')) {
+                    	$("#checkOut").removeClass('js-is-invalid');
+                    }
+                    $(this).datepicker();
+				}
+				if($('body').hasClass('ja_JP')) {
+	            	if($("#checkIn").val().length) {
+	            		var dateArray = $("#checkIn").val().split('-');
+	            		$("#checkIn").siblings('input[name="ciDateY"]').val(dateArray[0]);
+		            	$("#checkIn").siblings('input[name="ciDateM"]').val(dateArray[1]);
+		            	$("#checkIn").siblings('input[name="ciDateD"]').val(dateArray[2]);
+	            	}
+	            	if($("#checkOut").val().length) {
+	            		var dateArray = $("#checkOut").val().split('-');
+	            		$("#checkOut").siblings('input[name="coDateY"]').val(dateArray[0]);
+		            	$("#checkOut").siblings('input[name="coDateM"]').val(dateArray[1]);
+		            	$("#checkOut").siblings('input[name="coDateD"]').val(dateArray[2]);
+	            	}
+	            }
+			}
+		});
 
-		var datepicker__updateDatepicker = $.datepicker._updateDatepicker;
-		$.datepicker._updateDatepicker = function (inst) {
-		    datepicker__updateDatepicker.call(this, inst);
-
-		    var onAfterUpdate = this._get(inst, 'onAfterUpdate');
-		    if (onAfterUpdate) onAfterUpdate.apply((inst.input ? inst.input[0] : null), [(inst.input ? inst.input.val() : ''), inst]);
-		}
-
-
-		$(function () {
-
-		    var cur = -1,
-		        prv = -1;
-		    $('#jrange div')
-		        .datepicker({
-		        showButtonPanel: true,
-		        numberOfMonths: 2,
-				minDate: new Date(),
-		        beforeShowDay: function (date) {
-		            return [true, ((date.getTime() >= Math.min(prv, cur) && date.getTime() <= Math.max(prv, cur)) ? 'date-range-selected' : '')];
-		        },
-
-		        onSelect: function (dateText, inst) {
-		            var d1, d2;
-
-		            prv = cur;
-		            cur = (new Date(inst.selectedYear, inst.selectedMonth, inst.selectedDay)).getTime();
-		            if (prv == -1 || prv == cur) {
-		                prv = cur;
-		                $('#jrange input').val(dateText);
-		            } else {
-		                d1 = $.datepicker.formatDate('mm/dd/yy', new Date(Math.min(prv, cur)), {});
-		                d2 = $.datepicker.formatDate('mm/dd/yy', new Date(Math.max(prv, cur)), {});
-		                $('#jrange input').val(d1 + ' - ' + d2);
-		            }
-		        },
-
-		        onChangeMonthYear: function (year, month, inst) {
-		            //prv = cur = -1;
-		        },
-
-		        onAfterUpdate: function (inst) {
-		            $('<button type="button" class="ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all" data-handler="hide" data-event="click">Done</button>')
-		                .appendTo($('#jrange div .ui-datepicker-buttonpane'))
-		                .on('click', function () {
-		                $('#jrange div').hide();
-		            });
-		        }
-		    }).position({
-		        my: 'left top',
-		        at: 'left bottom',
-		        of: $('#jrange input')
-		    }).hide();
-
-		    $('#jrange input').on('focus', function (e) {
-		        var v = this.value,
-		            d;
-
-		        try {
-		            if (v.indexOf(' - ') > -1) {
-		                d = v.split(' - ');
-
-		                prv = $.datepicker.parseDate('mm/dd/yy', d[0]).getTime();
-		                cur = $.datepicker.parseDate('mm/dd/yy', d[1]).getTime();
-
-		            } else if (v.length > 0) {
-		                prv = cur = $.datepicker.parseDate('mm/dd/yy', v).getTime();
-		            }
-		        } catch (e) {
-		            cur = prv = -1;
-		        }
-
-		        if (cur > -1) $('#jrange div').datepicker('setDate', new Date(cur));
-
-		        $('#jrange div').datepicker('refresh').show();
-		    });
-		});	
+		$('.js-close-datepicker').click(function() {
+            $(".js-datepicker-modal").addClass('hidden');
+        });
 
 		function formatCitySlider (d) {
 			if(d.disabled) return; 
@@ -194,82 +183,82 @@
 
 		var checkinFlag = false;
 
-		$.datepicker.regional[$('body').data('i18n')];
-		$( ".js-datepicker.check-in" ).datepicker({
-			dateFormat: "yy-mm-dd",
-			minDate: new Date(),
-			onSelect: function(dateText, inst) {
-				var date2 = $( ".js-datepicker.check-in" ).datepicker('getDate');
-		            date2.setDate(date2.getDate() + 1);
-		            $( ".js-datepicker.check-out" ).datepicker('setDate', date2);
-		            $( ".js-datepicker.check-out" ).datepicker('option', 'minDate', date2);
-		            checkinFlag = true;
+		//$.datepicker.regional[$('body').data('i18n')];
+		// $( ".js-datepicker.check-in" ).datepicker({
+		// 	dateFormat: "yy-mm-dd",
+		// 	minDate: new Date(),
+		// 	onSelect: function(dateText, inst) {
+		// 		var date2 = $( ".js-datepicker.check-in" ).datepicker('getDate');
+		//             date2.setDate(date2.getDate() + 1);
+		//             $( ".js-datepicker.check-out" ).datepicker('setDate', date2);
+		//             $( ".js-datepicker.check-out" ).datepicker('option', 'minDate', date2);
+		//             checkinFlag = true;
 		            
-		            if($('body').hasClass('ja_JP')) {
-		            	var dateArray = dateText.split('-');
-		            	$(this).siblings('input[name="ciDateY"]').val(dateArray[0]);
-		            	$(this).siblings('input[name="ciDateM"]').val(dateArray[1]);
-		            	$(this).siblings('input[name="ciDateD"]').val(dateArray[2]);
-		            	if(!$( ".js-datepicker.check-out" ).val()) {
-		            		var month = date2.getMonth() + 1;
-			            		month = month < 10 ? '0' + month : month;
-			            	$( ".js-datepicker.check-out" ).siblings('input[name="coDateY"]').val(date2.getFullYear());
-			            	$( ".js-datepicker.check-out" ).siblings('input[name="coDateM"]').val(month);
-			            	$( ".js-datepicker.check-out" ).siblings('input[name="coDateD"]').val(date2.getDate());
-		            	}
-		            }
+		//             if($('body').hasClass('ja_JP')) {
+		//             	var dateArray = dateText.split('-');
+		//             	$(this).siblings('input[name="ciDateY"]').val(dateArray[0]);
+		//             	$(this).siblings('input[name="ciDateM"]').val(dateArray[1]);
+		//             	$(this).siblings('input[name="ciDateD"]').val(dateArray[2]);
+		//             	if(!$( ".js-datepicker.check-out" ).val()) {
+		//             		var month = date2.getMonth() + 1;
+		// 	            		month = month < 10 ? '0' + month : month;
+		// 	            	$( ".js-datepicker.check-out" ).siblings('input[name="coDateY"]').val(date2.getFullYear());
+		// 	            	$( ".js-datepicker.check-out" ).siblings('input[name="coDateM"]').val(month);
+		// 	            	$( ".js-datepicker.check-out" ).siblings('input[name="coDateD"]').val(date2.getDate());
+		//             	}
+		//             }
 
-		            if($(this).hasClass('required') && $(this).hasClass('js-is-invalid')) {
-						$(this).removeClass('js-is-invalid');
-					}
-					if($( ".js-datepicker.check-out" ).hasClass('required') && $( ".js-datepicker.check-out" ).hasClass('js-is-invalid')) {
-						$( ".js-datepicker.check-out" ).removeClass('js-is-invalid');
-					}
-		    },
-		    onClose: function() {
-		    	if(checkinFlag) {
-		    		setTimeout(function(){
-		    		 $( ".js-datepicker.check-out" ).datepicker("show");
-		    		}, 10);
-		    		checkinFlag = false;
-		    	}
-	        },
-	        beforeShow: function (input, inst) {
-		        setTimeout(function () {
-		            inst.dpDiv.css({
-		                top: $(".js-datepicker").offset().top + 55
-		            });
-		        }, 0);
-		        if(!$('.js-select-guest-container').hasClass('hidden')) {
-		        	$('.js-select-guest-container').addClass('hidden');
-		        }
-		    }
-		});
-		$( ".js-datepicker.check-out" ).datepicker({
-			dateFormat: "yy-mm-dd",
-	        beforeShow: function (input, inst) {
-		        setTimeout(function () {
-		            inst.dpDiv.css({
-		                top: $(".js-datepicker").offset().top + 55
-		            });
-		        }, 0);
-		        if(!$('.js-select-guest-container').hasClass('hidden')) {
-		        	$('.js-select-guest-container').addClass('hidden');
-		        }
-		    },
-		    onSelect: function(dateText, inst) {
-	            if($('body').hasClass('ja_JP')) {
-	            	//console.log(dateText)
-		            var dateArray = dateText.split('-');
-	            	$(this).siblings('input[name="coDateY"]').val(dateArray[0]);
-	            	$(this).siblings('input[name="coDateM"]').val(dateArray[1]);
-	            	$(this).siblings('input[name="coDateD"]').val(dateArray[2]);
-	            }
-		    }
-		})
-		$(".js-datepicker").focus(function () {
-	        $('html, body').animate({ scrollTop: $(this).offset().top - 25 }, 1000);
-	    });
+		//             if($(this).hasClass('required') && $(this).hasClass('js-is-invalid')) {
+		// 				$(this).removeClass('js-is-invalid');
+		// 			}
+		// 			if($( ".js-datepicker.check-out" ).hasClass('required') && $( ".js-datepicker.check-out" ).hasClass('js-is-invalid')) {
+		// 				$( ".js-datepicker.check-out" ).removeClass('js-is-invalid');
+		// 			}
+		//     },
+		//     onClose: function() {
+		//     	if(checkinFlag) {
+		//     		setTimeout(function(){
+		//     		 $( ".js-datepicker.check-out" ).datepicker("show");
+		//     		}, 10);
+		//     		checkinFlag = false;
+		//     	}
+	 //        },
+	 //        beforeShow: function (input, inst) {
+		//         setTimeout(function () {
+		//             inst.dpDiv.css({
+		//                 top: $(".js-datepicker").offset().top + 55
+		//             });
+		//         }, 0);
+		//         if(!$('.js-select-guest-container').hasClass('hidden')) {
+		//         	$('.js-select-guest-container').addClass('hidden');
+		//         }
+		//     }
+		// });
+		// $( ".js-datepicker.check-out" ).datepicker({
+		// 	dateFormat: "yy-mm-dd",
+	 //        beforeShow: function (input, inst) {
+		//         setTimeout(function () {
+		//             inst.dpDiv.css({
+		//                 top: $(".js-datepicker").offset().top + 55
+		//             });
+		//         }, 0);
+		//         if(!$('.js-select-guest-container').hasClass('hidden')) {
+		//         	$('.js-select-guest-container').addClass('hidden');
+		//         }
+		//     },
+		//     onSelect: function(dateText, inst) {
+	 //            if($('body').hasClass('ja_JP')) {
+	 //            	//console.log(dateText)
+		//             var dateArray = dateText.split('-');
+	 //            	$(this).siblings('input[name="coDateY"]').val(dateArray[0]);
+	 //            	$(this).siblings('input[name="coDateM"]').val(dateArray[1]);
+	 //            	$(this).siblings('input[name="coDateD"]').val(dateArray[2]);
+	 //            }
+		//     }
+		// })
+		// $(".js-datepicker").focus(function () {
+	 //        $('html, body').animate({ scrollTop: $(this).offset().top - 25 }, 1000);
+	 //    });
 
 		for(var city in cityHotelMap) {
 				var hotelsSelected = cityHotelMap[city].hotels;

@@ -44,12 +44,6 @@
 			<div class="stage_container">
 					<h1 class="stage__heading">Win Amazing Pepper <i class="icon x-icon"></i> MYSTAYS Prizes!</h1>
 					<div class="stage__form form">
-						<div class="wrapper">
-						    <div id="jrange" class="dates">
-						        <input />
-						        <div></div>
-						    </div>
-						</div>
 						<form name="mainForm" id="mainForm" novalidate autocomplete="off">
 							<div class="form__control">
 								<label class="form__label">Where in Japan?</label>
@@ -93,6 +87,11 @@
 									<div class="input-wrap">
 										<input class="datepicker form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" placeholder="Select" readonly>
 									</div>
+								</div>
+								<div class="datepicker-modal js-datepicker-modal hidden">
+									<h5>Select Checkin - Checkout Date</h5>
+									<a class="js-close-datepicker cancel-datepicker" title="Close" href="javascript:;"><i class="icon close-btn"></i></a>
+									<div class="datepicker-container js-datepicker-container"></div>
 								</div>
 								<div class="form__control">
 									<label class="form__label">No of guests</label>
@@ -401,7 +400,7 @@
  	</footer>
 	<script type="text/javascript" src="../dist/scripts/vendor.min.js"></script>
 	<script type="text/javascript" src="../data/data-en.js"></script>
-	<script type="text/javascript" src="../dist/scripts/app.min.js"></script>
+	<script type="text/javascript" src="../scripts/main.js"></script>
 	<script type="text/javascript">
 	  var tag = document.createElement('script');
 	  tag.src = "https://www.youtube.com/player_api";

@@ -790,6 +790,8 @@ header {
       .form_guestWrap .form__control input.check-out {
         background: url(../images/calendar-icon.svg) no-repeat center top 7px;
         cursor: pointer; }
+      .form_guestWrap .form__control input.js-datepicker-highlight {
+        border: 2px solid #ffd25d; }
     .form_guestWrap .form__control .input-wrap {
       background: url(../images/corner-icon.svg) no-repeat bottom 2px right 2px; }
     .form_guestWrap .form__control .guest {
@@ -972,48 +974,20 @@ header {
     color: #fff !important; }
 
 .ui-widget.ui-widget-content {
-  border-top: 1px solid #dddee0;
+  border: none;
   padding: 10px;
   z-index: 3 !important;
   width: auto;
   -webkit-box-shadow: 0 15px 15px 0 rgba(35, 46, 72, 0.25);
   -moz-box-shadow: 0 15px 15px 0 rgba(35, 46, 72, 0.25);
   box-shadow: 0 15px 15px 0 rgba(35, 46, 72, 0.25);
-  margin-top: 20px; }
+  border-radius: 0; }
   @media (max-width: 767px) {
     .ui-widget.ui-widget-content {
       left: 0 !important;
       width: 87%;
       margin-left: 10px;
       margin-right: 10px; } }
-
-.ui-datepicker-title {
-  position: relative; }
-  .ui-datepicker-title:after {
-    content: '';
-    position: absolute;
-    top: -23px;
-    left: -12px;
-    border: solid #dddee0;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 9px;
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg); }
-    @media (max-width: 767px) {
-      .ui-datepicker-title:after {
-        display: none; } }
-  .ui-datepicker-title:before {
-    content: '';
-    position: absolute;
-    top: -14px;
-    left: -16px;
-    width: 27px;
-    height: 1px;
-    background: #fff; }
-    @media (max-width: 767px) {
-      .ui-datepicker-title:before {
-        display: none; } }
 
 .ui-datepicker td span, .ui-datepicker td a {
   padding: 5px 10px;
@@ -1043,7 +1017,7 @@ form {
   left: -20px; }
   @media (max-width: 767px) {
     .select-guest-container {
-      left: -22px; } }
+      left: -27px; } }
   .select-guest-container:after {
     content: '';
     position: absolute;
@@ -1235,17 +1209,61 @@ form {
   z-index: 2;
   position: relative; }
 
-.jp .form-city-container-options {
-  top: 0; }
+.dp-highlighted .ui-state-default {
+  background: #232e48;
+  color: #FFF; }
 
-.jp .select2-search--dropdown {
-  display: none; }
+.dp-highlight .ui-state-default {
+  background: #9196A3;
+  color: #FFF; }
 
-.select2-dropdown {
-  background: none; }
+.dp-highlight-hover.new-cell .ui-state-default {
+  background: #9196A3 !important;
+  color: #FFF; }
 
-.select2-results {
-  background: #fff; }
+.dp-highlight-hover.last-cell .ui-state-default {
+  background: #232e48 !important;
+  color: #FFF; }
+
+.ui-widget {
+  font-size: 100%; }
+
+.ui-widget.ui-widget-content {
+  width: 600px !important; }
+  @media (max-width: 767px) {
+    .ui-widget.ui-widget-content {
+      width: 94% !important;
+      margin-left: 0;
+      margin-right: 0; } }
+
+.datepicker-modal {
+  position: absolute;
+  top: 83%;
+  background: white;
+  z-index: 1;
+  border: 1px solid #dddee0;
+  border-radius: 3px; }
+  @media (max-width: 767px) {
+    .datepicker-modal {
+      width: 100%; } }
+  .datepicker-modal .close-datepicker {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .datepicker-modal h5 {
+    padding: 10px 0;
+    border-bottom: 1px solid #dddee0; }
+
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 90%; }
+  .ui-datepicker-multi .ui-datepicker-group table tr {
+    height: 33px; }
+
+.ui-datepicker .ui-datepicker-next {
+  cursor: pointer; }
+
+.ui-datepicker .ui-datepicker-prev {
+  cursor: pointer; }
 
 .offers {
   background: #fff;

@@ -279,6 +279,15 @@
 				$('.js-hotel').html(options);
 		};
 		createSliderElements('tokyo');
+
+		var tabMaxHeight = 0;
+
+		$('.tabs .tab-content').each(function () {
+		    tabMaxHeight = ($(this).height() > tabMaxHeight ? $(this).height() : tabMaxHeight); 
+		});
+		if($(window).width() >= 768) {
+			$('.tabs .tab-content').height(tabMaxHeight);
+		}
 	};
 
 	$('#main-form-btn').on('click', function(){
@@ -364,7 +373,7 @@
 	});
 
 	$( ".js-hotel" ).on('change', function(e) {
-		console.log(e.target.value)
+		//console.log(e.target.value)
 		if(e.target.value === 'jptok28108' || e.target.value === '151373') {
 			$(e.target).parents('form').find('#adults1').val(1);
 		}
@@ -425,7 +434,7 @@
 		        centerMode: true,
 		        dotsClass: 'custom_paging',
 			    customPaging: function (slider, i) {
-			        console.log(slider);
+			        //console.log(slider);
 			        var slideNumber   = (i + 1),
 			            totalSlides = slider.slideCount;
 			        return '<a class="custom-dot"><span class="string">' + slideNumber + '/' + totalSlides + '</span></a>';
@@ -433,7 +442,12 @@
 		      }
 		    }
 		  ]
-		});	
+		});
+
+		setTimeout(function() {
+			var stHeight = $('.slick-track').height();
+			$('.slick-slide').css('height', (stHeight - 15) + 'px' );	
+		}, 100);
 	};
 
 	$('.js-slider').on('click', '.js-slider-choose', function(e){
@@ -471,7 +485,11 @@
 	    scrollTop: $(".stage__form").offset().top},
 	        1000);
 	});
-
+	$(".subscribe_link").click(function() {
+	    $('html,body').animate({
+	    scrollTop: $(".subscribe_container").offset().top},
+	        1000);
+	});
 	$(document).keyup(function(e) {
 	     if (e.keyCode == 27) { // escape key maps to keycode `27`
 	     	if($('ul.header_language').hasClass('active')) {
@@ -509,7 +527,7 @@
 	$('.js-select-guest').on('click', function(e) {
 		$('.js-select-guest-container').toggleClass('hidden');
 		$('html, body').animate({
-	        scrollTop: $('.js-select-guest-container').offset().top
+	        scrollTop: $('.js-select-guest').offset().top
 	    }, 1000);
 	});
 
@@ -521,7 +539,7 @@
 	});
 
 	$('.js-add-room').on('click', function(){
-		console.log($('.js-room-list').find('li').length)
+		//console.log($('.js-room-list').find('li').length)
 		var index = $('.js-room-list').find('li').length + 1;
 		var list = '<li class="js-room room clearfix" data-room="'+ index +'">\
 						<div class="room-container clearfix">\
@@ -531,7 +549,12 @@
 								<div class="input-wrap">\
 									<select class="room__field form__field js-adult-count">\
 										<option value="1">1</option>\
-										<option value="2">2</option>\
+										<option value="2" selected>2</option>\
+										<option value="3">3</option>\
+										<option value="4">4</option>\
+										<option value="5">5</option>\
+										<option value="6">6</option>\
+										<option value="7">7</option>\
 									</select>\
 								</div>\
 							</div>\
@@ -542,12 +565,14 @@
 										<option value="0">0</option>\
 										<option value="1">1</option>\
 										<option value="2">2</option>\
+										<option value="3">3</option>\
+										<option value="4">4</option>\
+										<option value="5">5</option>\
+										<option value="6">6</option>\
+										<option value="7">7</option>\
 									</select>\
 								</div>\
 							</div>\
-						</div>\
-						<div class="room__age-container js-child-age-list">\
-							\
 						</div>\
 						<div class="room__delete">\
 							<a href="javascript:;" title="Delete this room" class="room__delete-btn js-delete-room"><i class="icon delete-icon"></i></a>\
@@ -601,7 +626,7 @@
 			adultCount = 0,
 			childCount = 0;
 
-			console.log(adultFields, childFields);
+			//console.log(adultFields, childFields);
 			for (var i = 0; i < adultFields.length; i++) {
 				adultCount += Number(adultFields[i].value);
 			}
@@ -630,7 +655,7 @@
 //     }
 // }
 function lightboxOpen(){
-    window.scrollTo(0,0);
+    //window.scrollTo(0,0);
     document.getElementById('light').style.display='block';
     document.getElementById('fade').style.display='block';
 }

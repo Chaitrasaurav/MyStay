@@ -26,29 +26,10 @@ header{
 	@media (max-width: 767px) {
 		width:90%;
 	}
-	.icon.ms-logo:before{
+	i{
 		@media (max-width: 767px) {
-			background-position: 0 -41.1em;
-		    width: 14em;
-		    height: 2em;
-		    background-size: 14em 62em;
-		}
-	}
-	.icon.pepper-logo:before{
-		@media (max-width: 767px) {
-			background-position: 0 -46.3em;
-		    width: 9.3em;
-		    height: 2em;
-		    background-size: 14em 62em;
-		}
-	}
-	.icon.plus-icon:before{
-		@media (max-width: 767px) {
-			background-position: 0em -48.3em;
-		    width: 1.3em;
-		    height: 1.3em;
-		    background-size: 14em 62em;
-		}
+			font-size:7px;
+		}	
 	}
 }
 .hamburguer-icon{
@@ -101,6 +82,10 @@ header{
 				position: relative;
 				top: -2px;
     			right: -2px;
+			}
+			img{
+				display: inline-block;
+				margin: 0 7px 0 0;
 			}
 		}
 	}

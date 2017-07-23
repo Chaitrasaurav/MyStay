@@ -58,7 +58,13 @@ gulp.task('styles', function () {
   .pipe(gulp.dest('src/dist/styles'));
 });
 
-
+gulp.task('serve', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'src'
+    },
+  })
+})
 
 gulp.task('default', function (callback) {
     runSequence('sprite', 'scripts', 'styles', 'vendorScripts', 'vendorStyles',  callback);

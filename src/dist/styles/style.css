@@ -1017,7 +1017,7 @@ form {
   left: -20px; }
   @media (max-width: 767px) {
     .select-guest-container {
-      left: -22px; } }
+      left: -27px; } }
   .select-guest-container:after {
     content: '';
     position: absolute;
@@ -1217,11 +1217,20 @@ form {
   background: #9196A3;
   color: #FFF; }
 
+.dp-highlight-hover.new-class .ui-state-default {
+  background: #9196A3 !important;
+  color: #FFF; }
+
 .ui-widget {
   font-size: 100%; }
 
 .ui-widget.ui-widget-content {
   width: 600px !important; }
+  @media (max-width: 767px) {
+    .ui-widget.ui-widget-content {
+      width: 94% !important;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .datepicker-modal {
   position: absolute;
@@ -1230,6 +1239,9 @@ form {
   z-index: 1;
   border: 1px solid #dddee0;
   border-radius: 3px; }
+  @media (max-width: 767px) {
+    .datepicker-modal {
+      width: 100%; } }
   .datepicker-modal .close-datepicker {
     position: absolute;
     top: 10px;

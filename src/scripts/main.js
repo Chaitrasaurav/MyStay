@@ -27,7 +27,9 @@
 		      	$('.js-select-guest-container').addClass('hidden');
 		    }	
 			$('.js-datepicker-modal').removeClass('hidden');
-
+			$('.check-in').removeClass('js-is-invalid');
+			$('.check-out').removeClass('js-is-invalid');
+			//
 			if($(e.target).hasClass('check-in')) {
 				if($(e.target).val()) {
 					var date = $(e.target).val();
@@ -57,9 +59,14 @@
 				}
 			}
 		});
+		var numberOfMonths = 2;
+		if($(window).width() < 768) {
+			numberOfMonths = 1;
+		}
+
 		$(".js-datepicker-container").datepicker({
 			minDate: 0,
-			numberOfMonths: 2,
+			numberOfMonths: numberOfMonths,
 			beforeShowDay: function(date) {
 				var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#checkIn").val());
 				var date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#checkOut").val());
@@ -68,10 +75,12 @@
 				if((date1 && date.getTime() == date1.getTime()) || (date2 && date.getTime() == date2.getTime())) {
 					className = "dp-highlighted";
 				}
-				if(!date) {
-					booleanFlag = false;
+				if(date1 && !date2 && date > date1) {
+					
+					className = 'dp-highlight-hover';
 				}
-				return [booleanFlag, date1 && ((date.getTime() == date1.getTime()) || (date2 && date >= date1 && date <= date2)) ? className : ""];
+				//console.log(date)
+				return [booleanFlag, date1 && ((date.getTime() == date1.getTime()) || (!date2 && (date > date1)) || (date2 && date >= date1 && date <= date2)) ? className : ""];
 			},
 			onSelect: function(dateText, inst) {
 				var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#checkIn").val());
@@ -317,9 +326,9 @@
 	 //            }
 		//     }
 		// })
-		// $(".js-datepicker").focus(function () {
-	 //        $('html, body').animate({ scrollTop: $(this).offset().top - 25 }, 1000);
-	 //    });
+		$(".js-datepicker").focus(function () {
+	        $('html, body').animate({ scrollTop: $(this).offset().top - 25 }, 1000);
+	    });
 
 		for(var city in cityHotelMap) {
 				var hotelsSelected = cityHotelMap[city].hotels;
@@ -339,6 +348,18 @@
 			$('.tabs .tab-content').height(tabMaxHeight);
 		}
 	};
+
+	$(document).on('mouseover', '.ui-datepicker-calendar td a', function(e){
+		if($('.check-out').hasClass('js-datepicker-highlight')) {
+			$(this).parents('.ui-datepicker-group').prevAll().find('td.dp-highlight-hover').addClass('new-class');
+			$(this).parents('tr').prevAll().find('td.dp-highlight-hover').addClass('new-class');
+			$(this).parent('td').prevAll('td.dp-highlight-hover').addClass('new-class');
+	    	$(this).parent('td.dp-highlight-hover').addClass('new-class');
+	    	$(this).parent('td').nextAll('td.dp-highlight-hover').removeClass('new-class');
+	    	$(this).parents('tr').nextAll().find('td.dp-highlight-hover').removeClass('new-class');
+	    	$(this).parents('.ui-datepicker-group').nextAll().find('td.dp-highlight-hover').removeClass('new-class');
+		}
+    });
 
 	$('#main-form-btn').on('click', function(){
 		var $this = $(this),

@@ -228,6 +228,9 @@
 		    	background: url(../images/calendar-icon.svg) no-repeat center top 7px;
 		    	cursor: pointer;
 		    }
+		    &.js-datepicker-highlight {
+				border: 2px solid #ffd25d;
+			}
 		}
 		.input-wrap{
 			background: url(../images/corner-icon.svg) no-repeat bottom 2px right 2px;

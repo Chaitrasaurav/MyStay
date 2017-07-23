@@ -790,6 +790,8 @@ header {
       .form_guestWrap .form__control input.check-out {
         background: url(../images/calendar-icon.svg) no-repeat center top 7px;
         cursor: pointer; }
+      .form_guestWrap .form__control input.js-datepicker-highlight {
+        border: 2px solid #ffd25d; }
     .form_guestWrap .form__control .input-wrap {
       background: url(../images/corner-icon.svg) no-repeat bottom 2px right 2px; }
     .form_guestWrap .form__control .guest {

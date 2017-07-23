@@ -9,11 +9,53 @@
 	myStays.init = function() {
 		var query= {},
 			cityHotelMap = window.cityHotelMap;
-	
+		
+	    function gotoDate(month, year) {
+		    $(".js-datepicker-container").each(function (i, el) {
+		        var inst = $.datepicker._getInst(el);
+		        inst.drawMonth = inst.selectedMonth = month;
+		        inst.drawYear = inst.selectedYear = year;
+		        $.datepicker._notifyChange(inst);
+		        $.datepicker._adjustDate(el);
+		    });
+		}		
+
 		$.datepicker.regional[$('body').data('i18n')];
+
 		$('input.js-datepicker').click(function(e){
+			if(!$('.js-select-guest-container').hasClass('hidden')) {
+		      	$('.js-select-guest-container').addClass('hidden');
+		    }	
 			$('.js-datepicker-modal').removeClass('hidden');
-			$(".js-datepicker-container").datepicker( "option", "gotoCurrent", true );
+
+			if($(e.target).hasClass('check-in')) {
+				if($(e.target).val()) {
+					var date = $(e.target).val();
+					gotoDate(new Date(date).getMonth(), new Date(date).getFullYear());
+					$('.check-out').removeClass('js-datepicker-highlight');
+					$(e.target).addClass('js-datepicker-highlight');
+				} else {
+					$(e.target).addClass('js-datepicker-highlight');
+					$(".js-datepicker-container").datepicker( "option", "gotoCurrent", true );		
+				}
+			} else if($(e.target).hasClass('check-out')) {
+				if($(e.target).val()) {
+					var date = $(e.target).val();
+					gotoDate(new Date(date).getMonth(), new Date(date).getFullYear());
+					$('.check-in').addClass('js-datepicker-highlight');
+				}
+				else {
+					if(!$('.check-in').val().length) {
+						$('.check-in').addClass('js-datepicker-highlight');
+						$(".js-datepicker-container").datepicker( "option", "gotoCurrent", true );
+					} else {
+						$(e.target).addClass('js-datepicker-highlight');
+						$('.check-in').removeClass('js-datepicker-highlight');
+						var date = $('.check-in').val();
+						gotoDate(new Date(date).getMonth(), new Date(date).getFullYear());
+					}
+				}
+			}
 		});
 		$(".js-datepicker-container").datepicker({
 			minDate: 0,
@@ -38,26 +80,39 @@
 
                 
                 if (!date1 || date2) {
-					$("#checkIn").val(dateText);
+					$("#checkIn").val(dateText).removeClass('js-datepicker-highlight');
+					
 					if($("#checkIn").hasClass('js-is-invalid')) {
                     	$("#checkIn").removeClass('js-is-invalid');
                     }
-					$("#checkOut").val("");
+					$("#checkOut").val("").addClass('js-datepicker-highlight');
                     $(this).datepicker();
                 } else if( selectedDate < date1 ) {
-                    // $("#checkOut").val( $("#checkIn").val() );
                     $("#checkIn").val( dateText );
                     if($("#checkIn").hasClass('js-is-invalid')) {
                     	$("#checkIn").removeClass('js-is-invalid');
                     }
+                    if($("#checkIn").hasClass('js-datepicker-highlight')) {
+                		$("#checkIn").removeClass('js-datepicker-highlight');
+                		$("#checkOut").addClass('js-datepicker-highlight');
+                	}
                     $(this).datepicker();
                 } else {
-					$("#checkOut").val(dateText);
-					if($("#checkOut").hasClass('js-is-invalid')) {
-                    	$("#checkOut").removeClass('js-is-invalid');
-                    }
-                    $(this).datepicker();
+                	if($("#checkIn").hasClass('js-datepicker-highlight')) {
+                		$("#checkIn").val(dateText).removeClass('js-datepicker-highlight');
+                		$("#checkOut").addClass('js-datepicker-highlight');
+                	} else {
+                		$("#checkOut").val(dateText).removeClass('js-datepicker-highlight');
+						if(!$("#checkOut").hasClass('js-is-invalid')) {
+	                    	$("#checkOut").removeClass('js-is-invalid');
+	                    }
+	                    if(!$('.js-datepicker-modal').hasClass('hidden')) {
+					      	$('.js-datepicker-modal').addClass('hidden');
+					    }
+                	}
+                	$(this).datepicker();
 				}
+
 				if($('body').hasClass('ja_JP')) {
 	            	if($("#checkIn").val().length) {
 	            		var dateArray = $("#checkIn").val().split('-');
@@ -123,6 +178,12 @@
 	    }
 
 	    function format(d) {
+	      if(!$('.js-datepicker-modal').hasClass('hidden'))	{
+	      	$('.js-datepicker-modal').addClass('hidden');
+	      }
+	      if(!$('.js-select-guest-container').hasClass('hidden')) {
+	      	$('.js-select-guest-container').addClass('hidden');
+	      }	
 	      if(d.id && d.id.length) {
 	      	var term	= query.term || '';
 		    var result = highlightMatch(d.text, term);
@@ -484,6 +545,12 @@
 	     	if($('ul.header_language').hasClass('active')) {
 	     		$('ul.header_language').removeClass('active');	
 	     	}
+
+	     	if(!$('.js-datepicker-modal').hasClass('hidden')) {
+	     		$('.js-datepicker-modal').addClass('hidden');
+        		$("#checkIn").removeClass('js-datepicker-highlight');
+        		$("#checkOut").removeClass('js-datepicker-highlight');
+	     	}
 	     	
 	     	lightboxClose();
 	     }
@@ -492,6 +559,12 @@
 	$(document).click(function(e) {                    
 	   if(!$(e.target).hasClass('select-language') && !$(e.target).parent().hasClass('select-language')) {
 	     	$('ul.header_language').removeClass('active');	
+	   }
+
+	   if(!$(e.target).hasClass('js-datepicker-modal') && !$(e.target).parents().hasClass('js-datepicker-modal') && !$(e.target).parents().hasClass('ui-datepicker-header') && !$(e.target).hasClass('js-datepicker')) {
+	     	$('.js-datepicker-modal').addClass('hidden');
+	     	$("#checkIn").removeClass('js-datepicker-highlight');
+        	$("#checkOut").removeClass('js-datepicker-highlight');	
 	   }
 	}); 
 

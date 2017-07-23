@@ -351,13 +351,13 @@
 
 	$(document).on('mouseover', '.ui-datepicker-calendar td a', function(e){
 		if($('.check-out').hasClass('js-datepicker-highlight')) {
-			$(this).parents('.ui-datepicker-group').prevAll().find('td.dp-highlight-hover').addClass('new-class');
-			$(this).parents('tr').prevAll().find('td.dp-highlight-hover').addClass('new-class');
-			$(this).parent('td').prevAll('td.dp-highlight-hover').addClass('new-class');
-	    	$(this).parent('td.dp-highlight-hover').addClass('new-class');
-	    	$(this).parent('td').nextAll('td.dp-highlight-hover').removeClass('new-class');
-	    	$(this).parents('tr').nextAll().find('td.dp-highlight-hover').removeClass('new-class');
-	    	$(this).parents('.ui-datepicker-group').nextAll().find('td.dp-highlight-hover').removeClass('new-class');
+			$(this).parents('.ui-datepicker-group').prevAll().find('td.dp-highlight-hover').addClass('new-cell');
+			$(this).parents('tr').prevAll().find('td.dp-highlight-hover').addClass('new-cell');
+			$(this).parent('td').prevAll('td.dp-highlight-hover').addClass('new-cell');
+	    	$(this).parent('td.dp-highlight-hover').addClass('new-cell');
+	    	$(this).parent('td').nextAll('td.dp-highlight-hover').removeClass('new-cell');
+	    	$(this).parents('tr').nextAll().find('td.dp-highlight-hover').removeClass('new-cell');
+	    	$(this).parents('.ui-datepicker-group').nextAll().find('td.dp-highlight-hover').removeClass('new-cell');
 		}
     });
 

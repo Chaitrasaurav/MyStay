@@ -684,9 +684,16 @@ form{
   color: #FFF;
 }
 
-.dp-highlight-hover.new-class {
+.dp-highlight-hover.new-cell {
 	.ui-state-default {
 	  background: #9196A3 !important;
+	  color: #FFF;
+	}
+}
+
+.dp-highlight-hover.last-cell {
+	.ui-state-default {
+	  background: #232e48 !important;
 	  color: #FFF;
 	}
 }

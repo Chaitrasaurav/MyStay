@@ -338,15 +338,6 @@
 				$('.js-hotel').html(options);
 		};
 		createSliderElements('tokyo');
-
-		var tabMaxHeight = 0;
-
-		$('.tabs .tab-content').each(function () {
-		    tabMaxHeight = ($(this).height() > tabMaxHeight ? $(this).height() : tabMaxHeight); 
-		});
-		if($(window).width() >= 768) {
-			$('.tabs .tab-content').height(tabMaxHeight);
-		}
 	};
 
 	$(document).on('mouseover', '.ui-datepicker-calendar td a', function(e){
@@ -748,7 +739,7 @@
 //     }
 // }
 function lightboxOpen(){
-    //window.scrollTo(0,0);
+    window.scrollTo(0,0);
     document.getElementById('light').style.display='block';
     document.getElementById('fade').style.display='block';
 }

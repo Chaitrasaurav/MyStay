@@ -740,3 +740,14 @@ form{
 .ui-datepicker .ui-datepicker-prev{
 	cursor: pointer;
 }
+body.jp,
+body.kr,
+body.cns,
+body.cnt {
+	.select2-search.select2-search--dropdown {
+		display: none;
+	}
+	.form-city-container-options {
+		top: 0;
+	}
+}

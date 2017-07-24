@@ -369,8 +369,13 @@
 		$form.find(':input.required').each(function(index){
 		    // console.log(this.value)
 		    if(!this.value.length) {
-		    	isValid = false;
-		    	$(this).addClass('js-is-invalid');
+		    	if(!$('body').hasClass('ja_JP') && $(this).hasClass('js-city') && $(this).parents('form').find('.js-hotel').val().length) {
+		    		$(this).removeClass('js-is-invalid');
+		    	}else {
+		    		isValid = false;
+		    		$(this).addClass('js-is-invalid');	
+		    	}
+		    	
 		    }else {
 		    	$(this).removeClass('js-is-invalid');
 		    }
@@ -446,10 +451,14 @@
 	$( ".js-hotel" ).on('change', function(e) {
 		//console.log(e.target.value)
 		if(e.target.value === 'jptok28108' || e.target.value === '151373') {
-			$(e.target).parents('form').find('#adults1').val(1);
+			$(e.target).parents('form').find('.js-select-guest').val(1);
+			$(e.target).parents('form').find('.js-total-adult').val(1);
 		}
 		if($(e.target).hasClass('required') && $(e.target).hasClass('js-is-invalid')) {
 			$(e.target).removeClass('js-is-invalid');
+		}
+		if(!$('body').hasClass('ja_JP') && $(e.target).parents('form').find('.js-city').hasClass('required') && $(e.target).parents('form').find('.js-city').hasClass('js-is-invalid')) {
+			$(e.target).parents('form').find('.js-city').removeClass('js-is-invalid');
 		}
 	});
 
@@ -716,7 +725,8 @@
 			for (var i = 0; i < childFields.length; i++) {
 				childCount += Number(childFields[i].value);
 			}
-		$('.js-select-guest').val(adultCount);
+		$('.js-select-guest').val(adultCount + childCount);	
+		$('.js-total-adult').val(adultCount);
 		$('.js-total-children').val(childCount);
 		$('.js-total-room').val($('.js-room').length);
 		$('.js-select-guest-container').toggleClass('hidden');

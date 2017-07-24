@@ -1272,6 +1272,18 @@ form {
   float: left;
   width: 50%; }
 
+body.jp .select2-search.select2-search--dropdown,
+body.kr .select2-search.select2-search--dropdown,
+body.cns .select2-search.select2-search--dropdown,
+body.cnt .select2-search.select2-search--dropdown {
+  display: none; }
+
+body.jp .form-city-container-options,
+body.kr .form-city-container-options,
+body.cns .form-city-container-options,
+body.cnt .form-city-container-options {
+  top: 0; }
+
 .offers {
   background: #fff;
   position: relative;

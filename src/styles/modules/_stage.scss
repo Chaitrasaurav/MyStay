@@ -168,8 +168,7 @@
 	    background-color: transparent;
 	    border: none;
 	    border-radius: 3px;
-	    @media (max-width: 767px)
-	     {
+	    @media (max-width: 767px) {
 	    	    line-height: 1.9;
 	    }
 	}
@@ -740,6 +739,7 @@ form{
 .ui-datepicker .ui-datepicker-prev{
 	cursor: pointer;
 }
+
 .form_container{
 	float:left;
 	width:50%;
@@ -747,4 +747,15 @@ form{
 .video_container{
 	float:left;
 	width:50%;
+}
+body.jp,
+body.kr,
+body.cns,
+body.cnt {
+	.select2-search.select2-search--dropdown {
+		display: none;
+	}
+	.form-city-container-options {
+		top: 0;
+	}
 }

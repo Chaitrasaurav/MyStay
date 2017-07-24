@@ -179,11 +179,19 @@
 
 		function matchStart(term, text, obj) {
 		  if(!obj.id.length) return;
-		  
-		  if (text.toUpperCase().indexOf(term.toUpperCase()) > -1 ) {
-	          return true;
-	      }
-		  return false;
+		  // if($('body').hasClass('jp')) {
+		  	var text1 = $(obj.element).data('keys')
+		  		if (String(text1).toUpperCase().indexOf(String(term).toUpperCase()) > -1 ) {
+		          return true;
+		      	}
+			  	return false;
+
+		  // } else {
+		  // 		if (text.toUpperCase().indexOf(term.toUpperCase()) > -1 ) {
+		  //         return true;
+		  //     	}
+			 //  	return false;
+		  // }
 	    }
 
 	    function format(d) {
@@ -195,8 +203,12 @@
 	      }	
 	      if(d.id && d.id.length) {
 	      	var term	= query.term || '';
-		    var result = highlightMatch(d.text, term);
-		    return result;
+	      	//if($('body').hasClass('jp')) {
+	      		return d.text;
+		  	// } else {
+		  	// 	var result = highlightMatch(d.text, term);
+		   //  	return result;	
+		  	// }   
 	      }
 	    }
 
@@ -333,7 +345,8 @@
 		for(var city in cityHotelMap) {
 				var hotelsSelected = cityHotelMap[city].hotels;
 				for (var i = 0; i < hotelsSelected.length; i++) {
-					options += '<option value="'+ hotelsSelected[i].id +'">' + hotelsSelected[i].name + '</option>';
+					var localName = hotelsSelected[i].localName ? hotelsSelected[i].localName : hotelsSelected[i].name;
+					options += '<option data-keys="'+ localName +'" value="'+ hotelsSelected[i].id +'">' + hotelsSelected[i].name + '</option>';
 				}
 				$('.js-hotel').html(options);
 		};
@@ -429,7 +442,8 @@
 			options = '<option value="">Please select a Hotel</option>';
 		if(hotelsSelected.length){
 			for (var i = 0; i < hotelsSelected.length; i++) {
-				options += '<option value="'+ hotelsSelected[i].id +'">' + hotelsSelected[i].name + '</option>';
+				var localName = hotelsSelected[i].localName ? hotelsSelected[i].localName : hotelsSelected[i].name;
+				options += '<option data-keys="'+ localName +'" value="'+ hotelsSelected[i].id +'">' + hotelsSelected[i].name + '</option>';
 			}
 			$('.js-hotel').empty().html(options);
 			$('.js-hotel').val('').trigger('change')

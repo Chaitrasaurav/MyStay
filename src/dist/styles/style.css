@@ -604,10 +604,6 @@ header {
   left: 0;
   z-index: 1; }
 
-.video_container {
-  position: absolute;
-  left: 0; }
-
 .stage_container {
   max-width: 940px;
   margin: 0 auto;
@@ -1267,6 +1263,14 @@ form {
 
 .ui-datepicker .ui-datepicker-prev {
   cursor: pointer; }
+
+.form_container {
+  float: left;
+  width: 50%; }
+
+.video_container {
+  float: left;
+  width: 50%; }
 
 .offers {
   background: #fff;

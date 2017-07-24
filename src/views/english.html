@@ -41,156 +41,158 @@
 	<section class="stage">
 		<div class="animation-container">
 			<div class="animation"></div>
-			<div class="video_container">
+			<div class="stage_container clearfix">
+				<div class="form_container">
+					<h1 class="stage__heading">Win Amazing Pepper  MYSTAYS Prizes!</h1>
+					<div class="stage__form form">
+						<form name="mainForm" id="mainForm" novalidate autocomplete="off">
+							<div class="form__control">
+								<label class="form__label">Where in Japan?</label>
+								<select class="form__field js-city required" type="text" id="city">
+									<option value=""> Please select a city</option>
+									<option value="tokyo">Tokyo</option>
+									<option value="kyoto">Kyoto</option>
+									<option value="osaka">Osaka</option>
+									<option value="kanazawa">Kanazawa</option>
+									<option value="maihama-urayasu">Maihama/Urayasu</option>
+									<option value="tachikawa">Tachikawa</option>
+									<option value="kawasaki">Kawasaki</option>
+									<option value="yokohama">Yokohama</option>
+									<option value="chiba">Chiba</option>
+									<option value="tochigi">Tochigi</option>
+									<option value="hokkaido">Hokkaido</option>
+									<option value="aomori">Aomori</option>
+									<option value="yamanashi">Yamanashi</option>
+									<option value="nagoya">Nagoya</option>
+									<option value="niigata">Niigata</option>
+									<option value="kagawa">Kagawa</option>
+									<option value="ehime">Ehime</option>
+									<option value="fukuoka">Fukuoka</option>
+									<option value="oita">Oita</option>
+									<option value="okinawa">Okinawa</option>
+								</select>
+							</div>
+							<div class="form__control">
+								<select class="form__field js-hotel" type="text" name="property" id="property">
+								</select>
+							</div>
+							<div class="form_guestWrap">
+								<div class="form__control">
+									<label class="form__label">Check In</label>
+									<div class="input-wrap">
+										<input class="datepicker form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" placeholder="Select" readonly>
+									</div>
+								</div>
+								<div class="form__control">
+									<label class="form__label">Check Out</label>
+									<div class="input-wrap">
+										<input class="datepicker form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" placeholder="Select" readonly>
+									</div>
+								</div>
+								<div class="datepicker-modal js-datepicker-modal hidden">
+									<div class="datepicker-container js-datepicker-container"></div>
+								</div>
+								<div class="form__control">
+									<label class="form__label">No of guests</label>
+									<div class="input-wrap">
+										<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" name="adults1" id="adults1" value="2" readonly>
+										<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1" value="0">
+										<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms" value="1"> 
+										<input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="en_GB"> 
+										<input class="form__field form__field--sm" type="hidden" name="code" id="code" value="PP5"> 
+										<input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY">
+									</div>
+								</div>
+							</div>
+							<div class="select-guest-container js-select-guest-container hidden">
+										<h5>Rooms</h5>
+										<a class="js-cancel-select-guest cancel-select-guest" title="Close" href="javascript:;"><i class="icon close-btn"></i></a>
+										<ul class="js-room-list room-list clearfix" style="list-style: none;padding-left: 0;">
+											<li class="room js-room clearfix" data-room="0">
+												<div class="room-container clearfix">
+													<p class="room__heading">Room1</p>
+													<div class="form__control">
+														<label class="room__label form__label">Adults</label>
+														<div class="input-wrap">
+															<select class="room__field form__field js-adult-count">
+																<option value="1">1</option>
+																<option value="2" selected>2</option>
+																<option value="3">3</option>
+																<option value="4">4</option>
+																<option value="5">5</option>
+																<option value="6">6</option>
+																<option value="7">7</option>
+															</select>
+														</div>
+													</div>
+													<div class="form__control">
+														<label class="room__label form__label">Children</label>
+														<div class="input-wrap">
+															<select class="room__field form__field js-child-count">
+																<option value="0">0</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+																<option value="4">4</option>
+																<option value="5">5</option>
+																<option value="6">6</option>
+																<option value="7">7</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<div class="button-wrap">
+											<button type="button" class="room__add js-add-room">Add Room <i class="icon add-room"></i></button>
+											<button type="button" class="room__confirm js-confirm">Confirm here <i class="icon confirm-room"></i></button>
+										</div>
+									</div>
+							<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>
+						</form>
+						<a target="_blank" href="https://www.mystays.com/en/best-price-guarantee/" class="stage__hint">Best Price Guarantee!</a>
+					</div>
+					<div class="stage_conditions">
+						<div class="checkbox-wrap">
+		 					<input type="checkbox" class="form__field js-check-box" id="checkbox" checked> 
+		 					<label for="checkbox">Yes I want to become a MyStays Member and Join the Campaign</label>
+		 				</div>
+						<a onclick="lightboxOpen()"><i class="icon terms-conditions"></i>Terms &amp; Conitions</a>
+						<div id="light">
+							<span onclick="lightboxClose()">x</span>
+								<p><strong>ELIGIBILITY: This MYSTAYS x Pepper Campaign (“Promotion”)</strong> is open to legal residents of Japan and tourists allowed entry to Japan. Entry requires a membership to MYSTAYS HOTEL MANAGEMENT Co., Ltd. which is free and gives access to our Mail Magazine content, promotions and eventual loyalty advantages. Void where prohibited. By participating, entrants agree to be bound by these Official Rules and the decisions of Sponsor, which are binding and final on matters relating to this Promotion. Promotion is subject to all applicable international, state and local laws.</p>
+								<p><strong>SPONSOR:</strong> MYSTAYS HOTEL MANAGEMENT Co. Ltd. Holds all rights to this campaigns and designation of the winning participants. MYSTAYS HOTEL MANAGEMENT Co. Ltd. states rules and is the final arbiter on any dispute that may occur.</p>
+								<p><strong>PROMOTION PERIOD:</strong> The Promotion begins on <strong>28th July 2017</strong> at 16:00:01 Japan Standard Time (JST”), and ends on <strong>31st August 2017</strong> at 11:59:59 p.m. JST (the “<strong>Promotion Period</strong>”).</p>
+								<p><strong>HOW TO ENTER:</strong> To enter, you must book a stay through and register for the Promotion at <a href="http://www.mystays.com/ja/pepper2017" target="_blank">http://www.mystays.com/ja/pepper2017</a> (the "<strong>Campaign Website</strong>") before the <strong>31st August 2017</strong>, be a MYSTAYS HOTEL MANAGEMENT Co., Ltd. member book and pay at any Participating Hotel during the Promotion Period or the accepted stay period prior to the <strong>30th September 2017</strong>. The “<strong>Participating Hotel</strong>” is any participating MYSTAYS HOTEL MANAGEMENT Co. Ltd. and properties excluding MYSTAYS Residence and MYSTAYS PREMIER Residence brands. The campaign and entries are unlimited for individuals and valid during the Promotion Period for individual bookers, this excludes agents, companies or travel organizations.</p>
+								<p>In the event of a dispute as to an entry, the natural person who is the <strong>authorized account holder</strong> of the email address identified with the participant’s MYSTAYS HOTEL MANAGEMENT Co. Ltd. membership account will be deemed to be the entrant, but only if that person is otherwise eligible to enter the Promotion.  The “Authorized Account Holder” is the natural person assigned an email address by an Internet access provider, online service provider, Internet service provider, online service provider, or other organization responsible for assigning email addresses for the domain associated with the submitted address. Each potential winner may be required to show proof of being the authorized account holder.  If a dispute cannot be resolved to Sponsor’s satisfaction, the winning entrant may be deemed ineligible, as determined in Sponsor’s sole discretion. All entries become the exclusive property of Sponsor and none will be acknowledged or returned.</p>
+								<p><strong>DRAWING AND WINNER NOTIFICATION:</strong> The winners will be the Authorized Mail Magazine Account Holders who have booked through the Campaign website before the <strong>31st of August 2017</strong> and paid their stay in full before the <strong>30th September 2017</strong>. These should have been identified through lucky draws on or around <strong>15th October 2017</strong>. The potential winner(s) will be notified by telephone and/or mail and/or email using the contact information given at the time of entry or requested by email. Sponsor shall have no liability for any winner notification that is lost, intercepted or not received by a potential winner for any reason. In the event if a potential winner is unable to be contacted and all methods of communication are unsuccessful, or if the prize or prize notification is returned as unclaimed or undeliverable to such potential winner, such potential winner may be disqualified and an alternate winner may be selected. If any potential winner is found to be ineligible, or if he or she has not complied with these Official Rules or declines a prize for any reason prior to award, such potential winner will be disqualified and an alternate winner may be selected. Each potential winner may be required to execute an Affidavit of Eligibility, a Liability Release, and (where legal) a Publicity Release (collectively, “<strong>Prize Claim Documents</strong>”).</p>
+								<p><strong>PRIZES:</strong> The following prizes are available for:</p>
+								<ul>
+									<li>1 x Grand Prize Winner: 100,000 YEN MYSTAYS Voucher valid until 02/01/2018. The voucher can serve as partial payment if the accumulated stays’ cost is superior to the Voucher amount.</li>
+									<li>20x Second Prize Winners: 15,000 YEN MYSTAYS Voucher valid until 02/01/2018 for one night stay. The voucher can serve as partial payment if 										the night stay cost is superior to the Voucher amount.</li>
+									<li>100x Third Prize Winners: Small Pepper branded towels</li>
+									<li>100x Fourth Prize Winners: Mystays x Pepper hand fans</li>
+									<li>Campaign Duration: 5% Discount for all bookings made through the campaign page and paid in full before the <strong>30th September 2017</strong></li>
+								</ul>
+								<p>To the extent allowed by law, winner is solely responsible for the payment of any taxes that may be due as a result of the acceptance or use of any prize. Prize is non-transferable and no substitution by winners or cash equivalent is allowed. Sponsor reserves the right to substitute prize for one of comparable value if the advertised prize becomes unavailable. Any prize is awarded "AS IS." Neither Sponsor nor any other Promotion Entity makes any warranty or guarantee, either express or implied (including, without limitation, quality, merchantability and fitness for a particular purpose) in connection with this Promotion or any prize.</p>
+								<p><strong>GENERAL PROVISIONS:</strong> To the extent allowed by applicable law, acceptance of a prize constitutes winner’s permission for Sponsor to use winner’s name, photograph, likeness, voice, biographical information, statements and address (city and state/country) for advertising and/or publicity purposes worldwide and in all forms of media now known or hereafter developed, in perpetuity (or for as long as allowed under applicable law), without further compensation except where prohibited by law. Entrants (and any minor entrant’s parent or legal guardian) agree, to the extent allowed by applicable law, that the Promotion Entities shall not be responsible or liable for, and are hereby released from, any and all costs, injuries, losses or damages of any kind, including, without limitation, death and bodily injury, due in whole or in part, directly or indirectly, from participation in the Promotion or any Promotion-related activity, or from entrants’ acceptance, receipt, possession and/or use or misuse of any prize.</p>
+								<p>Sponsor reserves the right in its sole discretion to disqualify from this Promotion and any other promotions offered by Sponsor, any individual who is found to be tampering with the entry process or the operation of the Promotion or the Website, to be acting in violation of these Official Rules, or to be acting in an unsportsmanlike or disruptive manner, or with the intent to disrupt or undermine the legitimate operation of the Promotion, or to annoy, abuse, threaten or harass any other person.  No mechanically reproduced, illegible, incomplete, forged, software-generated or other automated multiple entries will be accepted.</p> 
+								<p>Sponsor reserves the right to modify, extend, suspend, or terminate the Promotion, in whole or in part, if it determines, in its sole discretion, that the Promotion is technically impaired or corrupted or that fraud or technical problems, failures or malfunctions or other unintended circumstances have impaired the integrity, administration, security, proper play and/or feasibility of the Promotion as contemplated herein.  If the Promotion is terminated before the designated end date, Sponsor will (if possible) select winner(s) in a random drawing from all eligible, non-suspect entries unaffected by the problem.  Inclusion in such drawing shall be each entrant’s sole and exclusive remedy in such 	circumstances.</p> 
+								<p>By entering this Promotion, you agree, to the extent allowed by applicable law, that (i) any and all disputes, claims, and causes of action arising out of or in connection with the Promotion, or any prize awarded, shall be resolved individually without resort to any form of class action; (ii) any claims, judgments and awards shall be limited to reasonable and actual out-of-pocket costs incurred, including costs associated with entering the Promotion, but in no event attorney's fees; and (iii) under no circumstances will any entrant be permitted to obtain any award for, and entrant hereby waives all rights to claim, punitive, incidental, indirect or consequential damages and any and all rights to have damages multiplied or otherwise increased and any other damages, other than damages for reasonable and actual out-of-pocket expenses. These rules and any disputes relating hereto are governed by the internal Japan laws, without regard to principles of conflicts of laws, and by entering you consent to the exclusive jurisdiction of the state and courts in Japan, for resolution of any disputes relating to the Promotion and waive any objection thereto to the extend allowed by applicable law.</p>
+								<p><strong>DATA:</strong> Any information you submit will be subject to the Sponsor’s privacy policy posted at <a href="http://corporate.mystays.com/e/privacy/" target="_blank">http://corporate.mystays.com/e/privacy/ </a></p>
+
+								<p><strong>WINNER NAME(S):</strong> The winner name(s) will be available for 30 days beginning approximately on 31 October 2017, and can be requested by contacting the following email address: <a href="mailto:khalil.maaouni@mystays.com">khalil.maaouni@mystays.com.</a> </p>
+								<p><strong>SPONSOR: MYSTAYS HOTEL MANAGEMENT Co., Ltd. Roppongi Hills North Tower 14th Floor, 6-2-31 Roppongi, Minato-ku, Tokyo, Japan, 106-0032m</strong></p>
+						</div>
+						<div id="fade" onclick="lightboxClose()"></div> 
+					</div>
+				</div>
+				<div class="video_container">
 					<video width="100%" height="100%" autoplay>
 					  <source src="../dist/images/PEPPER_ANIMATION_ALPHA.mp4" type="video/mp4">
 					  <source src="movie.ogg" type="video/ogg">
 					  Your browser does not support the video tag.
 					</video>
-				</div>
-			<div class="stage_container">
-				<h1 class="stage__heading">Win Amazing Pepper  MYSTAYS Prizes!</h1>
-				<div class="stage__form form">
-					<form name="mainForm" id="mainForm" novalidate autocomplete="off">
-						<div class="form__control">
-							<label class="form__label">Where in Japan?</label>
-							<select class="form__field js-city required" type="text" id="city">
-								<option value=""> Please select a city</option>
-								<option value="tokyo">Tokyo</option>
-								<option value="kyoto">Kyoto</option>
-								<option value="osaka">Osaka</option>
-								<option value="kanazawa">Kanazawa</option>
-								<option value="maihama-urayasu">Maihama/Urayasu</option>
-								<option value="tachikawa">Tachikawa</option>
-								<option value="kawasaki">Kawasaki</option>
-								<option value="yokohama">Yokohama</option>
-								<option value="chiba">Chiba</option>
-								<option value="tochigi">Tochigi</option>
-								<option value="hokkaido">Hokkaido</option>
-								<option value="aomori">Aomori</option>
-								<option value="yamanashi">Yamanashi</option>
-								<option value="nagoya">Nagoya</option>
-								<option value="niigata">Niigata</option>
-								<option value="kagawa">Kagawa</option>
-								<option value="ehime">Ehime</option>
-								<option value="fukuoka">Fukuoka</option>
-								<option value="oita">Oita</option>
-								<option value="okinawa">Okinawa</option>
-							</select>
-						</div>
-						<div class="form__control">
-							<select class="form__field js-hotel" type="text" name="property" id="property">
-							</select>
-						</div>
-						<div class="form_guestWrap">
-							<div class="form__control">
-								<label class="form__label">Check In</label>
-								<div class="input-wrap">
-									<input class="datepicker form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" placeholder="Select" readonly>
-								</div>
-							</div>
-							<div class="form__control">
-								<label class="form__label">Check Out</label>
-								<div class="input-wrap">
-									<input class="datepicker form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" placeholder="Select" readonly>
-								</div>
-							</div>
-							<div class="datepicker-modal js-datepicker-modal hidden">
-								<div class="datepicker-container js-datepicker-container"></div>
-							</div>
-							<div class="form__control">
-								<label class="form__label">No of guests</label>
-								<div class="input-wrap">
-									<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" name="adults1" id="adults1" value="2" readonly>
-									<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1" value="0">
-									<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms" value="1"> 
-									<input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="en_GB"> 
-									<input class="form__field form__field--sm" type="hidden" name="code" id="code" value="PP5"> 
-									<input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY">
-								</div>
-							</div>
-						</div>
-						<div class="select-guest-container js-select-guest-container hidden">
-									<h5>Rooms</h5>
-									<a class="js-cancel-select-guest cancel-select-guest" title="Close" href="javascript:;"><i class="icon close-btn"></i></a>
-									<ul class="js-room-list room-list clearfix" style="list-style: none;padding-left: 0;">
-										<li class="room js-room clearfix" data-room="0">
-											<div class="room-container clearfix">
-												<p class="room__heading">Room1</p>
-												<div class="form__control">
-													<label class="room__label form__label">Adults</label>
-													<div class="input-wrap">
-														<select class="room__field form__field js-adult-count">
-															<option value="1">1</option>
-															<option value="2" selected>2</option>
-															<option value="3">3</option>
-															<option value="4">4</option>
-															<option value="5">5</option>
-															<option value="6">6</option>
-															<option value="7">7</option>
-														</select>
-													</div>
-												</div>
-												<div class="form__control">
-													<label class="room__label form__label">Children</label>
-													<div class="input-wrap">
-														<select class="room__field form__field js-child-count">
-															<option value="0">0</option>
-															<option value="1">1</option>
-															<option value="2">2</option>
-															<option value="3">3</option>
-															<option value="4">4</option>
-															<option value="5">5</option>
-															<option value="6">6</option>
-															<option value="7">7</option>
-														</select>
-													</div>
-												</div>
-											</div>
-										</li>
-									</ul>
-									<div class="button-wrap">
-										<button type="button" class="room__add js-add-room">Add Room <i class="icon add-room"></i></button>
-										<button type="button" class="room__confirm js-confirm">Confirm here <i class="icon confirm-room"></i></button>
-									</div>
-								</div>
-						<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>
-					</form>
-					<a target="_blank" href="https://www.mystays.com/en/best-price-guarantee/" class="stage__hint">Best Price Guarantee!</a>
-				</div>
-				<div class="stage_conditions">
-					<div class="checkbox-wrap">
-	 					<input type="checkbox" class="form__field js-check-box" id="checkbox" checked> 
-	 					<label for="checkbox">Yes I want to become a MyStays Member and Join the Campaign</label>
-	 				</div>
-					<a onclick="lightboxOpen()"><i class="icon terms-conditions"></i>Terms &amp; Conitions</a>
-					<div id="light">
-						<span onclick="lightboxClose()">x</span>
-							<p><strong>ELIGIBILITY: This MYSTAYS x Pepper Campaign (“Promotion”)</strong> is open to legal residents of Japan and tourists allowed entry to Japan. Entry requires a membership to MYSTAYS HOTEL MANAGEMENT Co., Ltd. which is free and gives access to our Mail Magazine content, promotions and eventual loyalty advantages. Void where prohibited. By participating, entrants agree to be bound by these Official Rules and the decisions of Sponsor, which are binding and final on matters relating to this Promotion. Promotion is subject to all applicable international, state and local laws.</p>
-							<p><strong>SPONSOR:</strong> MYSTAYS HOTEL MANAGEMENT Co. Ltd. Holds all rights to this campaigns and designation of the winning participants. MYSTAYS HOTEL MANAGEMENT Co. Ltd. states rules and is the final arbiter on any dispute that may occur.</p>
-							<p><strong>PROMOTION PERIOD:</strong> The Promotion begins on <strong>28th July 2017</strong> at 16:00:01 Japan Standard Time (JST”), and ends on <strong>31st August 2017</strong> at 11:59:59 p.m. JST (the “<strong>Promotion Period</strong>”).</p>
-							<p><strong>HOW TO ENTER:</strong> To enter, you must book a stay through and register for the Promotion at <a href="http://www.mystays.com/ja/pepper2017" target="_blank">http://www.mystays.com/ja/pepper2017</a> (the "<strong>Campaign Website</strong>") before the <strong>31st August 2017</strong>, be a MYSTAYS HOTEL MANAGEMENT Co., Ltd. member book and pay at any Participating Hotel during the Promotion Period or the accepted stay period prior to the <strong>30th September 2017</strong>. The “<strong>Participating Hotel</strong>” is any participating MYSTAYS HOTEL MANAGEMENT Co. Ltd. and properties excluding MYSTAYS Residence and MYSTAYS PREMIER Residence brands. The campaign and entries are unlimited for individuals and valid during the Promotion Period for individual bookers, this excludes agents, companies or travel organizations.</p>
-							<p>In the event of a dispute as to an entry, the natural person who is the <strong>authorized account holder</strong> of the email address identified with the participant’s MYSTAYS HOTEL MANAGEMENT Co. Ltd. membership account will be deemed to be the entrant, but only if that person is otherwise eligible to enter the Promotion.  The “Authorized Account Holder” is the natural person assigned an email address by an Internet access provider, online service provider, Internet service provider, online service provider, or other organization responsible for assigning email addresses for the domain associated with the submitted address. Each potential winner may be required to show proof of being the authorized account holder.  If a dispute cannot be resolved to Sponsor’s satisfaction, the winning entrant may be deemed ineligible, as determined in Sponsor’s sole discretion. All entries become the exclusive property of Sponsor and none will be acknowledged or returned.</p>
-							<p><strong>DRAWING AND WINNER NOTIFICATION:</strong> The winners will be the Authorized Mail Magazine Account Holders who have booked through the Campaign website before the <strong>31st of August 2017</strong> and paid their stay in full before the <strong>30th September 2017</strong>. These should have been identified through lucky draws on or around <strong>15th October 2017</strong>. The potential winner(s) will be notified by telephone and/or mail and/or email using the contact information given at the time of entry or requested by email. Sponsor shall have no liability for any winner notification that is lost, intercepted or not received by a potential winner for any reason. In the event if a potential winner is unable to be contacted and all methods of communication are unsuccessful, or if the prize or prize notification is returned as unclaimed or undeliverable to such potential winner, such potential winner may be disqualified and an alternate winner may be selected. If any potential winner is found to be ineligible, or if he or she has not complied with these Official Rules or declines a prize for any reason prior to award, such potential winner will be disqualified and an alternate winner may be selected. Each potential winner may be required to execute an Affidavit of Eligibility, a Liability Release, and (where legal) a Publicity Release (collectively, “<strong>Prize Claim Documents</strong>”).</p>
-							<p><strong>PRIZES:</strong> The following prizes are available for:</p>
-							<ul>
-								<li>1 x Grand Prize Winner: 100,000 YEN MYSTAYS Voucher valid until 02/01/2018. The voucher can serve as partial payment if the accumulated stays’ cost is superior to the Voucher amount.</li>
-								<li>20x Second Prize Winners: 15,000 YEN MYSTAYS Voucher valid until 02/01/2018 for one night stay. The voucher can serve as partial payment if 										the night stay cost is superior to the Voucher amount.</li>
-								<li>100x Third Prize Winners: Small Pepper branded towels</li>
-								<li>100x Fourth Prize Winners: Mystays x Pepper hand fans</li>
-								<li>Campaign Duration: 5% Discount for all bookings made through the campaign page and paid in full before the <strong>30th September 2017</strong></li>
-							</ul>
-							<p>To the extent allowed by law, winner is solely responsible for the payment of any taxes that may be due as a result of the acceptance or use of any prize. Prize is non-transferable and no substitution by winners or cash equivalent is allowed. Sponsor reserves the right to substitute prize for one of comparable value if the advertised prize becomes unavailable. Any prize is awarded "AS IS." Neither Sponsor nor any other Promotion Entity makes any warranty or guarantee, either express or implied (including, without limitation, quality, merchantability and fitness for a particular purpose) in connection with this Promotion or any prize.</p>
-							<p><strong>GENERAL PROVISIONS:</strong> To the extent allowed by applicable law, acceptance of a prize constitutes winner’s permission for Sponsor to use winner’s name, photograph, likeness, voice, biographical information, statements and address (city and state/country) for advertising and/or publicity purposes worldwide and in all forms of media now known or hereafter developed, in perpetuity (or for as long as allowed under applicable law), without further compensation except where prohibited by law. Entrants (and any minor entrant’s parent or legal guardian) agree, to the extent allowed by applicable law, that the Promotion Entities shall not be responsible or liable for, and are hereby released from, any and all costs, injuries, losses or damages of any kind, including, without limitation, death and bodily injury, due in whole or in part, directly or indirectly, from participation in the Promotion or any Promotion-related activity, or from entrants’ acceptance, receipt, possession and/or use or misuse of any prize.</p>
-							<p>Sponsor reserves the right in its sole discretion to disqualify from this Promotion and any other promotions offered by Sponsor, any individual who is found to be tampering with the entry process or the operation of the Promotion or the Website, to be acting in violation of these Official Rules, or to be acting in an unsportsmanlike or disruptive manner, or with the intent to disrupt or undermine the legitimate operation of the Promotion, or to annoy, abuse, threaten or harass any other person.  No mechanically reproduced, illegible, incomplete, forged, software-generated or other automated multiple entries will be accepted.</p> 
-							<p>Sponsor reserves the right to modify, extend, suspend, or terminate the Promotion, in whole or in part, if it determines, in its sole discretion, that the Promotion is technically impaired or corrupted or that fraud or technical problems, failures or malfunctions or other unintended circumstances have impaired the integrity, administration, security, proper play and/or feasibility of the Promotion as contemplated herein.  If the Promotion is terminated before the designated end date, Sponsor will (if possible) select winner(s) in a random drawing from all eligible, non-suspect entries unaffected by the problem.  Inclusion in such drawing shall be each entrant’s sole and exclusive remedy in such 	circumstances.</p> 
-							<p>By entering this Promotion, you agree, to the extent allowed by applicable law, that (i) any and all disputes, claims, and causes of action arising out of or in connection with the Promotion, or any prize awarded, shall be resolved individually without resort to any form of class action; (ii) any claims, judgments and awards shall be limited to reasonable and actual out-of-pocket costs incurred, including costs associated with entering the Promotion, but in no event attorney's fees; and (iii) under no circumstances will any entrant be permitted to obtain any award for, and entrant hereby waives all rights to claim, punitive, incidental, indirect or consequential damages and any and all rights to have damages multiplied or otherwise increased and any other damages, other than damages for reasonable and actual out-of-pocket expenses. These rules and any disputes relating hereto are governed by the internal Japan laws, without regard to principles of conflicts of laws, and by entering you consent to the exclusive jurisdiction of the state and courts in Japan, for resolution of any disputes relating to the Promotion and waive any objection thereto to the extend allowed by applicable law.</p>
-							<p><strong>DATA:</strong> Any information you submit will be subject to the Sponsor’s privacy policy posted at <a href="http://corporate.mystays.com/e/privacy/" target="_blank">http://corporate.mystays.com/e/privacy/ </a></p>
-
-							<p><strong>WINNER NAME(S):</strong> The winner name(s) will be available for 30 days beginning approximately on 31 October 2017, and can be requested by contacting the following email address: <a href="mailto:khalil.maaouni@mystays.com">khalil.maaouni@mystays.com.</a> </p>
-							<p><strong>SPONSOR: MYSTAYS HOTEL MANAGEMENT Co., Ltd. Roppongi Hills North Tower 14th Floor, 6-2-31 Roppongi, Minato-ku, Tokyo, Japan, 106-0032m</strong></p>
-					</div>
-					<div id="fade" onclick="lightboxClose()"></div> 
 				</div>
 			</div>
 		</div>

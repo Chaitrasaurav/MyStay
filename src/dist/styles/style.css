@@ -1499,7 +1499,8 @@ form {
     opacity: 0.6;
     font-weight: 600;
     line-height: 1;
-    margin-top: 15px; }
+    margin-top: 20px;
+    margin-bottom: 25px; }
   .tabs .tab-content-right p {
     font-family: Helvetica Neue Light;
     margin-top: 20px; }

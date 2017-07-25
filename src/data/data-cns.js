@@ -562,4 +562,15 @@
 			]
 		}
 	};
+
+	window.miscellaneous = {
+		hotelSelectPlaceholder: '请选择一家酒店',
+		roomLabel: '会议室',
+		adultLabel: '成人',
+		childrenLabel: '孩子',
+		sliderSelectButton: '选择酒店',
+		hotelSingular: '旅馆',
+		hotelPlural: '酒店',
+		deleteRoom: '删除这个房间'
+	};
 })(window);

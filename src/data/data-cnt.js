@@ -562,4 +562,15 @@
 			]
 		}
 	};
+
+	window.miscellaneous = {
+		hotelSelectPlaceholder: '請選擇一家酒店',
+		roomLabel: '會議室',
+		adultLabel: '成人',
+		childrenLabel: '孩子',
+		sliderSelectButton: '選擇酒店',
+		hotelSingular: '旅館',
+		hotelPlural: '酒店',
+		deleteRoom: '刪除這個房間'
+	};
 })(window);

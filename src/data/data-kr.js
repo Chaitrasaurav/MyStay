@@ -562,4 +562,15 @@
 			]
 		}
 	};
+
+	window.miscellaneous = {
+		hotelSelectPlaceholder: '호텔을 선택하십시오.',
+		roomLabel: '방',
+		adultLabel: '성인',
+		childrenLabel: '어린이',
+		sliderSelectButton: '호텔 선택',
+		hotelSingular: '호텔',
+		hotelPlural: '호텔',
+		deleteRoom: '이 방을 삭제하십시오.'
+	};
 })(window);

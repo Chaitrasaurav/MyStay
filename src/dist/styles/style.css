@@ -587,7 +587,7 @@ header {
         text-align: left; }
 
 .stage {
-  background: url(../images/Hero-section-lg-gradient-bg.png) repeat-x;
+  background: url(../images/Hero-section-lg-gradient-bg.png) repeat-x #415ebd;
   position: relative;
   z-index: 3; }
   @media (max-width: 767px) {
@@ -754,6 +754,10 @@ header {
   @media (max-width: 767px) {
     .form__control .form__label {
       font-size: 15px; } }
+
+@media (max-width: 767px) {
+  .jp .form__control .form__label {
+    font-size: 11px; } }
 
 .select2-search input:focus {
   outline: none; }
@@ -1124,7 +1128,7 @@ form {
   background: #fff;
   border: 1px solid #aaabae;
   padding: 10px 20px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 900;
   display: block;
   float: left;
@@ -1134,11 +1138,20 @@ form {
   .room__add:hover {
     text-decoration: underline; }
 
+@media (max-width: 400px) {
+  .kr .room__add {
+    padding: 10px; } }
+
+@media (max-width: 400px) {
+  .kr .room__confirm {
+    padding: 10px;
+    margin-left: 10px; } }
+
 .room__confirm {
   background: #ffd25d;
   border: 1px solid #ffd25d;
   padding: 10px 20px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 900;
   display: block;
   float: left;
@@ -1964,6 +1977,10 @@ footer {
   color: #ffffff;
   z-index: 2;
   position: relative; }
+  @media (max-width: 400px) {
+    .slider_container p {
+      max-width: 250px;
+      margin: 20px auto 0; } }
   @media (max-width: 950px) {
     .slider_container {
       padding: 62px 60px 69px; } }
@@ -2059,7 +2076,7 @@ footer {
       left: 50%;
       position: absolute;
       bottom: 20px;
-      min-width: 140px; }
+      min-width: 145px; }
       .slider_container .slick-slide button:focus {
         outline: none; }
       .slider_container .slick-slide button:hover {

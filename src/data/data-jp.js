@@ -635,4 +635,15 @@
 			]
 		}
 	};
+
+	window.miscellaneous = {
+		hotelSelectPlaceholder: 'ホテルを選択してください',
+		roomLabel: 'ルーム',
+		adultLabel: '大人',
+		childrenLabel: '子供',
+		sliderSelectButton: 'ホテルを選択',
+		hotelSingular: 'ホテル',
+		hotelPlural: 'ホテル',
+		deleteRoom: 'この部屋を削除する'
+	};
 })(window);

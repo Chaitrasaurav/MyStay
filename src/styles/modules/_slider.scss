@@ -80,6 +80,12 @@
 	color: $text-color-primary;
 	z-index: 2;
     position: relative;
+    p{
+    	@media (max-width: 400px) {
+    	    max-width: 250px;
+    		margin: 20px auto 0;
+    	}
+    }
     @media (max-width: 950px) {
 		padding: 62px 60px 69px;
 	}
@@ -184,7 +190,7 @@
 		    left: 50%;
 		    position: absolute;
 		    bottom: 20px;
-		    min-width: 140px;
+		    min-width: 145px;
 	    	&:focus{
 	    		outline:none;
 	    	}

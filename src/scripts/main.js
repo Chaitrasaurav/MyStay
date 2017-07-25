@@ -4,11 +4,12 @@
 
 	window.myStays = {};
 
-	var options = '<option value="">Please select a Hotel</option>';
+	var options = '<option value="">' + miscellaneous.hotelSelectPlaceholder + '</option>';
 
 	myStays.init = function() {
 		var query= {},
-			cityHotelMap = window.cityHotelMap;
+			cityHotelMap = window.cityHotelMap,
+			miscellaneous = window.miscellaneous;
 		
 	    function gotoDate(month, year) {
 		    $(".js-datepicker-container").each(function (i, el) {
@@ -147,9 +148,9 @@
 			if(d.disabled) return; 
 	    	var info = '';
 	    	if(cityHotelMap[d.id].hotels.length > 1) {
-	    		info += '<span> (' + cityHotelMap[d.id].hotels.length + ' Hotels) </span>';
+	    		info += '<span> (' + cityHotelMap[d.id].hotels.length + ' '+ miscellaneous.hotelPlural  +') </span>';
 	    	} else {
-	    		info += '<span> (' + cityHotelMap[d.id].hotels.length + ' Hotel) </span>';
+	    		info += '<span> (' + cityHotelMap[d.id].hotels.length + ' '+ miscellaneous.hotelSingular + ') </span>';
 	    	}
 	    	return $('<p class="option-city">' + d.text + ' ' + info +'<p>');
 		};
@@ -439,7 +440,7 @@
 	$( ".js-city" ).on('change', function(e) {
 		var selectedCity = e.target.value,
 			hotelsSelected = cityHotelMap[selectedCity].hotels,
-			options = '<option value="">Please select a Hotel</option>';
+			options = '<option value="">' + miscellaneous.hotelSelectPlaceholder + '</option>';
 		if(hotelsSelected.length){
 			for (var i = 0; i < hotelsSelected.length; i++) {
 				var localName = hotelsSelected[i].localName ? hotelsSelected[i].localName : hotelsSelected[i].name;
@@ -486,7 +487,7 @@
 		var item = '';
 		for (var i = 0; i < cityHotelMap[city].hotels.length; i++) {
 			var hotelData =  cityHotelMap[city].hotels[i];
-			item += '<div><img data-lazy="../dist/images/' + hotelData.img + '" /> <h6>'+ hotelData.name +'</h6> <p>'+ hotelData.address +'</p> <button class="js-slider-choose" data-city="' + city + '" data-hotel="' + hotelData.name + '" data-property="' + hotelData.id + '">Select Hotel</button></div>';
+			item += '<div><img data-lazy="../dist/images/' + hotelData.img + '" /> <h6>'+ hotelData.name +'</h6> <p>'+ hotelData.address +'</p> <button class="js-slider-choose" data-city="' + city + '" data-hotel="' + hotelData.name + '" data-property="' + hotelData.id + '">' + miscellaneous.sliderSelectButton + '</button></div>';
 		};
 		
 		$('.js-slider').empty().append(item).slick({
@@ -640,9 +641,9 @@
 		var index = $('.js-room-list').find('li').length + 1;
 		var list = '<li class="js-room room clearfix" data-room="'+ index +'">\
 						<div class="room-container clearfix">\
-							<p class="room__heading">Room' + index +'</p>\
+							<p class="room__heading">'+ miscellaneous.roomLabel + index +'</p>\
 							<div class="form__control">\
-								<label class="room__label form__label">Adults</label>\
+								<label class="room__label form__label">' + miscellaneous.adultLabel + '</label>\
 								<div class="input-wrap">\
 									<select class="room__field form__field js-adult-count">\
 										<option value="1">1</option>\
@@ -656,7 +657,7 @@
 								</div>\
 							</div>\
 							<div class="form__control">\
-								<label class="room__label form__label">Children</label>\
+								<label class="room__label form__label">' + miscellaneous.childrenLabel + '</label>\
 								<div class="input-wrap">\
 									<select class="room__field form__field js-child-count">\
 										<option value="0">0</option>\
@@ -672,7 +673,7 @@
 							</div>\
 						</div>\
 						<div class="room__delete">\
-							<a href="javascript:;" title="Delete this room" class="room__delete-btn js-delete-room"><i class="icon delete-icon"></i></a>\
+							<a href="javascript:;" title="'+ miscellaneous.deleteRoom +'" class="room__delete-btn js-delete-room"><i class="icon delete-icon"></i></a>\
 						</div>\
 					</li>';
 		$('.js-room-list').append(list);

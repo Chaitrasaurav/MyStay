@@ -562,4 +562,15 @@
 			]
 		}
 	};
+
+	window.miscellaneous = {
+		hotelSelectPlaceholder: 'Please select a Hotel',
+		roomLabel: 'Room',
+		adultLabel: 'Adults',
+		childrenLabel: 'Children',
+		sliderSelectButton: 'Select Hotel',
+		hotelSingular: 'Hotel',
+		hotelPlural: 'Hotels',
+		deleteRoom: 'Delete this room'
+	};
 })(window);

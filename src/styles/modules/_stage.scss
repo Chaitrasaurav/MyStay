@@ -1,5 +1,5 @@
 .stage{
-	background: url(../images/Hero-section-lg-gradient-bg.png) repeat-x;
+	background: url(../images/Hero-section-lg-gradient-bg.png) repeat-x #415ebd;
 	position: relative;
 	z-index:3;
 	@media (max-width: 767px) {
@@ -181,6 +181,11 @@
 		@media (max-width: 767px) {
 	    	font-size:15px;
 	    }
+	}
+}
+.jp .form__control .form__label{
+	@media (max-width: 767px) {
+		font-size:11px;
 	}
 }
 .select2-search{
@@ -576,7 +581,7 @@ form{
 	background: #fff;
     border: 1px solid #aaabae;
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 900;
     display: block;
     float: left;
@@ -588,11 +593,24 @@ form{
     	text-decoration: underline;
     }
 }
+.kr{
+	.room__add{
+		@media (max-width: 400px) {
+			padding: 10px;
+		}
+	}
+	.room__confirm{
+		@media (max-width: 400px) {
+			padding: 10px;
+			margin-left: 10px;
+		}
+	}
+}
 .room__confirm{
 	background: #ffd25d;
 	border: 1px solid #ffd25d;
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 900;
     display: block;
     float: left;

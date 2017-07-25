@@ -540,6 +540,9 @@ header {
       display: inline-block;
       margin: 0 28px 0 0;
       color: #fff; }
+      @media (max-width: 400px) {
+        .header_links ul li {
+          margin: 0 18px 0 0; } }
       .header_links ul li a {
         color: #fff; }
     .header_links ul .select-language {
@@ -575,11 +578,11 @@ header {
       display: block;
       position: absolute;
       left: -10px;
-      min-width: 70px;
+      min-width: 105px;
       top: 30px; }
       @media (max-width: 950px) {
         .header_links .header_language.active {
-          left: -17px; } }
+          left: -25px; } }
       .header_links .header_language.active a {
         text-align: left; }
 
@@ -1263,14 +1266,6 @@ form {
 
 .ui-datepicker .ui-datepicker-prev {
   cursor: pointer; }
-
-.form_container {
-  float: left;
-  width: 50%; }
-
-.video_container {
-  float: left;
-  width: 50%; }
 
 .offers {
   background: #fff;

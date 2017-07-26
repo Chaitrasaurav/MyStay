@@ -609,7 +609,7 @@ header {
 
 .stage_container {
   max-width: 940px;
-  background: url(../images/PEPPER_ANIMATION_ALPHA_256_1.gif) no-repeat center right;
+  background: url(../images/PEPPER_ANIMATION_ALPHA_256.gif) no-repeat center right;
   margin: 0 auto;
   padding: 58px 0 67px;
   position: relative;
@@ -656,7 +656,7 @@ header {
 
 @media (max-width: 767px) {
   .form-wrap {
-    background: url(../images/cropped_pepper_16_SD_1.gif) no-repeat top center, url(../images/cropped_still.gif) no-repeat top center;
+    background: url(../images/cropped_pepper_256.gif) no-repeat top center;
     padding-top: 165px; } }
 
 .stage__form {

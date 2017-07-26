@@ -44,114 +44,116 @@
 			<div class="stage_container clearfix">
 				<div class="form_container">
 					<h1 class="stage__heading">Win Amazing Pepper  MYSTAYS Prizes!</h1>
-					<div class="stage__form form">
-						<form name="mainForm" id="mainForm" novalidate autocomplete="off">
-							<div class="form__control">
-								<label class="form__label">Where in Japan?</label>
-								<select class="form__field js-city required" type="text" id="city">
-									<option value=""> Please select a city</option>
-									<option data-keys="Tokyo" value="tokyo">Tokyo</option>
-									<option data-keys="Kyoto" value="kyoto">Kyoto</option>
-									<option data-keys="Osaka" value="osaka">Osaka</option>
-									<option data-keys="Kanazawa" value="kanazawa">Kanazawa</option>
-									<option data-keys="Maihama/Urayasu" value="maihama-urayasu">Maihama/Urayasu</option>
-									<option data-keys="Tachikawa" value="tachikawa">Tachikawa</option>
-									<option data-keys="Kawasaki" value="kawasaki">Kawasaki</option>
-									<option data-keys="Yokohama" value="yokohama">Yokohama</option>
-									<option data-keys="Chiba" value="chiba">Chiba</option>
-									<option data-keys="Tochigi" value="tochigi">Tochigi</option>
-									<option data-keys="Hokkaido" value="hokkaido">Hokkaido</option>
-									<option data-keys="Aomori" value="aomori">Aomori</option>
-									<option data-keys="Yamanashi" value="yamanashi">Yamanashi</option>
-									<option data-keys="Nagoya" value="nagoya">Nagoya</option>
-									<option data-keys="Niigata" value="niigata">Niigata</option>
-									<option data-keys="Kagawa" value="kagawa">Kagawa</option>
-									<option data-keys="Ehime" value="ehime">Ehime</option>
-									<option data-keys="Fukuoka" value="fukuoka">Fukuoka</option>
-									<option data-keys="Oita"value="oita">Oita</option>
-									<option data-keys="Okinawa" value="okinawa">Okinawa</option>
-								</select>
-							</div>
-							<div class="form__control">
-								<select class="form__field js-hotel" type="text" name="property" id="property">
-								</select>
-							</div>
-							<div class="form_guestWrap">
+					<div class="form-wrap">
+						<div class="stage__form form">
+							<form name="mainForm" id="mainForm" novalidate autocomplete="off">
 								<div class="form__control">
-									<label class="form__label">Check In</label>
-									<div class="input-wrap">
-										<input class="datepicker form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" placeholder="Select" readonly>
-									</div>
+									<label class="form__label">Where in Japan?</label>
+									<select class="form__field js-city required" type="text" id="city">
+										<option value=""> Please select a city</option>
+										<option data-keys="Tokyo" value="tokyo">Tokyo</option>
+										<option data-keys="Kyoto" value="kyoto">Kyoto</option>
+										<option data-keys="Osaka" value="osaka">Osaka</option>
+										<option data-keys="Kanazawa" value="kanazawa">Kanazawa</option>
+										<option data-keys="Maihama/Urayasu" value="maihama-urayasu">Maihama/Urayasu</option>
+										<option data-keys="Tachikawa" value="tachikawa">Tachikawa</option>
+										<option data-keys="Kawasaki" value="kawasaki">Kawasaki</option>
+										<option data-keys="Yokohama" value="yokohama">Yokohama</option>
+										<option data-keys="Chiba" value="chiba">Chiba</option>
+										<option data-keys="Tochigi" value="tochigi">Tochigi</option>
+										<option data-keys="Hokkaido" value="hokkaido">Hokkaido</option>
+										<option data-keys="Aomori" value="aomori">Aomori</option>
+										<option data-keys="Yamanashi" value="yamanashi">Yamanashi</option>
+										<option data-keys="Nagoya" value="nagoya">Nagoya</option>
+										<option data-keys="Niigata" value="niigata">Niigata</option>
+										<option data-keys="Kagawa" value="kagawa">Kagawa</option>
+										<option data-keys="Ehime" value="ehime">Ehime</option>
+										<option data-keys="Fukuoka" value="fukuoka">Fukuoka</option>
+										<option data-keys="Oita"value="oita">Oita</option>
+										<option data-keys="Okinawa" value="okinawa">Okinawa</option>
+									</select>
 								</div>
 								<div class="form__control">
-									<label class="form__label">Check Out</label>
-									<div class="input-wrap">
-										<input class="datepicker form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" placeholder="Select" readonly>
-									</div>
+									<select class="form__field js-hotel" type="text" name="property" id="property">
+									</select>
 								</div>
-								<div class="datepicker-modal js-datepicker-modal hidden">
-									<div class="datepicker-container js-datepicker-container"></div>
-								</div>
-								<div class="form__control">
-									<label class="form__label">No of guests</label>
-									<div class="input-wrap">
-										<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" value="2" readonly>
-										<input class="form__field form__field--sm js-total-adult" type="hidden" name="adults1" id="adults1" value="2">
-										<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1" value="0">
-										<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms" value="1"> 
-										<input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="en_GB"> 
-										<input class="form__field form__field--sm" type="hidden" name="code" id="code" value="PP5"> 
-										<input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY">
-									</div>
-								</div>
-							</div>
-							<div class="select-guest-container js-select-guest-container hidden">
-										<h5>Rooms</h5>
-										<a class="js-cancel-select-guest cancel-select-guest" title="Close" href="javascript:;"><i class="icon close-btn"></i></a>
-										<ul class="js-room-list room-list clearfix" style="list-style: none;padding-left: 0;">
-											<li class="room js-room clearfix" data-room="0">
-												<div class="room-container clearfix">
-													<p class="room__heading">Room1</p>
-													<div class="form__control">
-														<label class="room__label form__label">Adults</label>
-														<div class="input-wrap">
-															<select class="room__field form__field js-adult-count">
-																<option value="1">1</option>
-																<option value="2" selected>2</option>
-																<option value="3">3</option>
-																<option value="4">4</option>
-																<option value="5">5</option>
-																<option value="6">6</option>
-																<option value="7">7</option>
-															</select>
-														</div>
-													</div>
-													<div class="form__control">
-														<label class="room__label form__label">Children</label>
-														<div class="input-wrap">
-															<select class="room__field form__field js-child-count">
-																<option value="0">0</option>
-																<option value="1">1</option>
-																<option value="2">2</option>
-																<option value="3">3</option>
-																<option value="4">4</option>
-																<option value="5">5</option>
-																<option value="6">6</option>
-																<option value="7">7</option>
-															</select>
-														</div>
-													</div>
-												</div>
-											</li>
-										</ul>
-										<div class="button-wrap">
-											<button type="button" class="room__add js-add-room">Add Room <i class="icon add-room"></i></button>
-											<button type="button" class="room__confirm js-confirm">Confirm here <i class="icon confirm-room"></i></button>
+								<div class="form_guestWrap">
+									<div class="form__control">
+										<label class="form__label">Check In</label>
+										<div class="input-wrap">
+											<input class="datepicker form__field form__field--sm js-datepicker check-in required" type="text" name="arrival" id="checkIn" placeholder="Select" readonly>
 										</div>
 									</div>
-							<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>
-						</form>
-						<a target="_blank" href="https://www.mystays.com/en/best-price-guarantee/" class="stage__hint">Best Price Guarantee!</a>
+									<div class="form__control">
+										<label class="form__label">Check Out</label>
+										<div class="input-wrap">
+											<input class="datepicker form__field form__field--sm js-datepicker check-out required" type="text" name="departure" id="checkOut" placeholder="Select" readonly>
+										</div>
+									</div>
+									<div class="datepicker-modal js-datepicker-modal hidden">
+										<div class="datepicker-container js-datepicker-container"></div>
+									</div>
+									<div class="form__control">
+										<label class="form__label">No of guests</label>
+										<div class="input-wrap">
+											<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" value="2" readonly>
+											<input class="form__field form__field--sm js-total-adult" type="hidden" name="adults1" id="adults1" value="2">
+											<input class="form__field form__field--sm js-total-children" type="hidden" name="children1" id="children1" value="0">
+											<input class="form__field form__field--sm js-total-room" type="hidden" name="rooms" id="rooms" value="1"> 
+											<input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="en_GB"> 
+											<input class="form__field form__field--sm" type="hidden" name="code" id="code" value="PP5"> 
+											<input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY">
+										</div>
+									</div>
+								</div>
+								<div class="select-guest-container js-select-guest-container hidden">
+											<h5>Rooms</h5>
+											<a class="js-cancel-select-guest cancel-select-guest" title="Close" href="javascript:;"><i class="icon close-btn"></i></a>
+											<ul class="js-room-list room-list clearfix" style="list-style: none;padding-left: 0;">
+												<li class="room js-room clearfix" data-room="0">
+													<div class="room-container clearfix">
+														<p class="room__heading">Room1</p>
+														<div class="form__control">
+															<label class="room__label form__label">Adults</label>
+															<div class="input-wrap">
+																<select class="room__field form__field js-adult-count">
+																	<option value="1">1</option>
+																	<option value="2" selected>2</option>
+																	<option value="3">3</option>
+																	<option value="4">4</option>
+																	<option value="5">5</option>
+																	<option value="6">6</option>
+																	<option value="7">7</option>
+																</select>
+															</div>
+														</div>
+														<div class="form__control">
+															<label class="room__label form__label">Children</label>
+															<div class="input-wrap">
+																<select class="room__field form__field js-child-count">
+																	<option value="0">0</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="4">4</option>
+																	<option value="5">5</option>
+																	<option value="6">6</option>
+																	<option value="7">7</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="button-wrap">
+												<button type="button" class="room__add js-add-room">Add Room <i class="icon add-room"></i></button>
+												<button type="button" class="room__confirm js-confirm">Confirm here <i class="icon confirm-room"></i></button>
+											</div>
+										</div>
+								<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">Book Now with Pepper</button>
+							</form>
+							<a target="_blank" href="https://www.mystays.com/en/best-price-guarantee/" class="stage__hint">Best Price Guarantee!</a>
+						</div>
 					</div>
 					<div class="stage_conditions">
 						<div class="checkbox-wrap">

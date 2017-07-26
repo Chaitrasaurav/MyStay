@@ -43,120 +43,122 @@
 			<div class="animation"></div>
 			<div class="stage_container">
 					<h1 class="stage__heading">豪華な MYSTAYS ペッパー プライズが当たる!</h1>
-					<div class="stage__form form">
-						<form name="mainForm" id="mainForm" novalidate autocomplete="off">
-							<div class="form__control">
-								<label class="form__label">日本の観光地</label>
-								<select class="form__field js-city" type="text" id="city">
-									<option value=""> 都市を選択してください</option>
-									<option data-keys="Tōkyō  とうきょう トウキョウ 東京 Toukyou" value="tokyo">東京</option>
-									<option data-keys="Kyōto きょうと キョウト 京都 Kyouto" value="kyoto">京都</option>
-									<option data-keys="ōsaka おおさか オオサカ 大阪 Oosaka" value="osaka">大阪</option>
-									<option data-keys="Kanazawa かなざわ カナザワ 金沢 Kanazawa" value="kanazawa">金沢</option>
-									<option data-keys="Maihama. urayasu まいはま ・ うらやす マイハマ ・ ウラヤス 舞浜 ・ 浦安 Maihama. urayasu" value="maihama-urayasu">舞浜・浦安</option>
-									<option data-keys="Tachikawa たちかわ タチカワ 立川 Tachikawa" value="tachikawa">立川</option>
-									<option data-keys="Kawasaki かわさき カワサキ 川崎 Kawasaki" value="kawasaki">川崎</option>
-									<option data-keys="Yokohama よこはま ヨコハマ 横浜 Yokohama" value="yokohama">横浜</option>
-									<option data-keys="Chiba ちば チバ 千葉 Chiba" value="chiba">千葉</option>
-									<option data-keys="Tochigi とちぎ トチギ 栃木 Tochigi" value="tochigi">栃木</option>
-									<option data-keys="Hokkaidō ほっかいどう ホッカイドウ 北海道 Hokkaidou" value="hokkaido">北海道</option>
-									<option data-keys="Aomori あおもり アオモリ 青森 Aomori" value="aomori">青森</option>
-									<option data-keys="Yamanashi やまなし ヤマナシ 山梨 Yamanashi" value="yamanashi">山梨</option>
-									<option data-keys="Nagoya なごや ナゴヤ 名古屋 Nagoya" value="nagoya">名古屋</option>
-									<option data-keys="Nīgata にいがた ニイガタ 新潟 Niigata" value="niigata">新潟</option>
-									<option data-keys="Kagawa かがわ カガワ 香川 Kagawa" value="kagawa">香川</option>
-									<option data-keys="Ehime えひめ エヒメ 愛媛 Ehime" value="ehime">愛媛</option>
-									<option data-keys="Fukuoka ふくおか フクオカ 福岡 Fukuoka" value="fukuoka">福岡</option>
-									<option data-keys="ōita おおいた オオイタ 大分 Ooita" value="oita">大分</option>
-									<option data-keys="Okinawa おきなわ オキナワ 沖縄 Okinawa" value="okinawa">沖縄</option>
-								</select>
-							</div>
-							<div class="form__control">
-								<select class="form__field js-hotel required" type="text" name="hotelNo" id="property">
-								</select>
-							</div>
-							<div class="form_guestWrap">
+					<div class="form-wrap">
+						<div class="stage__form form">
+							<form name="mainForm" id="mainForm" novalidate autocomplete="off">
 								<div class="form__control">
-									<label class="form__label">チェックイン</label>
-									<div class="input-wrap">
-										<input class="datepicker form__field form__field--sm js-datepicker check-in required" type="text" id="checkIn" placeholder="選択" readonly>
-										<input type="hidden" name="ciDateY"/>
-										<input type="hidden" name="ciDateM"/>
-										<input type="hidden" name="ciDateD"/>
-									</div>
+									<label class="form__label">日本の観光地</label>
+									<select class="form__field js-city" type="text" id="city">
+										<option value=""> 都市を選択してください</option>
+										<option data-keys="Tōkyō  とうきょう トウキョウ 東京 Toukyou" value="tokyo">東京</option>
+										<option data-keys="Kyōto きょうと キョウト 京都 Kyouto" value="kyoto">京都</option>
+										<option data-keys="ōsaka おおさか オオサカ 大阪 Oosaka" value="osaka">大阪</option>
+										<option data-keys="Kanazawa かなざわ カナザワ 金沢 Kanazawa" value="kanazawa">金沢</option>
+										<option data-keys="Maihama. urayasu まいはま ・ うらやす マイハマ ・ ウラヤス 舞浜 ・ 浦安 Maihama. urayasu" value="maihama-urayasu">舞浜・浦安</option>
+										<option data-keys="Tachikawa たちかわ タチカワ 立川 Tachikawa" value="tachikawa">立川</option>
+										<option data-keys="Kawasaki かわさき カワサキ 川崎 Kawasaki" value="kawasaki">川崎</option>
+										<option data-keys="Yokohama よこはま ヨコハマ 横浜 Yokohama" value="yokohama">横浜</option>
+										<option data-keys="Chiba ちば チバ 千葉 Chiba" value="chiba">千葉</option>
+										<option data-keys="Tochigi とちぎ トチギ 栃木 Tochigi" value="tochigi">栃木</option>
+										<option data-keys="Hokkaidō ほっかいどう ホッカイドウ 北海道 Hokkaidou" value="hokkaido">北海道</option>
+										<option data-keys="Aomori あおもり アオモリ 青森 Aomori" value="aomori">青森</option>
+										<option data-keys="Yamanashi やまなし ヤマナシ 山梨 Yamanashi" value="yamanashi">山梨</option>
+										<option data-keys="Nagoya なごや ナゴヤ 名古屋 Nagoya" value="nagoya">名古屋</option>
+										<option data-keys="Nīgata にいがた ニイガタ 新潟 Niigata" value="niigata">新潟</option>
+										<option data-keys="Kagawa かがわ カガワ 香川 Kagawa" value="kagawa">香川</option>
+										<option data-keys="Ehime えひめ エヒメ 愛媛 Ehime" value="ehime">愛媛</option>
+										<option data-keys="Fukuoka ふくおか フクオカ 福岡 Fukuoka" value="fukuoka">福岡</option>
+										<option data-keys="ōita おおいた オオイタ 大分 Ooita" value="oita">大分</option>
+										<option data-keys="Okinawa おきなわ オキナワ 沖縄 Okinawa" value="okinawa">沖縄</option>
+									</select>
 								</div>
 								<div class="form__control">
-									<label class="form__label">チェックアウト</label>
-									<div class="input-wrap">
-										<input class="datepicker form__field form__field--sm js-datepicker check-out required" type="text" id="checkOut" placeholder="選択" readonly>
-										<input type="hidden" name="coDateY"/>
-										<input type="hidden" name="coDateM"/>
-										<input type="hidden" name="coDateD"/>
-									</div>
+									<select class="form__field js-hotel required" type="text" name="hotelNo" id="property">
+									</select>
 								</div>
-								<div class="datepicker-modal js-datepicker-modal hidden">
-									<div class="datepicker-container js-datepicker-container"></div>
-								</div>
-								<div class="form__control">
-									<label class="form__label">人数</label>
-									<div class="input-wrap">
-										<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" value="2" readonly>
-										<input class="form__field form__field--sm js-total-adult" type="hidden" name="otona" id="adults1" value="2">
-										<input class="form__field form__field--sm js-total-children" type="hidden" name="s1" id="children1" value="0">
-										<input class="form__field form__field--sm js-total-room" type="hidden" name="room" id="rooms" value="1"> 
-										<!-- <input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="ja_JP"> --> 
-										<input class="form__field form__field--sm" type="hidden" name="Vipcode" id="code" value="PEP5"> 
-										<!-- <input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY"> -->
-									</div>
-								</div>
-							</div>
-							<div class="select-guest-container js-select-guest-container hidden">
-										<h5>部屋</h5>
-										<a class="js-cancel-select-guest cancel-select-guest" title="閉じる" href="javascript:;"><i class="icon close-btn"></i></a>
-										<ul class="js-room-list room-list clearfix" style="list-style: none;padding-left: 0;">
-											<li class="room js-room clearfix" data-room="0">
-												<div class="room-container clearfix">
-													<p class="room__heading">ルーム1</p>
-													<div class="form__control">
-														<label class="room__label form__label">大人</label>
-														<div class="input-wrap">
-															<select class="room__field form__field js-adult-count">
-																<option value="1">1</option>
-																<option value="2" selected>2</option>
-																<option value="3">3</option>
-																<option value="4">4</option>
-																<option value="5">5</option>
-																<option value="6">6</option>
-																<option value="7">7</option>
-															</select>
-														</div>
-													</div>
-													<div class="form__control">
-														<label class="room__label form__label">子供</label>
-														<div class="input-wrap">
-															<select class="room__field form__field js-child-count">
-																<option value="0">0</option>
-																<option value="1">1</option>
-																<option value="2">2</option>
-																<option value="3">3</option>
-																<option value="4">4</option>
-																<option value="5">5</option>
-																<option value="6">6</option>
-																<option value="7">7</option>
-															</select>
-														</div>
-													</div>
-												</div>
-											</li>
-										</ul>
-										<div class="button-wrap">
-											<button type="button" class="room__add js-add-room">部屋を追加 <i class="icon add-room"></i></button>
-											<button type="button" class="room__confirm js-confirm">ここで確認する <i class="icon confirm-room"></i></button>
+								<div class="form_guestWrap">
+									<div class="form__control">
+										<label class="form__label">チェックイン</label>
+										<div class="input-wrap">
+											<input class="datepicker form__field form__field--sm js-datepicker check-in required" type="text" id="checkIn" placeholder="選択" readonly>
+											<input type="hidden" name="ciDateY"/>
+											<input type="hidden" name="ciDateM"/>
+											<input type="hidden" name="ciDateD"/>
 										</div>
 									</div>
-							<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">ペッパー君と今すぐ予約</button>
-						</form>
-						<a target="_blank" href="https://www.mystays.com/ja/best-price-guarantee/" class="stage__hint">最低価格保証!</a>
+									<div class="form__control">
+										<label class="form__label">チェックアウト</label>
+										<div class="input-wrap">
+											<input class="datepicker form__field form__field--sm js-datepicker check-out required" type="text" id="checkOut" placeholder="選択" readonly>
+											<input type="hidden" name="coDateY"/>
+											<input type="hidden" name="coDateM"/>
+											<input type="hidden" name="coDateD"/>
+										</div>
+									</div>
+									<div class="datepicker-modal js-datepicker-modal hidden">
+										<div class="datepicker-container js-datepicker-container"></div>
+									</div>
+									<div class="form__control">
+										<label class="form__label">人数</label>
+										<div class="input-wrap">
+											<input class="form__field form__field--sm required js-select-guest guest" placeholder="Guests" type="text" value="2" readonly>
+											<input class="form__field form__field--sm js-total-adult" type="hidden" name="otona" id="adults1" value="2">
+											<input class="form__field form__field--sm js-total-children" type="hidden" name="s1" id="children1" value="0">
+											<input class="form__field form__field--sm js-total-room" type="hidden" name="room" id="rooms" value="1"> 
+											<!-- <input class="form__field form__field--sm" type="hidden" name="locale" id="locale" value="ja_JP"> --> 
+											<input class="form__field form__field--sm" type="hidden" name="Vipcode" id="code" value="PEP5"> 
+											<!-- <input class="form__field form__field--sm" type="hidden" name="currency" id="currency" value="JPY"> -->
+										</div>
+									</div>
+								</div>
+								<div class="select-guest-container js-select-guest-container hidden">
+											<h5>部屋</h5>
+											<a class="js-cancel-select-guest cancel-select-guest" title="閉じる" href="javascript:;"><i class="icon close-btn"></i></a>
+											<ul class="js-room-list room-list clearfix" style="list-style: none;padding-left: 0;">
+												<li class="room js-room clearfix" data-room="0">
+													<div class="room-container clearfix">
+														<p class="room__heading">ルーム1</p>
+														<div class="form__control">
+															<label class="room__label form__label">大人</label>
+															<div class="input-wrap">
+																<select class="room__field form__field js-adult-count">
+																	<option value="1">1</option>
+																	<option value="2" selected>2</option>
+																	<option value="3">3</option>
+																	<option value="4">4</option>
+																	<option value="5">5</option>
+																	<option value="6">6</option>
+																	<option value="7">7</option>
+																</select>
+															</div>
+														</div>
+														<div class="form__control">
+															<label class="room__label form__label">子供</label>
+															<div class="input-wrap">
+																<select class="room__field form__field js-child-count">
+																	<option value="0">0</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="4">4</option>
+																	<option value="5">5</option>
+																	<option value="6">6</option>
+																	<option value="7">7</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="button-wrap">
+												<button type="button" class="room__add js-add-room">部屋を追加 <i class="icon add-room"></i></button>
+												<button type="button" class="room__confirm js-confirm">ここで確認する <i class="icon confirm-room"></i></button>
+											</div>
+										</div>
+								<button type="button" class="form__btn js-main-form-btn" id="main-form-btn">ペッパー君と今すぐ予約</button>
+							</form>
+							<a target="_blank" href="https://www.mystays.com/ja/best-price-guarantee/" class="stage__hint">最低価格保証!</a>
+						</div>
 					</div>
 					<div class="stage_conditions">
 						<div class="checkbox-wrap">

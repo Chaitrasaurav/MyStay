@@ -609,6 +609,7 @@ header {
 
 .stage_container {
   max-width: 940px;
+  background: url(../images/PEPPER_ANIMATION_ALPHA_256_1.gif) no-repeat center right;
   margin: 0 auto;
   padding: 58px 0 67px;
   position: relative;
@@ -616,9 +617,13 @@ header {
   @media (max-width: 950px) {
     .stage_container {
       padding: 58px 20px 67px; } }
+  @media (max-width: 850px) {
+    .stage_container {
+      background-size: 47%; } }
   @media (max-width: 767px) {
     .stage_container {
-      padding: 30px 0; } }
+      padding: 30px 0;
+      background: none; } }
   .stage_container h1 {
     max-width: 400px;
     width: auto;
@@ -632,7 +637,7 @@ header {
       .stage_container h1 {
         text-align: center;
         float: none;
-        padding: 0 20px 100px;
+        padding: 0 20px 30px;
         max-width: 278px;
         margin: 0 auto; } }
 
@@ -649,6 +654,11 @@ header {
       left: 4px;
       margin-right: 3px; } }
 
+@media (max-width: 767px) {
+  .form-wrap {
+    background: url(../images/cropped_pepper_16_SD_1.gif) no-repeat top center, url(../images/cropped_still.gif) no-repeat top center;
+    padding-top: 165px; } }
+
 .stage__form {
   max-width: 400px;
   background: #fff;
@@ -662,7 +672,7 @@ header {
   box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.25); }
   @media (max-width: 767px) {
     .stage__form {
-      margin-top: 50px;
+      margin-top: 0;
       border-radius: 0;
       padding: 19px 15px 13px;
       max-width: 100%; } }

@@ -22,7 +22,7 @@
 
 .stage_container{
 	max-width: $desktop-max-width;
-	background:url(../images/PEPPER_ANIMATION_ALPHA_256_1.gif) no-repeat center right; 
+	background:url(../images/PEPPER_ANIMATION_ALPHA_256.gif) no-repeat center right; 
 	margin: 0 auto;	
 	padding:58px 0 67px;
 	position: relative;
@@ -73,7 +73,7 @@
 }
 .form-wrap{
 	@media (max-width: 767px) {
-		background: url(../images/cropped_pepper_16_SD_1.gif) no-repeat top center;
+		background: url(../images/cropped_pepper_256.gif) no-repeat top center;
 		padding-top:165px;
 	}
 }

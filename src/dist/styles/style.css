@@ -609,11 +609,12 @@ header {
 
 .stage_container {
   max-width: 940px;
-  background: url(../images/PEPPER_ANIMATION_ALPHA_256.gif) no-repeat center right;
+  background: url(../images/PEPPER_ANIMATION_test-blue.gif) no-repeat center right;
   margin: 0 auto;
   padding: 58px 0 67px;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  background-size: 50%; }
   @media (max-width: 950px) {
     .stage_container {
       padding: 58px 20px 67px; } }

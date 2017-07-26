@@ -34,7 +34,7 @@
 				{
 					name: 'MYSTAYS 淺草橋飯店',
 					address: '111-0053 日本東京都台東區淺草橋1-5-5',
-					img: 'HOTEL-MYSTAYS-Asakusabashi.jpg',
+					img: 'HOTEL-MYSTAYS-Asakusabashi.JPG',
 					id: 'jptok26316'
 				},
 				{
@@ -70,13 +70,13 @@
 				{
 					name: 'MYSTAYS 蒲田飯店',
 					address: '144-0052 日本東京都大田區蒲田5-46-5',
-					img: 'HOTEL-MYSTAYS-Kamata.jpg',
+					img: 'HOTEL-MYSTAYS-Kamata.JPG',
 					id: 'jptok26325'
 				},
 				{
 					name: 'MYSTAYS 龜戶飯店',
 					address: '136-0071 日本東京都江東區亀戶6-32-1',
-					img: 'HOTEL-MYSTAYS-Kameido.jpg',
+					img: 'HOTEL-MYSTAYS-Kameido.JPG',
 					id: 'jptok26311'
 				},
 				{
@@ -124,37 +124,37 @@
 				{
 					name: 'FLEXSTAY 江古田旅館',
 					address: '176-0006 日本東京都練馬區榮町8-6',
-					img: 'FLEXSTAY-INN-Ekoda.jpg',
+					img: 'FLEXSTAY-INN-Ekoda.JPG',
 					id: 'jptok26345'
 				},
 				{
 					name: 'FLEXSTAY  東十條旅館',
 					address: '114-0032 日本東京都北區中十條2-10-2',
-					img: 'FLEXSTAY-INN-Higashi-Jujo.jpg',
+					img: 'FLEXSTAY-INN-Higashi-Jujo.JPG',
 					id: 'jptok26339'
 				},
 				{
 					name: 'FLEXSTAY  飯田橋旅館',
 					address: '162-0814 日本東京都新宿區新小川町3-26',
-					img: 'FLEXSTAY-INN-Iidabashi.jpg',
+					img: 'FLEXSTAY-INN-Iidabashi.JPG',
 					id: 'jptok26340'
 				},
 				{
 					name: 'FLEXSTAY 清澄白河旅館',
 					address: '135-0006 日本東京都江東區常盤1-12-16',
-					img: 'FLEXSTAY-INN-Kiyosumi-Shirakawa.jpg',
+					img: 'FLEXSTAY-INN-Kiyosumi-Shirakawa.JPG',
 					id: 'jptok26348'
 				},
 				{
 					name: 'FLEXSTAY 中延旅館',
 					address: '142-0043 日本東京都品川區二葉4-27-8',
-					img: 'FLEXSTAY-INN-Nakanobu.jpg',
+					img: 'FLEXSTAY-INN-Nakanobu.JPG',
 					id: 'jptok26346'
 				},
 				{
 					name: 'FLEXSTAY  品川旅館',
 					address: '140-0001 日本東京都品川區北品川1-22-19',
-					img: 'FLEXSTAY-INN-Shinagawa.jpg',
+					img: 'FLEXSTAY-INN-Shinagawa.JPG',
 					id: 'jptok26341'
 				},
 				{
@@ -166,13 +166,13 @@
 				{
 					name: 'FLEXSTAY 巢鴨旅館',
 					address: '170-0002 日本東京都豐島區巢鴨3-6-16',
-					img: 'FLEXSTAY-INN-Sugamo.jpg',
+					img: 'FLEXSTAY-INN-Sugamo.JPG',
 					id: 'jptok26333'
 				},
 				{
 					name: 'FLEXSTAY 常盤台旅館',
 					address: '174-0071 日本東京都板橋區常盤台 1-52-5',
-					img: 'FLEXSTAY-INN-Tokiwadai.jpg',
+					img: 'FLEXSTAY-INN-Tokiwadai.JPG',
 					id: 'jptok26344'
 				},
 				{
@@ -208,13 +208,13 @@
 				{
 					name: 'MYSTAYS 大手前飯店',
 					address: '540-0025 日本大阪府大阪市中央區德井町1-3-2',
-					img: 'HOTEL-MYSTAYS-Otemae.jpg',
+					img: 'HOTEL-MYSTAYS-Otemae.JPG',
 					id: 'jposa26328'
 				},
 				{
 					name: 'MYSTAYS 堺筋本町飯店',
 					address: '541-0047 日本大阪府大阪市中央區淡路町1- 4-8',
-					img: 'HOTEL-MYSTAYS-Sakaisuji-Honmachi.jpg',
+					img: 'HOTEL-MYSTAYS-Sakaisuji-Honmachi.JPG',
 					id: 'jposa26315'
 				},
 				{
@@ -304,13 +304,13 @@
 				{
 					name: 'FLEXSTAY 川崎小川町旅館',
 					address: '210-0023 日本神奈川縣川崎市川崎區小川町15-9',
-					img: 'FLEXSTAY-INN-Ogawacho.jpg',
+					img: 'FLEXSTAY-INN-Ogawacho.JPG',
 					id: 'jpkaw26337'
 				},
 				{
 					name: 'FLEXSTAY  多摩川旅館',
 					address: '211-0004 日本神奈川縣川崎市中原區新丸子東1-837',
-					img: 'FLEXSTAY-INN-Tamagawa.jpg',
+					img: 'FLEXSTAY-INN-Tamagawa.JPG',
 					id: 'jpkaw26335'
 				}
 			]
@@ -322,7 +322,7 @@
 				{
 					name: 'MYSTAYS 橫濱飯店',
 					address: '231-0055 日本神奈川縣橫濱市中區末吉町4-81',
-					img: 'HOTEL-MYSTAYS-Yokohama.jpg',
+					img: 'HOTEL-MYSTAYS-Yokohama.JPG',
 					id: 'jpyok26332'
 				},
 				{
@@ -358,7 +358,7 @@
 				{
 					name: 'MYSTAYS 宇都宮飯店',
 					address: '321-0953 日本栃木縣宇都宮市東宿鄉2-4-1',
-					img: 'HOTEL-MYSTAYS-Utsunomiya.jpg',
+					img: 'HOTEL-MYSTAYS-Utsunomiya.JPG',
 					id: 'jputs26331'
 				},
 				{
@@ -460,7 +460,7 @@
 				{
 					name: 'MYSTAYS 名古屋榮飯店',
 					address: '460-0005 愛知縣名古屋市中區東櫻2-23-22',
-					img: 'HOTEL-MYSTAYS-Nagoya-Sakae.jpg',
+					img: 'HOTEL-MYSTAYS-Nagoya-Sakae.JPG',
 					id: 'jpnag26321'
 				}
 			]
@@ -520,7 +520,7 @@
 				{
 					name: 'MYSTAYS 福岡天神飯店',
 					address: '810-0001 日本福岡縣福岡市中央區天神3-5-7',
-					img: 'HOTEL-MYSTAYS-Fukuoka-Tenjin.jpg',
+					img: 'HOTEL-MYSTAYS-Fukuoka-Tenjin.JPG',
 					id: 'jpfuk26326'
 				}
 			]
@@ -550,7 +550,7 @@
 				{
 					name: 'ART 石垣島飯店',
 					address: '907-0022 沖繩縣石垣市大川559',
-					img: 'ART-HOTEL-ISHIGAKIJIMA.jpg',
+					img: 'ART-HOTEL-ISHIGAKIJIMA.JPG',
 					id: 'jpoki29665'
 				},
 				{

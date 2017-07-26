@@ -39,7 +39,7 @@
 					name: 'ホテルマイステイズ浅草橋',
 					localName: 'Hoterumaisuteizu asakusabashi ホテルマイステイズ あさくさばし ホテルマイステイズ アサクサバシ ホテルマイステイズ 浅草橋 Hoterumaisuteizu asakusabashi',
 					address: '〒111-0053 東京都台東区浅草橋1-5-5',
-					img: 'HOTEL-MYSTAYS-Asakusabashi.jpg',
+					img: 'HOTEL-MYSTAYS-Asakusabashi.JPG',
 					id: '80713'
 				},
 				{
@@ -81,14 +81,14 @@
 					name: 'ホテルマイステイズ蒲田',
 					localName: 'Hoterumaisuteizu kamata ホテルマイステイズ かまた ホテルマイステイズ カマタ ホテルマイステイズ 蒲田 Hoterumaisuteizu kamata',
 					address: '〒144-0052 東京都大田区蒲田5-46-5',
-					img: 'HOTEL-MYSTAYS-Kamata.jpg',
+					img: 'HOTEL-MYSTAYS-Kamata.JPG',
 					id: '74696'
 				},
 				{
 					name: 'ホテルマイステイズ亀戸',
 					localName: 'Hoterumaisuteizu kameido ホテルマイステイズ かめいど ホテルマイステイズ カメイド ホテルマイステイズ 亀戸 Hoterumaisuteizu kameido',
 					address: '〒136-0071 東京都江東区亀戸6-32-1',
-					img: 'HOTEL-MYSTAYS-Kameido.jpg',
+					img: 'HOTEL-MYSTAYS-Kameido.JPG',
 					id: '16330'
 				},
 				{
@@ -144,42 +144,42 @@
 					name: 'フレックステイイン江古田',
 					localName: 'Furekkusuteiin egota フレックステイイン えごた フレックステイイン エゴタ フレックステイイン 江古田 Furekkusuteiin egota',
 					address: '〒176-0006 東京都練馬区栄町8-6',
-					img: 'FLEXSTAY-INN-Ekoda.jpg',
+					img: 'FLEXSTAY-INN-Ekoda.JPG',
 					id: '20579'
 				},
 				{
 					name: 'フレックステイイン東十条',
 					localName: 'Furekkusuteiin higashijūjō フレックステイイン ひがしじゅうじょう フレックステイイン ヒガシジュウジョウ フレックステイイン 東十条 Furekkusuteiin higashijuujou',
 					address: '〒114-0032 東京都北区中十条2-10-2',
-					img: 'FLEXSTAY-INN-Higashi-Jujo.jpg',
+					img: 'FLEXSTAY-INN-Higashi-Jujo.JPG',
 					id: '28556'
 				},
 				{
 					name: 'フレックステイイン飯田橋',
 					localName: 'Furekkusuteiin īdabashi フレックステイイン いいだばし フレックステイイン イイダバシ フレックステイイン 飯田橋 Furekkusuteiin iidabashi',
 					address: '〒162-0814 東京都新宿区新小川町3-26',
-					img: 'FLEXSTAY-INN-Iidabashi.jpg',
+					img: 'FLEXSTAY-INN-Iidabashi.JPG',
 					id: '28095'
 				},
 				{
 					name: 'フレックステイイン清澄白河',
 					localName: 'Furekkusuteiin kiyosumi shirakawa フレックステイイン きよすみ しらかわ フレックステイイン キヨスミ シラカワ フレックステイイン 清澄 白河 Furekkusuteiin kiyosumi shirakawa',
 					address: '〒135-0006 東京都江東区常盤1-12-16 ',
-					img: 'FLEXSTAY-INN-Kiyosumi-Shirakawa.jpg',
+					img: 'FLEXSTAY-INN-Kiyosumi-Shirakawa.JPG',
 					id: '28558'
 				},
 				{
 					name: 'フレックステイイン中延',
 					localName: 'Furekkusuteiin nakanobu フレックステイイン なかのぶ フレックステイイン ナカノブ フレックステイイン 中延 Furekkusuteiin nakanobu',
 					address: '〒142-0043 東京都品川区二葉4-27-8',
-					img: 'FLEXSTAY-INN-Nakanobu.jpg',
+					img: 'FLEXSTAY-INN-Nakanobu.JPG',
 					id: '28555'
 				},
 				{
 					name: 'フレックステイイン品川',
 					localName: 'Furekkusuteiin shinagawa フレックステイイン しながわ フレックステイイン シナガワ フレックステイイン 品川 Furekkusuteiin shinagawa ',
 					address: '〒140-0001 東京都品川区北品川1-22-19',
-					img: 'FLEXSTAY-INN-Shinagawa.jpg',
+					img: 'FLEXSTAY-INN-Shinagawa.JPG',
 					id: '28554'
 				},
 				{
@@ -193,14 +193,14 @@
 					name: 'フレックステイイン巣鴨',
 					localName: 'Furekkusuteiin sugamo フレックステイイン すがも フレックステイイン スガモ フレックステイイン 巣鴨 Furekkusuteiin sugamo',
 					address: '〒170-0002 東京都豊島区巣鴨3-6-16',
-					img: 'FLEXSTAY-INN-Sugamo.jpg',
+					img: 'FLEXSTAY-INN-Sugamo.JPG',
 					id: '28094'
 				},
 				{
 					name: 'フレックステイイン常盤台',
 					localName: 'Furekkusuteiin tokiwadai フレックステイイン ときわだい フレックステイイン トキワダイ フレックステイイン 常盤台 Furekkusuteiin tokiwadai ',
 					address: '〒174-0071 東京都板橋区常盤台1-52-5',
-					img: 'FLEXSTAY-INN-Tokiwadai.jpg',
+					img: 'FLEXSTAY-INN-Tokiwadai.JPG',
 					id: '28557'
 				},
 				{
@@ -240,14 +240,14 @@
 					name: 'ホテルマイステイズ大手前',
 					localName: 'Hoterumaisuteizu ōte mae ホテルマイステイズ おおて まえ ホテルマイステイズ オオテ マエ ホテルマイステイズ 大手 前 Hoterumaisuteizu oote mae',
 					address: '〒540-0025 大阪府大阪市中央区徳井町1-3-2',
-					img: 'HOTEL-MYSTAYS-Otemae.jpg',
+					img: 'HOTEL-MYSTAYS-Otemae.JPG',
 					id: '19987'
 				},
 				{
 					name: 'ホテルマイステイズ堺筋本町',
 					localName: 'Hoterumaisuteizu sakai suji honchō ホテルマイステイズ さかい すじ ほんちょう ホテルマイステイズ サカイ スジ ホンチョウ ホテルマイステイズ 堺 筋 本町 Hoterumaisuteizu sakai suji honchou',
 					address: '〒541-0047 大阪府大阪市中央区淡路町1-4-8',
-					img: 'HOTEL-MYSTAYS-Sakaisuji-Honmachi.jpg',
+					img: 'HOTEL-MYSTAYS-Sakaisuji-Honmachi.JPG',
 					id: '72026'
 				},
 				{
@@ -348,14 +348,14 @@
 					name: 'フレックステイイン川崎小川町',
 					localName: 'Furekkusuteiin kawasaki ogawa machi フレックステイイン かわさき おがわ まち フレックステイイン カワサキ オガワ マチ フレックステイイン 川崎 小川 町 Furekkusuteiin kawasaki ogawa machi',
 					address: '〒210-0023 神奈川県川崎市川崎区小川町15-9',
-					img: 'FLEXSTAY-INN-Ogawacho.jpg',
+					img: 'FLEXSTAY-INN-Ogawacho.JPG',
 					id: '28896'
 				},
 				{
 					name: 'フレックステイイン多摩川',
 					localName: 'Furekkusuteiin tamagawa フレックステイイン たまがわ フレックステイイン タマガワ フレックステイイン 多摩川 Furekkusuteiin tamagawa',
 					address: '〒211-0004 神奈川県川崎市中原区新丸子東1-837 ',
-					img: 'FLEXSTAY-INN-Tamagawa.jpg',
+					img: 'FLEXSTAY-INN-Tamagawa.JPG',
 					id: '28900'
 				}
 			]
@@ -368,7 +368,7 @@
 					name: 'ホテルマイステイズ横浜',
 					localName: 'Hoterumaisuteizu yokohama ホテルマイステイズ よこはま ホテルマイステイズ ヨコハマ ホテルマイステイズ 横浜 Hoterumaisuteizu yokohama',
 					address: '〒231-0055 神奈川県横浜市中区末吉町4-81',
-					img: 'HOTEL-MYSTAYS-Yokohama.jpg',
+					img: 'HOTEL-MYSTAYS-Yokohama.JPG',
 					id: '50196'
 				},
 				{
@@ -408,7 +408,7 @@
 					name: 'ホテルマイステイズ宇都宮',
 					localName: 'Hoterumaisuteizu utsunomiya ホテルマイステイズ うつのみや ホテルマイステイズ ウツノミヤ ホテルマイステイズ 宇都宮 Hoterumaisuteizu utsunomiya',
 					address: '〒321-0953 栃木県宇都宮市東宿郷2-4-1',
-					img: 'HOTEL-MYSTAYS-Utsunomiya.jpg',
+					img: 'HOTEL-MYSTAYS-Utsunomiya.JPG',
 					id: '67045'
 				},
 				{
@@ -523,7 +523,7 @@
 					name: 'ホテルマイステイズ名古屋栄',
 					localName: 'Hoterumaisuteizu nagoya sakae ホテルマイステイズ なごや さかえ ホテルマイステイズ ナゴヤ サカエ ホテルマイステイズ 名古屋 栄 Hoterumaisuteizu nagoya sakae',
 					address: '〒460-0005 愛知県名古屋市中区東桜2-23-22',
-					img: 'HOTEL-MYSTAYS-Nagoya-Sakae.jpg',
+					img: 'HOTEL-MYSTAYS-Nagoya-Sakae.JPG',
 					id: '4758'
 				}
 			]
@@ -589,7 +589,7 @@
 					name: 'ホテルマイステイズ福岡天神',
 					localName: 'Hoterumaisuteizu fukuoka tenjin ホテルマイステイズ ふくおか てんじん ホテルマイステイズ フクオカ テンジン ホテルマイステイズ 福岡 天神 Hoterumaisuteizu fukuoka tenjin',
 					address: '〒810-0001 福岡県福岡市中央区天神3-5-7',
-					img: 'HOTEL-MYSTAYS-Fukuoka-Tenjin.jpg',
+					img: 'HOTEL-MYSTAYS-Fukuoka-Tenjin.JPG',
 					id: '72791'
 				}
 			]
@@ -622,7 +622,7 @@
 					name: 'アートホテル石垣島',
 					localName: 'āto hoteru ishigakijima アート ホテル いしがきじま アート ホテル イシガキジマ アート ホテル 石垣島 āto hoteru ishigakijima',
 					address: '〒 907-0022 沖縄県石垣市大川559',
-					img: 'ART-HOTEL-ISHIGAKIJIMA.jpg',
+					img: 'ART-HOTEL-ISHIGAKIJIMA.JPG',
 					id: '2770'
 				},
 				{

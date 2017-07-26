@@ -34,7 +34,7 @@
 				{
 					name: 'HOTEL MYSTAYS Asakusa bashi',
 					address: '1-5-5 Asakusabashi, Taito-ku, Tokyo 111-0053 Japan',
-					img: 'HOTEL-MYSTAYS-Asakusabashi.jpg',
+					img: 'HOTEL-MYSTAYS-Asakusabashi.JPG',
 					id: 'jptok26316'
 				},
 				{
@@ -70,13 +70,13 @@
 				{
 					name: 'HOTEL MYSTAYS Kamata',
 					address: '5-46-5 Kamata, Ota-ku, Tokyo 144-0052 Japan n',
-					img: 'HOTEL-MYSTAYS-Kamata.jpg',
+					img: 'HOTEL-MYSTAYS-Kamata.JPG',
 					id: 'jptok26325'
 				},
 				{
 					name: 'HOTEL MYSTAYS Kameido',
 					address: '6-32-1 Kameido, Koto-ku, Tokyo 136-0071 Japan',
-					img: 'HOTEL-MYSTAYS-Kameido.jpg',
+					img: 'HOTEL-MYSTAYS-Kameido.JPG',
 					id: 'jptok26311'
 				},
 				{
@@ -124,37 +124,37 @@
 				{
 					name: 'FLEXSTAY INN Ekoda',
 					address: '8-6 Sakaecho, Nerima-ku,Tokyo 176-0006 Japan',
-					img: 'FLEXSTAY-INN-Ekoda.jpg',
+					img: 'FLEXSTAY-INN-Ekoda.JPG',
 					id: 'jptok26345'
 				},
 				{
 					name: 'FLEXSTAY INN Higashi Jujo',
 					address: '2-10-2 Nakajujo, Kita-ku, Tokyo 114-0032 Japan',
-					img: 'FLEXSTAY-INN-Higashi-Jujo.jpg',
+					img: 'FLEXSTAY-INN-Higashi-Jujo.JPG',
 					id: 'jptok26339'
 				},
 				{
 					name: 'FLEXSTAY INN Iidabashi',
 					address: '3-26 Shinogawamachi, Shinjuku-ku, Tokyo 162-0814 Japan',
-					img: 'FLEXSTAY-INN-Iidabashi.jpg',
+					img: 'FLEXSTAY-INN-Iidabashi.JPG',
 					id: 'jptok26340'
 				},
 				{
 					name: 'FLEXSTAY INN Kiyosumi Shirakawa',
 					address: '1-12-16 Tokiwa, Koto-ku, Tokyo 135-0006 Japan',
-					img: 'FLEXSTAY-INN-Kiyosumi-Shirakawa.jpg',
+					img: 'FLEXSTAY-INN-Kiyosumi-Shirakawa.JPG',
 					id: 'jptok26348'
 				},
 				{
 					name: 'FLEXSTAY INN Nakanobu',
 					address: '4-27-8 Futaba, Shinagawa-ku, Tokyo 142-0043 Japan',
-					img: 'FLEXSTAY-INN-Nakanobu.jpg',
+					img: 'FLEXSTAY-INN-Nakanobu.JPG',
 					id: 'jptok26346'
 				},
 				{
 					name: 'FLEXSTAY INN Shinagawa',
 					address: '1-22-19 Kitashinagawa, Shinagawa-ku, Tokyo 140-0001 Japan',
-					img: 'FLEXSTAY-INN-Shinagawa.jpg',
+					img: 'FLEXSTAY-INN-Shinagawa.JPG',
 					id: 'jptok26341'
 				},
 				{
@@ -166,13 +166,13 @@
 				{
 					name: 'FLEXSTAY INN Sugamo',
 					address: '3-6-16 Sugamo, Toshima-ku, Tokyo 170-0002 Japan',
-					img: 'FLEXSTAY-INN-Sugamo.jpg',
+					img: 'FLEXSTAY-INN-Sugamo.JPG',
 					id: 'jptok26333'
 				},
 				{
 					name: 'FLEXSTAY INN Tokiwadai',
 					address: '1-52-5 Tokiwadai, Itabashi-ku, Tokyo 174-0071 Japan',
-					img: 'FLEXSTAY-INN-Tokiwadai.jpg',
+					img: 'FLEXSTAY-INN-Tokiwadai.JPG',
 					id: 'jptok26344'
 				},
 				{
@@ -208,13 +208,13 @@
 				{
 					name: 'HOTEL MYSTAYS Otemae',
 					address: '1-3-2 Tokuicho, Chuo-ku, Osaka-shi, Osaka 540-0025 Japan',
-					img: 'HOTEL-MYSTAYS-Otemae.jpg',
+					img: 'HOTEL-MYSTAYS-Otemae.JPG',
 					id: 'jposa26328'
 				},
 				{
 					name: 'HOTEL MYSTAYS Sakaisuji Honmachi',
 					address: '1- 4-8 Awajimachi, Chuo-ku, Osaka-shi, Osaka 541-0047 Japan',
-					img: 'HOTEL-MYSTAYS-Sakaisuji-Honmachi.jpg',
+					img: 'HOTEL-MYSTAYS-Sakaisuji-Honmachi.JPG',
 					id: 'jposa26315'
 				},
 				{
@@ -304,13 +304,13 @@
 				{
 					name: 'FLEXSTAY INN Kawasaki Ogawacho',
 					address: '15-9 Ogawacho, Kawasaki-ku, Kawasaki-shi, Kanagawa 210-0023 Japan',
-					img: 'FLEXSTAY-INN-Ogawacho.jpg',
+					img: 'FLEXSTAY-INN-Ogawacho.JPG',
 					id: 'jpkaw26337'
 				},
 				{
 					name: 'FLEXSTAY INN Tamagawa',
 					address: '1-837 Shinmaruko-Higashi, Nakahara-ku, Kawasaki-shi, Kanagawa 211-0004 Japan',
-					img: 'FLEXSTAY-INN-Tamagawa.jpg',
+					img: 'FLEXSTAY-INN-Tamagawa.JPG',
 					id: 'jpkaw26335'
 				}
 			]
@@ -322,7 +322,7 @@
 				{
 					name: 'HOTEL MYSTAYS Yokohama',
 					address: '4-81 Sueyoshicho, Naka-ku, Yokohama-shi, Kanagawa 231-0055 Japan',
-					img: 'HOTEL-MYSTAYS-Yokohama.jpg',
+					img: 'HOTEL-MYSTAYS-Yokohama.JPG',
 					id: 'jpyok26332'
 				},
 				{
@@ -358,7 +358,7 @@
 				{
 					name: 'HOTEL MYSTAYS Utsunomiya',
 					address: '2-4-1 Higashishukugo, Utsunomiya-shi, Tochigi 321-0953 Japan',
-					img: 'HOTEL-MYSTAYS-Utsunomiya.jpg',
+					img: 'HOTEL-MYSTAYS-Utsunomiya.JPG',
 					id: 'jputs26331'
 				},
 				{
@@ -460,7 +460,7 @@
 				{
 					name: 'HOTEL MYSTAYS Nagoya Sakae',
 					address: '2-23-22 Higashisakura, Naka-ku, Nagoya-shi, Aichi 460-0005 Japan',
-					img: 'HOTEL-MYSTAYS-Nagoya-Sakae.jpg',
+					img: 'HOTEL-MYSTAYS-Nagoya-Sakae.JPG',
 					id: 'jpnag26321'
 				}
 			]
@@ -520,7 +520,7 @@
 				{
 					name: 'HOTEL MYSTAYS Fukuoka Tenjin',
 					address: '3-5-7 Tenjin, Chuo-ku, Fukuoka-shi, Fukuoka 810-0001 Japan',
-					img: 'HOTEL-MYSTAYS-Fukuoka-Tenjin.jpg',
+					img: 'HOTEL-MYSTAYS-Fukuoka-Tenjin.JPG',
 					id: 'jpfuk26326'
 				}
 			]
@@ -550,7 +550,7 @@
 				{
 					name: 'ART HOTEL ISHIGAKIJIMA',
 					address: '559 Ohkawa, Ishigaki-shi, Okinawa 907-0022 Japan',
-					img: 'ART-HOTEL-ISHIGAKIJIMA.jpg',
+					img: 'ART-HOTEL-ISHIGAKIJIMA.JPG',
 					id: 'jpoki29665'
 				},
 				{

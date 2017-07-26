@@ -1,0 +1,81 @@
+.newsletter{
+	background: #fff;
+    @media (max-width: 950px) {
+        padding:0 15px;
+    }
+}
+.newsletter_container{
+	max-width: 560px;
+	margin: 0 auto;	
+	padding: 59px 0 79px;
+	text-align: center;
+    @media (max-width: 767px) {
+        padding:50px 0;
+    }
+	p{
+		color: $text-color-secondary;
+	}
+	ul{
+		list-style-type: none;
+        margin-top: 48px;
+        margin: 48px 0 0;
+        padding:0;
+		li{
+			float: left;
+			width: 50%;
+			display: block;
+            @media (max-width: 767px) {
+                float: none;
+                width: 100%;
+                margin-top: 20px;
+            }
+			a.newsletter_link{
+				background: #5873bb;
+			    padding: 15px 0;
+				color: $text-color-primary;
+				border-radius: 3px;
+				font-weight: 900;
+				display: block;
+                margin-right:11px;
+                @media (max-width: 767px) {
+                    margin-right:0;
+                }
+                i{
+                    margin: 0 8px -4px -9px;
+                }
+			}
+			a.campaign_link{
+				background: #ffd451;
+				padding: 15px 0;
+				border-radius: 3px;
+				font-weight: 900;
+				display: block;
+                cursor: pointer;
+                margin-left: 10px;
+                i{
+                    margin: 0 0 -4px 4px;
+                    position: relative;
+                    top: -2px;
+                }
+                @media (max-width: 767px) {
+                    margin-left:0;
+                }
+			}
+		}
+	}
+    h4{
+        i{
+            position: relative;
+            top: -6px;
+            left: 6px;
+            margin-right: 6px;
+        }
+        @media (max-width: 767px) {
+            font-size:24px;
+        }
+    }
+    h5{
+        line-height: 1;
+        margin-top: 10px;
+    }
+}

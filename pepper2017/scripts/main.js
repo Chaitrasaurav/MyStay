@@ -762,3 +762,18 @@ function lightboxClose(){
     document.getElementById('light').style.display='none';
     document.getElementById('fade').style.display='none';
 }
+
+var desktopAnimation = new Image();
+var mobileAnimation = new Image();
+
+desktopAnimation.onload = function () {
+   $('.stage_container').addClass('desktop-animation');
+}
+
+desktopAnimation.src = "../dist/images/desktop-animation.gif";
+
+mobileAnimation.onload = function () {
+   $('.form-wrap').addClass('mobile-animation');
+}
+
+mobileAnimation.src = "../dist/images/mobile-animation.gif";

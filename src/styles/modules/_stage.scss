@@ -19,20 +19,25 @@
 	left:0;
 	z-index:1;
 }
-
+.desktop-animation{
+	background:url(../images/desktop-animation.gif) no-repeat center right !important; 
+	@media (max-width: 767px) {
+		background:none !important;
+	}
+}
 .stage_container{
 	max-width: $desktop-max-width;
-	background:url(../images/PEPPER_ANIMATION_test-blue.gif) no-repeat center right; 
+	background:url(../images/desktop-still.gif) no-repeat center right; 
 	margin: 0 auto;	
 	padding:58px 0 67px;
 	position: relative;
 	z-index: 2;
-	background-size: 50%;
+	background-size: 50% !important;
 	@media (max-width: 950px) {
 		padding:58px 20px 67px;
 	}
 	@media (max-width: 850px) {
-		background-size: 47%;
+		background-size: 45% !important;
 	}
 	@media (max-width: 767px) {
 		padding: 30px 0;
@@ -72,10 +77,16 @@
 		}
 	}
 }
+.mobile-animation{
+	@media (max-width: 767px) {
+		background: url(../images/mobile-animation.gif) no-repeat top center !important;		
+	}
+}
 .form-wrap{
 	@media (max-width: 767px) {
-		background: url(../images/cropped_pepper_256.gif) no-repeat top center;
+		background: url(../images/mobile-still.gif) no-repeat top center;
 		padding-top:165px;
+		background-size: 240px !important;
 	}
 }
 .stage__form{

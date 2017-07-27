@@ -470,7 +470,7 @@
 
 	$('.js-check-box').change(function() {
 		if(!$(this).is(":checked")) {
-			$('.js-main-form-btn').empty().text('Members Only');	
+			$('.js-main-form-btn').empty().text(miscellaneous.membersOnly);	
 		} else {
 			$('.js-main-form-btn').empty().text('Book Now with Pepper');
 		}
@@ -764,7 +764,7 @@ function lightboxClose(){
 }
 
 var desktopAnimation = new Image();
-var mobileAnimation = new Image();
+//var mobileAnimation = new Image();
 
 desktopAnimation.onload = function () {
    $('.stage_container').addClass('desktop-animation');
@@ -772,8 +772,8 @@ desktopAnimation.onload = function () {
 
 desktopAnimation.src = "../dist/images/desktop-animation.gif";
 
-mobileAnimation.onload = function () {
-   $('.form-wrap').addClass('mobile-animation');
-}
+//mobileAnimation.onload = function () {
+//   $('.form-wrap').addClass('mobile-animation');
+//}
 
-mobileAnimation.src = "../dist/images/mobile-animation.gif";
+//mobileAnimation.src = "../dist/images/mobile-animation.gif";

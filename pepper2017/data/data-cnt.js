@@ -571,6 +571,7 @@
 		sliderSelectButton: '選擇酒店',
 		hotelSingular: '旅館',
 		hotelPlural: '酒店',
-		deleteRoom: '刪除這個房間'
+		deleteRoom: '刪除這個房間',
+		membersOnly: '會員獨享'
 	};
 })(window);

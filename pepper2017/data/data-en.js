@@ -571,6 +571,7 @@
 		sliderSelectButton: 'Select Hotel',
 		hotelSingular: 'Hotel',
 		hotelPlural: 'Hotels',
-		deleteRoom: 'Delete this room'
+		deleteRoom: 'Delete this room',
+		membersOnly: 'Members Only'
 	};
 })(window);

@@ -44,20 +44,18 @@
 		background:none;
 	}
 	h1{
-		max-width:400px;
 		width:auto;
 		float:left;
 		margin: 0 0 30px;
-		text-align:center;
 		@media (max-width: 950px) {
 			padding:0 20px;
 		}
 		@media (max-width: 767px) {
     		text-align: center;
     		float:none;
-    		padding: 0 20px 30px;
-    		max-width:278px;
+    		padding: 0 10px 20px;
     		margin: 0 auto;
+    		font-size: 23px;
 		}
 	}
 }
@@ -72,11 +70,12 @@
 	    	font-size:7px;
 	    	position: relative;
 		    top: -6px;
-		    left: 4px;
-		    margin-right: 3px;
+		    left: -1px;
+    		margin-right: 0;
 		}
 	}
 }
+
 .mobile-animation{
 	@media (max-width: 767px) {
 		background: url(../images/mobile-animation.gif) no-repeat top center !important;		
@@ -85,7 +84,7 @@
 .form-wrap{
 	@media (max-width: 767px) {
 		background: url(../images/mobile-still.gif) no-repeat top center;
-		padding-top:165px;
+		padding-top:164px;
 		background-size: 240px !important;
 	}
 }

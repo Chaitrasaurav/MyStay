@@ -632,11 +632,9 @@ header {
       padding: 30px 0;
       background: none; } }
   .stage_container h1 {
-    max-width: 400px;
     width: auto;
     float: left;
-    margin: 0 0 30px;
-    text-align: center; }
+    margin: 0 0 30px; }
     @media (max-width: 950px) {
       .stage_container h1 {
         padding: 0 20px; } }
@@ -644,9 +642,9 @@ header {
       .stage_container h1 {
         text-align: center;
         float: none;
-        padding: 0 20px 30px;
-        max-width: 278px;
-        margin: 0 auto; } }
+        padding: 0 10px 20px;
+        margin: 0 auto;
+        font-size: 23px; } }
 
 .stage__heading .x-icon {
   position: relative;
@@ -658,8 +656,8 @@ header {
       font-size: 7px;
       position: relative;
       top: -6px;
-      left: 4px;
-      margin-right: 3px; } }
+      left: -1px;
+      margin-right: 0; } }
 
 @media (max-width: 767px) {
   .mobile-animation {
@@ -668,7 +666,7 @@ header {
 @media (max-width: 767px) {
   .form-wrap {
     background: url(../images/mobile-still.gif) no-repeat top center;
-    padding-top: 165px;
+    padding-top: 164px;
     background-size: 240px !important; } }
 
 .stage__form {

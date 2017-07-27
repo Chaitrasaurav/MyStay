@@ -644,6 +644,7 @@
 		sliderSelectButton: 'ホテルを選択',
 		hotelSingular: 'ホテル',
 		hotelPlural: 'ホテル',
-		deleteRoom: 'この部屋を削除する'
+		deleteRoom: 'この部屋を削除する',
+		membersOnly: 'メンバー限定'
 	};
 })(window);

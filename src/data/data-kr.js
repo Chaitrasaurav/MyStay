@@ -571,6 +571,7 @@
 		sliderSelectButton: '호텔 선택',
 		hotelSingular: '호텔',
 		hotelPlural: '호텔',
-		deleteRoom: '이 방을 삭제하십시오.'
+		deleteRoom: '이 방을 삭제하십시오.',
+		membersOnly: '회원 전용'
 	};
 })(window);
